@@ -25,32 +25,28 @@ export const state = () => ({
       description: 'Browse Music keywords for: Business, Employer.',
       image: require('@/assets/img/image1.jpg'),
       loading: require('@/assets/img/image1.jpg?lqip'),
-      link: '/music',
-      component: 'LogoMob'
+      link: '/music'
     },
     {
       title: 'Tailoring',
       description: 'Browse Tailoring keywords for: Business, Employer, Land Developer.',
-      image: require('@/assets/img/image2.jpg'),
-      loading: require('@/assets/img/image2.jpg?lqip'),
-      link: '/tailoring',
-      component: 'LogoMobAlpha'
+      image: require('@/assets/img/image1.jpg'),
+      loading: require('@/assets/img/image1.jpg?lqip'),
+      link: '/tailoring'
     },
     {
       title: 'Design',
       description: 'Looking for Agency? Browse all.',
-      image: require('@/assets/img/image3.jpg'),
-      loading: require('@/assets/img/image3.jpg?lqip'),
-      link: '/design',
-      component: 'LogoMob'
+      image: require('@/assets/img/image1.jpg'),
+      loading: require('@/assets/img/image1.jpg?lqip'),
+      link: '/design'
     },
     {
       title: 'Quality Products',
       description: 'Browse Quality Products keywords for: FinTech, Land Developer.',
-      image: require('@/assets/img/image4.jpg'),
-      loading: require('@/assets/img/image4.jpg?lqip'),
-      link: '/quality',
-      component: 'LogoMobAlpha'
+      image: require('@/assets/img/image1.jpg'),
+      loading: require('@/assets/img/image1.jpg?lqip'),
+      link: '/quality'
     }
   ]
 })

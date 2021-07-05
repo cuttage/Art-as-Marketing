@@ -7,7 +7,8 @@ body {
   background: black;
 }
 
-.container {
+.container,
+.container-popup {
   overflow: hidden;
   display: flex; // opt
   flex-wrap: wrap; // opt
@@ -431,7 +432,8 @@ body {
 }
 
 .subtitle4-d1,
-.subtitle4-d1-S {
+.subtitle4-d1-S,
+.subtitle4-d1-menu {
   font-size: 0.492332099418298em;
   margin-left: 0;
   line-height: 123.882933133497038px;
@@ -439,7 +441,8 @@ body {
 }
 
 .subtitle5-d1,
-.subtitle5-d1-S {
+.subtitle5-d1-S,
+.subtitle5-d1-menu {
   font-size: 0.500528820729772em;
   letter-spacing: 0.0000414595em;
   margin-left: 0;

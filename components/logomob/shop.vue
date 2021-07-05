@@ -158,8 +158,6 @@
 
 <script>
 import LogoMob from '~/components/LogoMob.vue';
-import { anis } from '~/composables/animation.js';
-import anim from '~/mixins/anim.js';
 export default {
   components: {
     LogoMob

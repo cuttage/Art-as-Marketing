@@ -246,13 +246,15 @@ body-content {
 
 @media only screen and (min-width: 525px) {
   .container,
-  .container-index {
+  .container-index,
+  .container-popup {
     width: inherit;
     height: inherit;
     background: blue;
   }
 
-  .container:hover {
+  .container:hover,
+  .container-popup:hover {
     transition: all 0.3s ease-out-in;
     text-shadow: none !important;
   }

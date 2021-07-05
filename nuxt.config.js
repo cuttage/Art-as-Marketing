@@ -62,11 +62,6 @@ export default {
     {
       src: '~/plugins/eventBus.js'
     },
-    {
-      src: '~/plugins/waapi',
-      ssr: false
-    },
-    '~/plugins/axios',
     '~/plugins/vue-composition-api.js'
   ],
   /*
@@ -79,7 +74,6 @@ export default {
     '@aceforth/nuxt-optimized-images'
   ],
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
     'nuxt-purgecss',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
@@ -89,15 +83,11 @@ export default {
         'assets/scss/file/_mainpage.scss'
       ]
     ],
-    '@nuxtjs/axios',
     ['@nuxtjs/component-cache', {
       max: 10000,
       maxAge: 143340 / 3 //142590 seconds: 44530 * 3 = 133590 + 3 sec x 3 = 142590 // 45530 * 3 = 136590 + 3 sec x 3 = 145590 // 44780 * 3 = 134340 + 3 sec * 3 = 143340
     }]
   ],
-  axios: {
-    // proxyHeaders: false
-  },
   pwa: {
     manifest: {
       theme_color: '#D25593'

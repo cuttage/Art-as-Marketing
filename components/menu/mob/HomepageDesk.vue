@@ -11,6 +11,16 @@
         <ul id="childr" class="childr"></ul>
       </nuxt-link>
     </div>
+    <div class="stretchli">
+      <nuxt-link exact to="/" class="disable">
+        <ul id="childr" class="childr"></ul>
+      </nuxt-link>
+    </div>
+    <div class="stretchli">
+      <nuxt-link exact to="/portfolio" class="disable">
+        <ul id="childr" class="childr"></ul>
+      </nuxt-link>
+    </div>
   </div>
 </template>
 

@@ -3,10 +3,10 @@
   <ul class="nav-list" @click.once="toggle">
     <li>index</li>
     <li>about</li>
-    <li>users</li>
-    <li>test</li>
     <li>portfolio</li>
-    <HomepageDesk v-if="rtmO === true && glow === true" class="otherbk" :object="object" :object2="object2" :key="appLinkKeyBk" />
+    <li>index</li>
+    <li>portfolio</li>
+    <HomepageDesk v-if="rtmO === true && glow === true" class="otherbk" :object2="object2" :key="appLinkKeyBk" />
   </ul>
 </template>
 
@@ -19,17 +19,8 @@ export default {
     return {
       appLinkKeyBk: 'yuh' + 0,
       glow: false,
-      object: {
-        touch: false,
-        touchabout: false,
-        users: false,
-        touchtest: false,
-        touchportfolio: false
-      },
       object2: {
         about: false,
-        users: false,
-        test: false,
         portfolio: false
       }
     }
