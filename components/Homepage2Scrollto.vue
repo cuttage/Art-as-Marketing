@@ -305,6 +305,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     top: 117vh;
     width: 100vw;
     height: inherit;
+    z-index: -1;
     &:hover {
       cursor: default;
     }
@@ -336,17 +337,20 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     .absolutely-var2 {
       height: 117vh;
       min-height: 760.56px; /*or 798*/
+      z-index: -1;
     }
   }
   @media only screen and (min-height: 711px) {
     .absolutely-var2 {
       height: inherit;
+      z-index: -1;
     }
   }
   .absolutely-var2 {
     position: absolute;
     top: 960.56px;
     width: 100vw;
+    z-index: -1;
     &:hover {
       cursor: default;
     }

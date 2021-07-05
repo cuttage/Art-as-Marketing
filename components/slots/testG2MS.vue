@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span class="g2m-data-wrapper">
     <slot name="g2m" :tellYou="caption"></slot><!--risultato: da la funzionalità o styling 'predefinita' della parte superiore (Gallery2)-->
     <slot name="g3m" :G2mData="G2mData" :G2m2Data="G2m2Data"></slot><!--risultato: da la funzionalità o styling 'predefinita' della parte inferiore (Gallery3)-->
   </span>
@@ -25,3 +25,12 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: 1047px) {
+  .g2m-data-wrapper {
+    width: 80%;
+    text-align: center;
+  }
+}
+</style>
