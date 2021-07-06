@@ -14,7 +14,7 @@
               <div class="subtitle22-d6 tI">We got it covered. ...</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

@@ -2,16 +2,12 @@
   <article class="article logoarticle">
     <div class="nitem" />
     <div id="panel" class="nitem" :style="diapoclass2C">
-      <!-- disables if currentDiapo is first entry of diapos array -->
-      <!-- click event passes which direction to one method -->
       <span role="button" v-bind:class="{disabled: currentDiapo === 0}" @click="changeDiapo('prev')"></span>
-      <!-- disables if currentDiapo is at end of diapos array -->
-      <!-- click event passes which direction to one method -->
       <span role="button" v-bind:class="{disabled: currentDiapo === diapos.length - 1}" @click="changeDiapo('next')"></span>
     </div>
     <article v-show="this.currentDiapo === 0" class="nitem" :style="diapoclassC" :key="diapoaKeySub">
-      <project v-if="page === 'portfolio'" class="block_start_headline" :key="diapoaKeySub1"></project> <!--One tap, double tap, above or below-->
-      <nuxt-child v-else class="block_start_headline" :key="diapoaKeySub1"></nuxt-child> <!--One tap, double tap, above or below-->
+      <project v-if="page === 'portfolio'" class="block_start_headline" :key="diapoaKeySub1"></project>
+      <nuxt-child v-else class="block_start_headline" :key="diapoaKeySub1"></nuxt-child>
     </article>
     <component :is="diapos[currentDiapo]" v-if="this.currentDiapo === 1" class="nitem" :style="diapoclassC" :key="diapobKey">
       <slot name="inputBlueContent"></slot>
@@ -27,7 +23,6 @@ export default {
   data() {
     return {
       diapos: ['diapoA', 'diapoB'],
-      // number to reference the index of the diapos array
       currentDiapo: 0,
       diapoaKey: "a" + 2,
       diapoaKeySub: "aa" + 2,
@@ -88,17 +83,13 @@ export default {
   },
   methods: {
     changeDiapo(dir) {
-      // simple test against dir string
-      // if "next" then increase currentDiapo by 1, otherwise decrease by 1
-      // would be really easy to create a rule to go to first or last diapo as well
-        this.$nextTick(() => {this.currentDiapo = dir === 'next' ? this.currentDiapo + 1 : this.currentDiapo - 1})
+      this.$nextTick(() => {this.currentDiapo = dir === 'next' ? this.currentDiapo + 1 : this.currentDiapo - 1})
     },
     valCache(data) {
       return (this.diapoclass === data) ? this.diapoclass : this.diapoclass = data;
     }
   },
   created() {
-    //this.$bus.$on('dropd-change', (data) => {this.diapoclass = data});
     this.$bus.$on('dropd-change', (data) => {this.valCache(data)});
   }
 }

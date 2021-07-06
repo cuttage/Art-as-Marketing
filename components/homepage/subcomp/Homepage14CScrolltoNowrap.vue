@@ -16,7 +16,7 @@
               <div class="subtitle5-d1-S tI">/donate on these icons.</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

@@ -12,7 +12,7 @@
               <div class="subtitle22A-d6 tI">We use custom analytics to measure performance.</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

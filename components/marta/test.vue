@@ -26,7 +26,6 @@
 .container-marta {
   will-change: opacity;
   opacity: 1;
-  // clip-path: inset(7% 27% 76.07% 27% round 100%);
   background: linear-gradient(to right, rgba(32,28,41,0.2), rgba(32,28,41,0.2) 0.030745614035088rem, rgba(23,20,29,0.2) 0.030745614035088rem, rgba(23,20,29,0.2));
   border-radius: 0.307456140350877rem;
   -webkit-box-shadow: inset 0.061491228070175 0.061491228070175rem 0.061491228070175rem rgba(255, 255, 255, 0.4), inset -0.061491228070175rem -0.061491228070175rem 0.061491228070175rem rgba(0, 0, 0, 0.4);
@@ -38,7 +37,6 @@
   margin-right: 1.106842105263159rem;
   width: auto;
   height: auto;
-  /*min-height: 140px;*/
   box-shadow: rgba(white, 0.2) 0 0 1.229824561403509rem 0.153728070175439rem, rgba(white, 0.3) 0 0 0 0.009223684210526rem, // min. 1px in Safari
     rgba(black, 0.66) 0 0.922368421052632rem 1.844736842105263rem 0;
   &:focus, &:hover {
@@ -76,16 +74,10 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 
 .subheader {
   line-height: inherit !important;
-} /* was @media only screen and (max-width: 524px) {
-  .subheader {
-    line-height: inherit !important;
-  }
-}*/
+}
 
 .reg-text {
   display: inline-block !important;
-  //font-size: 0.87640350877193rem; /*old*/
-  //line-height: 1.39; /*old*/
   font-size: 0.67640350877193rem; /*with bangla MN*/
   line-height: 1.89 !important; /*with bangla MN*/
   text-transform: uppercase;
@@ -161,7 +153,6 @@ div {
   width: 80%;
   margin: auto;
   font-family: "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-  //font-family: sans-serif !important; /*alternative: sans-serif only*/
   &:focus, &:hover {
     text-shadow: none !important;
   }

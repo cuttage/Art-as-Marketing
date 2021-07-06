@@ -19,9 +19,8 @@
             </div>
             <div id="target-d1 tI" class="extratitle1B-d6">Make your new service a viral memento.</div>
             <div class="subtitle3-d6 tI subtitle3-d614AS">We always make it appetibile to talk about.</div>
-            <!--(Gain earned media.)-->
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

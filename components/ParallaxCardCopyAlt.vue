@@ -30,8 +30,6 @@ import { mapState } from 'vuex'
     },
     mounted() {
       this.$nextTick(() => {
-        // ----- setup ----- //
-
         // get canvas element and its context
         let canvas = this.$refs['my-canvas'];
         let ctx = canvas.getContext('2d');
@@ -47,9 +45,7 @@ import { mapState } from 'vuex'
         let scene = new Zdog.Anchor({
           rotate: { x: TAU/12.00000896262679, z: TAU/8.000006009690677 },
         });
-        // canvas.style.webkitFilter = "blur(3px)";
-        // ----- model ----- //
-        // Made with Zdog
+
         // Colors
         var $black1 = 'hsl(200,20%,15%)';
         var $black2 = 'hsl(200,20%,20%)';
@@ -67,14 +63,14 @@ import { mapState } from 'vuex'
         var $gold6T = 'hsla(324,61%,80%,0)';
 
         var stop = false;
-        var brdr = 4.650000000000001 // just a nice number that goes with platesmall.length
+        var brdr = 4.650000000000001
         var i;
         var j;
         var k;
         var obj;
         var m = 9;
-        var brdrb = 13.285714285714288 // just a nice number that goes with platesmall.length
-        var bp1 = 0.97 //was: 0.96
+        var brdrb = 13.285714285714288
+        var bp1 = 0.97
         var bp = 0.95;
 
         //base: width & height 211.412268188302425px
@@ -94,7 +90,7 @@ import { mapState } from 'vuex'
 
         var plateGrpMedium = new Zdog.Anchor({
           addTo: scene,
-          translate: {z: -33.214285714285725} // logocopy.translateZ + (bgCirclecopy.translateZ / 2) + logocopy.stroke
+          translate: {z: -33.214285714285725}
         });
 
         var plateGrpoupMedium = new Zdog.Group({
@@ -156,7 +152,7 @@ import { mapState } from 'vuex'
         // base
         var baseGrp = new Zdog.Anchor({
           addTo: scene,
-          translate: {z: -100.678571428571437} // 76,392857142857151 + 24,285714285714286 - ((24,285714285714286 - (8,5 * 1,857142857142857)) / 2) = z: -96.428571428571436 (exact match)
+          translate: {z: -100.678571428571437}
         });
         //base upper borders
         var baseBorderAnchor = new Zdog.Anchor({
@@ -170,19 +166,12 @@ import { mapState } from 'vuex'
         var baseshade = new Zdog.Group({
           addTo: plateGrpoupBig
         });
-        //
-        //var t0 = performance.now()
-        //
-
-        //var t1 = performance.now()
-        //console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.")
 
         //BASE START
-        // base's shades
         var baseshade1 = new Zdog.Ellipse({
           addTo: plateGrpoupBig,
           diameter: 147.988587731811698,
-          translate: {z: -10.999999999999998}, //(24,285714285714286-15,785714285714284)/2 + (15,785714285714284/2)
+          translate: {z: -10.999999999999998},
           color: 'hsla(200,20%,30%,0.165)',
           fill: true,
         });
@@ -205,12 +194,11 @@ import { mapState } from 'vuex'
           scale: (((bp1 * bp1) * bp1) * bp1) * bp1,
           color: 'hsla(0,0%,0%,0.165)'
         })
-        // a simple memoize function that takes in a function
-        // and returns a memoized function
+
         const memoize = (fn) => {
           let cache = {};
           return (...args) => {
-            let n = args[0];  // just taking one argument here
+            let n = args[0];
             if (n in cache) {
               return cache[n];
             }
@@ -223,7 +211,6 @@ import { mapState } from 'vuex'
         }
         var baseshade2 = new Zdog.Shape({
           addTo: baseshade,
-          //diameter: 205.419686162624821,
           translate: {z: -12.142857142857143},
           path: [
             {y: 102.709843081312411, x: 0},
@@ -291,7 +278,7 @@ import { mapState } from 'vuex'
         var sideshadebase = new Zdog.Shape({ // cylinder side line shape
           addTo: baseGrp,
           path: [
-            { x: 0, y: 0, z: 11.546566130018341 }, // (base lenght 24,285714285714286 + stroke of brdrBase 1,192582025677604) / 2 - stroke of brdrBase 1.192582025677604
+            { x: 0, y: 0, z: 11.546566130018341 },
             { x: 0, y: 0, z: -11.546566130018341 }
           ],
           stroke: 2.857142857142857,
@@ -325,7 +312,7 @@ import { mapState } from 'vuex'
         let base = new Zdog.Cylinder({
           addTo: baseGrp,
           diameter: 211.412268188302425,
-          length: 24.285714285714286, // /2 = 4,25
+          length: 24.285714285714286,
           stroke: false,
           color: $black1,
           frontFace: 'hsl(200,20%,12.9%)',
@@ -348,7 +335,7 @@ import { mapState } from 'vuex'
           stroke: 5.571428571428571,
           color: 'hsla(175, 100%, 13%, 0.98)',
         });
-        let logocopy2 = new Zdog.Shape({ //439,802089059923033
+        let logocopy2 = new Zdog.Shape({
           addTo: logoGroup3,
           translate: { x: -67.562857142857138 / 2, y: -67.562857142857138 / 2, z: 26.928571428571427 },
           path: [
@@ -421,7 +408,7 @@ import { mapState } from 'vuex'
         var sideshademediumr = new Zdog.Shape({
           addTo: plateGrpBig,
           path: [
-            { x: 0, y: 0, z: 6.231760749949053 }, // (platesmall lenght + stroke of brdrsmall) / 2 - stroke of brdrsmall
+            { x: 0, y: 0, z: 6.231760749949053 },
             { x: 0, y: 0, z: -6.231760749949053 }
           ],
           stroke: 1.857142857142857,
@@ -509,12 +496,12 @@ import { mapState } from 'vuex'
           addTo: logoGroup2
         });
         brdrBig.copy({
-          translate: { z: 6.642857142857146 }, // 6,642857142857146 + 43,178571428571426
+          translate: { z: 6.642857142857146 },
           diameter: 105.706134094151245,
           addTo: borderGroupMedium,
         });
         brdrBig2.copy({
-          translate: { z: 6.642857142857146 }, // 6,642857142857146 + 43,178571428571426
+          translate: { z: 6.642857142857146 },
           diameter: 103.150601181984951,
           addTo: borderGroupMedium,
         });
@@ -642,7 +629,7 @@ import { mapState } from 'vuex'
           stroke: 3,
           color: 'hsla(175, 100%, 13%, 0.98)',
         });
-        let logo = new Zdog.Shape({ //439,802089059923033
+        let logo = new Zdog.Shape({
           addTo: logoGroup,
           translate: { x: -18.19, y: -18.19, z: 14.5 },
           path: [
@@ -673,7 +660,7 @@ import { mapState } from 'vuex'
         var sideshadesmall = new Zdog.Shape({ // cylinder side line shape
           addTo: plateGrpSmall,
           path: [
-            { x: 0, y: 0, z: 3.355563480741798 }, // (platesmall lenght + stroke of brdrsmall) / 2 - stroke of brdrsmall
+            { x: 0, y: 0, z: 3.355563480741798 },
             { x: 0, y: 0, z: -3.355563480741798 }
           ],
           stroke: 1,
@@ -706,7 +693,7 @@ import { mapState } from 'vuex'
         let platesmall = new Zdog.Cylinder({
           addTo: plateGrpSmall,
           diameter: 73.994293865905849,
-          length: 8.5, // /2 = 4,25
+          length: 8.5,
           stroke: false,
           color: $gold3,
           backface: $gold5,
@@ -752,7 +739,7 @@ import { mapState } from 'vuex'
           else {depth = 1; counter = 1};
           if (counter == 5) tl.eventCallback("onUpdate", render);
           if(stop === false && depth < 152){
-            rAFanimate2(depth, counter); // continue animation until stop
+            rAFanimate2(depth, counter);
           } else {
             cAFanimate2();
             tl.eventCallback("onUpdate", null);
@@ -771,8 +758,6 @@ import { mapState } from 'vuex'
           ctx.lineCap = 'round';
 
           logo.translate.y = animationObject.lockTopY;
-          //scene.rotate.y = this.radiansToDegrees(animationObject.rotationY);
-
           // render scene graph
           scene.renderGraphCanvas( ctx );
           ctx.restore();
@@ -807,11 +792,10 @@ import { mapState } from 'vuex'
 
 <style scoped>
 .zdog-canvas {
-  /*filter: blur(4px);*/
   display: block;
   background-color: transparent;
-  max-width: 500px; /*34.722222222222222%; 500px fullscreen, where console.log(window.innerWidth + 'px') //1440:100=500:x, x=34,722222222222222*/
-  max-height: 500px; /*60.901339829476248%; 500px fullscreen, where console.log(window.innerHeight + 'px') //821:100=500:x, x=60,901339829476248*/
+  max-width: 500px;
+  max-height: 500px;
   width: auto;
   height: auto;
   cursor: move;

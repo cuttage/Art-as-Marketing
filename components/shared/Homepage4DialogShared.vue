@@ -9,7 +9,7 @@
             <div class="subtitle2-d1 tI">Integrate your offer with our expertise.</div>
             <div class="subtitle33-d1 tI">By partnering on a project, or by regular scale.</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

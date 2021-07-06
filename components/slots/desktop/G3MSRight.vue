@@ -22,16 +22,14 @@
   }
 }
 .container2p {
-  /*position: absolute;
-  top: calc(70vw - 8vw + 50px);*/
   margin-top: -14vw;
   min-height: 70vw;
   width: 100%;
   left: 0;
   overflow: visible;
-  display: flex; // opt
-  flex-wrap: wrap; // opt
-  justify-content: flex-end; // opt
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   padding: 7vw 0 0 0;
 }
 /* experimental feature: 460px limit in layout */

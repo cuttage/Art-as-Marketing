@@ -7,7 +7,7 @@
           <div id="target-d1 tI" class="title-d1-S">Art as Marketing
             <div class="subtitle2-d1 tI subtitle2-d1-desktop-callback">Yes — Real. We employ Design in time & money worthy brand experiences. We give back to creative communities. You grow.</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

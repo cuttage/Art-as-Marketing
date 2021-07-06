@@ -9,7 +9,7 @@
             <div class="subtitle2-d1 tI">our judgement and infrastructure.</div>
             <div class="subtitle3-d1 tI subtitle3-d1-red">Let's meet.</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

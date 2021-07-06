@@ -12,7 +12,7 @@
             </div>
             <div id="target-d1 tI" class="extratitle1-d6">Price: less than testing, same ...</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

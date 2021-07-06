@@ -234,7 +234,6 @@ body {
   z-index: 1001;
 }
 
-/* from layout-other */
 body-content {
   flex: 1;
 }
@@ -263,7 +262,6 @@ body-content {
 .parallaxcardcopy {
   opacity: 1;
   visibility: visible;
-  //margin-right: 56px !important;
 }
 
 .parallaxcardoverflow {
@@ -276,7 +274,6 @@ body-content {
   top: 78vh;
 }
 
-/* from layout-portfolio */
 @media only screen and (max-width: 525px) {
   .child {
     width: inherit;
@@ -286,7 +283,6 @@ body-content {
 }
 
 .show-whatspinner {
-  /*margin-top: -1em;*/ /* was calc(-1 * ((3em + 20px) / 2)) *//*was -2em*/
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   margin-bottom: calc(9.296188183807424vw + (2em - 9.296188183807424vw));
   visibility: visible;
@@ -294,7 +290,6 @@ body-content {
 }
 
 .show-whatspinner-var {
-  /*margin-top: -1em;*/ /* was calc(-1 * ((3em + 20px) / 2)) *//*was -2em*/
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   visibility: visible;
   display: block;

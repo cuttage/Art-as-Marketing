@@ -10,7 +10,7 @@
           <h3 class="reg-text">"Change in Fashion: A China Case-Study."</h3>
           <p class="reg-text-sub">"Change in Fashion: A Case-Study. Lorem ipsum dolor sit"</p>
         </div>
-      </div><!--text-->
+      </div>
     </div>
   </div>
 </template>
@@ -35,7 +35,6 @@ $g: 2.15219298245614rem;
 
 @media only screen and (min-width: 1196px) {
   .container-marta {
-    // clip-path: inset(7% 27% 76.07% 27% round 100%);
     background: linear-gradient(to right, rgba(32,28,41,0.2), rgba(32,28,41,0.2) 1px, rgba(23,20,29,0.2) 1px, rgba(23,20,29,0.2));
     border-radius: 10px;
     -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
@@ -98,8 +97,6 @@ $g: 2.15219298245614rem;
     font-weight: 400;
     background: -webkit-gradient(linear, left top, right top, from(#f27881), to(#D25593));
     background: linear-gradient(to right, #f27881, #D25593);
-    // background: -webkit-gradient(linear, left top, right top, from(#bfbfbf), to(#D25593));
-    // background: linear-gradient(to right, #bfbfbf, #D25593);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

@@ -9,9 +9,6 @@ export default {
     baseURL: (process.env.NODE_ENV === 'production' ? 'http://localhost:3000' : 'http://localhost:3000')
   },
   modern: true,
-  /*
-   ** Headers of the page
-   */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -44,32 +41,17 @@ export default {
       'pages'
     ]
   },
-  /*
-   ** Customize the progress-bar color
-   */
   loading: false,
-  /*
-   ** Global CSS
-   */
   css: [
     '~/assets/main.css',
     '@/assets/scss/mainpage.scss'
   ],
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [
     {
       src: '~/plugins/eventBus.js'
     },
     '~/plugins/vue-composition-api.js'
   ],
-  /*
-   ** Nuxt.js dev-modules
-   */
-  /*
-   ** Nuxt.js modules
-   */
   buildModules: [
     '@aceforth/nuxt-optimized-images'
   ],
@@ -85,7 +67,7 @@ export default {
     ],
     ['@nuxtjs/component-cache', {
       max: 10000,
-      maxAge: 143340 / 3 //142590 seconds: 44530 * 3 = 133590 + 3 sec x 3 = 142590 // 45530 * 3 = 136590 + 3 sec x 3 = 145590 // 44780 * 3 = 134340 + 3 sec * 3 = 143340
+      maxAge: 143340 / 3
     }]
   ],
   pwa: {
@@ -93,7 +75,6 @@ export default {
       theme_color: '#D25593'
     }
   },
-  // Other nuxt.config.js
   styleResources: {
     scss: [
         'assets/scss/file/_mainpage.scss'
@@ -110,9 +91,6 @@ export default {
   optimizedImages: {
     optimizeImages: true
   },
-  /*
-   ** Build configuration
-   */
   build: {
     babel: {
       cacheDirectory: true,
@@ -131,7 +109,7 @@ export default {
         ]
       }
     },
-    hardSource: false, /* When ready to build, turn true */
+    hardSource: true, /* When ready to build, turn true */
     loaders: {
       cssModules: {
         localIdentName: "[sha1:hash:hex:4]"
@@ -191,14 +169,8 @@ export default {
         }
       })
     },
-    /*
-    ** You can extend webpack config here
-    */
     plugins: [],
   },
-  /*
-  ** THE RENDERER HAS BEEN IMPLEMENTED POSTHUMOUSLY, COMPRESSOR IS THE LATEST ADDEDD FEATURE
-  */
   render: {
     compressor: {
       level: 9,

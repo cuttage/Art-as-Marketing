@@ -24,7 +24,7 @@
             <div class="subtitle3-d5 tI">Then, outsource to us.</div>
             <div class="subtitle4A-d4 tI">McKinsey Design Index (MDI) top-quartile results, October 2018</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

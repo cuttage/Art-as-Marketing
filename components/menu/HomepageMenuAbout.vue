@@ -1,6 +1,5 @@
 <template>
   <div class="longer">
-    <!--:class="{ 'parent' : (page === '') }"-->
     <nuxt-link exact to="/about" class="disable">
       <DepthCardAll id="child" class="child" />
     </nuxt-link>

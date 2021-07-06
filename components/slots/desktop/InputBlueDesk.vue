@@ -19,7 +19,6 @@
     </span>
   </div>
 </template>
-<!--v-if="search.localeCompare(blog.keyword) = 0" se il filtered blog keyword è uguale al search, far vedere il set di foto scelte (componente)-->
 
 <script>
 import useRaw from '~/composables/raw-data.js'
@@ -167,17 +166,13 @@ $main-h: 20.2vw;
 h2 {
   position: relative;
   margin-top: 1em;
-  margin-right: 6.59918336px; //0.266rem into px on 768px w screen: base size: 16px + 1,147vw = 1rem, 16px + 8,80896px = 1rem (24,80896px), 0,266rem = 6,59918336px
+  margin-right: 6.59918336px;
   margin-left: 6.59918336px;
-  //0.35rem into px on 768px w screen: base size: 16px + 1,147vw = 1rem, 16px + 8,80896px = 1rem (24,80896px), 0,35rem = 8,683136px
-  //0.5rem into px on 768px w screen: base size: 16px + 1,147vw = 1rem, 16px + 8,80896px = 1rem (24,80896px), 0,5rem = 12,40448px
-  //0.27rem into px on 768px w screen: base size: 16px + 1,147vw = 1rem, 16px + 8,80896px = 1rem (24,80896px), 0,27rem = 6,6984192px
-  padding: 0.35rem 12.65448px 0.27rem 12.65448px; // was: padding: 0.35rem 12.40448px 0.27rem 12.40448px;
+  padding: 0.35rem 12.65448px 0.27rem 12.65448px;
   font-family: 'AtkinsonHyperlegibleRegular';
   text-rendering: geometricPrecision;
-  font-size: 27.82428px; // was: 27.84528px
+  font-size: 27.82428px;
   line-height: 1.35;
-  //letter-spacing: -.01em;
   color: #333;
   z-index: 998;
 }
@@ -196,7 +191,6 @@ h2 {
   align-items: center;
   justify-content: center;
   align-items: center;
-  //max-height: 3.82rem;
   overflow: hidden;
 }
 .dropdown {
@@ -221,7 +215,6 @@ h2 {
   flex-direction: column;
 }
 .absol-head {
-  //border-radius: 5px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -255,8 +248,6 @@ body {
   line-height: $main-h !important;
   height: $main-h !important;
   font-size: 1.490250039119064rem !important;
-  // base size: 16px + 1,147vw, on iPhone 12 Pro Max 1,147vw = 5,24179px. 1.490250039119064rem is based off iPad 768w
-  // other option: instead of 1.490250039119064rem: calc(23.844000625905024px + 1.709316794869566vw) - 35,5071716025178% is vw
   color: #333 !important;
   text-align: center;
   background-color: black !important;

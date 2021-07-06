@@ -9,7 +9,7 @@
             <div class="subtitle2-d1 tI">Outsmart your own business today.</div>
             <div class="subtitle3-d1 tI subtitle3-d1-red">Redeem Italian creative communities.</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

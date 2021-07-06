@@ -42,7 +42,6 @@
             </ul>
           </section>
         </article>
-        <!--new section-->
         <article class="article">
           <subtouch1 v-if="isHomepage1DialogActive" />
           <subtouch2 v-if="isHomepage2DialogActive" />
@@ -236,35 +235,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* SCRIPT TO DESTROY WATCHERS FOR FUTURE REFERENCE, TO container-test-galler  beforeMount() {
-    this.$watch(
-      'selected', //what you want to watch
-      (newValue) => {
-        TweenMax.fromTo(
-          this.$refs.emoji,
-          0.6,
-          { scale: 0.5 },
-          { scale: 1, ease: Elastic.easeOut.config(1, 0.8) }
-        );
-      }
-    )
-  },
-  beforeDestroy() {
-    var vm = this
-    var unwatch = vm.$watch(
-      'selected', //what you want to watch
-      (newValue) => {
-        TweenMax.fromTo(
-          this.$refs.emoji,
-          0.6,
-          { scale: 0.5 },
-          { scale: 1, ease: Elastic.easeOut.config(1, 0.8) }
-        );
-      }
-    )
-    // later, teardown the watcher
-    unwatch()
-  }*/
 $primary: #D25593;
 $dur: 2s;
 $timing: ease-out;
@@ -356,13 +326,6 @@ li:nth-child(1) {
                   0 1.25px 1.125px rgba($cta-color,0.03125),
                   0 2.5px 2.25px rgba($cta-color,0.041666666666666667),
                   0 5px 4.5px rgba($cta-color,0.05208333333333333333);
-      /* ALTERNATIVE:
-      text-shadow: 0 0.25px 0.25px rgba($cta-color,0.125),
-                  0 0.5px 0.5px rgba($cta-color,0.1),
-                  0 1.25px 1.25px rgba($cta-color,0.075),
-                  0 2.5px 2.5px rgba($cta-color,0.05),
-                  0 5px 5px rgba($cta-color,0.025);
-      */
   }
   to {
     text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
@@ -386,8 +349,6 @@ li:nth-child(1) {
   text-align: center;
 }
 
-
-/* layout */
 body {
 	width: 100%;
 	height: 100%;
@@ -409,11 +370,8 @@ ul {
 }
 
 .archive {
-  /* Define the element as a grid container */
   display: grid;
-  /* Auto-fit as many items on a row as possible without going under 180px */
   grid-template-columns: 100vw;
-  /* A little spacing between articles */
   grid-gap: 1em;
   grid-auto-flow: dense;
 }
@@ -557,25 +515,3 @@ ul {
   }
 }
 </style>
-
-<!--NOTSUREIFNEEDEDstyle lang="scss">
-@media only screen and (max-height: 460px) and (orientation: landscape) {
-  .container-d1.deca1 {
-    max-height: none !important; /* was max-height: 50px 1vw; */
-    margin-bottom: calc(16.177105508901903rem + 25px + 2rem - 100vh - 50px -
-    (((100vh / 2) - (16.177105508901903rem / 2)) * -1)) !important;
-  }
-  .container-d1.decb1,
-  .container-d1.decc1,
-  .container-d1.decd1 {
-    max-height: none !important; /* was max-height: 50px 1vw; */
-    margin-bottom: calc(12.786386567061625rem + 25px + 2rem - 100vh - 50px -
-    (((100vh / 2) - (12.786386567061625rem / 2)) * -1)) !important;
-  }
-  .container-d1.dece1 {
-    max-height: none !important; /* was max-height: 50px 1vw; */
-    margin-bottom: calc(14.481746037981764rem + 25px + 2rem - 100vh - 50px -
-    (((100vh / 2) - (14.481746037981764rem / 2)) * -1)) !important;
-  }
-}
-</style-->

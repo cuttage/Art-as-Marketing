@@ -1,7 +1,7 @@
 <template>
   <span class="g2m-data-wrapper">
-    <slot name="g2m" :tellYou="caption"></slot><!--risultato: da la funzionalità o styling 'predefinita' della parte superiore (Gallery2)-->
-    <slot name="g3m" :G2mData="G2mData" :G2m2Data="G2m2Data"></slot><!--risultato: da la funzionalità o styling 'predefinita' della parte inferiore (Gallery3)-->
+    <slot name="g2m" :tellYou="caption"></slot>
+    <slot name="g3m" :G2mData="G2mData" :G2m2Data="G2m2Data"></slot>
   </span>
 </template>
 

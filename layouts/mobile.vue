@@ -50,7 +50,6 @@ export default {
   components: {
     myLayout,
     SpinnerMob: () => import('~/components/spinner/SpinnerMob.vue'),
-    //ParallaxCardCopyMob: () => import('~/components/ParallaxCardCopyMob.vue'),
     MartaMob: () => import('~/components/marta/test.vue'),
     MartaMobMobile: () => import('~/components/marta/MartaMobMobile.vue')
   },
@@ -82,7 +81,6 @@ body {
 :root {
   font-family: 'WindsorEF', sans-serif;
   font-display: auto;
-  /* original calc 0.859059166095426vw, 1vw is right (100% dimension Keynote) */
   font-size: calc(1em + 1.147vw);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -242,7 +240,6 @@ body {
 }
 
 .show-whatspinner {
-  /*margin-top: -1em;*/ /* was calc(-1 * ((3em + 20px) / 2)) *//*was -2em*/
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   margin-bottom: calc(9.296188183807424vw + (2em - 9.296188183807424vw));
   visibility: visible;

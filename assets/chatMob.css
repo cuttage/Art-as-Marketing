@@ -73,7 +73,7 @@ cf-input-button.cf-input-button {
     margin-top: -0.4rem !important;
   }
   cf-input-button.cf-input-button {
-    bottom: 0.19969298245614rem !important; /*6,495007132667618px*/
+    bottom: 0.19969298245614rem !important;
   }
 }
 
@@ -161,10 +161,7 @@ cf-info {
       .robot text > p {
         -webkit-font-smoothing: antialiased;
         color: rgba(245, 242, 235,0.98) !important;
-        /*background: linear-gradient(to right, rgba(245, 242, 235,0.98), rgba(245, 242, 235,0.98)) !important; /*was background: linear-gradient(to right, rgba(255,250,240,0.98), rgba(245,245,245,0.98)) !important;*/
-        /*-webkit-background-clip: text !important;
-        /*-webkit-text-fill-color: transparent !important;*/
-        letter-spacing: 0.09em !important; /*was letter-spacing: 0.048em !important;*/
+        letter-spacing: 0.09em !important;
       }
       .user text,
       .robot text,
@@ -172,7 +169,7 @@ cf-info {
       input {
         -webkit-font-smoothing: antialiased;
         font-family: "Proza Libre", "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-        font-size: 0.662675438596491rem !important; /*was font-size: 0.622675438596491rem !important; "Helvetica Neue Roman"*/
+        font-size: 0.662675438596491rem !important;
         font-weight: 500;
         color: rgba(245, 242, 235,0.98) !important;
         text-rendering: geometricPrecision;
@@ -182,7 +179,7 @@ cf-info {
     @media only screen and (min-width: 399px) {
       .robot text > p {
         -webkit-font-smoothing: antialiased;
-        background: linear-gradient(to right, rgba(245, 242, 235,0.98), rgba(245, 242, 235,0.98)) !important; /*was background: linear-gradient(to right, rgba(255,250,240,0.98), rgba(245,245,245,0.98)) !important;*/
+        background: linear-gradient(to right, rgba(245, 242, 235,0.98), rgba(245, 242, 235,0.98)) !important;
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
         letter-spacing: 0.048em !important;
@@ -242,7 +239,7 @@ cf-info {
     input {
       -webkit-font-smoothing: antialiased;
       font-family: "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-      font-size: 0.662675438596491rem !important; /*was font-size: 0.622675438596491rem !important; "Helvetica Neue Roman"*/
+      font-size: 0.662675438596491rem !important;
       font-weight: 500;
       color: rgba(245, 242, 235,0.98) !important;
       text-rendering: geometricPrecision;
@@ -270,10 +267,7 @@ cf-info {
       .robot text > p {
         -webkit-font-smoothing: antialiased;
         color: rgba(245, 242, 235,0.98) !important;
-        /*background: linear-gradient(to right, rgba(245, 242, 235,0.98), rgba(245, 242, 235,0.98)) !important; /*was background: linear-gradient(to right, rgba(255,250,240,0.98), rgba(245,245,245,0.98)) !important;*/
-        /*-webkit-background-clip: text !important;
-        /*-webkit-text-fill-color: transparent !important;*/
-        letter-spacing: 0.09em !important; /*was letter-spacing: 0.048em !important;*/
+        letter-spacing: 0.09em !important;
       }
       .user text,
       .robot text,
@@ -281,7 +275,7 @@ cf-info {
       input {
         -webkit-font-smoothing: antialiased;
         font-family: "Proza Libre", "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-        font-size: 0.662675438596491rem !important; /*was font-size: 0.622675438596491rem !important; "Helvetica Neue Roman"*/
+        font-size: 0.662675438596491rem !important;
         font-weight: 500;
         color: rgba(245, 242, 235,0.98) !important;
         text-rendering: geometricPrecision;
@@ -291,7 +285,7 @@ cf-info {
     @media only screen and (min-width: 399px) {
       .robot text > p {
         -webkit-font-smoothing: antialiased;
-        background: linear-gradient(to right, rgba(245, 242, 235,0.98), rgba(245, 242, 235,0.98)) !important; /*was background: linear-gradient(to right, rgba(255,250,240,0.98), rgba(245,245,245,0.98)) !important;*/
+        background: linear-gradient(to right, rgba(245, 242, 235,0.98), rgba(245, 242, 235,0.98)) !important;
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
         letter-spacing: 0.048em !important;
@@ -350,7 +344,7 @@ cf-info {
     input {
       -webkit-font-smoothing: antialiased;
       font-family: "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-      font-size: 0.662675438596491rem !important; /*was font-size: 0.622675438596491rem !important; "Helvetica Neue Roman"*/
+      font-size: 0.662675438596491rem !important;
       font-weight: 500;
       color: rgba(245, 242, 235,0.98) !important;
       text-rendering: geometricPrecision;

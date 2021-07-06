@@ -21,7 +21,7 @@
             </div>
             <previewer v-if="father === 'Homepage5Scrollto'" :mother="mother" />
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

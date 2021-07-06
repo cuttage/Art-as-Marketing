@@ -13,7 +13,7 @@
               <div class="subtitle21-d6 tI">scenic soundtrack or music ...</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

@@ -12,7 +12,6 @@
       <div class="card" :style="cardStyle">
         <placeholder class="card-bg" :style="cardBgImageLoading" rel="preload" as="image" />
         <img class="card-bg" :style="cardBgImage" rel="preload" as="image" />
-        <!--MAY USE INSTEAD div class="card-bg" :style="cardBgImage" rel="preload" as="image"/-->
         <div class="card-info">
           <h1>{{ title }}</h1>
           <p>{{ description }}</p>
@@ -83,7 +82,7 @@ export default {
 
 <style exact lang="scss" scoped>
 $primary: #D25593;
-$hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1); //was 0.23, 1, 0.32, 1
+$hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
 .nuxt-link-custom {
   color: white;
@@ -156,7 +155,7 @@ $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
   background-size: cover !important;
   transition: 7s $returnEasing, opacity 5s $returnEasing;
   pointer-events: none;
-  image-rendering: crisp-edges; //optional
+  image-rendering: crisp-edges;
 }
 
 .card-info h1 {

@@ -1,6 +1,4 @@
-// States
 // prettier-ignore
-// original image size 1199&h=798&q 1199&h=799&q 1199&h=799&q 1199&h=811&q
 export const state = () => ({
   products: [],
   page: 'index',
@@ -51,7 +49,6 @@ export const state = () => ({
   ]
 })
 
-// mutations
 export const mutations = {
   setProducts(state, products) {
     state.products = products

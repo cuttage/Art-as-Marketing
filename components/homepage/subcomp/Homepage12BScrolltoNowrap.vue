@@ -17,7 +17,7 @@
             </div>
             <div class="subtitle4-d4 tI">Offices, Windows and Daylight: Call Center Worker Performance</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

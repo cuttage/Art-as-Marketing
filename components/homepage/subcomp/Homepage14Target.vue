@@ -9,7 +9,7 @@
             <div class="subtitle2-d1 tI">may spark in a vast bucket.</div>
             <div class="subtitle3-d1 tI subtitle3-d1-red">Let's interpret your own customers.</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

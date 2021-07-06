@@ -1,6 +1,5 @@
 <template>
   <div class="longer">
-    <!--:class="{ 'parent' : (page === '') }"-->
     <nuxt-link exact to="/portfolio" class="disable">
       <Homepage id="child" class="child" />
     </nuxt-link>

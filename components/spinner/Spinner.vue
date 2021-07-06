@@ -44,7 +44,6 @@
 
 <script>
 import mainpage from '~/assets/scss/mainpage.scss'
-// import { mapState } from 'vuex'
 
 export default {
   assets: {
@@ -54,7 +53,6 @@ export default {
     toggleCuttage() {
       return this.$store.getters['toggleCuttage']
     },
-    // mapState(['page']),
     page() {
       return this.$store.state.page
     }
@@ -67,8 +65,6 @@ $d: 60px;
 $c: rgba(0, 169, 157, 0.9);
 $m: rgba(210, 85, 147, 0.9);
 
-/* Enter and leave animations can use different */
-/* durations and timing functions. */
 .appearing {
   backface-visibility: hidden;
 }
@@ -83,8 +79,7 @@ $m: rgba(210, 85, 147, 0.9);
 .appearing-leave-active {
   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-.appearing-enter, .appearing-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
+.appearing-enter, .appearing-leave-to {
   transform: translateX(-10px);
   transition-delay: 1500ms;
   opacity: 0;

@@ -314,18 +314,12 @@
 @media only screen and (max-width: 525px) {
   svg {
     filter: drop-shadow(0px 1px 0.7px black);
-    //margin-top: -2.99vmin;
-    //margin-bottom: 2.99vmin;
   }
   .st0 {
     backface-visibility: hidden;
   }
 }
 @media only screen and (min-width: 526px) {
-  // svg {
-  //  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.20));
-  //  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.16));
-  //}
   .st0 {
     backface-visibility: hidden;
   }

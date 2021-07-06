@@ -306,7 +306,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
     position: absolute;
     top: 95vh;
     width: 100vw;
-    height: auto; /* was inherit */
+    height: auto;
     &:hover {
       cursor: default;
     }
@@ -359,8 +359,8 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
     position: absolute;
     top: 779.94px;
     width: 100vw;
-    height: auto; /* was inherit */
-    z-index: -1; //newchange
+    height: auto;
+    z-index: -1;
     &:hover {
       cursor: default;
     }
@@ -415,7 +415,6 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 .subtitle-d2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 560;
-  /* font-size: 1.001293231094659em looks good */
   font-size: 1.007793231094659em;
   line-height: 24px;
   line-height: 1.405em;

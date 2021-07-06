@@ -149,7 +149,7 @@ export default {
           delay: 0.3,
           force3D: true,
           onComplete:done
-        }).then(() => {this.martaGetBackVisibleMob()}); // could be .then((done) => {this.martaGetBackVisibleMob(done)}) //the last part could be like this or .then(() => {this.martaChange()})
+        }).then(() => {this.martaGetBackVisibleMob()});
     },
     promiseMob() {
       new Promise(resolve => {

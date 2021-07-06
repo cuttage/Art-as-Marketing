@@ -264,11 +264,6 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 .spinnervariant {
   position: absolute;
-  /* was:
-  .spinnervariant {
-    position: absolute;
-    top: 140vh;
-  } */
 }
 
 .spinnervariant-container {
@@ -321,7 +316,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   .item-2 {
     opacity: 0;
     flex-grow: 1;
-    height: 77vh; /* 20.367606712877593em */
+    height: 77vh;
   }
   .no-point {
     pointer-events: none;
@@ -359,7 +354,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   @media only screen and (max-height: 710px) {
     .absolutely-var2 {
       height: 117vh;
-      min-height: 760.56px; /*or 798*/
+      min-height: 760.56px;
       z-index: -1;
     }
   }
@@ -381,7 +376,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   .item-2 {
     opacity: 0;
     flex-grow: 1;
-    height: calc(392.16px + 17.1vw); /* 20.367606712877593em */
+    height: calc(392.16px + 17.1vw);
     max-height: 632.16px;
   }
   .no-point {
@@ -422,7 +417,6 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 .subtitle-d2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 560;
-  /* font-size: 1.001293231094659em looks good */
   font-size: 1.007793231094659em;
   line-height: 24px;
   line-height: 1.405em;

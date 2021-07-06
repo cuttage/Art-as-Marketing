@@ -111,8 +111,6 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
-/* Enter and leave animations can use different */
-/* durations and timing functions. */
 .appearing {
   backface-visibility: hidden;
   will-change: opacity, transform;
@@ -128,8 +126,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   transition: all .05s cubic-bezier(1.0, 0.5, 0.8, 1.0) 220ms;
   transform: rotate(0.01);
 }
-.appearing-enter, .appearing-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
+.appearing-enter, .appearing-leave-to {
   opacity: 0;
 }
 
@@ -144,7 +141,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 p {
   display: inline-block;
   font-family: 'AtkinsonHyperlegibleBold';
-  font-size: 26.647101746392745px; // was 1.145029419344325rem;
+  font-size: 26.647101746392745px;
   line-height: 1.35;
   letter-spacing: 0.04em;
   font-weight: 560;

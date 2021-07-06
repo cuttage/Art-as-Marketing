@@ -15,7 +15,7 @@
             </div>
             <div class="subtitle3-d3 tI">A small investment, great added ...</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

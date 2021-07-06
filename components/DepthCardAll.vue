@@ -75,7 +75,7 @@ export default {
           return u.none
         })
       }
-    } // contains only Alex and James
+    }
   }
 }
 </script>

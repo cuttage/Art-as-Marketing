@@ -9,7 +9,7 @@
             <div class="subtitle2-d1 tI">Stand-out competition & level-up by marking lasting customer relationships.</div>
             <div class="subtitle33-d1 tI">With a human, quality, memora...</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

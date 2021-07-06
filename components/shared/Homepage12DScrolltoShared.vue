@@ -10,7 +10,7 @@
               <div class="subtitle1-d4 tI">won’t let it pass. ...</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

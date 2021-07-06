@@ -1,7 +1,6 @@
 <template>
   <!--eslint-disable-->
   <footer class="footer">
-    <!-- start footer touts -->
     <section class="footer-touts">
       <div class="tout" style="">
         <a href="/events">
@@ -19,13 +18,10 @@
         </a>
       </div>
     </section>
-    <!-- end footer touts -->
     <section class="footer-bottom">
-      <!-- start credits -->
       <section class="footer-credits">
         <p> ©2021 <cite>Art as Marketing</cite></p>
       </section>
-      <!-- end credits -->
     </section>
   </footer>
 </template>
@@ -65,10 +61,7 @@ a:active {
   padding-left: 2em;
 }
 
-/* new css */
-
 section {
-  /* 1 */
   display: flex;
 }
 

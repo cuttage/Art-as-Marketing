@@ -3,7 +3,6 @@ $g: 61.614px;
 @media only screen and (max-width: 1195px) {
   @media only screen and (min-width: 1101px) {
     .container-marta {
-      // clip-path: inset(7% 27% 76.07% 27% round 100%);
       background: linear-gradient(to right, rgba(32,28,41,0.2), rgba(32,28,41,0.2) 0.8802px, rgba(23,20,29,0.2) 0.8802px, rgba(23,20,29,0.2));
       border-radius: 8.802px;
       -webkit-box-shadow: inset 1.7604px 1.7604px 1.7604px rgba(255, 255, 255, 0.4), inset -1.7604px -1.7604px 1.7604px rgba(0, 0, 0, 0.4);
@@ -72,8 +71,6 @@ $g: 61.614px;
       font-weight: 400;
       background: -webkit-gradient(linear, left top, right top, from(#f27881), to(#D25593));
       background: linear-gradient(to right, #f27881, #D25593);
-      // background: -webkit-gradient(linear, left top, right top, from(#bfbfbf), to(#D25593));
-      // background: linear-gradient(to right, #bfbfbf, #D25593);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -138,7 +135,6 @@ $g: 61.614px;
       margin: auto;
       display: flex;
       align-items: center;
-      // clip-path: inset(7% 27% 76.07% 27% round 100%);
       background: linear-gradient(to right, rgba(32,28,41,0.2), rgba(32,28,41,0.2) 0.030745614035088rem, rgba(23,20,29,0.2) 0.030745614035088rem, rgba(23,20,29,0.2));
       border-radius: 0.307456140350877rem;
       -webkit-box-shadow: inset 0.061491228070175 0.061491228070175rem 0.061491228070175rem rgba(255, 255, 255, 0.4), inset -0.061491228070175rem -0.061491228070175rem 0.061491228070175rem rgba(0, 0, 0, 0.4);
@@ -150,8 +146,7 @@ $g: 61.614px;
       right: 50vw;
       top: calc(21.15rem - 13vw);
       width: auto;
-      height: 120px; /*height: calc((821/5760) * 100vw);*/
-      /*min-height: 140px;*/
+      height: 120px;
       box-shadow: rgba(white, 0.2) 0 0 1.229824561403509rem 0.153728070175439rem, rgba(white, 0.3) 0 0 0 0.009223684210526rem, // min. 1px in Safari
         rgba(black, 0.66) 0 0.922368421052632rem 1.844736842105263rem 0;
       &:focus, &:hover {

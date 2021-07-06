@@ -13,7 +13,7 @@
               <div class="subtitle5-d1 tI subtitle5-d1-business">How tailoring increases customer awareness)</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

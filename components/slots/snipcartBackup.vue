@@ -27,7 +27,6 @@
 
 <script>
 import useRaw from '~/composables/raw-data.js'
-//on line 18 was: :key="sfilter"
 export default {
   setup (props) {
     const { firstArrMore } = useRaw();
@@ -84,7 +83,7 @@ export default {
   position: relative;
   font-family: 'AtkinsonHyperlegibleRegular';
   text-rendering: geometricPrecision;
-  font-size: 27.82428px; // was: 27.84528px
+  font-size: 27.82428px;
   line-height: 1.35;
   color: #333;
 }
@@ -94,9 +93,9 @@ export default {
   align-items: center;
   white-space: nowrap;
   margin-top: 1em;
-  margin-right: 6.59918336px; //0.266rem into px on 768px w screen: base size: 16px + 1,147vw = 1rem, 16px + 8,80896px = 1rem (24,80896px), 0,266rem = 6,59918336px
+  margin-right: 6.59918336px;
   margin-left: 6.59918336px;
-  padding: 0.35rem 12.65448px 0.27rem 12.65448px; // was: padding: 0.35rem 12.40448px 0.27rem 12.40448px;
+  padding: 0.35rem 12.65448px 0.27rem 12.65448px;
   border-bottom: 1px solid #c5d0d1;
   &__controls {
     display: flex;

@@ -20,7 +20,7 @@
               <div class="subtitle5-d3 tI">*Is this the best haute-couture tweak for you? We will find out.</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

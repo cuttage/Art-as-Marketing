@@ -1,6 +1,5 @@
 <template>
   <div class="longer">
-    <!--:class="{ 'parent' : (page === '') }"-->
     <div class="disable">
       <Homepage14BScrolltoShared id="child" class="child" />
     </div>
@@ -38,17 +37,7 @@ $primary: #D25593;
   height: inherit;
   border-radius: 5px;
 }
-/* not used:     text-shadow: 0 1px 2px rgba(0,0,0,0.07),
-                0 2px 4px rgba(0,0,0,0.07),
-                0 4px 8px rgba(0,0,0,0.07),
-                0 8px 16px rgba(0,0,0,0.07),
-                0 16px 32px rgba(0,0,0,0.07),
-                0 32px 64px rgba(0,0,0,0.07);
-                text-shadow: 0 0.01px 0.01px rgba(0,0,0,0.25),
-                            0 0.02px 0.02px rgba(0,0,0,0.20),
-                            0 0.04px 0.04px rgba(0,0,0,0.15),
-                            0 0.08px 0.08px rgba(0,0,0,0.10),
-                            0 0.16px 0.16px rgba(0,0,0,0.05); */
+
 .disable {
   position: relative;
   display: inline-block;

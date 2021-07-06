@@ -11,7 +11,7 @@
               <div class="subtitle22-d3 tI">and right and filling out the ...</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

@@ -61,9 +61,8 @@ li {
   list-style: none;
   font-family: 'AtkinsonHyperlegibleRegular';
   text-rendering: geometricPrecision;
-  font-size: 27.82428px; // was: 27.84528px
+  font-size: 27.82428px;
   line-height: 1.35;
-  //letter-spacing: -.01em;
   color: #e3e4e1;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

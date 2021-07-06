@@ -9,7 +9,7 @@
             <div class="subtitle3-d1 tI">Make your footmark to the world.</div>
             <div class="subtitle3-d1 tI subtitle3-d1-sust">(Human-sustaibale)</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

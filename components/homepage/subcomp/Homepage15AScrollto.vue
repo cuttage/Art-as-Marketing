@@ -17,7 +17,7 @@
               <div class="subtitle3-d5 tI subtitle3-d5-mbottom">Ease for you? Time & results.</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

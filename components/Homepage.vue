@@ -13,7 +13,7 @@
               <div class="subtitle5-d1-menu tI">(Customers, Businesses,…)</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

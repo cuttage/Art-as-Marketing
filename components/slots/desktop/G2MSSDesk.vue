@@ -37,7 +37,6 @@
           class="container-test-galler"
           v-bind:style="[(isImage1Active || isImage2Active || isImage3Active ? {'z-index': '996 !important'} : '')]"
         >
-          <!--original formula: v-bind:style="[(isImage1Active === true || isImage2Active === true || isImage3Active === true ? {'height': 'calc(70vw + (50px - 8vw) + 70vw + (7vw - 9.142857142857143vw) + 2em + 20.2vw) !important'} : '')]"-->
           <doubleClick
             class="itemg"
             @single-click="toggleImage1"
@@ -64,12 +63,12 @@
       </div>
     </article>
     <div class="article emptyspace">
-      <testG2MS :uidb="block._uid"><!--prendo la funzionalità o styling predefinita-->
+      <testG2MS :uidb="block._uid">
         <template slot="g2m" slot-scope="{tellYou}">
-          <g2M :tellYou="tellYou"></g2M><!--rilascio un componente superiore differente in base alla scelta iniziale. ad esempio, se la scelta è tailor, rilascio il componente che ha lo styling o funzionalità specifica di tailor. posso anche scegliere un componente random infra tailor (o quello che è)-->
+          <g2M :tellYou="tellYou"></g2M>
         </template>
         <template slot="g3m" slot-scope="{G2mData, G2m2Data}">
-          <g3M :G2mData="G2mData" :G2m2Data="G2m2Data"></g3M><!--nell'esempio rilascio un componente inferiore predefinito. attenzione: devo seguire il pattern del componente superiore :is-->
+          <g3M :G2mData="G2mData" :G2m2Data="G2m2Data"></g3M>
         </template>
       </testG2MS>
     </div>
@@ -171,7 +170,6 @@ export default {
       isBlock_Anim_3Active: 'block_start_img_anim_3',
       img3Key: 2997,
       isVariance3AActive: 'variance3A',
-//      fetchList: this.fetchGenerator(),
       promiseList: this.promiseGenerator()
     }
   },
@@ -258,11 +256,6 @@ export default {
       }
     }
   },
-//  async fetch() {
-//    let block = await requestAnimationFrame(() => {setTimeout(() => {}, 0)});
-//    return block;
-//  },
-//  fetchDelay: 800,
   methods: {
     promiseRequestIdleCallback() {
       new Promise((resolve) => requestIdleCallback(resolve))
@@ -278,7 +271,6 @@ export default {
       while(val = yield val);
     },
     async fetchWaitIdle() {
-//      let res1 = await this.fetchImage();
       let res2 = await this.promiseList.next();
       let res3 = await this.promiseList.next(this.promiseRequestIdleCallback(res2));
       let res4 = await this.promiseList.next(this.promiseRequestAnimationFrame(res3));
@@ -380,16 +372,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-//@media (min-resolution: 2dppx),
-//(-webkit-min-device-pixel-ratio: 2)
-//{
-  /* High dpi styles & resources here */
-//}
 .archive {
-  /* Define the element as a grid container */
   display: grid;
   visibility: visible;
-  /* A little spacing between articles */
   grid-gap: 1em;
   grid-auto-flow: dense;
 }
@@ -407,18 +392,16 @@ img {
 }
 .block_start_img_1 {
   image-rendering: high-quality;
-  grid-area: 1/4/13/1; /*was 3/1/10/5*/
+  grid-area: 1/4/13/1;
   max-width: 110%;
   align-self: end;
   max-height: 33vw;
-  /*was padding-left: 20px;*/
   z-index: 8;
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
   .block_start_img_1 {
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: crisp-edges; */
     justify-self: start;
     max-height: 151.8px;
   }
@@ -450,7 +433,7 @@ img {
   }
 }
 .block_start_img_anim_1 {
-  animation: block_start_img_anim_1 0.27s 0.2s; // was 1s 0s, then 0.8s 0.2s
+  animation: block_start_img_anim_1 0.27s 0.2s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
@@ -469,11 +452,10 @@ img {
 }
 .variance1A {
   image-rendering: high-quality;
-  grid-area: 1/4/13/1; /*was 3/1/10/5*/
+  grid-area: 1/4/13/1;
   max-width: 110%;
   align-self: end;
   max-height: 33vw;
-  /*was padding-left: 20px;*/
   z-index: 5;
   opacity: 1;
 }
@@ -481,7 +463,6 @@ img {
 @media only screen and (min-width: 460px) {
   .variance1A {
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: crisp-edges; */
     justify-self: start;
     max-height: 151.8px;
   }
@@ -491,24 +472,20 @@ img {
   grid-area: 4/6/9/3;
   z-index: 7;
   max-width: 110%;
-  //max-width: 100%;
   align-self: stretch;
-  //align-self: self-start;
   overflow: hidden;
   height: 100%;
-  //height: auto;
   max-height: 33vw;
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
   .block_start_img_2 {
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: crisp-edges; */
     max-height: 151.8px;
   }
 }
 .block_start_img_anim_2 {
-  animation: block_start_img_anim_2 0.27s 0s; // was 1.2s 0.8s, then 1s 0.4s
+  animation: block_start_img_anim_2 0.27s 0s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
@@ -537,7 +514,6 @@ img {
 @media only screen and (min-width: 460px) {
   .variance2A {
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: crisp-edges; */
     max-height: 151.8px;
   }
 }
@@ -555,13 +531,12 @@ img {
 @media only screen and (min-width: 460px) {
   .block_start_img_3 {
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: crisp-edges; */
     justify-self: end;
     max-height: 151.8px;
   }
 }
 .block_start_img_anim_3 {
-  animation: block_start_img_anim_3 0.27s 0s; // was 1.2s 0.8s, then 1s 0.2s
+  animation: block_start_img_anim_3 0.27s 0s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
@@ -590,7 +565,6 @@ img {
 @media only screen and (min-width: 460px) {
   .variance3A {
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: crisp-edges; */
     justify-self: end;
     max-height: 151.8px;
   }
@@ -599,7 +573,7 @@ img {
   display: flex;
   position: absolute;
   top: calc(50px + 22.2vw);
-  height: 74.165450121654501vw; // calc(70vw + 4.165450121654501vw), 4... is 12.165450121654501vw - 8vw
+  height: 74.165450121654501vw;
   width: 100%;
   z-index: 9;
 }
@@ -612,7 +586,7 @@ img {
 .itemg {
   opacity: 0;
   flex-grow: 1;
-  height: calc(164.365450121654501vw + 2em) !important; // calc(12.165450121654501vw + 152.2vw + 2em)
+  height: calc(164.365450121654501vw + 2em) !important;
   margin-right: 0;
   margin-left: 0;
   z-index: inherit;
@@ -620,7 +594,7 @@ img {
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
   .itemg {
-    height: calc(3em + 613.32px + 27.2vw) !important; // calc((460px * 0.7) + (460px * 0.7) - 15.34px + (1em - 15.34px) + 2em + 27.2vw)
+    height: calc(3em + 613.32px + 27.2vw) !important;
   }
 }
 .pre-galler-grid-container {
@@ -632,15 +606,15 @@ img {
 }
 .double-container-gallery {
   overflow: hidden;
-  display: flex; // opt
-  flex-wrap: wrap; // opt
-  justify-content: center; // opt
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0 20px 0 20px;
 }
 .galler-grid-container3 {
   position: absolute;
-  top: calc(50px + 22.2vw) !important; // 10vw - 8vw + 50px + 20.2vw
-  height: calc(164.365450121654501vw + 2em); // 70vw + (50px - 8vw) + 88.057142857142857vw + 2em, then replace 50px with 12.165450121654501vw
+  top: calc(50px + 22.2vw) !important;
+  height: calc(164.365450121654501vw + 2em);
   width: 100%;
   display: flex;
   flex-grow: 1;
@@ -648,7 +622,7 @@ img {
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
   .galler-grid-container3 {
-    height: calc(3em + 613.32px + 27.2vw) !important; // calc((460px * 0.7) + (460px * 0.7) - 15.34px + (1em - 15.34px) + 2em + 27.2vw)
+    height: calc(3em + 613.32px + 27.2vw) !important;
   }
 }
 .container-test-galler3 {

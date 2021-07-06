@@ -9,7 +9,7 @@
             <div class="subtitle2-d1 tI subtitle2-d1-fintech">Be at the forefront of human-sustainable FinTech innovation.</div>
             <div class="subtitle33-d1 tI">Be loved, be rewarded.</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

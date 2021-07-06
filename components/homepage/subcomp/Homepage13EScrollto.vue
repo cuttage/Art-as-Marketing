@@ -23,7 +23,7 @@
             </div>
             <div class="subtitle3-d5 tI subtitle3-d5-mbottom">Then, outsource to us.</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

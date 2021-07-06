@@ -13,7 +13,7 @@
             <div class="subtitle2-d1 tI">We see a world where Quality products can fill the speculation gap.</div>
             <div class="subtitle3-d1 tI">License it exclusively. ...</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

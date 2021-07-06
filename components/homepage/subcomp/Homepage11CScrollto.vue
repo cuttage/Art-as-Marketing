@@ -21,7 +21,7 @@
             </div>
             <previewer :mother="mother" />
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

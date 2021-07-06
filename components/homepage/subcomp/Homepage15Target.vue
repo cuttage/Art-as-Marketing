@@ -9,7 +9,7 @@
             <div class="subtitle2-d1 tI">at this point in time next year?</div>
             <div class="subtitle3-d1 tI subtitle3-d1-red">Fast-forward to the future. Jump in.</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

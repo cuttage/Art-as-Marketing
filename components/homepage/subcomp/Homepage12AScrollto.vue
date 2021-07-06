@@ -20,7 +20,7 @@
             </div>
             <div class="subtitle4-d4 tI">Art as Marketing Research, February 2020</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

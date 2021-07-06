@@ -128,16 +128,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-//@media (min-resolution: 2dppx),
-//(-webkit-min-device-pixel-ratio: 2)
-//{
-  /* High dpi styles & resources here */
-//}
 .archive {
-  /* Define the element as a grid container */
   display: grid;
   visibility: visible;
-  /* A little spacing between articles */
   grid-gap: 1em;
   grid-auto-flow: dense;
 }
@@ -163,18 +156,16 @@ img {
 }
 .block_start_img_1 {
   image-rendering: high-quality;
-  grid-area: 1/4/13/1; /*was 3/1/10/5*/
+  grid-area: 1/4/13/1;
   max-width: 110%;
   align-self: end;
   max-height: 33vw;
-  /*was padding-left: 20px;*/
   z-index: 4;
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
   .block_start_img_1 {
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: crisp-edges; */
     justify-self: start;
     max-height: 151.8px;
   }
@@ -194,7 +185,6 @@ img {
 @media only screen and (min-width: 460px) {
   .variance2A {
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: crisp-edges; */
     max-height: 151.8px;
   }
 }
@@ -213,7 +203,6 @@ img {
 @media only screen and (min-width: 460px) {
   .variance3A {
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: crisp-edges; */
     justify-self: end;
     max-height: 151.8px;
   }

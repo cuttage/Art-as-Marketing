@@ -9,7 +9,7 @@
             <div class="subtitle2-d1 tI">Make more aware, productive employees.</div>
             <div class="subtitle33-d1 tI">(Exactly, you make your own employees, by giving a working ...</div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

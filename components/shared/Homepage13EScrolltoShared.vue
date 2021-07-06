@@ -14,7 +14,7 @@
               <div class="subtitle22-d5 tI">reported their leaders could ...</div>
             </div>
           </div>
-        </div><!--text-->
+        </div>
       </div>
     </div>
   </div>

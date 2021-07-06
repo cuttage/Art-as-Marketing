@@ -25,9 +25,9 @@
   height: auto;
   margin-top: -8vw;
   overflow: hidden;
-  display: flex; // opt
-  flex-wrap: wrap; // opt
-  justify-content: flex-start; // opt
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   padding: 12.165450121654501vw 0 0 0;
 }
 /* experimental feature: 460px limit in layout */

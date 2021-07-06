@@ -17,7 +17,6 @@ function keyByUsernameReducer(a, v) {
 }
 
 const createObject = () => {
-  //put last in the synonyms the main keyword block
   const temp = reactive({
     firstArrD: {
       body: []
@@ -44,7 +43,7 @@ function collate(swappee1, swappee2) {
 
 function changeArr3(swappee1, swappee2, n) {
   let ret = collate(swappee1, swappee2)
-  let mep = new Map().set(n, ret) //remove old Map reference from memory?
+  let mep = new Map().set(n, ret)
   return mep
 }
 
@@ -152,7 +151,6 @@ function putMapTogether({ range,reactor,uid }) {
 function strongCollect({ range,reactors,uids }) {
   range.map(v => state.mappy.set(uids[v], state['arr'+reactors[v]]))
   return state.mappy;
-  //'from Map ' + mappy.get(uids[1]).get(7).component
 }
 
 function useMap () {
@@ -189,7 +187,6 @@ export default function memoizedUseMap() {
     return lastResult;
   }
   let result = useMap();
-  // Remember it for the next time.
   lastResult = result;
   isCalculated = true;
   return result;

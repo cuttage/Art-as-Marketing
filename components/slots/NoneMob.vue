@@ -45,10 +45,8 @@ only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2
     align-items: center;
     font-size: 1.490250039119064rem;
     line-height: 1.2;
-    //margin: 80px 0 80px 0;
     font-family: 'Avenir Heavy', sans-serif;
     color: #333;
-    //padding: 0 40px 0 40px;
   }
 }
 
@@ -69,10 +67,8 @@ only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2
     align-items: center;
     font-size: 1.490250039119064rem;
     line-height: 1.2;
-    //margin: 80px 0 80px 0;
     font-family: 'Avenir Heavy', sans-serif;
     color: #333;
-    //padding: 0 40px 0 40px;
     justify-content: center;
     background: black;
   }

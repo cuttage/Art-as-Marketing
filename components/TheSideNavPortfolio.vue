@@ -137,7 +137,7 @@ export default {
           delay: 0.3,
           force3D: true,
           onComplete:done
-        }).then(() => {this.martaGetBackVisiblePort()}); // could be .then((done) => {this.martaGetBackVisiblePort(done)}) //the last part could be like this or .then(() => {this.martaChange()})
+        }).then(() => {this.martaGetBackVisiblePort()});
     },
     promisePort() {
       new Promise(resolve => {
