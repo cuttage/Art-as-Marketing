@@ -1,6 +1,6 @@
 <template>
-  <div class="no-vis-text-cont">
-    <div class="no-vis-text">🚧<br/>Resize the window to view the page</div>
+  <div class="n-v-t-c">
+    <div class="n-v-t">🚧<br/>Resize the window to view the page</div>
   </div>
 </template>
 
@@ -11,11 +11,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.no-vis-text-cont {
+.n-v-t-c {
   display: none;
   visibility: hidden;
 }
-.no-vis-text {
+.n-v-t {
   display: none;
   visibility: hidden;
 }
@@ -23,14 +23,14 @@ export default {
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .no-vis-text-cont {
+  .n-v-t-c {
     display: flex;
     visibility: visible;
     width: 100vw;
     height: 100vh;
     justify-content: center;
   }
-  .no-vis-text {
+  .n-v-t {
     display: flex;
     visibility: visible;
     width: auto;

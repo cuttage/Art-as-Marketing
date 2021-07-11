@@ -2,35 +2,35 @@
   <div>
     <Homepage11CScrollto
       v-if="isHomepage11CScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
     <Homepage12CScrollto
       v-if="isHomepage12CScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
     <Homepage13CScrollto
       v-if="isHomepage13CScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
     <Homepage14CScrollto
       v-if="isHomepage14CScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
     <Homepage15CScrollto
       v-if="isHomepage15CScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
 
-    <div class="container-test2">
-      <div class="item-2 item1" :class="peEnabled" @mouseover="toggleHomepage11CScrollto" />
-      <div class="item-2 item2" :class="peEnabled" @mouseover="toggleHomepage12CScrollto" />
-      <div class="item-2 item3" :class="peEnabled" @mouseover="toggleHomepage13CScrollto" />
-      <div class="item-2 item4" :class="peEnabled" @mouseover="toggleHomepage14CScrollto" />
-      <div class="item-2 item5" :class="peEnabled" @mouseover="toggleHomepage15CScrollto" />
+    <div class="c-t2">
+      <div class="it-2 item1" :class="peEnabled" @mouseover="toggleHomepage11CScrollto" />
+      <div class="it-2 item2" :class="peEnabled" @mouseover="toggleHomepage12CScrollto" />
+      <div class="it-2 item3" :class="peEnabled" @mouseover="toggleHomepage13CScrollto" />
+      <div class="it-2 item4" :class="peEnabled" @mouseover="toggleHomepage14CScrollto" />
+      <div class="it-2 item5" :class="peEnabled" @mouseover="toggleHomepage15CScrollto" />
     </div>
-    <div class="container-test-variant-get-help" @click.prevent="prevent11" />
-    <div class="container-test-variant2">
-      <div class="item-variant item-variant-1">
+    <div class="c-t-v-g-h" @click.prevent="prevent11" />
+    <div class="c-t-v2">
+      <div class="i-v i-v-1">
         <vue-next-level-scroll target="#my-target11">
           <HomepageMenu11CScrollto
             v-if="isHomepage11CScrolltoActive"
@@ -62,99 +62,99 @@
           />
         </vue-next-level-scroll>
       </div>
-      <div class="item-variant item-variant-2">
-        <span class="subtitle-d2">Your gateway to: Alta Sartoria Mario Napolitano, Accademia dei Sartori, World Federation of Master Tailors.</span>
+      <div class="i-v i-v-2">
+        <span class="sl-d2">Your gateway to: Alta Sartoria Mario Napolitano, Accademia dei Sartori, World Federation of Master Tailors.</span>
         <vue-next-level-scroll target=".my-target16">
           <span
             v-if="isHomepage11CScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <vue-next-level-scroll target=".my-target17">
           <span
             v-if="isHomepage12CScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <vue-next-level-scroll target=".my-target18">
           <span
             v-if="isHomepage13CScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <vue-next-level-scroll target=".my-target19">
           <span
             v-if="isHomepage14CScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <vue-next-level-scroll target=".my-target20">
           <span
             v-if="isHomepage15CScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <nuxt-link exact to="/contact">
           <span
-            class="subtitle-d2-variant-2"
+            class="s-d2-tv-2"
           >| Understood</span>
         </nuxt-link>
       </div>
     </div>
     <div class="spinnerscont">
-      <div class= "spinnervariant-container">
-        <SpinnerCuttage
+      <div class="svt-c">
+        <SpinnerCut
           v-if="isHomepage12CScrolltoActive"
-          class="spinnervariant"
+          class="svt"
         />
-        <SpinnerCuttage
+        <SpinnerCut
           v-if="isHomepage13CScrolltoActive"
-          class="spinnervariant"
+          class="svt"
         />
-        <SpinnerCuttage
+        <SpinnerCut
           v-if="isHomepage14CScrolltoActive"
-          class="spinnervariant"
+          class="svt"
         />
       </div>
-      <div class= "spinnervariantpatreon-container">
-        <SpinnerPatreon
+      <div class="svtp-c">
+        <SpinnerPat
           v-if="isHomepage12CScrolltoActive"
-          class="spinnervariant"
+          class="svt"
         />
-        <SpinnerPatreon
+        <SpinnerPat
           v-if="isHomepage13CScrolltoActive"
-          class="spinnervariant"
+          class="svt"
         />
-        <SpinnerPatreon
+        <SpinnerPat
           v-if="isHomepage14CScrolltoActive"
-          class="spinnervariant"
+          class="svt"
         />
       </div>
     </div>
     <Homepage11Target
       v-if="isHomepage11CScrolltoActive"
       id="my-target11"
-      class="absolutely-var2 my-target16"
+      class="ay-vr2 my-target16"
     />
     <Homepage12TargetFinancial
       v-if="isHomepage12CScrolltoActive"
       id="my-target12"
-      class="absolutely-var2 my-target17"
+      class="ay-vr2 my-target17"
     />
     <Homepage12TargetDesign
       v-if="isHomepage13CScrolltoActive"
       id="my-target13"
-      class="absolutely-var2 my-target18"
+      class="ay-vr2 my-target18"
     />
     <Homepage12TargetFinancialB
       v-if="isHomepage14CScrolltoActive"
       id="my-target14"
-      class="absolutely-var2 my-target19"
+      class="ay-vr2 my-target19"
     />
     <Homepage15Target
       v-if="isHomepage15CScrolltoActive"
       id="my-target15"
-      class="absolutely-var2 my-target20"
+      class="ay-vr2 my-target20"
     />
   </div>
 </template>
@@ -193,8 +193,8 @@ export default {
     Homepage12TargetDesign,
     Homepage12TargetFinancialB,
     Homepage15Target,
-    SpinnerCuttage: () => import('~/components/spinner/SpinnerCuttage.vue'),
-    SpinnerPatreon: () => import('~/components/spinner/SpinnerPatreon.vue'),
+    SpinnerCut: () => import('~/components/spinner/SpinnerCut.vue'),
+    SpinnerPat: () => import('~/components/spinner/SpinnerPat.vue'),
     HomepageMenu11CScrollto: () => import('~/components/menu/scrollto/subcomp/HomepageMenu11CScrollto.vue'),
     HomepageMenu12CScrollto: () => import('~/components/menu/scrollto/subcomp/HomepageMenu12CScrollto.vue'),
     HomepageMenu13CScrollto: () => import('~/components/menu/scrollto/subcomp/HomepageMenu13CScrollto.vue'),
@@ -213,7 +213,7 @@ export default {
   data() {
     return {
       activeDialog: DIALOG_TYPE.NONE,
-      noPoint: 'no-point',
+      noPoint: 'n-pt',
       nullNoPoint: null
     };
   },
@@ -281,15 +281,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/scss/homecta.scss';
+@import '~/assets/scss/homestyle.scss';
 $primary: #D25593;
 $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
-.spinnervariant {
+.svt {
   position: absolute;
 }
 
-.spinnervariantpatreon-container {
+.svtp-c {
   z-index: 999;
   position: absolute;
   right: 2.459649122807018rem;
@@ -297,7 +297,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   right: 12em;
 }
 
-.spinnervariant-container {
+.svt-c {
   z-index: 999;
   position: absolute;
   right: 2.459649122807018rem;
@@ -305,7 +305,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   right: 0em;
 }
 
-.absolutely2 {
+.ay2 {
   position: absolute;
   top: 0;
   width: 100vw;
@@ -317,7 +317,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @media only screen and (min-width: 525px) {
-  .absolutely2 {
+  .ay2 {
     &:hover {
       cursor: default;
       background-color: blue;
@@ -327,14 +327,14 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 @media only screen and (min-height: 821px) {
   @media only screen and (min-width: 525px) {
-    .absolutely-var2 {
+    .ay-vr2 {
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
-  .absolutely-var2 {
+  .ay-vr2 {
     position: absolute;
     top: 117vh;
     width: 100vw;
@@ -344,15 +344,15 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
       cursor: default;
     }
   }
-  .item-2 {
+  .it-2 {
     opacity: 0;
     flex-grow: 1;
     height: 77vh;
   }
-  .no-point {
+  .n-pt {
     pointer-events: none;
   }
-  .container-test-variant-get-help {
+  .c-t-v-g-h {
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -361,7 +361,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     align-self: center;
     position: relative;
   }
-  .container-test-variant2 {
+  .c-t-v2 {
     display: flex;
     flex-direction: row;
     height: 35vh;
@@ -372,7 +372,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 @media only screen and (max-height: 820px) {
   @media only screen and (min-width: 525px) {
-    .absolutely-var2 {
+    .ay-vr2 {
       &:hover {
         cursor: default;
         background-color: blue;
@@ -380,19 +380,19 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   }
   @media only screen and (max-height: 710px) {
-    .absolutely-var2 {
+    .ay-vr2 {
       height: 117vh;
       min-height: 760.56px;
       z-index: -1;
     }
   }
   @media only screen and (min-height: 711px) {
-    .absolutely-var2 {
+    .ay-vr2 {
       height: inherit;
       z-index: -1;
     }
   }
-  .absolutely-var2 {
+  .ay-vr2 {
     position: absolute;
     top: 960.56px;
     width: 100vw;
@@ -401,16 +401,16 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
       cursor: default;
     }
   }
-  .item-2 {
+  .it-2 {
     opacity: 0;
     flex-grow: 1;
     height: calc(392.16px + 17.1vw);
     max-height: 632.16px;
   }
-  .no-point {
+  .n-pt {
     pointer-events: none;
   }
-  .container-test-variant-get-help {
+  .c-t-v-g-h {
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -418,7 +418,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     align-self: center;
     position: relative;
   }
-  .container-test-variant2 {
+  .c-t-v2 {
     display: flex;
     flex-direction: row;
     height: 287.34px;
@@ -427,19 +427,19 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-.container-test2 {
+.c-t2 {
   display: flex;
 }
 
-.item-2 + .item-2 {
+.it-2 + .it-2 {
   margin-left: 0;
 }
 
-.item-variant { margin-left: 5%; }
-.item-variant-1 { margin-left: 15%; }
-.item-variant-2 { height: 100%; max-width: 41%; }
+.i-v { margin-left: 5%; }
+.i-v-1 { margin-left: 15%; }
+.i-v-2 { height: 100%; max-width: 41%; }
 
-.subtitle-d2 {
+.sl-d2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 560;
   font-size: 1.007793231094659em;
@@ -450,7 +450,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: default !important;
 }
 
-.subtitle-d2-variant {
+.s-d2-tv {
   margin-left: 0.064526909722222em;
   line-height: 2.905em;
   position: relative;
@@ -463,7 +463,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-.subtitle-d2-variant-2 {
+.s-d2-tv-2 {
   margin-left: 0.064526909722222em;
   display: inline-block;
   position: relative;

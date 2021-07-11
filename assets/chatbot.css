@@ -192,7 +192,7 @@ cf-input {
 
 .cf-icon-progress,
 .cf-icon-attachment {
-  background-image: url('~assets/svg/SendCuttage.svg') !important;
+  background-image: url('~assets/svg/Send.svg') !important;
   background-size: cover !important;
 }
 

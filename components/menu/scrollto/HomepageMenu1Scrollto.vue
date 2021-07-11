@@ -1,5 +1,5 @@
 <template>
-  <div class="longer">
+  <div class="lngr">
     <div class="disable">
       <Homepage1DialogShared id="child" class="child" />
     </div>
@@ -18,10 +18,10 @@ export default {
 </script>
 
 <style exact lang="scss" scoped>
-@import '~/assets/scss/homecta.scss';
+@import '~/assets/scss/homestyle.scss';
 
 $primary: #D25593;
-.longer {
+.lngr {
   padding-top: 16px;
   display: flex;
   padding-bottom: 6px;
@@ -80,7 +80,7 @@ $primary: #D25593;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.longer:hover div {
+.lngr:hover div {
   text-shadow: none !important;
 }
 

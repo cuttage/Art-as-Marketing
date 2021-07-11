@@ -1,20 +1,20 @@
 <template>
   <!--eslint-disable-->
-  <div class="container">
-    <div class="day container-d1 d4">
+  <div class="cntnr">
+    <div class="day c-d1 d4">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="title-subcomp-d6 title-d3var">We make it happen fy in your area.
-            <div class="container-subtitle-d6 container-subtitle-d615AS">
-              <div class="subtitle-d6 tI">While there are differences in managing design among</div>
-              <div class="subtitle1-d6 tI">companies, top-teams will retain their dramatic performance</div>
-              <div class="subtitle11-d6 tI">improvement: Tackle it in advance.</div>
+          <div id="target-d1 tI" class="t-s-d6 t-d3var">We make it happen fy in your area.
+            <div class="c-s-d6 c-s-d615AS">
+              <div class="s-d6 tI">While there are differences in managing design among</div>
+              <div class="s1-d6 tI">companies, top-teams will retain their dramatic performance</div>
+              <div class="s11-d6 tI">improvement: Tackle it in advance.</div>
             </div>
-            <div id="target-d1 tI" class="extratitle1-d6">Price: less than testing, same quality.</div>
-            <div class="container-subtitle3-d6">
-              <div class="subtitle3-d6 tI subtitle3-d615AS">Years of experience in design: liaisons and business</div>
-              <div class="subtitle3-d6 tI subtitle3-d615AS">best practices, preparation at working cross-functional.</div>
-              <div class="subtitle3-d5 tI subtitle3-d5-mbottom subtitle3-d5-mbottom-small">Ease for you? Time & results.</div>
+            <div id="target-d1 tI" class="e1-d6">Price: less than testing, same quality.</div>
+            <div class="cntnr-s3-d6">
+              <div class="s3-d6 tI s3-d615AS">Years of experience in design: liaisons and business</div>
+              <div class="s3-d6 tI s3-d615AS">best practices, preparation at working cross-functional.</div>
+              <div class="s3-d5 tI s3-d5-mbttm s3-d5-m-smll">Ease for you? Time & results.</div>
             </div>
           </div>
         </div>

@@ -1,40 +1,40 @@
 <template>
   <div>
     <NoneMob class="g2-bk-mob" />
-    <div class="web-container-bottom-view-mob">
-      <main class="archive" id="mapp" v-pan="onPan">
+    <div class="w-c-b-v-mob">
+      <main class="rchv" id="mapp" v-pan="onPan">
         <article class="article">
           <Homepage1DialogNowrap
             v-if="isHomepage1DialogActive"
-            class="absolutely n1"
+            class="ayt n1"
           />
           <Homepage2Dialog
             v-if="isHomepage2DialogActive"
-            class="absolutely n2"
+            class="ayt n2"
           />
           <Homepage3DialogNowrap
             v-if="isHomepage3DialogActive"
-            class="absolutely n3"
+            class="ayt n3"
           />
           <Homepage4Dialog
             v-if="isHomepage4DialogActive"
-            class="absolutely n4"
+            class="ayt n4"
           />
           <Homepage5DialogSmall
             v-if="isHomepage5DialogSmallActive"
-            class="absolutely n5"
+            class="ayt n5"
           />
         </article>
 
         <article class="article">
-          <div class="emoji" ref="emoji" v-if="selectedContent">{{ selectedContent }}</div>
-          <div class="emoji" ref="emoji" v-else>We use art for experiential marketing. Browse Below</div>
+          <div class="yyj" ref="yyj" v-if="selectedContent">{{ selectedContent }}</div>
+          <div class="yyj" ref="yyj" v-else>We use art for experiential marketing. Browse Below</div>
         </article>
         <article class="article">
           <section class="slider">
-            <ul class="slider__list" ref="list">
+            <ul class="slider__lst" ref="list">
               <li v-for="(slide, index) in slides" v-bind:key="slide.id"
-                  class="slider__item"
+                  class="slider__tm"
                   v-tap="(e) => onTap(e, slide)"
                   :style="{backgroundColor: colors[index]}">
                 {{ slide }}
@@ -43,11 +43,11 @@
           </section>
         </article>
         <article class="article">
-          <subtouch1 v-if="isHomepage1DialogActive" />
-          <subtouch2 v-if="isHomepage2DialogActive" />
-          <subtouch3 v-if="isHomepage3DialogActive" />
-          <subtouch4 v-if="isHomepage4DialogActive" />
-          <subtouch5 v-if="isHomepage5DialogSmallActive" />
+          <Subtouch1 v-if="isHomepage1DialogActive" />
+          <Subtouch2 v-if="isHomepage2DialogActive" />
+          <Subtouch3 v-if="isHomepage3DialogActive" />
+          <Subtouch4 v-if="isHomepage4DialogActive" />
+          <Subtouch5 v-if="isHomepage5DialogSmallActive" />
         </article>
       </main>
     </div>
@@ -65,11 +65,11 @@ import Homepage3DialogNowrap from '~/components/homepage/Homepage3DialogNowrap.v
 import Homepage4Dialog from '~/components/homepage/Homepage4Dialog.vue'
 import Homepage5DialogSmall from '~/components/homepage/Homepage5DialogSmall.vue'
 import { TweenMax, Elastic, Sine } from "gsap/dist/gsap"
-import subtouch1 from '~/components/subtouch/subtouch1.vue'
-import subtouch2 from '~/components/subtouch/subtouch2.vue'
-import subtouch3 from '~/components/subtouch/subtouch3.vue'
-import subtouch4 from '~/components/subtouch/subtouch4.vue'
-import subtouch5 from '~/components/subtouch/subtouch5.vue'
+import Subtouch1 from '~/components/subtouch/Subtouch1.vue'
+import Subtouch2 from '~/components/subtouch/Subtouch2.vue'
+import Subtouch3 from '~/components/subtouch/Subtouch3.vue'
+import Subtouch4 from '~/components/subtouch/Subtouch4.vue'
+import Subtouch5 from '~/components/subtouch/Subtouch5.vue'
 
 const DIALOG_TYPE = {
   NONE: 1,
@@ -99,11 +99,11 @@ export default {
     Homepage3DialogNowrap,
     Homepage4Dialog,
     Homepage5DialogSmall,
-    subtouch1,
-    subtouch2,
-    subtouch3,
-    subtouch4,
-    subtouch5
+    Subtouch1,
+    Subtouch2,
+    Subtouch3,
+    Subtouch4,
+    Subtouch5
   },
   data() {
     return {
@@ -115,7 +115,7 @@ export default {
   			"Agency",
   			"Land Developer"
   		],
-      emojis: [
+      yyjs: [
         "Navigate to know more about Business",
         "Navigate to know more about Employer",
         "Navigate to know more about FinTech",
@@ -167,15 +167,15 @@ export default {
 		},
 		selectedContent() {
 			if (this.selected === "Business") {
-				return this.emojis[this.slides.indexOf('Business')];
+				return this.yyjs[this.slides.indexOf('Business')];
 			} else if (this.selected === "Employer") {
-        return this.emojis[this.slides.indexOf('Employer')];
+        return this.yyjs[this.slides.indexOf('Employer')];
       } else if (this.selected === "FinTech") {
-        return this.emojis[this.slides.indexOf('FinTech')];
+        return this.yyjs[this.slides.indexOf('FinTech')];
       } else if (this.selected === "Agency") {
-        return this.emojis[this.slides.indexOf('Agency')];
+        return this.yyjs[this.slides.indexOf('Agency')];
       } else if (this.selected === "Land Developer") {
-        return this.emojis[this.slides.indexOf('Land Developer')];
+        return this.yyjs[this.slides.indexOf('Land Developer')];
       }
 			return "";
 		},
@@ -241,7 +241,7 @@ $timing: ease-out;
 
 $cta-color: yellow;
 
-.web-container-bottom-view-mob {
+.w-c-b-v-mob {
   display: block;
   visibility: visible;
 }
@@ -256,13 +256,13 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .web-container-bottom-view-mob {
+  .w-c-b-v-mob {
     display: none;
     visibility: hidden;
   }
 }
 
-.absolutely {
+.ayt {
   border-radius: 5px;
   text-rendering: geometricPrecision;
   height: auto;
@@ -275,7 +275,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   position: relative;
   white-space: nowrap;
 
-	&__list {
+	&__lst {
 		display: flex;
 		width: 100%;
 		height: 100%;
@@ -285,7 +285,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 		transform: translateX(calc(var(--x, 0) * 1%));
 	}
 
-	&__item {
+	&__tm {
 		position: relative;
 		flex: 0 0 140px;
 
@@ -309,10 +309,10 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 li:nth-child(1) {
-  animation: glow-text-glow $dur $timing infinite;
+  animation: g-t-glw $dur $timing infinite;
 }
 
-@keyframes glow-text-glow {
+@keyframes g-t-glw {
   from {
     text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
                 0 0.5px 0.5px rgba(0,0,0,0.1),
@@ -336,7 +336,7 @@ li:nth-child(1) {
   }
 }
 
-.emoji  {
+.yyj  {
   background-color: blue;
   border-radius: 5px;
   text-rendering: geometricPrecision;
@@ -369,7 +369,7 @@ ul {
 	overflow: hidden;
 }
 
-.archive {
+.rchv {
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;
@@ -377,139 +377,139 @@ ul {
 }
 //(min-width: 690px)
 @media only screen and (min-width: 690px) {
-  .absolutely.n1 {
+  .ayt.n1 {
     height: calc(17.584817452319324rem + 50px) !important;
     min-height: calc(17.584817452319324rem + 50px) !important;
   }
-  .absolutely.n2,
-  .absolutely.n3,
-  .absolutely.n4 {
+  .ayt.n2,
+  .ayt.n3,
+  .ayt.n4 {
     height: calc(13.577173490338417rem + 50px) !important;
     min-height: calc(13.577173490338417rem + 50px) !important;
   }
-  .absolutely.n5 {
+  .ayt.n5 {
     height: calc(15.912178069188728rem + 50px) !important;
     min-height: calc(15.912178069188728rem + 50px) !important;
   }
 }
 //(max-width: 689px)
 @media only screen and (max-width: 689px) {
-  .absolutely.n1 {
+  .ayt.n1 {
     height: calc(17.475573394447436rem + 50px) !important;
     min-height: calc(17.475573394447436rem + 50px) !important;
   }
-  .absolutely.n2,
-  .absolutely.n3,
-  .absolutely.n4 {
+  .ayt.n2,
+  .ayt.n3,
+  .ayt.n4 {
     height: calc(13.534199088559807rem + 50px) !important;
     min-height: calc(13.534199088559807rem + 50px) !important;
   }
-  .absolutely.n5 {
+  .ayt.n5 {
     height: calc(15.802131379422437rem + 50px) !important;
     min-height: calc(15.802131379422437rem + 50px) !important;
   }
 }
 //(max-width: 556px)
 @media only screen and (max-width: 556px) {
-  .absolutely.n1 {
+  .ayt.n1 {
     height: calc(17.381198463444237rem + 50px) !important;
     min-height: calc(17.381198463444237rem + 50px) !important;
   }
-  .absolutely.n2,
-  .absolutely.n3,
-  .absolutely.n4 {
+  .ayt.n2,
+  .ayt.n3,
+  .ayt.n4 {
     height: calc(13.434792012627071rem + 50px) !important;
     min-height: calc(13.434792012627071rem + 50px) !important;
   }
-  .absolutely.n5 {
+  .ayt.n5 {
     height: calc(15.727738621068117rem + 50px) !important;
     min-height: calc(15.727738621068117rem + 50px) !important;
   }
 }
 //(max-width: 532px)
 @media only screen and (max-width: 532px) {
-  .absolutely.n1 {
+  .ayt.n1 {
     height: calc(17.497212022057692rem + 50px) !important;
     min-height: calc(17.497212022057692rem + 50px) !important;
   }
-  .absolutely.n2,
-  .absolutely.n3,
-  .absolutely.n4 {
+  .ayt.n2,
+  .ayt.n3,
+  .ayt.n4 {
     height: calc(13.537396548010953rem + 50px) !important;
     min-height: calc(13.537396548010953rem + 50px) !important;
   }
-  .absolutely.n5 {
+  .ayt.n5 {
     height: calc(15.823158405287476rem + 50px) !important;
     min-height: calc(15.823158405287476rem + 50px) !important;
   }
 }
 //(max-width: 524px)
 @media only screen and (max-width: 524px) {
-  .absolutely.n1 {
+  .ayt.n1 {
     height: calc(16.72130295480112rem + 50px) !important;
     min-height: calc(16.72130295480112rem + 50px) !important;
   }
-  .absolutely.n2,
-  .absolutely.n3,
-  .absolutely.n4  {
+  .ayt.n2,
+  .ayt.n3,
+  .ayt.n4  {
     height: calc(11.701375902532816rem + 50px) !important;
     min-height: calc(11.701375902532816rem + 50px) !important;
   }
-  .absolutely.n5 {
+  .ayt.n5 {
     height: calc(13.859004065373089rem + 50px) !important;
     min-height: calc(13.859004065373089rem + 50px) !important;
   }
 }
 //(max-width: 456px)
 @media only screen and (max-width: 456px) {
-  .absolutely.n1 {
+  .ayt.n1 {
     height: calc(16.717159232644633rem + 50px) !important;
     min-height: calc(16.717159232644633rem + 50px) !important;
   }
-  .absolutely.n2,
-  .absolutely.n3,
-  .absolutely.n4  {
+  .ayt.n2,
+  .ayt.n3,
+  .ayt.n4  {
     height: calc(11.716292547639414rem + 50px) !important;
     min-height: calc(11.716292547639414rem + 50px) !important;
   }
-  .absolutely.n5 {
+  .ayt.n5 {
     height: calc(13.843910030560067rem + 50px) !important;
     min-height: calc(13.843910030560067rem + 50px) !important;
   }
 }
 //(max-width: 419px)
 @media only screen and (max-width: 419px) {
-  .absolutely.n1 {
+  .ayt.n1 {
     height: calc(17.055146933682664rem + 50px) !important;
     min-height: calc(17.055146933682664rem + 50px) !important;
   }
-  .absolutely.n2 {
+  .ayt.n2 {
     height: calc(11.309365166565494rem + 50px) !important;
     min-height: calc(11.309365166565494rem + 50px) !important;
   }
-  .absolutely.n3,
-  .absolutely.n4 {
+  .ayt.n3,
+  .ayt.n4 {
     height: calc(11.855843982941402rem + 50px) !important;
     min-height: calc(11.855843982941402rem + 50px) !important;
   }
-  .absolutely.n5 {
+  .ayt.n5 {
     height: calc(14.13757703600184rem + 50px) !important;
     min-height: calc(14.13757703600184rem + 50px) !important;
   }
 }
 //(max-width: 398px)
 @media only screen and (max-width: 398px) {
-  .absolutely.n1 {
+  .ayt.n1 {
     height: calc(15.935286354622841rem + 50px) !important;
     min-height: calc(15.935286354622841rem + 50px) !important;
   }
-  .absolutely.n2,
-  .absolutely.n3,
-  .absolutely.n4 {
+  .ayt.n2,
+  .ayt.n3,
+  .ayt.n4 {
     height: calc(11.090661539523833rem + 50px) !important;
     min-height: calc(11.090661539523833rem + 50px) !important;
   }
-  .absolutely.n5 {
+  .ayt.n5 {
     height: calc(13.163594951826058rem + 50px) !important;
     min-height: calc(13.163594951826058rem + 50px) !important;
   }

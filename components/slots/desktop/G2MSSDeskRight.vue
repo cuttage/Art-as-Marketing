@@ -1,5 +1,5 @@
 <template>
-  <div v-if="batchKeyds.includes(searchfactor)" class="archive noblue">
+  <div v-if="batchKeyds.includes(searchfactor)" class="rchv nbl">
     <article class="article">
       <div>
         <G2MSRight>
@@ -29,7 +29,7 @@
         </G2MSRight>
       </div>
     </article>
-    <div class="article emptyspace"></div>
+    <div class="article emptyspc"></div>
     <article class="article">
       <div>
         <G3MSRight>
@@ -95,12 +95,12 @@ export default {
   },
   data() {
     return {
-      isBlock_1Active: 'block_start_img_1',
+      isBlock_1Active: 'b_s_img_1',
       img1Key: 999,
       img2Key: 1998,
-      isVariance2AActive: 'variance2A',
+      isVrnc2AActive: 'vrnc2A',
       img3Key: 2997,
-      isVariance3AActive: 'variance3A'
+      isVrnc3AActive: 'vrnc3A'
     }
   },
   components: {
@@ -110,17 +110,17 @@ export default {
   computed: {
     classObjectImg1() {
       return {
-        block_start_img_1: this.isBlock_1Active
+        b_s_img_1: this.isBlock_1Active
       }
     },
     classObjectVar2() {
       return {
-        variance2A: this.isVariance2AActive
+        vrnc2A: this.isVrnc2AActive
       }
     },
     classObjectVar3() {
       return {
-        variance3A: this.isVariance3AActive
+        vrnc3A: this.isVrnc3AActive
       }
     }
   }
@@ -128,20 +128,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.archive {
+.rchv {
   display: grid;
   visibility: visible;
   grid-gap: 1em;
   grid-auto-flow: dense;
 }
-.noblue {
+.nbl {
   background-color: transparent !important;
   position: relative;
   top: calc(-164.365450121654501vw - 2em);
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .noblue {
+  .nbl {
     top: calc(-3em - 613.32px - 27.2vw);
   }
 }
@@ -154,7 +154,7 @@ img {
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
-.block_start_img_1 {
+.b_s_img_1 {
   image-rendering: high-quality;
   grid-area: 1/4/13/1;
   max-width: 110%;
@@ -164,13 +164,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .block_start_img_1 {
+  .b_s_img_1 {
     image-rendering: -webkit-optimize-contrast;
     justify-self: start;
     max-height: 151.8px;
   }
 }
-.variance2A {
+.vrnc2A {
   image-rendering: high-quality;
   grid-area: 4/6/9/3;
   z-index: 3;
@@ -183,12 +183,12 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .variance2A {
+  .vrnc2A {
     image-rendering: -webkit-optimize-contrast;
     max-height: 151.8px;
   }
 }
-.variance3A {
+.vrnc3A {
   image-rendering: high-quality;
   grid-area: 1/5/7/7;
   z-index: 2;
@@ -201,13 +201,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .variance3A {
+  .vrnc3A {
     image-rendering: -webkit-optimize-contrast;
     justify-self: end;
     max-height: 151.8px;
   }
 }
-.emptyspace {
+.emptyspc {
   height: 27.2vw;
   display: flex;
 }

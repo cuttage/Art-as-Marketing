@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import office from '~/components/logomob/office.vue';
-import shop from '~/components/logomob/shop.vue';
-import project from '~/components/logomob/project.vue';
-import innovation from '~/components/logomob/innovation.vue';
-import reward from '~/components/logomob/reward.vue';
-import boost from '~/components/logomob/boost.vue';
+import office from '~/components/motto/office.vue';
+import shop from '~/components/motto/shop.vue';
+import project from '~/components/motto/project.vue';
+import innovation from '~/components/motto/innovation.vue';
+import reward from '~/components/motto/reward.vue';
+import boost from '~/components/motto/boost.vue';
 export default {
   data() {
     return {

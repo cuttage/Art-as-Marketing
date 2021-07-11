@@ -1,38 +1,38 @@
 <template>
   <div>
     <None class="g2-bk-desk" />
-    <div class="web-container-bottom-view">
+    <div class="w-c-b-v">
       <Homepage1Dialog
         v-if="isHomepage1DialogActive"
-        class="absolutely"
+        class="ayt"
       />
       <Homepage2Dialog
         v-if="isHomepage2DialogActive"
-        class="absolutely"
+        class="ayt"
       />
       <Homepage3Dialog
         v-if="isHomepage3DialogActive"
-        class="absolutely"
+        class="ayt"
       />
       <Homepage4Dialog
         v-if="isHomepage4DialogActive"
-        class="absolutely"
+        class="ayt"
       />
       <Homepage5Dialog
         v-if="isHomepage5DialogActive"
-        class="absolutely"
+        class="ayt"
       />
 
-      <div class="container-test">
+      <div class="c-ts">
         <div class="item item1" @mouseover="toggleHomepage1Dialog" />
         <div class="item item2" @mouseover="toggleHomepage2Dialog" />
         <div class="item item3" @mouseover="toggleHomepage3Dialog" />
         <div class="item item4" @mouseover="toggleHomepage4Dialog" />
         <div class="item item5" @mouseover="toggleHomepage5Dialog" />
       </div>
-      <div class="nonvisible-c" />
-      <div class="container-test-variant overflow-cts">
-        <div class="item-variant item-variant-1">
+      <div class="nv-c" />
+      <div class="c-t-tv o-cts">
+        <div class="i-v i-v-1">
           <vue-next-level-scroll target="#my-target1">
             <HomepageMenu1Scrollto
               v-if="isHomepage1DialogActive"
@@ -64,41 +64,41 @@
             />
           </vue-next-level-scroll>
         </div>
-        <div class="item-variant item-variant-2">
-          <span class="subtitle-d2">We use art for experiential marketing.</span>
+        <div class="i-v i-v-2">
+          <span class="sl-d2">We use art for experiential marketing.</span>
           <vue-next-level-scroll target=".my-target6">
             <span
               v-if="isHomepage1DialogActive"
-              class="subtitle-d2-variant"
+              class="s-d2-tv"
             >Tell me more</span>
           </vue-next-level-scroll>
           <vue-next-level-scroll target=".my-target7">
             <span
               v-if="isHomepage2DialogActive"
-              class="subtitle-d2-variant"
+              class="s-d2-tv"
             >Tell me more</span>
           </vue-next-level-scroll>
           <vue-next-level-scroll target=".my-target8">
             <span
               v-if="isHomepage3DialogActive"
-              class="subtitle-d2-variant"
+              class="s-d2-tv"
             >Tell me more</span>
           </vue-next-level-scroll>
           <vue-next-level-scroll target=".my-target9">
             <span
               v-if="isHomepage4DialogActive"
-              class="subtitle-d2-variant"
+              class="s-d2-tv"
             >Tell me more</span>
           </vue-next-level-scroll>
           <vue-next-level-scroll target=".my-target10">
             <span
               v-if="isHomepage5DialogActive"
-              class="subtitle-d2-variant"
+              class="s-d2-tv"
             >Tell me more</span>
           </vue-next-level-scroll>
           <nuxt-link exact to="/about">
             <span
-              class="subtitle-d2-variant-2"
+              class="s-d2-tv-2"
             >| Understood</span>
           </nuxt-link>
         </div>
@@ -106,27 +106,27 @@
       <Homepage1Scrollto
         v-if="isHomepage1DialogActive"
         id="my-target1"
-        class="absolutely-var my-target6"
+        class="ayt-vr my-target6"
       />
       <Homepage2Scrollto
         v-if="isHomepage2DialogActive"
         id="my-target2"
-        class="absolutely-var my-target7"
+        class="ayt-vr my-target7"
       />
       <Homepage3Scrollto
         v-if="isHomepage3DialogActive"
         id="my-target3"
-        class="absolutely-var my-target8"
+        class="ayt-vr my-target8"
       />
       <Homepage4Scrollto
         v-if="isHomepage4DialogActive"
         id="my-target4"
-        class="absolutely-var my-target9"
+        class="ayt-vr my-target9"
       />
       <Homepage5Scrollto
         v-if="isHomepage5DialogActive"
         id="my-target5"
-        class="absolutely-var my-target10"
+        class="ayt-vr my-target10"
       />
     </div>
   </div>
@@ -139,7 +139,7 @@ import Homepage2Dialog from '~/components/homepage/Homepage2Dialog.vue'
 import Homepage3Dialog from '~/components/homepage/Homepage3Dialog.vue'
 import Homepage4Dialog from '~/components/homepage/Homepage4Dialog.vue'
 import Homepage5Dialog from '~/components/homepage/Homepage5Dialog.vue'
-import MyForm from '~/components/MyForm.vue'
+import Form from '~/components/Form.vue'
 import Homepage5Scrollto from '~/components/Homepage5Scrollto.vue'
 import Homepage4Scrollto from '~/components/Homepage4Scrollto.vue'
 import Homepage3Scrollto from '~/components/Homepage3Scrollto.vue'
@@ -169,7 +169,7 @@ export default {
   components: {
     None,
     Homepage5Scrollto,
-    MyForm,
+    Form,
     Homepage1Dialog,
     Homepage2Dialog,
     Homepage3Dialog,
@@ -249,11 +249,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/scss/homecta.scss';
+@import '~/assets/scss/homestyle.scss';
 $primary: #D25593;
 $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
-.web-container-bottom-view {
+.w-c-b-v {
   display: block;
   visibility: visible;
 }
@@ -262,18 +262,18 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .web-container-bottom-view {
+  .w-c-b-v {
     display: none;
     visibility: hidden;
   }
 }
 
-.spinnervariant {
+.svt {
   position: absolute;
   top: 140vh;
 }
 
-.absolutely {
+.ayt {
   position: absolute;
   top: 0;
   width: 100vw;
@@ -285,7 +285,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 @media only screen and (min-width: 525px) {
-  .absolutely {
+  .ayt {
     &:hover {
       cursor: default;
       background-color: blue;
@@ -295,14 +295,14 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 
 @media only screen and (min-height: 821px) {
   @media only screen and (min-width: 525px) {
-    .absolutely-var {
+    .ayt-vr {
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
-  .absolutely-var {
+  .ayt-vr {
     position: absolute;
     top: 95vh;
     width: 100vw;
@@ -317,7 +317,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 65vh;
     }
-    .nonvisible-c {
+    .nv-c {
       display: none;
     }
   }
@@ -328,34 +328,34 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 45.5vh;
     }
-    .nonvisible-c {
+    .nv-c {
       display: flex;
       width: 100%;
       height: 19.5vh;
     }
   }
-  .container-test-variant {
+  .c-t-tv {
     display: flex;
     flex-direction: row;
     height: 25vh;
     margin-top: 5vh;
     align-self: center;
   }
-  .overflow-cts {
+  .o-cts {
     overflow: visible;
   }
 }
 
 @media only screen and (max-height: 820px) {
   @media only screen and (min-width: 525px) {
-    .absolutely-var {
+    .ayt-vr {
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
-  .absolutely-var {
+  .ayt-vr {
     position: absolute;
     top: 779.94px;
     width: 100vw;
@@ -371,7 +371,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 533.64px;
     }
-    .nonvisible-c {
+    .nv-c {
       display: none;
     }
   }
@@ -382,25 +382,25 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 373.548px;
     }
-    .nonvisible-c {
+    .nv-c {
       display: flex;
       width: 100%;
       height: 160.092px;
     }
   }
-  .container-test-variant {
+  .c-t-tv {
     display: flex;
     flex-direction: row;
     height: 205.25px;
     margin-top: 41.05px;
     align-self: center;
   }
-  .overflow-cts {
+  .o-cts {
     overflow: visible;
   }
 }
 
-.container-test {
+.c-ts {
   display: flex;
 }
 
@@ -408,11 +408,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   margin-left: 0;
 }
 
-.item-variant { margin-left: 5%; }
-.item-variant-1 { margin-left: 15%; }
-.item-variant-2 { height: 100%; max-width: 41%; }
+.i-v { margin-left: 5%; }
+.i-v-1 { margin-left: 15%; }
+.i-v-2 { height: 100%; max-width: 41%; }
 
-.subtitle-d2 {
+.sl-d2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 560;
   font-size: 1.007793231094659em;
@@ -423,7 +423,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   cursor: default !important;
 }
 
-.subtitle-d2-variant {
+.s-d2-tv {
   margin-left: 0.064526909722222em;
   line-height: 2.905em;
   position: relative;
@@ -436,7 +436,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
-.subtitle-d2-variant-2 {
+.s-d2-tv-2 {
   margin-left: 0.064526909722222em;
   display: inline-block;
   position: relative;

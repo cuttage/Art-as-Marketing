@@ -1,7 +1,7 @@
 <template>
-  <div class="longer">
+  <div class="lngr">
     <nuxt-link exact to="/about" class="disable">
-      <DepthCardAll id="child" class="child" />
+      <CardsMenuAll id="child" class="child" />
     </nuxt-link>
   </div>
 </template>
@@ -9,18 +9,18 @@
 <script>
 // prettier-ignore
 /* eslint-disable */
-import DepthCardAll from '~/components/DepthCardAll.vue'
+import CardsMenuAll from '~/components/CardsMenuAll.vue'
 
 export default {
   components: {
-    DepthCardAll
+    CardsMenuAll
   }
 }
 </script>
 
 <style exact lang="scss" scoped>
 $primary: #D25593;
-.longer {
+.lngr {
   padding-top: 6px;
   display: flex;
   padding-bottom: 6px;
@@ -77,7 +77,7 @@ $primary: #D25593;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.longer:hover div {
+.lngr:hover div {
   background-color: yellow !important;
   text-shadow: none !important;
 }

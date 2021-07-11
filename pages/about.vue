@@ -1,12 +1,12 @@
 <template>
   <!--eslint-disable-->
-  <div class="about-wrapper">
+  <div class="a-wr">
     <None class="g2-bk-desk" />
-    <div class="web-container-bottom-view">
-      <footer class="Hover-croll-card">Hover over the cards</footer>
+    <div class="w-c-b-v">
+      <footer class="h-c-c">Hover over the cards</footer>
 
-      <div class="container">
-        <DepthCard
+      <div class="cntnr">
+        <Cards
             v-for="article in this.$store.state.articleList"
             v-bind="article"
             :dsk="dsk"
@@ -37,17 +37,17 @@ export default {
   },
   components: {
     None,
-    DepthCard: () => import('~/components/DepthCard.vue')
+    Cards: () => import('~/components/Cards.vue')
   }
 }
 </script>
 
 <style scoped>
-.about-wrapper {
+.a-wr {
   background: blue;
 }
 
-.web-container-bottom-view {
+.w-c-b-v {
   display: block;
   visibility: visible;
   max-width: 80%;
@@ -58,17 +58,17 @@ export default {
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .web-container-bottom-view {
+  .w-c-b-v {
     display: none;
     visibility: hidden;
   }
 }
 
-.nuxt-link-name {
+.n-l-n {
   position: absolute;
   bottom: 100px;
 }
-.container {
+.cntnr {
   display: flex;
   align-items: center !important;
   padding: 60px 0 60px 0;
@@ -76,7 +76,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   overflow: visible;
 }
 
-.Hover-croll-card {
+.h-c-c {
   font-family: 'DIN Medium', sans-serif;
   font-size: 24px;
   font-weight: 700;

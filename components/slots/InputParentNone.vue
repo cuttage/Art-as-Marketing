@@ -1,5 +1,5 @@
 <template>
-  <div class="no-vis-text">🚧<br/>{{ dangerMessage }}</div>
+  <div class="n-v-t">🚧<br/>{{ dangerMessage }}</div>
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.no-vis-text {
+.n-v-t {
   display: none;
   visibility: hidden;
 }
@@ -29,7 +29,7 @@ only screen and (max-width: 460px) and (max-resolution: 1.6687500000dppx), // li
 only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.6687500000),
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape) {
-  .no-vis-text {
+  .n-v-t {
     display: flex;
     visibility: visible;
     margin-top: calc(10vw - 8vw + 50px + 2em);
@@ -46,7 +46,7 @@ only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2
 }
 
 @media only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .no-vis-text {
+  .n-v-t {
     display: flex;
     visibility: visible;
     margin-top: calc(10vw - 8vw + 50px + 2em);

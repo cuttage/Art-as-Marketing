@@ -1,15 +1,15 @@
 <template>
-  <div v-if="batchKeyds.includes(searchfactor.toLowerCase())" class="archive noblue">
+  <div v-if="batchKeyds.includes(searchfactor.toLowerCase())" class="rchv nbl">
     <article class="article">
       <div>
-        <Gallery2MobSlots>
+        <G2MSlo>
           <img
             async=on
             v-show="baseCondition"
             v-bind:class="[(isImage1Active ? classObjectImg1 : ''),(isZoom && isImage1Active ? c_Obj_I_Up : ''),(isImage1Active && isDataBool && !isZoom ? classObjectImg1_Anim : ''),(isImage2Active || isImage3Active ? classObjectVar1 : '')]"
             :srcSet="i1Set" :src="i1"
             alt="marta-fattori"
-            class="will-change-op"
+            class="w-c-p"
             :key="img1Key"
           />
 
@@ -19,7 +19,7 @@
             v-bind:class="[(isImage2Active ? classObjectImg2 : ''),(isZoom && isImage2Active ? c_Obj_I_Up : ''),(isImage2Active && isDataBool && !isZoom ? classObjectImg2_Anim : ''),(isImage1Active || isImage3Active ? classObjectVar2 : '')]"
             :srcSet="i2Set" :src="i2"
             alt="marta-fattori"
-            class="will-change-op"
+            class="w-c-p"
             :key="img2Key"
           />
 
@@ -29,59 +29,59 @@
             v-bind:class="[(isImage3Active ? classObjectImg3 : ''),(isZoom && isImage3Active ? c_Obj_I_Up : ''),(isImage3Active && isDataBool && !isZoom ? classObjectImg3_Anim : ''),(isImage1Active || isImage2Active ? classObjectVar3 : '')]"
             :srcSet="i3Set" :src="i3"
             alt="marta-fattori"
-            class="will-change-op"
+            class="w-c-p"
             :key="img3Key"
           />
-        </Gallery2MobSlots>
+        </G2MSlo>
         <div
-          class="container-test-galler"
+          class="c-t-g"
           v-bind:style="[(isImage1Active || isImage2Active || isImage3Active ? {'z-index': '996 !important'} : '')]"
         >
-          <doubleClick
-            class="itemg"
+          <DoubleClick
+            class="itmg"
             @single-click="toggleImage1"
             @double-click="toggleZoom"
           />
-          <doubleClick
-            class="itemg"
+          <DoubleClick
+            class="itmg"
             @single-click="toggleImage2"
             @double-click="toggleZoom"
           />
-          <doubleClick
-            class="itemg"
+          <DoubleClick
+            class="itmg"
             @single-click="toggleImage3"
             @double-click="toggleZoom"
           />
         </div>
-        <div class="pre-galler-grid-container" @click="toggleNone"></div>
+        <div class="p-g-g-c" @click="toggleNone"></div>
 
-        <div v-if="isZoom" class="double-container-gallery">
-          <div class="galler-grid-container3">
-            <doubleClick class="container-test-galler3" @single-click="toggleBackZoom" @double-click="toggleBackZoom" ></doubleClick>
+        <div v-if="isZoom" class="d-c-g">
+          <div class="g-g-c3">
+            <DoubleClick class="c-t-g3" @single-click="toggleBackZoom" @double-click="toggleBackZoom"></DoubleClick>
           </div>
         </div>
       </div>
     </article>
-    <div class="article emptyspace">
-      <testG2MS :uidb="block._uid">
+    <div class="article emptyspc">
+      <MessagePor :uidb="block._uid">
         <template slot="g2m" slot-scope="{tellYou}">
           <g2M :tellYou="tellYou"></g2M>
         </template>
         <template slot="g3m" slot-scope="{G2mData, G2m2Data}">
           <g3M :G2mData="G2mData" :G2m2Data="G2m2Data"></g3M>
         </template>
-      </testG2MS>
+      </MessagePor>
     </div>
     <article class="article">
       <div>
-        <Gallery3MobSlots>
+        <G3MSlo>
           <img
             async=on
             v-show="baseCondition"
             v-bind:class="[(isImage1Active ? classObjectImg1 : ''),(isZoom && isImage1Active ? c_Obj_I_Down : ''),(isImage1Active && isDataBool && !isZoom ? classObjectImg1_Anim : ''),(isImage2Active || isImage3Active ? classObjectVar1 : '')]"
             :srcSet="i4Set" :src="i4"
             alt="marta-fattori"
-            class="will-change-op"
+            class="w-c-p"
             :key="img1Key"
           />
 
@@ -91,7 +91,7 @@
             v-bind:class="[(isImage2Active ? classObjectImg2 : ''),(isZoom && isImage2Active ? c_Obj_I_Down : ''),(isImage2Active && isDataBool && !isZoom ? classObjectImg2_Anim : ''),(isImage1Active || isImage3Active ? classObjectVar2 : '')]"
             :srcSet="i5Set" :src="i5"
             alt="marta-fattori"
-            class="will-change-op"
+            class="w-c-p"
             :key="img2Key"
           />
 
@@ -101,10 +101,10 @@
             v-bind:class="[(isImage3Active ? classObjectImg3 : ''),(isZoom && isImage3Active ? c_Obj_I_Down : ''),(isImage3Active && isDataBool && !isZoom ? classObjectImg3_Anim : ''),(isImage1Active || isImage2Active ? classObjectVar3 : '')]"
             :srcSet="i6Set" :src="i6"
             alt="marta-fattori"
-            class="will-change-op"
+            class="w-c-p"
             :key="img3Key"
           />
-        </Gallery3MobSlots>
+        </G3MSlo>
       </div>
     </article>
   </div>
@@ -115,17 +115,17 @@
 import useReactCenter from '~/composables/react-center.js'
 import useRaw from '~/composables/raw-data.js'
 
-import Gallery2MobSlots from '~/components/slots/Gallery2MobSlots.vue'
+import G2MSlo from '~/components/slots/G2MSlo.vue'
 const DIALOG_TYPE = {
   NONE: null,
   IMAGE1: 1,
   IMAGE2: 2,
   IMAGE3: 3
 };
-import testG2MS from '~/components/slots/testG2MS.vue';
+import MessagePor from '~/components/slots/MessagePor.vue';
 import g2M from '~/components/slots/g2M.vue';
 import g3M from '~/components/slots/g3M.vue';
-import Gallery3MobSlots from '~/components/slots/Gallery3MobSlots.vue'
+import G3MSlo from '~/components/slots/G3MSlo.vue'
 import 'requestidlecallback-polyfill'; //remove with safari 14
 export default {
   scrollToTop: true,
@@ -154,32 +154,32 @@ export default {
   data() {
     return {
       activeDialog: DIALOG_TYPE.NONE,
-      isBlock_1Active: 'block_start_img_1',
-      isZooming_UpActive: 'zooming_img_up',
-      isZooming_DownActive: 'zooming_img_down',
+      isBlock_1Active: 'b_s_img_1',
+      isZooming_UpActive: 'z_img_up',
+      isZooming_DownActive: 'z_img_down',
       dataBool: false,
       zoom: false,
-      isBlock_Anim_1Active: 'block_start_img_anim_1',
+      isBlock_Anim_1Active: 'b_s_img_a_1',
       img1Key: 999,
-      isVariance1AActive: 'variance1A',
-      isBlock_2Active: 'block_start_img_2',
-      isBlock_Anim_2Active: 'block_start_img_anim_2',
+      isVrnc1AActive: 'vrnc1A',
+      isBlock_2Active: 'b_s_img_2',
+      isBlock_Anim_2Active: 'b_s_img_a_2',
       img2Key: 1998,
-      isVariance2AActive: 'variance2A',
-      isBlock_3Active: 'block_start_img_3',
-      isBlock_Anim_3Active: 'block_start_img_anim_3',
+      isVrnc2AActive: 'vrnc2A',
+      isBlock_3Active: 'b_s_img_3',
+      isBlock_Anim_3Active: 'b_s_img_a_3',
       img3Key: 2997,
-      isVariance3AActive: 'variance3A',
+      isVrnc3AActive: 'vrnc3A',
       promiseList: this.promiseGenerator()
     }
   },
   components: {
-    Gallery2MobSlots,
-    doubleClick: () => import("~/components/doubleClick.vue"),
-    testG2MS,
+    G2MSlo,
+    DoubleClick: () => import("~/components/DoubleClick.vue"),
+    MessagePor,
     g2M,
     g3M,
-    Gallery3MobSlots
+    G3MSlo
   },
   computed: {
     baseCondition() {
@@ -190,17 +190,17 @@ export default {
     },
     classObjectImg1() {
       return {
-        block_start_img_1: this.isBlock_1Active
+        b_s_img_1: this.isBlock_1Active
       }
     },
     c_Obj_I_Up() {
       return {
-        zooming_img_up: this.isZooming_UpActive
+        z_img_up: this.isZooming_UpActive
       }
     },
     c_Obj_I_Down() {
       return {
-        zooming_img_down: this.isZooming_DownActive
+        z_img_down: this.isZooming_DownActive
       }
     },
     isDataBool() {
@@ -211,7 +211,7 @@ export default {
     },
     classObjectImg1_Anim() {
       return {
-        block_start_img_anim_1: this.isBlock_Anim_1Active
+        b_s_img_a_1: this.isBlock_Anim_1Active
       }
     },
     isImage2Active() {
@@ -222,37 +222,37 @@ export default {
     },
     classObjectVar1() {
       return {
-        variance1A: this.isVariance1AActive
+        vrnc1A: this.isVrnc1AActive
       }
     },
     classObjectImg2() {
       return {
-        block_start_img_2: this.isBlock_2Active
+        b_s_img_2: this.isBlock_2Active
       }
     },
     classObjectImg2_Anim() {
       return {
-        block_start_img_anim_2: this.isBlock_Anim_2Active
+        b_s_img_a_2: this.isBlock_Anim_2Active
       }
     },
     classObjectVar2() {
       return {
-        variance2A: this.isVariance2AActive
+        vrnc2A: this.isVrnc2AActive
       }
     },
     classObjectImg3() {
       return {
-        block_start_img_3: this.isBlock_3Active
+        b_s_img_3: this.isBlock_3Active
       }
     },
     classObjectImg3_Anim() {
       return {
-        block_start_img_anim_3: this.isBlock_Anim_3Active
+        b_s_img_a_3: this.isBlock_Anim_3Active
       }
     },
     classObjectVar3() {
       return {
-        variance3A: this.isVariance3AActive
+        vrnc3A: this.isVrnc3AActive
       }
     }
   },
@@ -283,17 +283,17 @@ export default {
     toggleAnim() {
       if(this.isBlock_Anim_1Active === undefined){
         this.testDataBool();
-        this.isBlock_Anim_1Active = 'block_start_img_anim_1';
+        this.isBlock_Anim_1Active = 'b_s_img_a_1';
       }
 
       if(this.isBlock_Anim_2Active === undefined){
         this.testDataBool();
-        this.isBlock_Anim_2Active = 'block_start_img_anim_2';
+        this.isBlock_Anim_2Active = 'b_s_img_a_2';
       }
 
       if(this.isBlock_Anim_3Active === undefined){
         this.testDataBool();
-        this.isBlock_Anim_3Active = 'block_start_img_anim_3';
+        this.isBlock_Anim_3Active = 'b_s_img_a_3';
       }
       return this.testDataBool();
     },
@@ -372,13 +372,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.archive {
+.rchv {
   display: grid;
   visibility: visible;
   grid-gap: 1em;
   grid-auto-flow: dense;
 }
-.noblue {
+.nbl {
   background-color: transparent !important;
 }
 /*
@@ -390,7 +390,7 @@ img {
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
-.block_start_img_1 {
+.b_s_img_1 {
   image-rendering: high-quality;
   grid-area: 1/4/13/1;
   max-width: 110%;
@@ -400,13 +400,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .block_start_img_1 {
+  .b_s_img_1 {
     image-rendering: -webkit-optimize-contrast;
     justify-self: start;
     max-height: 151.8px;
   }
 }
-.zooming_img_up {
+.z_img_up {
   grid-area: 2/1/13/10 !important;
   max-height: none !important;
   align-self: self-end !important;
@@ -414,11 +414,11 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .zooming_img_up {
+  .z_img_up {
     max-width: 100% !important;
   }
 }
-.zooming_img_down {
+.z_img_down {
   grid-area: 2/1/13/10 !important;
   max-height: none !important;
   align-self: self-start !important;
@@ -426,18 +426,18 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .zooming_img_down {
+  .z_img_down {
     grid-area: 1/1/13/10 !important;
     align-self: self-end !important;
     max-width: 100% !important;
   }
 }
-.block_start_img_anim_1 {
-  animation: block_start_img_anim_1 0.27s 0.2s;
+.b_s_img_a_1 {
+  animation: b_s_img_a_1 0.27s 0.2s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
-@keyframes block_start_img_anim_1 {
+@keyframes b_s_img_a_1 {
   0% {
     transform: translate3d(-5%,0,0);
     opacity: 0;
@@ -447,10 +447,10 @@ img {
     opacity: 1;
   }
 }
-.will-change-op {
+.w-c-p {
   will-change: transform, opacity;
 }
-.variance1A {
+.vrnc1A {
   image-rendering: high-quality;
   grid-area: 1/4/13/1;
   max-width: 110%;
@@ -461,13 +461,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .variance1A {
+  .vrnc1A {
     image-rendering: -webkit-optimize-contrast;
     justify-self: start;
     max-height: 151.8px;
   }
 }
-.block_start_img_2 {
+.b_s_img_2 {
   image-rendering: high-quality;
   grid-area: 4/6/9/3;
   z-index: 7;
@@ -479,17 +479,17 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .block_start_img_2 {
+  .b_s_img_2 {
     image-rendering: -webkit-optimize-contrast;
     max-height: 151.8px;
   }
 }
-.block_start_img_anim_2 {
-  animation: block_start_img_anim_2 0.27s 0s;
+.b_s_img_a_2 {
+  animation: b_s_img_a_2 0.27s 0s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
-@keyframes block_start_img_anim_2 {
+@keyframes b_s_img_a_2 {
   0% {
     transform: translate3d(0,-10%,0);
     opacity: 0;
@@ -499,7 +499,7 @@ img {
     opacity: 1;
   }
 }
-.variance2A {
+.vrnc2A {
   image-rendering: high-quality;
   grid-area: 4/6/9/3;
   z-index: 7;
@@ -512,12 +512,12 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .variance2A {
+  .vrnc2A {
     image-rendering: -webkit-optimize-contrast;
     max-height: 151.8px;
   }
 }
-.block_start_img_3 {
+.b_s_img_3 {
   image-rendering: high-quality;
   grid-area: 1/5/7/7;
   z-index: 8;
@@ -529,18 +529,18 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .block_start_img_3 {
+  .b_s_img_3 {
     image-rendering: -webkit-optimize-contrast;
     justify-self: end;
     max-height: 151.8px;
   }
 }
-.block_start_img_anim_3 {
-  animation: block_start_img_anim_3 0.27s 0s;
+.b_s_img_a_3 {
+  animation: b_s_img_a_3 0.27s 0s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
-@keyframes block_start_img_anim_3 {
+@keyframes b_s_img_a_3 {
   0% {
     transform: translate3d(0,10%,0);
     opacity: 0;
@@ -550,7 +550,7 @@ img {
     opacity: 1;
   }
 }
-.variance3A {
+.vrnc3A {
   image-rendering: high-quality;
   grid-area: 1/5/7/7;
   z-index: 6;
@@ -563,13 +563,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .variance3A {
+  .vrnc3A {
     image-rendering: -webkit-optimize-contrast;
     justify-self: end;
     max-height: 151.8px;
   }
 }
-.container-test-galler {
+.c-t-g {
   display: flex;
   position: absolute;
   top: calc(50px + 22.2vw);
@@ -579,11 +579,11 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .container-test-galler {
+  .c-t-g {
     height: calc((460px * 0.7) + (1em - 15.34px));
   }
 }
-.itemg {
+.itmg {
   opacity: 0;
   flex-grow: 1;
   height: calc(164.365450121654501vw + 2em) !important;
@@ -593,25 +593,25 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .itemg {
+  .itmg {
     height: calc(3em + 613.32px + 27.2vw) !important;
   }
 }
-.pre-galler-grid-container {
+.p-g-g-c {
   position: absolute;
   top: 0;
   height: calc(50px + 2vw);
   width: 100%;
   z-index: 11;
 }
-.double-container-gallery {
+.d-c-g {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 20px 0 20px;
 }
-.galler-grid-container3 {
+.g-g-c3 {
   position: absolute;
   top: calc(50px + 22.2vw) !important;
   height: calc(164.365450121654501vw + 2em);
@@ -621,11 +621,11 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .galler-grid-container3 {
+  .g-g-c3 {
     height: calc(3em + 613.32px + 27.2vw) !important;
   }
 }
-.container-test-galler3 {
+.c-t-g3 {
   position: absolute;
   top: 0;
   display: flex;
@@ -633,7 +633,7 @@ img {
   width: 100%;
   z-index: 997;
 }
-.emptyspace {
+.emptyspc {
   height: 27.2vw;
   background-color: blue;
   display: flex;

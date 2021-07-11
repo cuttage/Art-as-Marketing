@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg>
 <metadata>
 Created by FontForge 20120731 at Wed Jul  3 07:58:37 2019
@@ -7,7 +7,7 @@ Created by FontForge 20120731 at Wed Jul  3 07:58:37 2019
 Copyright \(c\) 1998 Elsner+Flake Designstudios. All Rights Reserved.
 </metadata>
 <defs>
-<font id="WindsorEF-Bold" horiz-adv-x="500" >
+<font id="WindsorEF-Bold" horiz-adv-x="500">
   <font-face 
     font-family="WindsorEF"
     font-weight="700"

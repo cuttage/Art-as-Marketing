@@ -2,34 +2,34 @@
   <div>
     <Homepage11BScrollto
       v-if="isHomepage11BScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
     <Homepage12BScrollto
       v-if="isHomepage12BScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
     <Homepage13BScrollto
       v-if="isHomepage13BScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
     <Homepage14BScrollto
       v-if="isHomepage14BScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
     <Homepage15BScrollto
       v-if="isHomepage15BScrolltoActive"
-      class="absolutely2"
+      class="ay2"
     />
 
-    <div class="container-test2">
-      <div class="item-2 item1" @mouseover="toggleHomepage11BScrollto" />
-      <div class="item-2 item2" @mouseover="toggleHomepage12BScrollto" />
-      <div class="item-2 item3" @mouseover="toggleHomepage13BScrollto" />
-      <div class="item-2 item4" @mouseover="toggleHomepage14BScrollto" />
-      <div class="item-2 item5" @mouseover="toggleHomepage15BScrollto" />
+    <div class="c-t2">
+      <div class="it-2 item1" @mouseover="toggleHomepage11BScrollto" />
+      <div class="it-2 item2" @mouseover="toggleHomepage12BScrollto" />
+      <div class="it-2 item3" @mouseover="toggleHomepage13BScrollto" />
+      <div class="it-2 item4" @mouseover="toggleHomepage14BScrollto" />
+      <div class="it-2 item5" @mouseover="toggleHomepage15BScrollto" />
     </div>
-    <div class="container-test-variant2">
-      <div class="item-variant item-variant-1">
+    <div class="c-t-v2">
+      <div class="i-v i-v-1">
         <vue-next-level-scroll target="#my-target11">
           <HomepageMenu11BScrollto
             v-if="isHomepage11BScrolltoActive"
@@ -61,41 +61,41 @@
           />
         </vue-next-level-scroll>
       </div>
-      <div class="item-variant item-variant-2">
-        <span class="subtitle-d2">Your gateway to: Alta Sartoria Mario Napolitano, Accademia dei Sartori, World Federation of Master Tailors.</span>
+      <div class="i-v i-v-2">
+        <span class="sl-d2">Your gateway to: Alta Sartoria Mario Napolitano, Accademia dei Sartori, World Federation of Master Tailors.</span>
         <vue-next-level-scroll target=".my-target16">
           <span
             v-if="isHomepage11BScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <vue-next-level-scroll target=".my-target17">
           <span
             v-if="isHomepage12BScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <vue-next-level-scroll target=".my-target18">
           <span
             v-if="isHomepage13BScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <vue-next-level-scroll target=".my-target19">
           <span
             v-if="isHomepage14BScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <vue-next-level-scroll target=".my-target20">
           <span
             v-if="isHomepage15BScrolltoActive"
-            class="subtitle-d2-variant"
+            class="s-d2-tv"
           >Tell me more</span>
         </vue-next-level-scroll>
         <nuxt-link exact to="/contact">
           <span
-            class="subtitle-d2-variant-2"
+            class="s-d2-tv-2"
           >| Understood</span>
         </nuxt-link>
       </div>
@@ -103,27 +103,27 @@
     <Homepage11Target
       v-if="isHomepage11BScrolltoActive"
       id="my-target11"
-      class="absolutely-var2 my-target16"
+      class="ay-vr2 my-target16"
     />
     <Homepage12TargetEmployees
       v-if="isHomepage12BScrolltoActive"
       id="my-target12"
-      class="absolutely-var2 my-target17"
+      class="ay-vr2 my-target17"
     />
     <Homepage13Target
       v-if="isHomepage13BScrolltoActive"
       id="my-target13"
-      class="absolutely-var2 my-target18"
+      class="ay-vr2 my-target18"
     />
     <Homepage14TargetEmployees
       v-if="isHomepage14BScrolltoActive"
       id="my-target14"
-      class="absolutely-var2 my-target19"
+      class="ay-vr2 my-target19"
     />
     <Homepage15Target
       v-if="isHomepage15BScrolltoActive"
       id="my-target15"
-      class="absolutely-var2 my-target20"
+      class="ay-vr2 my-target20"
     />
   </div>
 </template>
@@ -230,29 +230,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/scss/homecta.scss';
+@import '~/assets/scss/homestyle.scss';
 $primary: #D25593;
 $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
-.spinnervariant {
+.svt {
   position: absolute;
 }
 
-.spinnervariantpatreon-container {
+.svtp-c {
   position: absolute;
   right: 80px;
   bottom: 20vh;
   transform: translate3d(30px, 0, 0) scale(0.5);
 }
 
-.spinnervariant-container {
+.svt-c {
   position: absolute;
   right: 80px;
   bottom: 10vh;
   transform: translate3d(30px, 0, 0) scale(0.5);
 }
 
-.absolutely2 {
+.ay2 {
   position: absolute;
   top: 0;
   width: 100vw;
@@ -264,7 +264,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @media only screen and (min-width: 525px) {
-  .absolutely2 {
+  .ay2 {
     &:hover {
       cursor: default;
       background-color: blue;
@@ -274,14 +274,14 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 @media only screen and (min-height: 821px) {
   @media only screen and (min-width: 525px) {
-    .absolutely-var2 {
+    .ay-vr2 {
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
-  .absolutely-var2 {
+  .ay-vr2 {
     position: absolute;
     top: 117vh;
     width: 100vw;
@@ -291,12 +291,12 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
       cursor: default;
     }
   }
-  .item-2 {
+  .it-2 {
     opacity: 0;
     flex-grow: 1;
     height: 77vh;
   }
-  .container-test-variant2 {
+  .c-t-v2 {
     display: flex;
     flex-direction: row;
     height: 35vh;
@@ -307,7 +307,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 @media only screen and (max-height: 820px) {
   @media only screen and (min-width: 525px) {
-    .absolutely-var2 {
+    .ay-vr2 {
       &:hover {
         cursor: default;
         background-color: blue;
@@ -315,19 +315,19 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   }
   @media only screen and (max-height: 710px) {
-    .absolutely-var2 {
+    .ay-vr2 {
       height: 117vh;
       min-height: 760.56px;
       z-index: -1;
     }
   }
   @media only screen and (min-height: 711px) {
-    .absolutely-var2 {
+    .ay-vr2 {
       height: inherit;
       z-index: -1;
     }
   }
-  .absolutely-var2 {
+  .ay-vr2 {
     position: absolute;
     top: 960.56px;
     width: 100vw;
@@ -336,13 +336,13 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
       cursor: default;
     }
   }
-  .item-2 {
+  .it-2 {
     opacity: 0;
     flex-grow: 1;
     height: calc(392.16px + 17.1vw);
     max-height: 632.16px;
   }
-  .container-test-variant2 {
+  .c-t-v2 {
     display: flex;
     flex-direction: row;
     height: 287.34px;
@@ -351,19 +351,19 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-.container-test2 {
+.c-t2 {
   display: flex;
 }
 
-.item-2 + .item-2 {
+.it-2 + .it-2 {
   margin-left: 0;
 }
 
-.item-variant { margin-left: 5%; }
-.item-variant-1 { margin-left: 15%; }
-.item-variant-2 { height: 100%; max-width: 41%; }
+.i-v { margin-left: 5%; }
+.i-v-1 { margin-left: 15%; }
+.i-v-2 { height: 100%; max-width: 41%; }
 
-.subtitle-d2 {
+.sl-d2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 560;
   font-size: 1.007793231094659em;
@@ -374,7 +374,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: default !important;
 }
 
-.subtitle-d2-variant {
+.s-d2-tv {
   margin-left: 0.064526909722222em;
   line-height: 2.905em;
   position: relative;
@@ -387,7 +387,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-.subtitle-d2-variant-2 {
+.s-d2-tv-2 {
   margin-left: 0.064526909722222em;
   display: inline-block;
   position: relative;

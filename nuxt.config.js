@@ -44,7 +44,7 @@ export default {
   loading: false,
   css: [
     '~/assets/main.css',
-    '@/assets/scss/mainpage.scss'
+    '@/assets/scss/styles.scss'
   ],
   plugins: [
     {
@@ -62,7 +62,7 @@ export default {
     [
       'nuxt-sass-resources-loader',
       [
-        'assets/scss/file/_mainpage.scss'
+        'assets/scss/file/_styles.scss'
       ]
     ],
     ['@nuxtjs/component-cache', {
@@ -77,7 +77,7 @@ export default {
   },
   styleResources: {
     scss: [
-        'assets/scss/file/_mainpage.scss'
+        'assets/scss/file/_styles.scss'
     ]
   },
   resolve: {

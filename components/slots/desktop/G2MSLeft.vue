@@ -1,7 +1,7 @@
 <template functional>
-  <section class="containerp">
-    <section class="container-bs">
-      <section class="block_start">
+  <section class="ctp">
+    <section class="c-bs">
+      <section class="blck_s">
         <slot></slot>
       </section>
     </section>
@@ -9,19 +9,19 @@
 </template>
 
 <style lang="scss" scoped>
-.container-bs {
+.c-bs {
   display: grid;
   grid-template-columns: minmax(280px, 460px);
   justify-items: center;
 }
 
 @media only screen and (min-width: 525px) {
-  .containerp:hover {
+  .ctp:hover {
     transition: all 0.3s ease-out-in;
     text-shadow: none !important;
   }
 }
-.containerp {
+.ctp {
   height: auto;
   margin-top: -8vw;
   overflow: hidden;
@@ -32,23 +32,23 @@
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .containerp {
+  .ctp {
     margin-top: 0;
     /* make 1em considering picture overflow-y */
     padding: calc(1em - 15.34px) 0 0 0;
   }
 }
-#containerp1 {
+#ctp1 {
   grid-area: 4/3/5/5;
 }
-#containerp2 {
+#ctp2 {
   grid-area: 6/2/7/4;
 }
-#containerp3 {
+#ctp3 {
   grid-area: 8/3/9/5;
 }
 
-.block_start {
+.blck_s {
   height: 70vw;
   max-height: calc(460px * 0.7);
   display: grid;
@@ -57,7 +57,7 @@
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .block_start {
+  .blck_s {
     grid-template-columns: 30px minmax(8.5%, 1fr) minmax(27%, 1fr) minmax(7.5%, 1fr)  minmax(15%, 1fr) minmax(25%, 1fr);
     justify-items: center;
   }

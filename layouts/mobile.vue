@@ -1,38 +1,38 @@
 <template>
   <my-layout>
-    <div class="archive">
+    <div class="rchv">
       <article class="article">
         <nuxt />
       </article>
       <article class="article">
         <div v-if="page === 'touch'">
-          <SpinnerMob class="touch-show-whatspinner2" :is="asyncComp"></SpinnerMob>
+          <SpinnerMob class="t-sw-wsp2" :is="asyncComp"></SpinnerMob>
         </div>
       </article>
       <article class="article">
         <SpinnerMob
           v-if="page === 'touch'"
-          class="hide-spinner"
+          class="h-sp"
         />
         <SpinnerMob
           v-else-if="page === 'touchabout'"
-          class="show-whatspinner2"
+          class="sw-wsp2"
           :is="asyncComp"
         />
         <SpinnerMob
           v-else
-          class="show-whatspinner"
+          class="sw-wsp"
           :is="asyncComp"
         />
       </article>
       <article class="article">
-        <MartaMob
+        <ArticleWidgetMobInd
           v-if="page === 'touch'"
-          class="marta-no-gap"
+          class="m-n-g"
         />
-        <MartaMobMobile
+        <ArticleWidgetMob
           v-else
-          class="marta-gap-bottom"
+          class="m-g-b"
         />
       </article>
     </div>
@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import myLayout from "~/components/layout_0Mob.vue"
+import myLayout from "~/components/Layout_0Mob.vue"
 
 export default {
   name: 'mobile',
@@ -50,8 +50,8 @@ export default {
   components: {
     myLayout,
     SpinnerMob: () => import('~/components/spinner/SpinnerMob.vue'),
-    MartaMob: () => import('~/components/marta/test.vue'),
-    MartaMobMobile: () => import('~/components/marta/MartaMobMobile.vue')
+    ArticleWidgetMobInd: () => import('~/components/awidget/ArticleWidgetMobInd.vue'),
+    ArticleWidgetMob: () => import('~/components/awidget/ArticleWidgetMob.vue')
   },
   computed: {
     page() {
@@ -228,29 +228,29 @@ body {
   pointer-events: all;
 }
 
-.ParallaxCardCopyMob {
+.PxccMob {
   opacity: 1;
   visibility: visible;
   display: flex;
   justify-content: center;
 }
 
-.hide-spinner {
+.h-sp {
   display: none !important;
 }
 
-.show-whatspinner {
+.sw-wsp {
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   margin-bottom: calc(9.296188183807424vw + (2em - 9.296188183807424vw));
   visibility: visible;
   display: block;
 }
 
-.show-whatspinner2 {
+.sw-wsp2 {
   margin-top: calc(-1 * ((3em) / 2));
 }
 
-.touch-show-whatspinner2 {
+.t-sw-wsp2 {
   margin-top: calc(-1 * ((3em) / 2) - 12px);
 }
 
@@ -264,7 +264,7 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .show-whatspinner {
+  .sw-wsp {
     margin-bottom: 0;
     visibility: hidden;
     display: none;
@@ -272,7 +272,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
-.archive {
+.rchv {
   display: grid;
   grid-template-columns: repeat(1, minmax(280px, 2732px));
   justify-content: center;
@@ -280,12 +280,12 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   grid-auto-flow: dense;
 }
 
-.marta-no-gap {
+.m-n-g {
   margin-top: -1em;
   margin-bottom: 2em !important;
 }
 
-.marta-gap-bottom {
+.m-g-b {
   margin-bottom: 2em !important;
 }
 </style>
