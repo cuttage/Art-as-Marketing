@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main v-if="selectedContent" class="3wp" id="lt3" v-pan="onPan">
+    <main v-if="selectedContent" class="jrf" id="lt3" v-pan="onPan">
       <article class="article">
         <Homepage11Target
           v-if="isHomepage1DialogActive"
@@ -43,7 +43,7 @@
         </section>
       </article>
     </main>
-    <main v-else class="3wp wud ybl" id="lt3" v-pan="onPan">
+    <main v-else class="jrf wud ybl" id="lt3" v-pan="onPan">
       <article class="article">
         <Homepage11Target
           v-if="isHomepage1DialogActive"
@@ -382,7 +382,7 @@ ul {
   margin-bottom: 12px;
 }
 
-.3wp {
+.jrf {
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;

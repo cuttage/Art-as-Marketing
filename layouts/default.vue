@@ -1,7 +1,7 @@
 <template>
   <my-layout>
     <div :class="(page === 'portfolio' || page === 'portfolio-id') ? content : null">
-      <div :class="(page === 'portfolio' || page === 'portfolio-id') ? 3wp : null">
+      <div :class="(page === 'portfolio' || page === 'portfolio-id') ? jrf : null">
         <Spinner
           v-if="page !== 'index' && page !== 'portfolio' && page !== 'portfolio-id' && page !== 'about'"
           class="hx0"
@@ -47,7 +47,7 @@ export default {
   data: () => ({
     asyncComp: '',
     asyncComp2: '',
-    3wp: '3wp',
+    jrf: 'jrf',
     content: 'content',
     article: 'article'
   }),
@@ -337,7 +337,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
-.3wp {
+.jrf {
   display: grid;
   grid-template-columns: repeat(1, minmax(280px, 2732px));
   justify-content: center;

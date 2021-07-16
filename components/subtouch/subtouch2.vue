@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main v-if="selectedContent" class="3wp" id="p3z" v-pan="onPan">
+    <main v-if="selectedContent" class="jrf" id="p3z" v-pan="onPan">
       <article class="article">
         <Homepage11BScrolltoSmall
           v-if="isHomepage1DialogActive"
@@ -44,7 +44,7 @@
         <SSubtouchE v-if="isAnyActive" />
       </article>
     </main>
-    <main v-else class="3wp wud ybl" id="p3z" v-pan="onPan">
+    <main v-else class="jrf wud ybl" id="p3z" v-pan="onPan">
       <article class="article">
         <Homepage11BScrolltoSmall
           v-if="isHomepage1DialogActive"
@@ -386,7 +386,7 @@ ul {
 	overflow: hidden;
 }
 
-.3wp {
+.jrf {
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;

@@ -1,6 +1,6 @@
 <template>
   <my-layout>
-    <div class="3wp">
+    <div class="jrf">
       <article class="article">
         <nuxt />
       </article>
@@ -272,7 +272,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
-.3wp {
+.jrf {
   display: grid;
   grid-template-columns: repeat(1, minmax(280px, 2732px));
   justify-content: center;

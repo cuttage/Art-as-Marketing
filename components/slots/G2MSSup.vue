@@ -1,5 +1,5 @@
 <template>
-  <div v-if="batchKeyds.includes(searchfactor.toLowerCase())" class="3wp nbl">
+  <div v-if="batchKeyds.includes(searchfactor.toLowerCase())" class="jrf nbl">
     <article class="article">
       <div>
         <G2MSlo>
@@ -159,10 +159,10 @@ export default {
       isZooming_DownActive: 'ib8',
       dataBool: false,
       zoom: false,
-      isBlock_Anim_1Active: '7jp',
+      isBlock_Anim_1Active: 'krf',
       img1Key: 999,
       isFikActive: 'Fik',
-      isBlock_2Active: '0mu',
+      isBlock_2Active: 'yrf',
       isBlock_Anim_2Active: 'j76',
       img2Key: 1998,
       isQdhActive: 'Qdh',
@@ -211,7 +211,7 @@ export default {
     },
     classObjectImg1_Anim() {
       return {
-        7jp: this.isBlock_Anim_1Active
+        krf: this.isBlock_Anim_1Active
       }
     },
     isImage2Active() {
@@ -227,7 +227,7 @@ export default {
     },
     classObjectImg2() {
       return {
-        0mu: this.isBlock_2Active
+        yrf: this.isBlock_2Active
       }
     },
     classObjectImg2_Anim() {
@@ -283,7 +283,7 @@ export default {
     toggleAnim() {
       if(this.isBlock_Anim_1Active === undefined){
         this.testDataBool();
-        this.isBlock_Anim_1Active = '7jp';
+        this.isBlock_Anim_1Active = 'krf';
       }
 
       if(this.isBlock_Anim_2Active === undefined){
@@ -372,7 +372,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.3wp {
+.jrf {
   display: grid;
   visibility: visible;
   grid-gap: 1em;
@@ -432,12 +432,12 @@ img {
     max-width: 100% !important;
   }
 }
-.7jp {
-  animation: 7jp 0.27s 0.2s;
+.krf {
+  animation: krf 0.27s 0.2s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
-@keyframes 7jp {
+@keyframes krf {
   0% {
     transform: translate3d(-5%,0,0);
     opacity: 0;
@@ -467,7 +467,7 @@ img {
     max-height: 151.8px;
   }
 }
-.0mu {
+.yrf {
   image-rendering: high-quality;
   grid-area: 4/6/9/3;
   z-index: 3;
@@ -479,7 +479,7 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .0mu {
+  .yrf {
     image-rendering: -webkit-optimize-contrast;
     max-height: 151.8px;
   }

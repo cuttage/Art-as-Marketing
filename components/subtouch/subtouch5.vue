@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main v-if="selectedContent" class="3wp" id="p3z" v-pan="onPan">
+    <main v-if="selectedContent" class="jrf" id="p3z" v-pan="onPan">
       <article class="article">
         <Homepage11EScrollto
           v-if="isHomepage1DialogActive"
@@ -29,7 +29,7 @@
         <div class="cosa zk4" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
       </article>
 
-      <main v-if="isHomepage1DialogActive && selected2 === '+ Help'" class="3wp" id="i8c">
+      <main v-if="isHomepage1DialogActive && selected2 === '+ Help'" class="jrf" id="i8c">
         <article class="article">
           <div class="cosa"><Help :mother="mother" /></div>
         </article>
@@ -46,7 +46,7 @@
           </section>
         </article>
       </main>
-      <main v-else-if="isHomepage1DialogActive" class="3wp" id="i8c">
+      <main v-else-if="isHomepage1DialogActive" class="jrf" id="i8c">
         <article class="article">
           <section class="w9x">
             <ul class="w9x__nw" ref="newie2">
@@ -77,7 +77,7 @@
         <SSubtouchT v-if="isAnyActive" />
       </article>
     </main>
-    <main v-else class="3wp wud ybl" id="p3z" v-pan="onPan">
+    <main v-else class="jrf wud ybl" id="p3z" v-pan="onPan">
       <article class="article">
         <Homepage11EScrollto
           v-if="isHomepage1DialogActive"
@@ -468,7 +468,7 @@ ul {
   overflow: visible;
 }
 
-.3wp {
+.jrf {
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;
