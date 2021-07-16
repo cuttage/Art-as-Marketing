@@ -1,5 +1,5 @@
 <template>
-  <div v-if="batchKeyds.includes(searchfactor)" class="jrf nbl">
+  <div v-if="batchKeyds.includes(searchfactor)" class="3wp nbl">
     <article class="article">
       <div>
         <G2MSRight>
@@ -128,7 +128,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.jrf {
+.3wp {
   display: grid;
   visibility: visible;
   grid-gap: 1em;

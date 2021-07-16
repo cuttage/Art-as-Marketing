@@ -109,7 +109,7 @@ export default {
         ]
       }
     },
-    hardSource: false, /* When ready to build, turn true */
+    hardSource: true, /* When ready to build, turn true */
     loaders: {
       cssModules: {
         localIdentName: "[sha1:hash:hex:4]"

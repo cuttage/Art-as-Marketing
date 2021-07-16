@@ -2,7 +2,7 @@
   <div>
     <NoneMob class="g2-bk-mob" />
     <div class="6lw">
-      <main class="jrf" id="mapp" v-pan="onPan">
+      <main class="3wp" id="mapp" v-pan="onPan">
         <article class="article">
           <Homepage1DialogNowrap
             v-if="isHomepage1DialogActive"
@@ -369,7 +369,7 @@ ul {
 	overflow: hidden;
 }
 
-.jrf {
+.3wp {
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;
