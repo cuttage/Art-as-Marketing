@@ -1,6 +1,7 @@
 <template>
   <my-layout>
     <div :class="(page === 'portfolio' || page === 'portfolio-id') ? content : null">
+<<<<<<< HEAD
       <div :class="(page === 'portfolio' || page === 'portfolio-id') ? 3wp : null">
         <Spinner
           v-if="page !== 'index' && page !== 'portfolio' && page !== 'portfolio-id' && page !== 'about'"
@@ -13,24 +14,51 @@
             <Cake class="r9z 9i1"></Cake>
           </div>
           <Form class="fnm" />
+=======
+      <div :class="(page === 'portfolio' || page === 'portfolio-id') ? archive : null">
+        <Spinner
+          v-if="page !== 'index' && page !== 'portfolio' && page !== 'portfolio-id' && page !== 'about'"
+          class="show-spinner"
+          :is="asyncComp"
+        />
+        <Marta v-if="page !== 'portfolio' && page !== 'portfolio-id'" class="homepage-hidden" :class="page === 'about' ? 'homepage-hidden2' : ''" />
+        <div v-if="page === 'index'">
+          <div class="specific-prlxc">
+            <ParallaxCardCopy class="parallaxcardcopy parallaxcardoverflow"></ParallaxCardCopy>
+          </div>
+          <MyForm class="contact-form-container" />
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
         </div>
         <div :class="(page === 'portfolio' || page === 'portfolio-id') ? article : content">
           <nuxt />
         </div>
         <SpinnerMob
           v-if="page === 'about'"
+<<<<<<< HEAD
           class="57x"
+=======
+          class="show-whatspinner-var"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
           :is="asyncComp2"
         />
         <article class="article" v-if="(page === 'portfolio' || page === 'portfolio-id')">
           <SpinnerMob
+<<<<<<< HEAD
             class="3cm"
+=======
+            class="show-whatspinner"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             :is="asyncComp2"
           />
         </article>
         <article class="article" v-if="(page === 'portfolio' || page === 'portfolio-id')">
+<<<<<<< HEAD
           <ArticleWidgetMob
             class="iob"
+=======
+          <MartaMobMobile
+            class="marta-gap-bottom"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
           />
         </article>
       </div>
@@ -39,26 +67,35 @@
 </template>
 
 <script>
-import myLayout from "~/components/Layout_0.vue"
-import Form from '~/components/Form.vue'
+import myLayout from "~/components/layout_0Desk.vue"
+import MyForm from '~/components/MyForm.vue'
 
 export default {
   name: 'default',
   data: () => ({
     asyncComp: '',
     asyncComp2: '',
+<<<<<<< HEAD
     3wp: '3wp',
+=======
+    archive: 'archive',
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     content: 'content',
     article: 'article'
   }),
   components: {
     myLayout,
-    Form,
+    MyForm,
     Spinner: () => import('~/components/spinner/Spinner.vue'),
+<<<<<<< HEAD
     Cake: () => import('~/components/Cake.vue'),
     Marta: () => import('~/components/awidget/ArticleWidgetDesk.vue'),
+=======
+    ParallaxCardCopy: () => import('~/components/ParallaxCardCopyAlt.vue'),
+    Marta: () => import('~/components/marta/Marta-mb-trial.vue'),
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     SpinnerMob: () => import('~/components/spinner/SpinnerMob.vue'),
-    ArticleWidgetMob: () => import('~/components/awidget/ArticleWidgetMob.vue')
+    MartaMobMobile: () => import('~/components/marta/MartaMobMobile.vue')
   },
   computed: {
     page() {
@@ -238,38 +275,65 @@ body-content {
   flex: 1;
 }
 
+<<<<<<< HEAD
 .fnm {
+=======
+.contact-form-container {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   width: inherit;
   z-index: 999;
 }
 
 @media only screen and (min-width: 525px) {
+<<<<<<< HEAD
   .vt0,
   .c3q,
   .6p2 {
+=======
+  .container,
+  .container-index,
+  .container-popup {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     width: inherit;
     height: inherit;
     background: blue;
   }
 
+<<<<<<< HEAD
   .vt0:hover,
   .6p2:hover {
+=======
+  .container:hover,
+  .container-popup:hover {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     transition: all 0.3s ease-out-in;
     text-shadow: none !important;
   }
 }
 
+<<<<<<< HEAD
 .r9z {
+=======
+.parallaxcardcopy {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   opacity: 1;
   visibility: visible;
 }
 
+<<<<<<< HEAD
 .9i1 {
+=======
+.parallaxcardoverflow {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   overflow-y: visible;
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 .hx0 {
+=======
+.show-spinner {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   position: absolute;
   top: 78vh;
 }
@@ -282,21 +346,33 @@ body-content {
   }
 }
 
+<<<<<<< HEAD
 .3cm {
+=======
+.show-whatspinner {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   margin-bottom: calc(9.296188183807424vw + (2em - 9.296188183807424vw));
   visibility: visible;
   display: block;
 }
 
+<<<<<<< HEAD
 .57x {
+=======
+.show-whatspinner-var {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   visibility: visible;
   display: block;
 }
 
 @media only screen and (max-width: 974px) {
+<<<<<<< HEAD
   .nwe {
+=======
+  .homepage-hidden2 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     visibility: hidden;
     display: none;
     height: 0;
@@ -307,12 +383,20 @@ body-content {
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
+<<<<<<< HEAD
   .ju8 {
+=======
+  .homepage-hidden {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     visibility: hidden;
     display: none;
     height: 0;
   }
+<<<<<<< HEAD
   .57x {
+=======
+  .show-whatspinner-var {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     visibility: hidden !important;
     display: none !important;
     height: 0 !important;
@@ -329,7 +413,11 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
+<<<<<<< HEAD
   .3cm {
+=======
+  .show-whatspinner {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     margin-bottom: 0;
     visibility: hidden;
     display: none;
@@ -337,7 +425,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
+<<<<<<< HEAD
 .3wp {
+=======
+.archive {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   display: grid;
   grid-template-columns: repeat(1, minmax(280px, 2732px));
   justify-content: center;
@@ -345,11 +437,19 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   grid-auto-flow: dense;
 }
 
+<<<<<<< HEAD
 .iob {
   margin-bottom: 2em !important;
 }
 
 .igf {
+=======
+.marta-gap-bottom {
+  margin-bottom: 2em !important;
+}
+
+.specific-prlxc {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   visibility: visible;
   display: block;
   position: absolute;
@@ -361,7 +461,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 @media only screen and (max-width: 1199px) {
+<<<<<<< HEAD
   .igf {
+=======
+  .specific-prlxc {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     top: calc(20.2rem - 12vw);
   }
 }
@@ -369,7 +473,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 @media only screen and (max-width: 865px),
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px) {
+<<<<<<< HEAD
   .igf {
+=======
+  .specific-prlxc {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     visibility: hidden;
     display: none;
     width: 0;

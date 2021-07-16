@@ -1,40 +1,52 @@
 <template>
   <div>
     <NoneMob class="g2-bk-mob" />
+<<<<<<< HEAD
     <div class="6lw">
       <main class="3wp" id="mapp" v-pan="onPan">
+=======
+    <div class="web-container-bottom-view-mob">
+      <main class="archive" id="mapp" v-pan="onPan">
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
         <article class="article">
           <Homepage1DialogNowrap
             v-if="isHomepage1DialogActive"
-            class="ayt n1"
+            class="absolutely n1"
           />
           <Homepage2Dialog
             v-if="isHomepage2DialogActive"
-            class="ayt n2"
+            class="absolutely n2"
           />
           <Homepage3DialogNowrap
             v-if="isHomepage3DialogActive"
-            class="ayt n3"
+            class="absolutely n3"
           />
           <Homepage4Dialog
             v-if="isHomepage4DialogActive"
-            class="ayt n4"
+            class="absolutely n4"
           />
           <Homepage5DialogSmall
             v-if="isHomepage5DialogSmallActive"
-            class="ayt n5"
+            class="absolutely n5"
           />
         </article>
 
         <article class="article">
-          <div class="yyj" ref="yyj" v-if="selectedContent">{{ selectedContent }}</div>
-          <div class="yyj" ref="yyj" v-else>We use art for experiential marketing. Browse Below</div>
+          <div class="emoji" ref="emoji" v-if="selectedContent">{{ selectedContent }}</div>
+          <div class="emoji" ref="emoji" v-else>We use art for experiential marketing. Browse Below</div>
         </article>
         <article class="article">
+<<<<<<< HEAD
           <section class="w9x">
             <ul class="w9x__lst" ref="list">
               <li v-for="(slide, index) in slides" v-bind:key="slide.id"
                   class="w9x__tm"
+=======
+          <section class="slider">
+            <ul class="slider__list" ref="list">
+              <li v-for="(slide, index) in slides" v-bind:key="slide.id"
+                  class="slider__item"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
                   v-tap="(e) => onTap(e, slide)"
                   :style="{backgroundColor: colors[index]}">
                 {{ slide }}
@@ -43,11 +55,11 @@
           </section>
         </article>
         <article class="article">
-          <Subtouch1 v-if="isHomepage1DialogActive" />
-          <Subtouch2 v-if="isHomepage2DialogActive" />
-          <Subtouch3 v-if="isHomepage3DialogActive" />
-          <Subtouch4 v-if="isHomepage4DialogActive" />
-          <Subtouch5 v-if="isHomepage5DialogSmallActive" />
+          <subtouch1 v-if="isHomepage1DialogActive" />
+          <subtouch2 v-if="isHomepage2DialogActive" />
+          <subtouch3 v-if="isHomepage3DialogActive" />
+          <subtouch4 v-if="isHomepage4DialogActive" />
+          <subtouch5 v-if="isHomepage5DialogSmallActive" />
         </article>
       </main>
     </div>
@@ -65,11 +77,11 @@ import Homepage3DialogNowrap from '~/components/homepage/Homepage3DialogNowrap.v
 import Homepage4Dialog from '~/components/homepage/Homepage4Dialog.vue'
 import Homepage5DialogSmall from '~/components/homepage/Homepage5DialogSmall.vue'
 import { TweenMax, Elastic, Sine } from "gsap/dist/gsap"
-import Subtouch1 from '~/components/subtouch/Subtouch1.vue'
-import Subtouch2 from '~/components/subtouch/Subtouch2.vue'
-import Subtouch3 from '~/components/subtouch/Subtouch3.vue'
-import Subtouch4 from '~/components/subtouch/Subtouch4.vue'
-import Subtouch5 from '~/components/subtouch/Subtouch5.vue'
+import subtouch1 from '~/components/subtouch/subtouch1.vue'
+import subtouch2 from '~/components/subtouch/subtouch2.vue'
+import subtouch3 from '~/components/subtouch/subtouch3.vue'
+import subtouch4 from '~/components/subtouch/subtouch4.vue'
+import subtouch5 from '~/components/subtouch/subtouch5.vue'
 
 const DIALOG_TYPE = {
   NONE: 1,
@@ -99,11 +111,11 @@ export default {
     Homepage3DialogNowrap,
     Homepage4Dialog,
     Homepage5DialogSmall,
-    Subtouch1,
-    Subtouch2,
-    Subtouch3,
-    Subtouch4,
-    Subtouch5
+    subtouch1,
+    subtouch2,
+    subtouch3,
+    subtouch4,
+    subtouch5
   },
   data() {
     return {
@@ -115,7 +127,7 @@ export default {
   			"Agency",
   			"Land Developer"
   		],
-      yyjs: [
+      emojis: [
         "Navigate to know more about Business",
         "Navigate to know more about Employer",
         "Navigate to know more about FinTech",
@@ -167,15 +179,15 @@ export default {
 		},
 		selectedContent() {
 			if (this.selected === "Business") {
-				return this.yyjs[this.slides.indexOf('Business')];
+				return this.emojis[this.slides.indexOf('Business')];
 			} else if (this.selected === "Employer") {
-        return this.yyjs[this.slides.indexOf('Employer')];
+        return this.emojis[this.slides.indexOf('Employer')];
       } else if (this.selected === "FinTech") {
-        return this.yyjs[this.slides.indexOf('FinTech')];
+        return this.emojis[this.slides.indexOf('FinTech')];
       } else if (this.selected === "Agency") {
-        return this.yyjs[this.slides.indexOf('Agency')];
+        return this.emojis[this.slides.indexOf('Agency')];
       } else if (this.selected === "Land Developer") {
-        return this.yyjs[this.slides.indexOf('Land Developer')];
+        return this.emojis[this.slides.indexOf('Land Developer')];
       }
 			return "";
 		},
@@ -241,7 +253,11 @@ $timing: ease-out;
 
 $cta-color: yellow;
 
+<<<<<<< HEAD
 .6lw {
+=======
+.web-container-bottom-view-mob {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   display: block;
   visibility: visible;
 }
@@ -256,13 +272,17 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
+<<<<<<< HEAD
   .6lw {
+=======
+  .web-container-bottom-view-mob {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     display: none;
     visibility: hidden;
   }
 }
 
-.ayt {
+.absolutely {
   border-radius: 5px;
   text-rendering: geometricPrecision;
   height: auto;
@@ -275,7 +295,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   position: relative;
   white-space: nowrap;
 
-	&__lst {
+	&__list {
 		display: flex;
 		width: 100%;
 		height: 100%;
@@ -285,7 +305,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 		transform: translateX(calc(var(--x, 0) * 1%));
 	}
 
-	&__tm {
+	&__item {
 		position: relative;
 		flex: 0 0 140px;
 
@@ -309,10 +329,17 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 li:nth-child(1) {
+<<<<<<< HEAD
   animation: s8z $dur $timing infinite;
 }
 
 @keyframes s8z {
+=======
+  animation: glow-text-glow $dur $timing infinite;
+}
+
+@keyframes glow-text-glow {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   from {
     text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
                 0 0.5px 0.5px rgba(0,0,0,0.1),
@@ -336,7 +363,7 @@ li:nth-child(1) {
   }
 }
 
-.yyj  {
+.emoji  {
   background-color: blue;
   border-radius: 5px;
   text-rendering: geometricPrecision;
@@ -369,7 +396,11 @@ ul {
 	overflow: hidden;
 }
 
+<<<<<<< HEAD
 .3wp {
+=======
+.archive {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;
@@ -377,139 +408,139 @@ ul {
 }
 //(min-width: 690px)
 @media only screen and (min-width: 690px) {
-  .ayt.n1 {
+  .absolutely.n1 {
     height: calc(17.584817452319324rem + 50px) !important;
     min-height: calc(17.584817452319324rem + 50px) !important;
   }
-  .ayt.n2,
-  .ayt.n3,
-  .ayt.n4 {
+  .absolutely.n2,
+  .absolutely.n3,
+  .absolutely.n4 {
     height: calc(13.577173490338417rem + 50px) !important;
     min-height: calc(13.577173490338417rem + 50px) !important;
   }
-  .ayt.n5 {
+  .absolutely.n5 {
     height: calc(15.912178069188728rem + 50px) !important;
     min-height: calc(15.912178069188728rem + 50px) !important;
   }
 }
 //(max-width: 689px)
 @media only screen and (max-width: 689px) {
-  .ayt.n1 {
+  .absolutely.n1 {
     height: calc(17.475573394447436rem + 50px) !important;
     min-height: calc(17.475573394447436rem + 50px) !important;
   }
-  .ayt.n2,
-  .ayt.n3,
-  .ayt.n4 {
+  .absolutely.n2,
+  .absolutely.n3,
+  .absolutely.n4 {
     height: calc(13.534199088559807rem + 50px) !important;
     min-height: calc(13.534199088559807rem + 50px) !important;
   }
-  .ayt.n5 {
+  .absolutely.n5 {
     height: calc(15.802131379422437rem + 50px) !important;
     min-height: calc(15.802131379422437rem + 50px) !important;
   }
 }
 //(max-width: 556px)
 @media only screen and (max-width: 556px) {
-  .ayt.n1 {
+  .absolutely.n1 {
     height: calc(17.381198463444237rem + 50px) !important;
     min-height: calc(17.381198463444237rem + 50px) !important;
   }
-  .ayt.n2,
-  .ayt.n3,
-  .ayt.n4 {
+  .absolutely.n2,
+  .absolutely.n3,
+  .absolutely.n4 {
     height: calc(13.434792012627071rem + 50px) !important;
     min-height: calc(13.434792012627071rem + 50px) !important;
   }
-  .ayt.n5 {
+  .absolutely.n5 {
     height: calc(15.727738621068117rem + 50px) !important;
     min-height: calc(15.727738621068117rem + 50px) !important;
   }
 }
 //(max-width: 532px)
 @media only screen and (max-width: 532px) {
-  .ayt.n1 {
+  .absolutely.n1 {
     height: calc(17.497212022057692rem + 50px) !important;
     min-height: calc(17.497212022057692rem + 50px) !important;
   }
-  .ayt.n2,
-  .ayt.n3,
-  .ayt.n4 {
+  .absolutely.n2,
+  .absolutely.n3,
+  .absolutely.n4 {
     height: calc(13.537396548010953rem + 50px) !important;
     min-height: calc(13.537396548010953rem + 50px) !important;
   }
-  .ayt.n5 {
+  .absolutely.n5 {
     height: calc(15.823158405287476rem + 50px) !important;
     min-height: calc(15.823158405287476rem + 50px) !important;
   }
 }
 //(max-width: 524px)
 @media only screen and (max-width: 524px) {
-  .ayt.n1 {
+  .absolutely.n1 {
     height: calc(16.72130295480112rem + 50px) !important;
     min-height: calc(16.72130295480112rem + 50px) !important;
   }
-  .ayt.n2,
-  .ayt.n3,
-  .ayt.n4  {
+  .absolutely.n2,
+  .absolutely.n3,
+  .absolutely.n4  {
     height: calc(11.701375902532816rem + 50px) !important;
     min-height: calc(11.701375902532816rem + 50px) !important;
   }
-  .ayt.n5 {
+  .absolutely.n5 {
     height: calc(13.859004065373089rem + 50px) !important;
     min-height: calc(13.859004065373089rem + 50px) !important;
   }
 }
 //(max-width: 456px)
 @media only screen and (max-width: 456px) {
-  .ayt.n1 {
+  .absolutely.n1 {
     height: calc(16.717159232644633rem + 50px) !important;
     min-height: calc(16.717159232644633rem + 50px) !important;
   }
-  .ayt.n2,
-  .ayt.n3,
-  .ayt.n4  {
+  .absolutely.n2,
+  .absolutely.n3,
+  .absolutely.n4  {
     height: calc(11.716292547639414rem + 50px) !important;
     min-height: calc(11.716292547639414rem + 50px) !important;
   }
-  .ayt.n5 {
+  .absolutely.n5 {
     height: calc(13.843910030560067rem + 50px) !important;
     min-height: calc(13.843910030560067rem + 50px) !important;
   }
 }
 //(max-width: 419px)
 @media only screen and (max-width: 419px) {
-  .ayt.n1 {
+  .absolutely.n1 {
     height: calc(17.055146933682664rem + 50px) !important;
     min-height: calc(17.055146933682664rem + 50px) !important;
   }
-  .ayt.n2 {
+  .absolutely.n2 {
     height: calc(11.309365166565494rem + 50px) !important;
     min-height: calc(11.309365166565494rem + 50px) !important;
   }
-  .ayt.n3,
-  .ayt.n4 {
+  .absolutely.n3,
+  .absolutely.n4 {
     height: calc(11.855843982941402rem + 50px) !important;
     min-height: calc(11.855843982941402rem + 50px) !important;
   }
-  .ayt.n5 {
+  .absolutely.n5 {
     height: calc(14.13757703600184rem + 50px) !important;
     min-height: calc(14.13757703600184rem + 50px) !important;
   }
 }
 //(max-width: 398px)
 @media only screen and (max-width: 398px) {
-  .ayt.n1 {
+  .absolutely.n1 {
     height: calc(15.935286354622841rem + 50px) !important;
     min-height: calc(15.935286354622841rem + 50px) !important;
   }
-  .ayt.n2,
-  .ayt.n3,
-  .ayt.n4 {
+  .absolutely.n2,
+  .absolutely.n3,
+  .absolutely.n4 {
     height: calc(11.090661539523833rem + 50px) !important;
     min-height: calc(11.090661539523833rem + 50px) !important;
   }
-  .ayt.n5 {
+  .absolutely.n5 {
     height: calc(13.163594951826058rem + 50px) !important;
     min-height: calc(13.163594951826058rem + 50px) !important;
   }

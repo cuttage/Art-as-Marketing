@@ -1,5 +1,6 @@
 <template>
   <div>
+<<<<<<< HEAD
     <main v-if="selectedContent" class="3wp" id="p3z" v-pan="onPan">
       <article class="article">
         <Homepage11EScrollto
@@ -21,23 +22,60 @@
         <Homepage15EScrolltoSmall
           v-if="isHomepage5DialogActive"
           class="ruj n5"
+=======
+    <main v-if="selectedContent" class="archive" id="mapp1" v-pan="onPan">
+      <article class="article">
+        <Homepage11EScrollto
+          v-if="isHomepage1DialogActive"
+          class="A-absolutely n1"
+        />
+        <Homepage12EScrollto
+          v-if="isHomepage2DialogActive"
+          class="A-absolutely n2"
+        />
+        <Homepage13EScrolltoSmall
+          v-if="isHomepage3DialogActive"
+          class="A-absolutely n3"
+        />
+        <Homepage14EScrollto
+          v-if="isHomepage4DialogActive"
+          class="A-absolutely n4"
+        />
+        <Homepage15EScrolltoSmall
+          v-if="isHomepage5DialogActive"
+          class="A-absolutely n5"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
         />
       </article>
 
       <article class="article">
         <div class="cosa" ref="cosa" v-if="selectedContent">{{ selectedContent }}</div>
+<<<<<<< HEAD
         <div class="cosa zk4" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
       </article>
 
       <main v-if="isHomepage1DialogActive && selected2 === '+ Help'" class="3wp" id="i8c">
+=======
+        <div class="cosa newcosa" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
+      </article>
+
+      <main v-if="isHomepage1DialogActive && selected2 === '+ Help'" class="archive" id="mappb">
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
         <article class="article">
-          <div class="cosa"><Help :mother="mother" /></div>
+          <div class="cosa"><previewer :mother="mother" /></div>
         </article>
         <article class="article">
+<<<<<<< HEAD
           <section class="w9x">
             <ul class="w9x__nw" ref="newie2">
               <li v-for="(hey, index) in heys" v-bind:key="hey"
                   class="w9x__tm u08"
+=======
+          <section class="slider">
+            <ul class="slider__newie" ref="newie2">
+              <li v-for="(hey, index) in heys" v-bind:key="hey"
+                  class="slider__item help-enabler"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
                   v-tap="(e) => tap2(e, hey)"
                   :style="{backgroundColor: colors[index]}">
                 {{ hey }}
@@ -46,12 +84,21 @@
           </section>
         </article>
       </main>
+<<<<<<< HEAD
       <main v-else-if="isHomepage1DialogActive" class="3wp" id="i8c">
         <article class="article">
           <section class="w9x">
             <ul class="w9x__nw" ref="newie2">
               <li v-for="(hey, index) in heys" v-bind:key="hey"
                   class="w9x__tm u08"
+=======
+      <main v-else-if="isHomepage1DialogActive" class="archive" id="mappb">
+        <article class="article">
+          <section class="slider">
+            <ul class="slider__newie" ref="newie2">
+              <li v-for="(hey, index) in heys" v-bind:key="hey"
+                  class="slider__item help-enabler"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
                   v-tap="(e) => tap2(e, hey)"
                   :style="{backgroundColor: colors[index]}">
                 {{ hey }}
@@ -62,10 +109,17 @@
       </main>
 
       <article class="article">
+<<<<<<< HEAD
         <section class="w9x">
           <ul class="w9x__nw" ref="newie">
             <li v-for="(indice, index) in indices" v-bind:key="indice"
                 class="w9x__tm"
+=======
+        <section class="slider">
+          <ul class="slider__newie" ref="newie">
+            <li v-for="(indice, index) in indices" v-bind:key="indice"
+                class="slider__item"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
                 v-tap="(e) => onTap(e, indice)"
                 :style="{backgroundColor: colors[index]}">
               {{ indice }}
@@ -74,9 +128,10 @@
         </section>
       </article>
       <article class="article">
-        <SSubtouchT v-if="isAnyActive" />
+        <subcompSubtouchT v-if="isAnyActive" />
       </article>
     </main>
+<<<<<<< HEAD
     <main v-else class="3wp wud ybl" id="p3z" v-pan="onPan">
       <article class="article">
         <Homepage11EScrollto
@@ -98,11 +153,35 @@
         <Homepage15EScrolltoSmall
           v-if="isHomepage5DialogActive"
           class="ruj n5"
+=======
+    <main v-else class="archive specificarchive newmapp1" id="mapp1" v-pan="onPan">
+      <article class="article">
+        <Homepage11EScrollto
+          v-if="isHomepage1DialogActive"
+          class="A-absolutely n1"
+        />
+        <Homepage12EScrollto
+          v-if="isHomepage2DialogActive"
+          class="A-absolutely n2"
+        />
+        <Homepage13EScrolltoSmall
+          v-if="isHomepage3DialogActive"
+          class="A-absolutely n3"
+        />
+        <Homepage14EScrollto
+          v-if="isHomepage4DialogActive"
+          class="A-absolutely n4"
+        />
+        <Homepage15EScrolltoSmall
+          v-if="isHomepage5DialogActive"
+          class="A-absolutely n5"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
         />
       </article>
 
       <article class="article">
         <div class="cosa" ref="cosa" v-if="selectedContent">{{ selectedContent }}</div>
+<<<<<<< HEAD
         <div class="cosa zk4" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
       </article>
       <article class="article">
@@ -110,6 +189,15 @@
           <ul class="w9x__nw" ref="newie">
             <li v-for="(indice, index) in indices" v-bind:key="indice"
                 class="w9x__tm"
+=======
+        <div class="cosa newcosa" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
+      </article>
+      <article class="article">
+        <section class="slider">
+          <ul class="slider__newie" ref="newie">
+            <li v-for="(indice, index) in indices" v-bind:key="indice"
+                class="slider__item"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
                 v-tap="(e) => onTap(e, indice)"
                 :style="{backgroundColor: colors[index]}">
               {{ indice }}
@@ -118,7 +206,7 @@
         </section>
       </article>
       <article class="article">
-        <SSubtouchT v-if="isAnyActive" />
+        <subcompSubtouchT v-if="isAnyActive" />
       </article>
     </main>
   </div>
@@ -131,8 +219,8 @@ import Homepage13EScrolltoSmall from '~/components/homepage/subcomp/Homepage13ES
 import Homepage14EScrollto from '~/components/homepage/subcomp/Homepage14EScrollto.vue'
 import Homepage15EScrolltoSmall from '~/components/homepage/subcomp/Homepage15EScrolltoSmall.vue'
 import { TweenMax, Elastic, Sine } from "gsap/dist/gsap"
-import SSubtouchT from '~/components/subtouch/subcomp/SSubtouchT.vue'
-import Help from '~/components/Help.vue'
+import subcompSubtouchT from '~/components/subtouch/subcomp/subcompSubtouchT.vue'
+import previewer from '~/components/previewer.vue'
 import { enactHelp } from '~/composables/toggle-help-store.js'
 
 const DIALOG_TYPE = {
@@ -152,8 +240,8 @@ export default {
     Homepage13EScrolltoSmall,
     Homepage14EScrollto,
     Homepage15EScrolltoSmall,
-    SSubtouchT,
-    Help
+    subcompSubtouchT,
+    previewer
   },
   setup () {
     const { toggleHelp, getToggleHelp } = enactHelp();
@@ -194,7 +282,7 @@ export default {
       currentOffset: 0,
       selected: "",
       selected2: "",
-      mother: 'Subtouch5',
+      mother: 'subtouch5',
       tmrSubtouch1: null,
       wchrSubtouch1: null
     }
@@ -334,7 +422,11 @@ $timing: ease-out;
 
 $cta-color: yellow;
 
+<<<<<<< HEAD
 .ruj {
+=======
+.A-absolutely {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   border-radius: 5px;
   text-rendering: geometricPrecision;
   height: auto;
@@ -347,7 +439,7 @@ $cta-color: yellow;
   position: relative;
   white-space: nowrap;
 
-	&__nw {
+	&__newie {
 		display: flex;
 		width: 100%;
 		height: 100%;
@@ -357,7 +449,7 @@ $cta-color: yellow;
 		transform: translateX(calc(var(--x, 0) * 1%));
 	}
 
-	&__tm {
+	&__item {
 		position: relative;
 		flex: 0 0 140px;
 
@@ -381,10 +473,17 @@ $cta-color: yellow;
 }
 
 li:nth-child(1) {
+<<<<<<< HEAD
   animation: s8z $dur $timing infinite;
 }
 
 @keyframes s8z {
+=======
+  animation: glow-text-glow $dur $timing infinite;
+}
+
+@keyframes glow-text-glow {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   from {
     text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
                 0 0.5px 0.5px rgba(0,0,0,0.1),
@@ -422,21 +521,36 @@ li:nth-child(1) {
 }
 
 @media only screen and (orientation : portrait) and (max-width: 460px) {
+<<<<<<< HEAD
   .zk4 {
     position: relative;
   }
   .ybl {
+=======
+  .newcosa {
+    position: relative;
+  }
+  .newmapp1 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     margin-top: -1em;
   }
 }
 @media only screen and (orientation : portrait) and (min-width: 461px) {
+<<<<<<< HEAD
   .wud {
+=======
+  .specificarchive {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     position: relative;
     margin-top: -1em !important;
   }
 }
 @media only screen and (orientation : landscape) {
+<<<<<<< HEAD
   .wud {
+=======
+  .specificarchive {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     position: relative;
     margin-top: -1em !important;
   }
@@ -454,21 +568,33 @@ ul {
   padding: 0 !important;
 }
 
+<<<<<<< HEAD
 #p3z {
+=======
+#mapp1 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
 	overflow: hidden;
 }
 
+<<<<<<< HEAD
 #i8c {
+=======
+#mappb {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   height: 100%;
   width: 100%;
   box-sizing: border-box;
   overflow: visible;
 }
 
+<<<<<<< HEAD
 .3wp {
+=======
+.archive {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;
@@ -477,6 +603,7 @@ ul {
 
 //(min-width: 690px)
 @media only screen and (min-width: 690px) {
+<<<<<<< HEAD
   .ruj.n1 {
     height: calc(18.189894749166817rem + 50px) !important;
     min-height: calc(18.189894749166817rem + 50px) !important;
@@ -494,12 +621,32 @@ ul {
     min-height: calc(17.378664648348478rem + 50px) !important;
   }
   .ruj.n5 {
+=======
+  .A-absolutely.n1 {
+    height: calc(18.189894749166817rem + 50px) !important;
+    min-height: calc(18.189894749166817rem + 50px) !important;
+  }
+  .A-absolutely.n2 {
+    height: calc(19.308472336635402rem + 50px) !important;
+    min-height: calc(19.308472336635402rem + 50px) !important;
+  }
+  .A-absolutely.n3 {
+    height: calc(20.241386952576492rem + 50px) !important;
+    min-height: calc(20.241386952576492rem + 50px) !important;
+  }
+  .A-absolutely.n4 {
+    height: calc(17.378664648348478rem + 50px) !important;
+    min-height: calc(17.378664648348478rem + 50px) !important;
+  }
+  .A-absolutely.n5 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     height: calc(17.698138770526421rem + 50px) !important;
     min-height: calc(17.698138770526421rem + 50px) !important;
   }
 }
 //(max-width: 689px)
 @media only screen and (max-width: 689px) {
+<<<<<<< HEAD
   .ruj.n1 {
     height: calc(18.149552165998754rem + 50px) !important;
     min-height: calc(18.149552165998754rem + 50px) !important;
@@ -517,12 +664,32 @@ ul {
     min-height: calc(17.339606230726655rem + 50px) !important;
   }
   .ruj.n5 {
+=======
+  .A-absolutely.n1 {
+    height: calc(18.149552165998754rem + 50px) !important;
+    min-height: calc(18.149552165998754rem + 50px) !important;
+  }
+  .A-absolutely.n2 {
+    height: calc(19.227248823674854rem + 50px) !important;
+    min-height: calc(19.227248823674854rem + 50px) !important;
+  }
+  .A-absolutely.n3 {
+    height: calc(20.202447157930672rem + 50px) !important;
+    min-height: calc(20.202447157930672rem + 50px) !important;
+  }
+  .A-absolutely.n4 {
+    height: calc(17.339606230726655rem + 50px) !important;
+    min-height: calc(17.339606230726655rem + 50px) !important;
+  }
+  .A-absolutely.n5 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     height: calc(17.669692668190336rem + 50px) !important;
     min-height: calc(17.669692668190336rem + 50px) !important;
   }
 }
 //(max-width: 556px)
 @media only screen and (max-width: 556px) {
+<<<<<<< HEAD
   .ruj.n1 {
     height: calc(18.301326521674624rem + 50px) !important;
     min-height: calc(18.301326521674624rem + 50px) !important;
@@ -540,12 +707,32 @@ ul {
     min-height: calc(17.088044502201336rem + 50px) !important;
   }
   .ruj.n5 {
+=======
+  .A-absolutely.n1 {
+    height: calc(18.301326521674624rem + 50px) !important;
+    min-height: calc(18.301326521674624rem + 50px) !important;
+  }
+  .A-absolutely.n2 {
+    height: calc(18.683856690613532rem + 50px) !important;
+    min-height: calc(18.683856690613532rem + 50px) !important;
+  }
+  .A-absolutely.n3 {
+    height: calc(19.509245968686152rem + 50px) !important;
+    min-height: calc(19.509245968686152rem + 50px) !important;
+  }
+  .A-absolutely.n4 {
+    height: calc(17.088044502201336rem + 50px) !important;
+    min-height: calc(17.088044502201336rem + 50px) !important;
+  }
+  .A-absolutely.n5 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     height: calc(17.453593191678003rem + 50px) !important;
     min-height: calc(17.453593191678003rem + 50px) !important;
   }
 }
 //(max-width: 532px)
 @media only screen and (max-width: 532px) {
+<<<<<<< HEAD
   .ruj.n1 {
     height: calc(18.169548150306488rem + 50px) !important;
     min-height: calc(18.169548150306488rem + 50px) !important;
@@ -563,12 +750,32 @@ ul {
     min-height: calc(17.019880517816455rem + 50px) !important;
   }
   .ruj.n5 {
+=======
+  .A-absolutely.n1 {
+    height: calc(18.169548150306488rem + 50px) !important;
+    min-height: calc(18.169548150306488rem + 50px) !important;
+  }
+  .A-absolutely.n2 {
+    height: calc(18.592133576810104rem + 50px) !important;
+    min-height: calc(18.592133576810104rem + 50px) !important;
+  }
+  .A-absolutely.n3 {
+    height: calc(19.39929888824742rem + 50px) !important;
+    min-height: calc(19.39929888824742rem + 50px) !important;
+  }
+  .A-absolutely.n4 {
+    height: calc(17.019880517816455rem + 50px) !important;
+    min-height: calc(17.019880517816455rem + 50px) !important;
+  }
+  .A-absolutely.n5 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     height: calc(17.291801118810752rem + 50px) !important;
     min-height: calc(17.291801118810752rem + 50px) !important;
   }
 }
 //(max-width: 524px)
 @media only screen and (max-width: 524px) {
+<<<<<<< HEAD
   .ruj.n1 {
     height: calc(16.880773892926396rem + 50px) !important;
     min-height: calc(16.880773892926396rem + 50px) !important;
@@ -586,12 +793,32 @@ ul {
     min-height: calc(15.227455534413919rem + 50px) !important;
   }
   .ruj.n5 {
+=======
+  .A-absolutely.n1 {
+    height: calc(16.880773892926396rem + 50px) !important;
+    min-height: calc(16.880773892926396rem + 50px) !important;
+  }
+  .A-absolutely.n2 {
+    height: calc(17.507753649658251rem + 50px) !important;
+    min-height: calc(17.507753649658251rem + 50px) !important;
+  }
+  .A-absolutely.n3 {
+    height: calc(18.474574607865052rem + 50px) !important;
+    min-height: calc(18.474574607865052rem + 50px) !important;
+  }
+  .A-absolutely.n4 {
+    height: calc(15.227455534413919rem + 50px) !important;
+    min-height: calc(15.227455534413919rem + 50px) !important;
+  }
+  .A-absolutely.n5 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     height: calc(15.948936587812604rem + 50px) !important;
     min-height: calc(15.948936587812604rem + 50px) !important;
   }
 }
 //(max-width: 456px)
 @media only screen and (max-width: 456px) {
+<<<<<<< HEAD
   .ruj.n1 {
     height: calc(16.887199062472916rem + 50px) !important;
     min-height: calc(16.887199062472916rem + 50px) !important;
@@ -609,12 +836,32 @@ ul {
     min-height: calc(15.407240211169686rem + 50px) !important;
   }
   .ruj.n5 {
+=======
+  .A-absolutely.n1 {
+    height: calc(16.887199062472916rem + 50px) !important;
+    min-height: calc(16.887199062472916rem + 50px) !important;
+  }
+  .A-absolutely.n2 {
+    height: calc(17.359636595209116rem + 50px) !important;
+    min-height: calc(17.359636595209116rem + 50px) !important;
+  }
+  .A-absolutely.n3 {
+    height: calc(18.558864868734904rem + 50px) !important;
+    min-height: calc(18.558864868734904rem + 50px) !important;
+  }
+  .A-absolutely.n4 {
+    height: calc(15.407240211169686rem + 50px) !important;
+    min-height: calc(15.407240211169686rem + 50px) !important;
+  }
+  .A-absolutely.n5 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     height: calc(16.133088903040557rem + 50px) !important;
     min-height: calc(16.133088903040557rem + 50px) !important;
   }
 }
 //(max-width: 419px)
 @media only screen and (max-width: 419px) {
+<<<<<<< HEAD
   .ruj.n1 {
     height: calc(16.985150868045793rem + 50px) !important;
     min-height: calc(16.985150868045793rem + 50px) !important;
@@ -632,12 +879,32 @@ ul {
     min-height: calc(15.06118015392727rem + 50px) !important;
   }
   .ruj.n5 {
+=======
+  .A-absolutely.n1 {
+    height: calc(16.985150868045793rem + 50px) !important;
+    min-height: calc(16.985150868045793rem + 50px) !important;
+  }
+  .A-absolutely.n2 {
+    height: calc(16.986112132454545rem + 50px) !important;
+    min-height: calc(16.986112132454545rem + 50px) !important;
+  }
+  .A-absolutely.n3 {
+    height: calc(18.813956405697799rem + 50px) !important;
+    min-height: calc(18.813956405697799rem + 50px) !important;
+  }
+  .A-absolutely.n4 {
+    height: calc(15.06118015392727rem + 50px) !important;
+    min-height: calc(15.06118015392727rem + 50px) !important;
+  }
+  .A-absolutely.n5 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     height: calc(15.807601967323739rem + 50px) !important;
     min-height: calc(15.807601967323739rem + 50px) !important;
   }
 }
 //(max-width: 398px)
 @media only screen and (max-width: 398px) {
+<<<<<<< HEAD
   .ruj.n1 {
     height: calc(16.485248280335676rem + 50px) !important;
     min-height: calc(16.485248280335676rem + 50px) !important;
@@ -655,12 +922,35 @@ ul {
     min-height: calc(14.945257636009815rem + 50px) !important;
   }
   .ruj.n5 {
+=======
+  .A-absolutely.n1 {
+    height: calc(16.485248280335676rem + 50px) !important;
+    min-height: calc(16.485248280335676rem + 50px) !important;
+  }
+  .A-absolutely.n2 {
+    height: calc(16.309707824825213rem + 50px) !important;
+    min-height: calc(16.309707824825213rem + 50px) !important;
+  }
+  .A-absolutely.n3 {
+    height: calc(17.806421182335476rem + 50px) !important;
+    min-height: calc(17.806421182335476rem + 50px) !important;
+  }
+  .A-absolutely.n4 {
+    height: calc(14.945257636009815rem + 50px) !important;
+    min-height: calc(14.945257636009815rem + 50px) !important;
+  }
+  .A-absolutely.n5 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     height: calc(15.733974031682864rem + 50px) !important;
     min-height: calc(15.733974031682864rem + 50px) !important;
   }
 }
 
+<<<<<<< HEAD
 .u08 {
+=======
+.help-enabler {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   flex-grow: 1;
   font-family: 'AtkinsonHyperlegibleBold';
   font-size: 26.647101746392745px;
@@ -677,10 +967,18 @@ ul {
   user-select: none;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .u08 + .u08 {
   margin-right: 0px;
 }
 .u08:nth-child(2) {
   animation: s8z $dur $timing infinite;
+=======
+.help-enabler + .help-enabler {
+  margin-right: 0px;
+}
+.help-enabler:nth-child(2) {
+  animation: glow-text-glow $dur $timing infinite;
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
 }
 </style>

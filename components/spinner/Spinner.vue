@@ -3,7 +3,11 @@
     id="nav"
     :class="{ 'activenav' : (page === 'about') }"
   >
+<<<<<<< HEAD
     <div :class="{ 'activechild' : (page === 'about') }" id="wl1">
+=======
+    <div :class="{ 'activechild' : (page === 'about') }" id="spinner-container">
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       <transition name="list" tag="div">
         <div
           class="circ"
@@ -15,6 +19,7 @@
             @mouseleave="$store.dispatch('toggleCuttage')"
           >
             <div
+<<<<<<< HEAD
               v-if="page === 'about'" class="g2b"
             />
             <div
@@ -22,12 +27,21 @@
             />
           </div>
           <transition name="o64" mode="out-in">
+=======
+              v-if="page === 'about'" class="spinner-2"
+            />
+            <div
+              v-else class="spinner-1"
+            />
+          </div>
+          <transition name="appearing" mode="out-in">
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             <div v-if="toggleCuttage" id="consultancy">
               <p>
                 A Consultancy part of
               </p>
               <p>
-                <img src="~assets/svg/CuttageLogo.svg"></img> Group
+                <img src="~assets/svg/Cuttage-logo.svg"></img> Group
               </p>
             </div>
           </transition>
@@ -43,11 +57,11 @@
 </template>
 
 <script>
-import styles from '~/assets/scss/styles.scss'
+import mainpage from '~/assets/scss/mainpage.scss'
 
 export default {
   assets: {
-    styles
+    mainpage
   },
   computed: {
     toggleCuttage() {
@@ -65,6 +79,7 @@ $d: 60px;
 $c: rgba(0, 169, 157, 0.9);
 $m: rgba(210, 85, 147, 0.9);
 
+<<<<<<< HEAD
 .o64 {
   backface-visibility: hidden;
 }
@@ -80,6 +95,23 @@ $m: rgba(210, 85, 147, 0.9);
   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 .o64-enter, .o64-leave-to {
+=======
+.appearing {
+  backface-visibility: hidden;
+}
+.appearing-enter-to,
+.appearing-leave{
+  opacity: 1;
+}
+.appearing-enter-active {
+  transition: all .4s;
+  transition-delay: 800ms;
+}
+.appearing-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.appearing-enter, .appearing-leave-to {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   transform: translateX(-10px);
   transition-delay: 1500ms;
   opacity: 0;
@@ -130,13 +162,13 @@ ul {
   list-style: none;
   li {
     z-index: 997;
-    animation: xAx 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+    animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
     list-style: none;
     position: absolute;
     width: $d - 5px; height: $d - 5px;
     bottom: 104.28px !important;
     right: 32px !important;
-    animation: ar 22.5s infinite linear;
+    animation: aura 22.5s infinite linear;
     filter: blur(4.28px);
     &:nth-child(2) {
       will-change: transform;
@@ -162,33 +194,42 @@ li::after {
   bottom: 104.28px !important;
   right: 32px !important;
   border-radius: 10%;
-  animation: yAx 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  animation: yAxis 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
   backface-visibility: hidden;
   will-change: transform;
 }
 
+<<<<<<< HEAD
 .7ip::after,
 .g2b::after {
+=======
+.spinner-1::after,
+.spinner-2::after {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   backface-visibility: hidden !important;
   content: '';
   display: flex;
 }
 
-@keyframes yAx {
+@keyframes yAxis {
   50% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
     transform: translateY(-10px);
   }
 }
 
-@keyframes xAx {
+@keyframes xAxis {
   50% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
     transform: translateX(10px);
   }
 }
 
+<<<<<<< HEAD
 .7ip {
+=======
+.spinner-1 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
 	&, &:before {
     backface-visibility: hidden !important;
     width: $d; height: $d;
@@ -201,10 +242,14 @@ li::after {
   bottom: 98.5px !important;
   right: 26.429333333333333px !important;
 	box-sizing: border-box;
-	background: url('~assets/svg/LogoIndex.svg') 50%/ cover padding-box !important;
+	background: url('~assets/svg/Logo-index.svg') 50%/ cover padding-box !important;
 }
 
+<<<<<<< HEAD
 .g2b {
+=======
+.spinner-2 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
 	&, &:before {
     backface-visibility: hidden !important;
     width: $d; height: $d;
@@ -217,10 +262,10 @@ li::after {
   bottom: 98.5px !important;
   right: 26.429333333333333px !important;
 	box-sizing: border-box;
-	background: url('~assets/svg/LogoAbout.svg') 50%/ cover padding-box !important;
+	background: url('~assets/svg/Logo-about.svg') 50%/ cover padding-box !important;
 }
 
-@keyframes ar {
+@keyframes aura {
   25%,
   75% {
     border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;

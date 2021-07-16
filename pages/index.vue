@@ -1,39 +1,54 @@
 <template>
   <div>
     <None class="g2-bk-desk" />
+<<<<<<< HEAD
     <div class="jvn">
+=======
+    <div class="web-container-bottom-view">
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       <Homepage1Dialog
         v-if="isHomepage1DialogActive"
-        class="ayt"
+        class="absolutely"
       />
       <Homepage2Dialog
         v-if="isHomepage2DialogActive"
-        class="ayt"
+        class="absolutely"
       />
       <Homepage3Dialog
         v-if="isHomepage3DialogActive"
-        class="ayt"
+        class="absolutely"
       />
       <Homepage4Dialog
         v-if="isHomepage4DialogActive"
-        class="ayt"
+        class="absolutely"
       />
       <Homepage5Dialog
         v-if="isHomepage5DialogActive"
-        class="ayt"
+        class="absolutely"
       />
 
+<<<<<<< HEAD
       <div class="3al">
+=======
+      <div class="container-test">
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
         <div class="item item1" @mouseover="toggleHomepage1Dialog" />
         <div class="item item2" @mouseover="toggleHomepage2Dialog" />
         <div class="item item3" @mouseover="toggleHomepage3Dialog" />
         <div class="item item4" @mouseover="toggleHomepage4Dialog" />
         <div class="item item5" @mouseover="toggleHomepage5Dialog" />
       </div>
+<<<<<<< HEAD
       <div class="dsu" />
       <div class="5gm do3">
         <div class="i-v 55w">
           <vue-next-level-scroll target="#efz1">
+=======
+      <div class="nonvisible-c" />
+      <div class="container-test-variant overflow-cts">
+        <div class="item-variant item-variant-1">
+          <vue-next-level-scroll target="#my-target1">
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             <HomepageMenu1Scrollto
               v-if="isHomepage1DialogActive"
               class="app-links"
@@ -64,47 +79,77 @@
             />
           </vue-next-level-scroll>
         </div>
+<<<<<<< HEAD
         <div class="i-v txl">
           <span class="pb2">We use art for experiential marketing.</span>
           <vue-next-level-scroll target=".efz6">
             <span
               v-if="isHomepage1DialogActive"
               class="gvx"
+=======
+        <div class="item-variant item-variant-2">
+          <span class="subtitle-d2">We use art for experiential marketing.</span>
+          <vue-next-level-scroll target=".my-target6">
+            <span
+              v-if="isHomepage1DialogActive"
+              class="subtitle-d2-variant"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             >Tell me more</span>
           </vue-next-level-scroll>
           <vue-next-level-scroll target=".efz7">
             <span
               v-if="isHomepage2DialogActive"
+<<<<<<< HEAD
               class="gvx"
+=======
+              class="subtitle-d2-variant"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             >Tell me more</span>
           </vue-next-level-scroll>
           <vue-next-level-scroll target=".efz8">
             <span
               v-if="isHomepage3DialogActive"
+<<<<<<< HEAD
               class="gvx"
+=======
+              class="subtitle-d2-variant"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             >Tell me more</span>
           </vue-next-level-scroll>
           <vue-next-level-scroll target=".efz9">
             <span
               v-if="isHomepage4DialogActive"
+<<<<<<< HEAD
               class="gvx"
+=======
+              class="subtitle-d2-variant"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             >Tell me more</span>
           </vue-next-level-scroll>
           <vue-next-level-scroll target=".efz10">
             <span
               v-if="isHomepage5DialogActive"
+<<<<<<< HEAD
               class="gvx"
+=======
+              class="subtitle-d2-variant"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             >Tell me more</span>
           </vue-next-level-scroll>
           <nuxt-link exact to="/about">
             <span
+<<<<<<< HEAD
               class="hv7"
+=======
+              class="subtitle-d2-variant-2"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             >| Understood</span>
           </nuxt-link>
         </div>
       </div>
       <Homepage1Scrollto
         v-if="isHomepage1DialogActive"
+<<<<<<< HEAD
         id="efz1"
         class="yvh efz6"
       />
@@ -127,6 +172,30 @@
         v-if="isHomepage5DialogActive"
         id="efz5"
         class="yvh efz10"
+=======
+        id="my-target1"
+        class="absolutely-var my-target6"
+      />
+      <Homepage2Scrollto
+        v-if="isHomepage2DialogActive"
+        id="my-target2"
+        class="absolutely-var my-target7"
+      />
+      <Homepage3Scrollto
+        v-if="isHomepage3DialogActive"
+        id="my-target3"
+        class="absolutely-var my-target8"
+      />
+      <Homepage4Scrollto
+        v-if="isHomepage4DialogActive"
+        id="my-target4"
+        class="absolutely-var my-target9"
+      />
+      <Homepage5Scrollto
+        v-if="isHomepage5DialogActive"
+        id="my-target5"
+        class="absolutely-var my-target10"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       />
     </div>
   </div>
@@ -139,7 +208,7 @@ import Homepage2Dialog from '~/components/homepage/Homepage2Dialog.vue'
 import Homepage3Dialog from '~/components/homepage/Homepage3Dialog.vue'
 import Homepage4Dialog from '~/components/homepage/Homepage4Dialog.vue'
 import Homepage5Dialog from '~/components/homepage/Homepage5Dialog.vue'
-import Form from '~/components/Form.vue'
+import MyForm from '~/components/MyForm.vue'
 import Homepage5Scrollto from '~/components/Homepage5Scrollto.vue'
 import Homepage4Scrollto from '~/components/Homepage4Scrollto.vue'
 import Homepage3Scrollto from '~/components/Homepage3Scrollto.vue'
@@ -169,7 +238,7 @@ export default {
   components: {
     None,
     Homepage5Scrollto,
-    Form,
+    MyForm,
     Homepage1Dialog,
     Homepage2Dialog,
     Homepage3Dialog,
@@ -249,11 +318,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/scss/homestyle.scss';
+@import '~/assets/scss/homecta.scss';
 $primary: #D25593;
 $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
+<<<<<<< HEAD
 .jvn {
+=======
+.web-container-bottom-view {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   display: block;
   visibility: visible;
 }
@@ -262,18 +335,22 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
+<<<<<<< HEAD
   .jvn {
+=======
+  .web-container-bottom-view {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     display: none;
     visibility: hidden;
   }
 }
 
-.svt {
+.spinnervariant {
   position: absolute;
   top: 140vh;
 }
 
-.ayt {
+.absolutely {
   position: absolute;
   top: 0;
   width: 100vw;
@@ -285,7 +362,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 @media only screen and (min-width: 525px) {
-  .ayt {
+  .absolutely {
     &:hover {
       cursor: default;
       background-color: blue;
@@ -295,14 +372,22 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 
 @media only screen and (min-height: 821px) {
   @media only screen and (min-width: 525px) {
+<<<<<<< HEAD
     .yvh {
+=======
+    .absolutely-var {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
+<<<<<<< HEAD
   .yvh {
+=======
+  .absolutely-var {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     position: absolute;
     top: 95vh;
     width: 100vw;
@@ -317,7 +402,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 65vh;
     }
+<<<<<<< HEAD
     .dsu {
+=======
+    .nonvisible-c {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       display: none;
     }
   }
@@ -328,34 +417,54 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 45.5vh;
     }
+<<<<<<< HEAD
     .dsu {
+=======
+    .nonvisible-c {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       display: flex;
       width: 100%;
       height: 19.5vh;
     }
   }
+<<<<<<< HEAD
   .5gm {
+=======
+  .container-test-variant {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     display: flex;
     flex-direction: row;
     height: 25vh;
     margin-top: 5vh;
     align-self: center;
   }
+<<<<<<< HEAD
   .do3 {
+=======
+  .overflow-cts {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     overflow: visible;
   }
 }
 
 @media only screen and (max-height: 820px) {
   @media only screen and (min-width: 525px) {
+<<<<<<< HEAD
     .yvh {
+=======
+    .absolutely-var {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
+<<<<<<< HEAD
   .yvh {
+=======
+  .absolutely-var {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     position: absolute;
     top: 779.94px;
     width: 100vw;
@@ -371,7 +480,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 533.64px;
     }
+<<<<<<< HEAD
     .dsu {
+=======
+    .nonvisible-c {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       display: none;
     }
   }
@@ -382,25 +495,41 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 373.548px;
     }
+<<<<<<< HEAD
     .dsu {
+=======
+    .nonvisible-c {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       display: flex;
       width: 100%;
       height: 160.092px;
     }
   }
+<<<<<<< HEAD
   .5gm {
+=======
+  .container-test-variant {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     display: flex;
     flex-direction: row;
     height: 205.25px;
     margin-top: 41.05px;
     align-self: center;
   }
+<<<<<<< HEAD
   .do3 {
+=======
+  .overflow-cts {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     overflow: visible;
   }
 }
 
+<<<<<<< HEAD
 .3al {
+=======
+.container-test {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   display: flex;
 }
 
@@ -408,11 +537,19 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   margin-left: 0;
 }
 
+<<<<<<< HEAD
 .i-v { margin-left: 5%; }
 .55w { margin-left: 15%; }
 .txl { height: 100%; max-width: 41%; }
 
 .pb2 {
+=======
+.item-variant { margin-left: 5%; }
+.item-variant-1 { margin-left: 15%; }
+.item-variant-2 { height: 100%; max-width: 41%; }
+
+.subtitle-d2 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   font-family: 'Barlow', sans-serif;
   font-weight: 560;
   font-size: 1.007793231094659em;
@@ -423,7 +560,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   cursor: default !important;
 }
 
+<<<<<<< HEAD
 .gvx {
+=======
+.subtitle-d2-variant {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   margin-left: 0.064526909722222em;
   line-height: 2.905em;
   position: relative;
@@ -436,7 +577,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
+<<<<<<< HEAD
 .hv7 {
+=======
+.subtitle-d2-variant-2 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   margin-left: 0.064526909722222em;
   display: inline-block;
   position: relative;

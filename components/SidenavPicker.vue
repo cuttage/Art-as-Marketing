@@ -3,21 +3,21 @@
 </template>
 
 <script>
-import SideNav from '~/components/SideNav.vue'
-import SideNavPor from '~/components/SideNavPor.vue'
+import TheSideNav from '~/components/TheSideNav.vue'
+import TheSideNavPortfolio from '~/components/TheSideNavPortfolio.vue'
 import { mapState } from 'vuex'
 export default {
-  name: 'SideNavPicker',
+  name: 'SidenavPicker',
   components: {
-    SideNav,
-    SideNavPor
+    TheSideNav,
+    TheSideNavPortfolio
   },
   computed: {
     ...mapState({
       page: 'page'
     }),
     pickSN() {
-      return (this.page === 'portfolio' || this.page === 'portfolio-id') ? 'SideNavPor' : 'SideNav'
+      return (this.page === 'portfolio' || this.page === 'portfolio-id') ? 'TheSideNavPortfolio' : 'TheSideNav'
     }
   }
 }

@@ -1,6 +1,11 @@
 <template>
+<<<<<<< HEAD
   <div class="j86">
     <div class="uh0">🚧<br/>Rotate your device to view the page</div>
+=======
+  <div class="no-vis-text-cont">
+    <div class="no-vis-text">🚧<br/>Rotate your device to view the page</div>
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   </div>
 </template>
 
@@ -11,11 +16,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+<<<<<<< HEAD
 .j86 {
   display: none;
   visibility: hidden;
 }
 .uh0 {
+=======
+.no-vis-text-cont {
+  display: none;
+  visibility: hidden;
+}
+.no-vis-text {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   display: none;
   visibility: hidden;
 }
@@ -29,14 +42,22 @@ only screen and (max-width: 460px) and (max-resolution: 1.6687500000dppx), // li
 only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.6687500000),
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape) {
+<<<<<<< HEAD
   .j86 {
+=======
+  .no-vis-text-cont {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     display: flex;
     visibility: visible;
     width: 100vw;
     height: 100vh;
     justify-content: center;
   }
+<<<<<<< HEAD
   .uh0 {
+=======
+  .no-vis-text {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     display: flex;
     visibility: visible;
     width: auto;
@@ -51,14 +72,22 @@ only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2
 }
 
 @media only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
+<<<<<<< HEAD
   .j86 {
+=======
+  .no-vis-text-cont {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     display: flex;
     visibility: visible;
     width: 100vw;
     height: 100vh;
     justify-content: center;
   }
+<<<<<<< HEAD
   .uh0 {
+=======
+  .no-vis-text {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     display: flex;
     visibility: visible;
     width: auto;

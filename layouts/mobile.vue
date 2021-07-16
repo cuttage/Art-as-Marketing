@@ -1,38 +1,66 @@
 <template>
   <my-layout>
+<<<<<<< HEAD
     <div class="3wp">
+=======
+    <div class="archive">
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
       <article class="article">
         <nuxt />
       </article>
       <article class="article">
         <div v-if="page === 'touch'">
+<<<<<<< HEAD
           <SpinnerMob class="k7m" :is="asyncComp"></SpinnerMob>
+=======
+          <SpinnerMob class="touch-show-whatspinner2" :is="asyncComp"></SpinnerMob>
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
         </div>
       </article>
       <article class="article">
         <SpinnerMob
           v-if="page === 'touch'"
+<<<<<<< HEAD
           class="csz"
         />
         <SpinnerMob
           v-else-if="page === 'touchabout'"
           class="7on"
+=======
+          class="hide-spinner"
+        />
+        <SpinnerMob
+          v-else-if="page === 'touchabout'"
+          class="show-whatspinner2"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
           :is="asyncComp"
         />
         <SpinnerMob
           v-else
+<<<<<<< HEAD
           class="3cm"
+=======
+          class="show-whatspinner"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
           :is="asyncComp"
         />
       </article>
       <article class="article">
-        <ArticleWidgetMobInd
+        <MartaMob
           v-if="page === 'touch'"
+<<<<<<< HEAD
           class="puj"
+=======
+          class="marta-no-gap"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
         />
-        <ArticleWidgetMob
+        <MartaMobMobile
           v-else
+<<<<<<< HEAD
           class="iob"
+=======
+          class="marta-gap-bottom"
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
         />
       </article>
     </div>
@@ -40,7 +68,7 @@
 </template>
 
 <script>
-import myLayout from "~/components/Layout_0Mob.vue"
+import myLayout from "~/components/layout_0Mob.vue"
 
 export default {
   name: 'mobile',
@@ -50,8 +78,8 @@ export default {
   components: {
     myLayout,
     SpinnerMob: () => import('~/components/spinner/SpinnerMob.vue'),
-    ArticleWidgetMobInd: () => import('~/components/awidget/ArticleWidgetMobInd.vue'),
-    ArticleWidgetMob: () => import('~/components/awidget/ArticleWidgetMob.vue')
+    MartaMob: () => import('~/components/marta/test.vue'),
+    MartaMobMobile: () => import('~/components/marta/MartaMobMobile.vue')
   },
   computed: {
     page() {
@@ -228,29 +256,49 @@ body {
   pointer-events: all;
 }
 
+<<<<<<< HEAD
 .b16 {
+=======
+.ParallaxCardCopyMob {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   opacity: 1;
   visibility: visible;
   display: flex;
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .csz {
   display: none !important;
 }
 
 .3cm {
+=======
+.hide-spinner {
+  display: none !important;
+}
+
+.show-whatspinner {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   margin-bottom: calc(9.296188183807424vw + (2em - 9.296188183807424vw));
   visibility: visible;
   display: block;
 }
 
+<<<<<<< HEAD
 .7on {
   margin-top: calc(-1 * ((3em) / 2));
 }
 
 .k7m {
+=======
+.show-whatspinner2 {
+  margin-top: calc(-1 * ((3em) / 2));
+}
+
+.touch-show-whatspinner2 {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   margin-top: calc(-1 * ((3em) / 2) - 12px);
 }
 
@@ -264,7 +312,11 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
+<<<<<<< HEAD
   .3cm {
+=======
+  .show-whatspinner {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     margin-bottom: 0;
     visibility: hidden;
     display: none;
@@ -272,7 +324,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
+<<<<<<< HEAD
 .3wp {
+=======
+.archive {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   display: grid;
   grid-template-columns: repeat(1, minmax(280px, 2732px));
   justify-content: center;
@@ -280,12 +336,20 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   grid-auto-flow: dense;
 }
 
+<<<<<<< HEAD
 .puj {
+=======
+.marta-no-gap {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   margin-top: -1em;
   margin-bottom: 2em !important;
 }
 
+<<<<<<< HEAD
 .iob {
+=======
+.marta-gap-bottom {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   margin-bottom: 2em !important;
 }
 </style>

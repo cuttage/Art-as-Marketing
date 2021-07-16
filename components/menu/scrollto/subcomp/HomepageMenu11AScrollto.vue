@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
   <div class="yjb">
+=======
+  <div class="longer">
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     <div class="disable">
       <Homepage11AScrolltoShared id="child" class="child" />
     </div>
@@ -18,10 +22,14 @@ export default {
 </script>
 
 <style exact lang="scss" scoped>
-@import '~/assets/scss/homestyle.scss';
+@import '~/assets/scss/homecta.scss';
 
 $primary: #D25593;
+<<<<<<< HEAD
 .yjb {
+=======
+.longer {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   padding-top: 16px;
   display: flex;
   padding-bottom: 6px;
@@ -80,7 +88,11 @@ $primary: #D25593;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+<<<<<<< HEAD
 .yjb:hover div {
+=======
+.longer:hover div {
+>>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
   text-shadow: none !important;
 }
 
