@@ -1,13 +1,7 @@
 <template>
-<<<<<<< HEAD
-  <nav class="jq4">
-    <div class="9sn">
-      <transition name="o64" mode="out-in">
-=======
-  <nav class="nav-wraper">
-    <div class="transition-wrapper">
-      <transition name="appearing" mode="out-in">
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  <nav class="n-wrpr">
+    <div class="t-wrpr">
+      <transition name="apng" mode="out-in">
         <div v-if="getToggleCuttage" id="consultancy">
           <p>
             A Consultancy part of Cuttage Group
@@ -15,22 +9,16 @@
         </div>
       </transition>
     </div>
-<<<<<<< HEAD
-    <div class="wo2">
-      <div id="wl1" @click="toggleImage">
-        <Cake class="r9z"></Cake>
-=======
-    <div class="spinner-wrapper">
-      <div id="spinner-container" @click="toggleImage">
-        <ParallaxCardCopyAlt class="parallaxcardcopy"></ParallaxCardCopyAlt>
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+    <div class="s-wrpr">
+      <div id="s-cntnr" @click="toggleImage">
+        <PxccAlt class="Pxcc"></PxccAlt>
       </div>
     </div>
   </nav>
 </template>
 
 <script>
-import mainpage from '~/assets/scss/mainpage.scss'
+import styles from '~/assets/scss/styles.scss'
 import { enactC } from '~/composables/toggle-cuttage-store.js'
 import animationWaiter from '~/mixins/animation-waiter.js';
 //import 'requestidlecallback-polyfill'; //remove with safari 14
@@ -42,14 +30,10 @@ export default {
     }
   },
   components: {
-<<<<<<< HEAD
-    Cake: () => import('~/components/Cake.vue'),
-=======
-    ParallaxCardCopyAlt: () => import('~/components/ParallaxCardCopyAlt.vue'),
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+    PxccAlt: () => import('~/components/PxccAlt.vue'),
   },
   assets: {
-    mainpage
+    styles
   },
   setup () {
     const { toggleCuttage, getToggleCuttage } = enactC();
@@ -76,32 +60,20 @@ $d: 60px;
 $c: rgba(0, 169, 157, 0.9);
 $m: rgba(210, 85, 147, 0.9);
 
-<<<<<<< HEAD
-.r9z {
-=======
-.parallaxcardcopy {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.Pxcc {
   opacity: 1;
   visibility: visible;
   margin-right: 56px !important;
 }
 
-<<<<<<< HEAD
-.jq4 {
-=======
-.nav-wraper {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.n-wrpr {
   visibility: visible;
   display: flex;
   width: 100%;
   height: 500px;
   overflow-y: visible;
   overflow-x: hidden;
-<<<<<<< HEAD
-  .9sn {
-=======
-  .transition-wrapper {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .t-wrpr {
     flex-grow: 1;
     width: calc(10px + 54%);
     height: inherit;
@@ -111,11 +83,7 @@ $m: rgba(210, 85, 147, 0.9);
     overflow: visible;
     margin-left: 4%;
   }
-<<<<<<< HEAD
-  .wo2 {
-=======
-  .spinner-wrapper {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .s-wrpr {
     flex-grow: 1;
     width: calc(10px + 46%);
   }
@@ -131,52 +99,29 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-<<<<<<< HEAD
-  .jq4 {
-=======
-  .nav-wraper {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .n-wrpr {
     visibility: hidden;
     display: none;
     height: 0;
   }
 }
 
-<<<<<<< HEAD
-.o64 {
+.apng {
   backface-visibility: hidden;
   will-change: opacity, transform;
 }
-.o64-enter-to,
-.o64-leave {
+.apng-enter-to,
+.apng-leave {
   opacity: 1;
 }
-.o64-enter-active {
+.apng-enter-active {
   transition: all .4s;
 }
-.o64-leave-active {
+.apng-leave-active {
   transition: all .05s cubic-bezier(1.0, 0.5, 0.8, 1.0) 220ms;
   transform: rotate(0.01);
 }
-.o64-enter, .o64-leave-to {
-=======
-.appearing {
-  backface-visibility: hidden;
-  will-change: opacity, transform;
-}
-.appearing-enter-to,
-.appearing-leave {
-  opacity: 1;
-}
-.appearing-enter-active {
-  transition: all .4s;
-}
-.appearing-leave-active {
-  transition: all .05s cubic-bezier(1.0, 0.5, 0.8, 1.0) 220ms;
-  transform: rotate(0.01);
-}
-.appearing-enter, .appearing-leave-to {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.apng-enter, .apng-leave-to {
   opacity: 0;
 }
 
@@ -207,11 +152,7 @@ p {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-#wl1 {
-=======
-#spinner-container {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+#s-cntnr {
   width: 100%;
   height: 500px;
   display: flex;
@@ -219,11 +160,7 @@ p {
   justify-content: center;
 }
 
-<<<<<<< HEAD
-.2ih {
-=======
-.spinner-parenting {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.s-pg {
   display: flex;
   justify-content: center;
   align-items: center !important;
@@ -231,23 +168,14 @@ p {
   position: relative;
 }
 
-<<<<<<< HEAD
-.7ip::after,
-.g2b::after {
-=======
-.spinner-1::after,
-.spinner-2::after {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.sp-1::after,
+.sp-2::after {
   backface-visibility: hidden !important;
   content: '';
   display: flex;
 }
 
-<<<<<<< HEAD
-.g2b {
-=======
-.spinner-2 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.sp-2 {
   &, &:before {
     backface-visibility: hidden !important;
     width: $d; height: $d;
@@ -258,14 +186,10 @@ p {
   backface-visibility: hidden !important;
   position: relative;
   box-sizing: border-box;
-  background: url('~assets/svg/Logo-aboutMob.svg') 50%/ cover padding-box !important;
+  background: url('~assets/svg/LogoAboutMob.svg') 50%/ cover padding-box !important;
 }
 
-<<<<<<< HEAD
-.7ip {
-=======
-.spinner-1 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.sp-1 {
   &, &:before {
     backface-visibility: hidden !important;
     width: $d; height: $d;
@@ -276,7 +200,7 @@ p {
   backface-visibility: hidden !important;
   position: relative;
   box-sizing: border-box;
-  background: url('~assets/svg/Logo-indexMob.svg') 50%/ cover padding-box !important;
+  background: url('~assets/svg/LogoIndexMob.svg') 50%/ cover padding-box !important;
 }
 
 ul:after, ul:before {
@@ -284,14 +208,14 @@ ul:after, ul:before {
   height: inherit !important;
 }
 
-@keyframes xAxis {
+@keyframes xAx {
   50% {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
     transform: translateX(10px);
   }
 }
 
-@keyframes aura {
+@keyframes ar {
   25%,
   75% {
     border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
@@ -313,12 +237,12 @@ ul {
   list-style: none;
   li {
     z-index: 997;
-    animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+    animation: xAx 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
     list-style: none;
     position: absolute;
     width: $d; height: $d;
     top: 0;
-    animation: aura 22.5s infinite linear;
+    animation: ar 22.5s infinite linear;
     filter: blur(4.28px);
     &:nth-child(2) {
       will-change: transform;
@@ -337,7 +261,7 @@ ul {
 }
 
 
-@keyframes yAxis {
+@keyframes yAx {
   50% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
     transform: translateY(-10px);
@@ -350,7 +274,7 @@ li::after {
   background-color: rgba(255, 255, 255, 0.35);
   width: $d - 5px; height: $d - 5px;
   border-radius: 10%;
-  animation: yAxis 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  animation: yAx 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
   backface-visibility: hidden;
   will-change: transform;
 }

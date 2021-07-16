@@ -1,16 +1,16 @@
 <template>
   <span>
     <InputParentNone class="g2-bk-mob" :mob="mob" />
-    <InputBlueWraper class="g2-bk-mob" :mob="mob" :dsk="dsk" />
-    <component :is="mob ? 'receiverComponent' : 'receiverComponentDesktop'" class="g2-bk-mob" />
+    <InputWrap class="g2-bk-mob" :mob="mob" :dsk="dsk" />
+    <component :is="mob ? 'InputReceiver' : 'InputReceiverDesk'" class="g2-bk-mob" />
   </span>
 </template>
 
 <script>
 import InputParentNone from '~/components/slots/InputParentNone.vue';
-import InputBlueWraper from '~/components/slots/InputBlueWraper.vue';
-import receiverComponent from '~/components/slots/receiverComponent.vue';
-import receiverComponentDesktop from '~/components/slots/desktop/receiverComponentDesktop.vue';
+import InputWrap from '~/components/slots/InputWrap.vue';
+import InputReceiver from '~/components/slots/InputReceiver.vue';
+import InputReceiverDesk from '~/components/slots/desktop/InputReceiverDesk.vue';
 
 export default {
   head() {
@@ -35,9 +35,9 @@ export default {
   },
   components: {
     InputParentNone,
-    InputBlueWraper,
-    receiverComponent,
-    receiverComponentDesktop
+    InputWrap,
+    InputReceiver,
+    InputReceiverDesk
   },
   computed: {
     capitalize() {

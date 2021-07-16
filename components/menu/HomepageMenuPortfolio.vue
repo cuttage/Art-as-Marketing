@@ -1,9 +1,5 @@
 <template>
-<<<<<<< HEAD
-  <div class="yjb">
-=======
-  <div class="longer">
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  <div class="lngr">
     <nuxt-link exact to="/portfolio" class="disable">
       <Homepage id="child" class="child" />
     </nuxt-link>
@@ -24,11 +20,7 @@ export default {
 
 <style exact lang="scss" scoped>
 $primary: #D25593;
-<<<<<<< HEAD
-.yjb {
-=======
-.longer {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.lngr {
   padding-top: 6px;
   display: flex;
   padding-bottom: 6px;
@@ -93,11 +85,7 @@ $primary: #D25593;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-<<<<<<< HEAD
-.yjb:hover div {
-=======
-.longer:hover div {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.lngr:hover div {
   background-color: yellow !important;
   text-shadow: none !important;
 }

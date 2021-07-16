@@ -1,30 +1,16 @@
 <template>
   <!--eslint-disable-->
-<<<<<<< HEAD
-  <div class="vt0">
-    <div class="day ocp bxh">
+  <div class="cntnr">
+    <div class="day c-d1 deca1">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="brm cp0">Art as Marketing
-            <div class="i37 tI">High-Quality Company</div>
-            <div class="i4w tI iy6">Stand-out competition & level-up by</br>marking lasting customer relationships.</div>
-            <div class="mzu tI">With a human, quality, memorable, original</br>experience.</div>
-            <div class="k9k l09">
-              <div class="84x tI y8i">(Read pioneering research:</div>
-              <div class="waz tI e8x">How tailoring increases customer awareness)</div>
-=======
-  <div class="container">
-    <div class="day container-d1 deca1">
-      <div class="declaration declaration1">
-        <div class="text">
-          <div id="target-d1 tI" class="title-dialog-d1 title-dialog-d1-nowrap">Art as Marketing
-            <div class="subtitle-d1 tI">High-Quality Company</div>
-            <div class="subtitle2-d1 tI subtitle2-d1-business">Stand-out competition & level-up by</br>marking lasting customer relationships.</div>
-            <div class="subtitle33-d1 tI">With a human, quality, memorable, original</br>experience.</div>
-            <div class="container-dialog-subtitle4-subtitle5-d1 container-dialog-subtitle4-subtitle5-d1-nrp">
-              <div class="subtitle4-d1 tI subtitle4-d1-business">(Read pioneering research:</div>
-              <div class="subtitle5-d1 tI subtitle5-d1-business">How tailoring increases customer awareness)</div>
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+          <div id="target-d1 tI" class="ttl-d-d1 ttl-d-d1-nwrp">Art as Marketing
+            <div class="sbttl-d1 tI">High-Quality Company</div>
+            <div class="sbttl2-d1 tI s2-d1-bsnss">Stand-out competition & level-up by</br>marking lasting customer relationships.</div>
+            <div class="s33-d1 tI">With a human, quality, memorable, original</br>experience.</div>
+            <div class="c-d-s4-s5-d1 c-d-s4-s5-d1-nrp">
+              <div class="s4-d1 tI s4-d1-bsnss">(Read pioneering research:</div>
+              <div class="s5-d1 tI s5-d1-bsnss">How tailoring increases customer awareness)</div>
             </div>
           </div>
         </div>

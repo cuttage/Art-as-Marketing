@@ -2,19 +2,11 @@
   <!--eslint-disable-->
   <div>
     <NoneMob class="g2-bk-mob" />
-<<<<<<< HEAD
-    <div class="6lw">
-      <footer class="fv6">Hover over the cards</footer>
+    <div class="w-c-b-v-mob">
+      <footer class="h-c-c">Hover over the cards</footer>
 
-      <div class="xr6">
+      <div class="c-crd">
         <Cards
-=======
-    <div class="web-container-bottom-view-mob">
-      <footer class="Hover-croll-card">Hover over the cards</footer>
-
-      <div class="container-card">
-        <DepthCard
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
             v-for="article in this.$store.state.articleList"
             v-bind="article"
             :key="article.id"
@@ -40,17 +32,13 @@ export default {
   layout: ({ isMobile }) => isMobile ? 'mobile' : 'default',
   components: {
     NoneMob,
-    DepthCard: () => import('~/components/DepthCard.vue')
+    Cards: () => import('~/components/Cards.vue')
   }
 }
 </script>
 
 <style scoped>
-<<<<<<< HEAD
-.6lw {
-=======
-.web-container-bottom-view-mob {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.w-c-b-v-mob {
   display: block;
   visibility: visible;
 }
@@ -65,39 +53,23 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-<<<<<<< HEAD
-  .6lw {
-=======
-  .web-container-bottom-view-mob {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .w-c-b-v-mob {
     display: none;
     visibility: hidden;
   }
 }
 
-<<<<<<< HEAD
-.0lq {
+.n-l-n {
   position: absolute;
   bottom: 100px;
 }
-.xr6 {
-=======
-.nuxt-link-name {
-  position: absolute;
-  bottom: 100px;
-}
-.container-card {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.c-crd {
   display: flex;
   align-items: center !important;
   padding: 60px 0 60px 0;
 }
 
-<<<<<<< HEAD
-.xr6 {
-=======
-.container-card {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.c-crd {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -106,20 +78,12 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 @media only screen and (max-width: 398px) {
-<<<<<<< HEAD
-  .xr6 {
-=======
-  .container-card {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .c-crd {
     padding: 40px 0 0 0;
   }
 }
 
-<<<<<<< HEAD
-.fv6 {
-=======
-.Hover-croll-card {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.h-c-c {
   font-family: 'DIN Medium', sans-serif;
   font-size: 24px;
   font-weight: 700;

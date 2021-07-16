@@ -1,64 +1,36 @@
 <template>
   <my-layout>
     <div :class="(page === 'portfolio' || page === 'portfolio-id') ? content : null">
-<<<<<<< HEAD
-      <div :class="(page === 'portfolio' || page === 'portfolio-id') ? 3wp : null">
+      <div :class="(page === 'portfolio' || page === 'portfolio-id') ? rchv : null">
         <Spinner
           v-if="page !== 'index' && page !== 'portfolio' && page !== 'portfolio-id' && page !== 'about'"
-          class="hx0"
+          class="sw-sp"
           :is="asyncComp"
         />
-        <Marta v-if="page !== 'portfolio' && page !== 'portfolio-id'" class="ju8" :class="page === 'about' ? 'nwe' : ''" />
+        <Marta v-if="page !== 'portfolio' && page !== 'portfolio-id'" class="h-hd" :class="page === 'about' ? 'h-h2' : ''" />
         <div v-if="page === 'index'">
-          <div class="igf">
-            <Cake class="r9z 9i1"></Cake>
+          <div class="s-prlxc">
+            <Pxcc class="Pxcc Pxcco"></Pxcc>
           </div>
-          <Form class="fnm" />
-=======
-      <div :class="(page === 'portfolio' || page === 'portfolio-id') ? archive : null">
-        <Spinner
-          v-if="page !== 'index' && page !== 'portfolio' && page !== 'portfolio-id' && page !== 'about'"
-          class="show-spinner"
-          :is="asyncComp"
-        />
-        <Marta v-if="page !== 'portfolio' && page !== 'portfolio-id'" class="homepage-hidden" :class="page === 'about' ? 'homepage-hidden2' : ''" />
-        <div v-if="page === 'index'">
-          <div class="specific-prlxc">
-            <ParallaxCardCopy class="parallaxcardcopy parallaxcardoverflow"></ParallaxCardCopy>
-          </div>
-          <MyForm class="contact-form-container" />
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+          <Form class="c-f-c" />
         </div>
         <div :class="(page === 'portfolio' || page === 'portfolio-id') ? article : content">
           <nuxt />
         </div>
         <SpinnerMob
           v-if="page === 'about'"
-<<<<<<< HEAD
-          class="57x"
-=======
-          class="show-whatspinner-var"
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+          class="sw-wsp-vr"
           :is="asyncComp2"
         />
         <article class="article" v-if="(page === 'portfolio' || page === 'portfolio-id')">
           <SpinnerMob
-<<<<<<< HEAD
-            class="3cm"
-=======
-            class="show-whatspinner"
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+            class="sw-wsp"
             :is="asyncComp2"
           />
         </article>
         <article class="article" v-if="(page === 'portfolio' || page === 'portfolio-id')">
-<<<<<<< HEAD
           <ArticleWidgetMob
-            class="iob"
-=======
-          <MartaMobMobile
-            class="marta-gap-bottom"
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+            class="m-g-b"
           />
         </article>
       </div>
@@ -67,35 +39,26 @@
 </template>
 
 <script>
-import myLayout from "~/components/layout_0Desk.vue"
-import MyForm from '~/components/MyForm.vue'
+import myLayout from "~/components/Layout_0.vue"
+import Form from '~/components/Form.vue'
 
 export default {
   name: 'default',
   data: () => ({
     asyncComp: '',
     asyncComp2: '',
-<<<<<<< HEAD
-    3wp: '3wp',
-=======
-    archive: 'archive',
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+    rchv: 'rchv',
     content: 'content',
     article: 'article'
   }),
   components: {
     myLayout,
-    MyForm,
+    Form,
     Spinner: () => import('~/components/spinner/Spinner.vue'),
-<<<<<<< HEAD
-    Cake: () => import('~/components/Cake.vue'),
+    Pxcc: () => import('~/components/PxccAlt.vue'),
     Marta: () => import('~/components/awidget/ArticleWidgetDesk.vue'),
-=======
-    ParallaxCardCopy: () => import('~/components/ParallaxCardCopyAlt.vue'),
-    Marta: () => import('~/components/marta/Marta-mb-trial.vue'),
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     SpinnerMob: () => import('~/components/spinner/SpinnerMob.vue'),
-    MartaMobMobile: () => import('~/components/marta/MartaMobMobile.vue')
+    ArticleWidgetMob: () => import('~/components/awidget/ArticleWidgetMob.vue')
   },
   computed: {
     page() {
@@ -275,65 +238,38 @@ body-content {
   flex: 1;
 }
 
-<<<<<<< HEAD
-.fnm {
-=======
-.contact-form-container {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.c-f-c {
   width: inherit;
   z-index: 999;
 }
 
 @media only screen and (min-width: 525px) {
-<<<<<<< HEAD
-  .vt0,
-  .c3q,
-  .6p2 {
-=======
-  .container,
-  .container-index,
-  .container-popup {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .cntnr,
+  .c-ndx,
+  .c-ppp {
     width: inherit;
     height: inherit;
     background: blue;
   }
 
-<<<<<<< HEAD
-  .vt0:hover,
-  .6p2:hover {
-=======
-  .container:hover,
-  .container-popup:hover {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .cntnr:hover,
+  .c-ppp:hover {
     transition: all 0.3s ease-out-in;
     text-shadow: none !important;
   }
 }
 
-<<<<<<< HEAD
-.r9z {
-=======
-.parallaxcardcopy {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.Pxcc {
   opacity: 1;
   visibility: visible;
 }
 
-<<<<<<< HEAD
-.9i1 {
-=======
-.parallaxcardoverflow {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.Pxcco {
   overflow-y: visible;
   overflow-x: hidden;
 }
 
-<<<<<<< HEAD
-.hx0 {
-=======
-.show-spinner {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.sw-sp {
   position: absolute;
   top: 78vh;
 }
@@ -346,33 +282,21 @@ body-content {
   }
 }
 
-<<<<<<< HEAD
-.3cm {
-=======
-.show-whatspinner {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.sw-wsp {
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   margin-bottom: calc(9.296188183807424vw + (2em - 9.296188183807424vw));
   visibility: visible;
   display: block;
 }
 
-<<<<<<< HEAD
-.57x {
-=======
-.show-whatspinner-var {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.sw-wsp-vr {
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   visibility: visible;
   display: block;
 }
 
 @media only screen and (max-width: 974px) {
-<<<<<<< HEAD
-  .nwe {
-=======
-  .homepage-hidden2 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .h-h2 {
     visibility: hidden;
     display: none;
     height: 0;
@@ -383,20 +307,12 @@ body-content {
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-<<<<<<< HEAD
-  .ju8 {
-=======
-  .homepage-hidden {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .h-hd {
     visibility: hidden;
     display: none;
     height: 0;
   }
-<<<<<<< HEAD
-  .57x {
-=======
-  .show-whatspinner-var {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .sw-wsp-vr {
     visibility: hidden !important;
     display: none !important;
     height: 0 !important;
@@ -413,11 +329,7 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-<<<<<<< HEAD
-  .3cm {
-=======
-  .show-whatspinner {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .sw-wsp {
     margin-bottom: 0;
     visibility: hidden;
     display: none;
@@ -425,11 +337,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
-<<<<<<< HEAD
-.3wp {
-=======
-.archive {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.rchv {
   display: grid;
   grid-template-columns: repeat(1, minmax(280px, 2732px));
   justify-content: center;
@@ -437,19 +345,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   grid-auto-flow: dense;
 }
 
-<<<<<<< HEAD
-.iob {
+.m-g-b {
   margin-bottom: 2em !important;
 }
 
-.igf {
-=======
-.marta-gap-bottom {
-  margin-bottom: 2em !important;
-}
-
-.specific-prlxc {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.s-prlxc {
   visibility: visible;
   display: block;
   position: absolute;
@@ -461,11 +361,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 @media only screen and (max-width: 1199px) {
-<<<<<<< HEAD
-  .igf {
-=======
-  .specific-prlxc {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .s-prlxc {
     top: calc(20.2rem - 12vw);
   }
 }
@@ -473,11 +369,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 @media only screen and (max-width: 865px),
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px) {
-<<<<<<< HEAD
-  .igf {
-=======
-  .specific-prlxc {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .s-prlxc {
     visibility: hidden;
     display: none;
     width: 0;

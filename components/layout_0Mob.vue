@@ -1,30 +1,25 @@
 <template>
   <div>
-<<<<<<< HEAD
-    <NavWrap class="u6g" />
+    <NavWrap class="n-hd-mob" />
     <SideNavMob />
-=======
-    <NavWraper class="navigation-hidden-mobile" />
-    <TheSideNavMobile />
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
     <slot></slot>
     <footer id="footer">
-      <AppFooter />
+      <Footer />
     </footer>
   </div>
 </template>
 
 <script>
-import NavWraper from '~/components/slots/NavWraper.vue'
-import TheSideNavMobile from '~/components/TheSideNavMobile.vue'
-import AppFooter from '~/components/AppFooter.vue'
+import NavWrap from '~/components/slots/NavWrap.vue'
+import SideNavMob from '~/components/SideNavMob.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
-  name: 'layout_0Mob',
+  name: 'Layout_0Mob',
   components: {
-    NavWraper,
-    TheSideNavMobile,
-    AppFooter
+    NavWrap,
+    SideNavMob,
+    Footer
   }
 }
 </script>
@@ -48,11 +43,7 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-<<<<<<< HEAD
-  .u6g {
-=======
-  .navigation-hidden-mobile {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .n-hd-mob {
     visibility: hidden;
     display: none;
     height: 0;

@@ -1,24 +1,13 @@
 <template>
   <!--eslint-disable-->
-<<<<<<< HEAD
-  <div class="vt0">
-    <div class="day ocp">
+  <div class="cntnr">
+    <div class="day c-d1">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="l0v l5u">How to establish lasting relationships?
-            <div class="j05">
-              <div class="v01 tI">Once people discover design, they</div>
-              <div class="w9b tI">won’t let it pass. ...</div>
-=======
-  <div class="container">
-    <div class="day container-d1">
-      <div class="declaration declaration1">
-        <div class="text">
-          <div id="target-d1 tI" class="title-d4 title-d4ver">How to establish lasting relationships?
-            <div class="container-subtitle-d4">
-              <div class="subtitle-d4 tI">Once people discover design, they</div>
-              <div class="subtitle1-d4 tI">won’t let it pass. ...</div>
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+          <div id="target-d1 tI" class="t-d4 t-d4vr">How to establish lasting relationships?
+            <div class="c-s-d4">
+              <div class="s-d4 tI">Once people discover design, they</div>
+              <div class="s1-d4 tI">won’t let it pass. ...</div>
             </div>
           </div>
         </div>

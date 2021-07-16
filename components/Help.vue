@@ -2,32 +2,32 @@
   <component :is="whichHelpWrap" :mother="mother">
     <template v-slot:HelpWrapSlot>
       <div v-if="mother === 'Homepage11AScrollto' || mother === 'Subtouch1'">
-        <a class ="hjn" href="https://www.google.com/" target="_blank">* In Stores, Stories & beyond</a>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">* In Stores, Stories & beyond</a>
         <br />
         <br />
-        <a class ="hjn" href="https://www.google.com/" target="_blank">&#10132; Read pioneering research</a></br></br>
-        <a class ="hjn" href="https://www.google.com/" target="_blank">We use the word Design loosely</a></br></br>
-        <a class ="hjn" href="https://www.google.com/" target="_blank">Fy: for you</a>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">&#10132; Read pioneering research</a></br></br>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">We use the word Design loosely</a></br></br>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">Fy: for you</a>
       </div>
       <div v-else-if="mother === 'Homepage11CScrollto'">
-        <a class ="hjn" href="https://www.google.com/" target="_blank">&#10132; What are human experiences?</a>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">&#10132; What are human experiences?</a>
         <br />
         <br />
-        <a class ="hjn" href="https://www.google.com/" target="_blank">We also give Brand Experiences as Products or Services</a>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">We also give Brand Experiences as Products or Services</a>
       </div>
       <div v-else-if="mother === 'Subtouch3'">
-        <a class ="hjn" href="https://www.google.com/" target="_blank">&#10132; What are human experiences?</a>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">&#10132; What are human experiences?</a>
         <br />
         <br />
-        <a class ="hjn" href="https://www.google.com/" target="_blank">We also give Brand Experiences as Products or Services</a></br></br>
-        <a class ="hjn" href="https://www.google.com/" target="_blank">Must read: Business</a></br></br>
-        <a class ="hjn" href="https://www.google.com/" target="_blank">Suggested reads: Land Developer</a>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">We also give Brand Experiences as Products or Services</a></br></br>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">Must read: Business</a></br></br>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">Suggested reads: Land Developer</a>
       </div>
       <div v-else-if="mother === 'Homepage11EScrollto' || mother === 'Subtouch5'">
-        <a class ="hjn" href="https://www.google.com/" target="_blank">* Rewards or Semi-rewards</a></br></br>
-        <a class ="hjn" href="https://www.google.com/" target="_blank">&#10132; Not a big expense for you, compared to house prices</a></br></br>
-        <a class ="hjn" href="https://www.google.com/" target="_blank">&#10132; Your gain is so much higher</a></br></br>
-        <a class ="hjn" href="https://www.google.com/" target="_blank">&#10132; Inject the right operation in due time</a>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">* Rewards or Semi-rewards</a></br></br>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">&#10132; Not a big expense for you, compared to house prices</a></br></br>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">&#10132; Your gain is so much higher</a></br></br>
+        <a class ="no-dcr-a" href="https://www.google.com/" target="_blank">&#10132; Inject the right operation in due time</a>
       </div>
     </template>
   </component>

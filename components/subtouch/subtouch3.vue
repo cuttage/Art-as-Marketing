@@ -1,81 +1,43 @@
 <template>
   <div>
-<<<<<<< HEAD
-    <main v-if="selectedContent" class="3wp" id="p3z" v-pan="onPan">
+    <main v-if="selectedContent" class="rchv" id="mzp1" v-pan="onPan">
       <article class="article">
         <Homepage11CScrolltoSmall
           v-if="isHomepage1DialogActive"
-          class="ruj n1"
+          class="A-bs n1"
         />
         <Homepage12CScrolltoNowrap
           v-if="isHomepage2DialogActive"
-          class="ruj n2"
+          class="A-bs n2"
         />
         <Homepage13CScrolltoNowrap
           v-if="isHomepage3DialogActive"
-          class="ruj n3"
+          class="A-bs n3"
         />
         <Homepage14CScrolltoNowrap
           v-if="isHomepage4DialogActive"
-          class="ruj n4"
+          class="A-bs n4"
         />
         <Homepage15CScrolltoSmall
           v-if="isHomepage5DialogActive"
-          class="ruj n5"
-=======
-    <main v-if="selectedContent" class="archive" id="mapp1" v-pan="onPan">
-      <article class="article">
-        <Homepage11CScrolltoSmall
-          v-if="isHomepage1DialogActive"
-          class="A-absolutely n1"
-        />
-        <Homepage12CScrolltoNowrap
-          v-if="isHomepage2DialogActive"
-          class="A-absolutely n2"
-        />
-        <Homepage13CScrolltoNowrap
-          v-if="isHomepage3DialogActive"
-          class="A-absolutely n3"
-        />
-        <Homepage14CScrolltoNowrap
-          v-if="isHomepage4DialogActive"
-          class="A-absolutely n4"
-        />
-        <Homepage15CScrolltoSmall
-          v-if="isHomepage5DialogActive"
-          class="A-absolutely n5"
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+          class="A-bs n5"
         />
       </article>
 
       <article class="article">
         <div class="cosa" ref="cosa" v-if="selectedContent">{{ selectedContent }}</div>
-<<<<<<< HEAD
-        <div class="cosa zk4" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
+        <div class="cosa nwcs" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
       </article>
 
-      <main v-if="isHomepage1DialogActive && selected2 === '+ Help'" class="3wp" id="i8c">
-=======
-        <div class="cosa newcosa" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
-      </article>
-
-      <main v-if="isHomepage1DialogActive && selected2 === '+ Help'" class="archive" id="mappb">
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+      <main v-if="isHomepage1DialogActive && selected2 === '+ Help'" class="rchv" id="mzpb">
         <article class="article">
-          <div class="cosa"><previewer :mother="mother" /></div>
+          <div class="cosa"><Help :mother="mother" /></div>
         </article>
         <article class="article">
-<<<<<<< HEAD
-          <section class="w9x">
-            <ul class="w9x__nw" ref="newie2">
-              <li v-for="(hey, index) in heys" v-bind:key="hey"
-                  class="w9x__tm u08"
-=======
           <section class="slider">
-            <ul class="slider__newie" ref="newie2">
+            <ul class="slider__nw" ref="newie2">
               <li v-for="(hey, index) in heys" v-bind:key="hey"
-                  class="slider__item help-enabler"
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+                  class="slider__tm h-nb"
                   v-tap="(e) => tap2(e, hey)"
                   :style="{backgroundColor: colors[index]}">
                 {{ hey }}
@@ -84,21 +46,12 @@
           </section>
         </article>
       </main>
-<<<<<<< HEAD
-      <main v-else-if="isHomepage1DialogActive" class="3wp" id="i8c">
-        <article class="article">
-          <section class="w9x">
-            <ul class="w9x__nw" ref="newie2">
-              <li v-for="(hey, index) in heys" v-bind:key="hey"
-                  class="w9x__tm u08"
-=======
-      <main v-else-if="isHomepage1DialogActive" class="archive" id="mappb">
+      <main v-else-if="isHomepage1DialogActive" class="rchv" id="mzpb">
         <article class="article">
           <section class="slider">
-            <ul class="slider__newie" ref="newie2">
+            <ul class="slider__nw" ref="newie2">
               <li v-for="(hey, index) in heys" v-bind:key="hey"
-                  class="slider__item help-enabler"
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+                  class="slider__tm h-nb"
                   v-tap="(e) => tap2(e, hey)"
                   :style="{backgroundColor: colors[index]}">
                 {{ hey }}
@@ -109,17 +62,10 @@
       </main>
 
       <article class="article">
-<<<<<<< HEAD
-        <section class="w9x">
-          <ul class="w9x__nw" ref="newie">
-            <li v-for="(indice, index) in indices" v-bind:key="indice"
-                class="w9x__tm"
-=======
         <section class="slider">
-          <ul class="slider__newie" ref="newie">
+          <ul class="slider__nw" ref="newie">
             <li v-for="(indice, index) in indices" v-bind:key="indice"
-                class="slider__item"
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+                class="slider__tm"
                 v-tap="(e) => onTap(e, indice)"
                 :style="{backgroundColor: colors[index]}">
               {{ indice }}
@@ -128,76 +74,42 @@
         </section>
       </article>
       <article class="article">
-        <subcompSubtouchF v-if="isAnyActive" />
+        <SSubtouchF v-if="isAnyActive" />
       </article>
     </main>
-<<<<<<< HEAD
-    <main v-else class="3wp wud ybl" id="p3z" v-pan="onPan">
+    <main v-else class="rchv spchv nwmpp1" id="mzp1" v-pan="onPan">
       <article class="article">
         <Homepage11CScrolltoSmall
           v-if="isHomepage1DialogActive"
-          class="ruj n1"
+          class="A-bs n1"
         />
         <Homepage12CScrolltoNowrap
           v-if="isHomepage2DialogActive"
-          class="ruj n2"
+          class="A-bs n2"
         />
         <Homepage13CScrolltoNowrap
           v-if="isHomepage3DialogActive"
-          class="ruj n3"
+          class="A-bs n3"
         />
         <Homepage14CScrolltoNowrap
           v-if="isHomepage4DialogActive"
-          class="ruj n4"
+          class="A-bs n4"
         />
         <Homepage15CScrolltoSmall
           v-if="isHomepage5DialogActive"
-          class="ruj n5"
-=======
-    <main v-else class="archive specificarchive newmapp1" id="mapp1" v-pan="onPan">
-      <article class="article">
-        <Homepage11CScrolltoSmall
-          v-if="isHomepage1DialogActive"
-          class="A-absolutely n1"
-        />
-        <Homepage12CScrolltoNowrap
-          v-if="isHomepage2DialogActive"
-          class="A-absolutely n2"
-        />
-        <Homepage13CScrolltoNowrap
-          v-if="isHomepage3DialogActive"
-          class="A-absolutely n3"
-        />
-        <Homepage14CScrolltoNowrap
-          v-if="isHomepage4DialogActive"
-          class="A-absolutely n4"
-        />
-        <Homepage15CScrolltoSmall
-          v-if="isHomepage5DialogActive"
-          class="A-absolutely n5"
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+          class="A-bs n5"
         />
       </article>
 
       <article class="article">
         <div class="cosa" ref="cosa" v-if="selectedContent">{{ selectedContent }}</div>
-<<<<<<< HEAD
-        <div class="cosa zk4" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
-      </article>
-      <article class="article">
-        <section class="w9x">
-          <ul class="w9x__nw" ref="newie">
-            <li v-for="(indice, index) in indices" v-bind:key="indice"
-                class="w9x__tm"
-=======
-        <div class="cosa newcosa" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
+        <div class="cosa nwcs" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
       </article>
       <article class="article">
         <section class="slider">
-          <ul class="slider__newie" ref="newie">
+          <ul class="slider__nw" ref="newie">
             <li v-for="(indice, index) in indices" v-bind:key="indice"
-                class="slider__item"
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+                class="slider__tm"
                 v-tap="(e) => onTap(e, indice)"
                 :style="{backgroundColor: colors[index]}">
               {{ indice }}
@@ -206,7 +118,7 @@
         </section>
       </article>
       <article class="article">
-        <subcompSubtouchF v-if="isAnyActive" />
+        <SSubtouchF v-if="isAnyActive" />
       </article>
     </main>
   </div>
@@ -219,8 +131,8 @@ import Homepage13CScrolltoNowrap from '~/components/homepage/subcomp/Homepage13C
 import Homepage14CScrolltoNowrap from '~/components/homepage/subcomp/Homepage14CScrolltoNowrap.vue'
 import Homepage15CScrolltoSmall from '~/components/homepage/subcomp/Homepage15CScrolltoSmall.vue'
 import { TweenMax, Elastic, Sine } from "gsap/dist/gsap"
-import subcompSubtouchF from '~/components/subtouch/subcomp/subcompSubtouchF.vue'
-import previewer from '~/components/previewer.vue'
+import SSubtouchF from '~/components/subtouch/subcomp/SSubtouchF.vue'
+import Help from '~/components/Help.vue'
 import { enactHelp } from '~/composables/toggle-help-store.js'
 
 const DIALOG_TYPE = {
@@ -240,8 +152,8 @@ export default {
     Homepage13CScrolltoNowrap,
     Homepage14CScrolltoNowrap,
     Homepage15CScrolltoSmall,
-    subcompSubtouchF,
-    previewer
+    SSubtouchF,
+    Help
   },
   setup () {
     const { toggleHelp, getToggleHelp } = enactHelp();
@@ -282,7 +194,7 @@ export default {
       currentOffset: 0,
       selected: "",
       selected2: "",
-      mother: 'subtouch3',
+      mother: 'Subtouch3',
       tmrSubtouch1: null,
       wchrSubtouch1: null
     }
@@ -422,24 +334,20 @@ $timing: ease-out;
 
 $cta-color: yellow;
 
-<<<<<<< HEAD
-.ruj {
-=======
-.A-absolutely {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.A-bs {
   border-radius: 5px;
   text-rendering: geometricPrecision;
   height: auto;
   background-color: blue !important;
 }
-.w9x {
+.slider {
 	width: 100%;
 	height: 120px;
 	overflow: visible;
   position: relative;
   white-space: nowrap;
 
-	&__newie {
+	&__nw {
 		display: flex;
 		width: 100%;
 		height: 100%;
@@ -449,7 +357,7 @@ $cta-color: yellow;
 		transform: translateX(calc(var(--x, 0) * 1%));
 	}
 
-	&__item {
+	&__tm {
 		position: relative;
 		flex: 0 0 140px;
 
@@ -473,17 +381,10 @@ $cta-color: yellow;
 }
 
 li:nth-child(1) {
-<<<<<<< HEAD
-  animation: s8z $dur $timing infinite;
+  animation: g-t-glw $dur $timing infinite;
 }
 
-@keyframes s8z {
-=======
-  animation: glow-text-glow $dur $timing infinite;
-}
-
-@keyframes glow-text-glow {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+@keyframes g-t-glw {
   from {
     text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
                 0 0.5px 0.5px rgba(0,0,0,0.1),
@@ -521,36 +422,21 @@ li:nth-child(1) {
 }
 
 @media only screen and (orientation : portrait) and (max-width: 460px) {
-<<<<<<< HEAD
-  .zk4 {
+  .nwcs {
     position: relative;
   }
-  .ybl {
-=======
-  .newcosa {
-    position: relative;
-  }
-  .newmapp1 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .nwmpp1 {
     margin-top: -1em;
   }
 }
 @media only screen and (orientation : portrait) and (min-width: 461px) {
-<<<<<<< HEAD
-  .wud {
-=======
-  .specificarchive {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .spchv {
     position: relative;
     margin-top: -1em !important;
   }
 }
 @media only screen and (orientation : landscape) {
-<<<<<<< HEAD
-  .wud {
-=======
-  .specificarchive {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .spchv {
     position: relative;
     margin-top: -1em !important;
   }
@@ -568,33 +454,21 @@ ul {
   padding: 0 !important;
 }
 
-<<<<<<< HEAD
-#p3z {
-=======
-#mapp1 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+#mzp1 {
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
 	overflow: hidden;
 }
 
-<<<<<<< HEAD
-#i8c {
-=======
-#mappb {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+#mzpb {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
   overflow: visible;
 }
 
-<<<<<<< HEAD
-.3wp {
-=======
-.archive {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.rchv {
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;
@@ -602,306 +476,166 @@ ul {
 }
 //(min-width: 690px)
 @media only screen and (min-width: 690px) {
-<<<<<<< HEAD
-  .ruj.n1 {
+  .A-bs.n1 {
     height: calc(19.021614682428505rem + 50px) !important;
     min-height: calc(19.021614682428505rem + 50px) !important;
   }
-  .ruj.n2 {
+  .A-bs.n2 {
     height: calc(12.552681868170927rem + 50px) !important;
     min-height: calc(12.552681868170927rem + 50px) !important;
   }
-  .ruj.n3,
-  .ruj.n4 {
+  .A-bs.n3,
+  .A-bs.n4 {
     height: calc(14.887686447021238rem + 50px) !important;
     min-height: calc(14.887686447021238rem + 50px) !important;
   }
-  .ruj.n5 {
-=======
-  .A-absolutely.n1 {
-    height: calc(19.021614682428505rem + 50px) !important;
-    min-height: calc(19.021614682428505rem + 50px) !important;
-  }
-  .A-absolutely.n2 {
-    height: calc(12.552681868170927rem + 50px) !important;
-    min-height: calc(12.552681868170927rem + 50px) !important;
-  }
-  .A-absolutely.n3,
-  .A-absolutely.n4 {
-    height: calc(14.887686447021238rem + 50px) !important;
-    min-height: calc(14.887686447021238rem + 50px) !important;
-  }
-  .A-absolutely.n5 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .A-bs.n5 {
     height: calc(17.698138770526421rem + 50px) !important;
     min-height: calc(17.698138770526421rem + 50px) !important;
   }
 }
 //(max-width: 689px)
 @media only screen and (max-width: 689px) {
-<<<<<<< HEAD
-  .ruj.n1 {
+  .A-bs.n1 {
     height: calc(18.981671207969935rem + 50px) !important;
     min-height: calc(18.981671207969935rem + 50px) !important;
   }
-  .ruj.n2 {
+  .A-bs.n2 {
     height: calc(12.510052575364507rem + 50px) !important;
     min-height: calc(12.510052575364507rem + 50px) !important;
   }
-  .ruj.n3,
-  .ruj.n4 {
+  .A-bs.n3,
+  .A-bs.n4 {
     height: calc(14.777566505723381rem + 50px) !important;
     min-height: calc(14.777566505723381rem + 50px) !important;
   }
-  .ruj.n5 {
-=======
-  .A-absolutely.n1 {
-    height: calc(18.981671207969935rem + 50px) !important;
-    min-height: calc(18.981671207969935rem + 50px) !important;
-  }
-  .A-absolutely.n2 {
-    height: calc(12.510052575364507rem + 50px) !important;
-    min-height: calc(12.510052575364507rem + 50px) !important;
-  }
-  .A-absolutely.n3,
-  .A-absolutely.n4 {
-    height: calc(14.777566505723381rem + 50px) !important;
-    min-height: calc(14.777566505723381rem + 50px) !important;
-  }
-  .A-absolutely.n5 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .A-bs.n5 {
     height: calc(17.669692668190336rem + 50px) !important;
     min-height: calc(17.669692668190336rem + 50px) !important;
   }
 }
 //(max-width: 556px)
 @media only screen and (max-width: 556px) {
-<<<<<<< HEAD
-  .ruj.n1 {
+  .A-bs.n1 {
     height: calc(19.105712390938683rem + 50px) !important;
     min-height: calc(19.105712390938683rem + 50px) !important;
   }
-  .ruj.n2 {
+  .A-bs.n2 {
     height: calc(12.170118673728579rem + 50px) !important;
     min-height: calc(12.170118673728579rem + 50px) !important;
   }
-  .ruj.n3,
-  .ruj.n4 {
+  .A-bs.n3,
+  .A-bs.n4 {
     height: calc(14.352685665665057rem + 50px) !important;
     min-height: calc(14.352685665665057rem + 50px) !important;
   }
-  .ruj.n5 {
-=======
-  .A-absolutely.n1 {
-    height: calc(19.105712390938683rem + 50px) !important;
-    min-height: calc(19.105712390938683rem + 50px) !important;
-  }
-  .A-absolutely.n2 {
-    height: calc(12.170118673728579rem + 50px) !important;
-    min-height: calc(12.170118673728579rem + 50px) !important;
-  }
-  .A-absolutely.n3,
-  .A-absolutely.n4 {
-    height: calc(14.352685665665057rem + 50px) !important;
-    min-height: calc(14.352685665665057rem + 50px) !important;
-  }
-  .A-absolutely.n5 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .A-bs.n5 {
     height: calc(17.453593191678003rem + 50px) !important;
     min-height: calc(17.453593191678003rem + 50px) !important;
   }
 }
 //(max-width: 532px)
 @media only screen and (max-width: 532px) {
-<<<<<<< HEAD
-  .ruj.n1 {
+  .A-bs.n1 {
     height: calc(18.938707920173884rem + 50px) !important;
     min-height: calc(18.938707920173884rem + 50px) !important;
   }
-  .ruj.n2 {
+  .A-bs.n2 {
     height: calc(12.269640268500102rem + 50px) !important;
     min-height: calc(12.269640268500102rem + 50px) !important;
   }
-  .ruj.n3,
-  .ruj.n4 {
+  .A-bs.n3,
+  .A-bs.n4 {
     height: calc(14.44455262953103rem + 50px) !important;
     min-height: calc(14.44455262953103rem + 50px) !important;
   }
-  .ruj.n5 {
-=======
-  .A-absolutely.n1 {
-    height: calc(18.938707920173884rem + 50px) !important;
-    min-height: calc(18.938707920173884rem + 50px) !important;
-  }
-  .A-absolutely.n2 {
-    height: calc(12.269640268500102rem + 50px) !important;
-    min-height: calc(12.269640268500102rem + 50px) !important;
-  }
-  .A-absolutely.n3,
-  .A-absolutely.n4 {
-    height: calc(14.44455262953103rem + 50px) !important;
-    min-height: calc(14.44455262953103rem + 50px) !important;
-  }
-  .A-absolutely.n5 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .A-bs.n5 {
     height: calc(17.291801118810752rem + 50px) !important;
     min-height: calc(17.291801118810752rem + 50px) !important;
   }
 }
 //(max-width: 524px)
 @media only screen and (max-width: 524px) {
-<<<<<<< HEAD
-  .ruj.n1 {
+  .A-bs.n1 {
     height: calc(18.077033095444492rem + 50px) !important;
     min-height: calc(18.077033095444492rem + 50px) !important;
   }
-  .ruj.n2 {
+  .A-bs.n2 {
     height: calc(10.852227232002501rem + 50px) !important;
     min-height: calc(10.852227232002501rem + 50px) !important;
   }
-  .ruj.n3,
-  .ruj.n4 {
+  .A-bs.n3,
+  .A-bs.n4 {
     height: calc(13.009855394842773rem + 50px) !important;
     min-height: calc(13.009855394842773rem + 50px) !important;
   }
-  .ruj.n5 {
-=======
-  .A-absolutely.n1 {
-    height: calc(18.077033095444492rem + 50px) !important;
-    min-height: calc(18.077033095444492rem + 50px) !important;
-  }
-  .A-absolutely.n2 {
-    height: calc(10.852227232002501rem + 50px) !important;
-    min-height: calc(10.852227232002501rem + 50px) !important;
-  }
-  .A-absolutely.n3,
-  .A-absolutely.n4 {
-    height: calc(13.009855394842773rem + 50px) !important;
-    min-height: calc(13.009855394842773rem + 50px) !important;
-  }
-  .A-absolutely.n5 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .A-bs.n5 {
     height: calc(15.948936587812604rem + 50px) !important;
     min-height: calc(15.948936587812604rem + 50px) !important;
   }
 }
 //(max-width: 456px)
 @media only screen and (max-width: 456px) {
-<<<<<<< HEAD
-  .ruj.n1 {
+  .A-bs.n1 {
     height: calc(18.086898360458062rem + 50px) !important;
     min-height: calc(18.086898360458062rem + 50px) !important;
   }
-  .ruj.n2 {
+  .A-bs.n2 {
     height: calc(10.8604411049857rem + 50px) !important;
     min-height: calc(10.8604411049857rem + 50px) !important;
   }
-  .ruj.n3,
-  .ruj.n4 {
+  .A-bs.n3,
+  .A-bs.n4 {
     height: calc(12.979109123178548rem + 50px) !important;
     min-height: calc(12.979109123178548rem + 50px) !important;
   }
-  .ruj.n5 {
-=======
-  .A-absolutely.n1 {
-    height: calc(18.086898360458062rem + 50px) !important;
-    min-height: calc(18.086898360458062rem + 50px) !important;
-  }
-  .A-absolutely.n2 {
-    height: calc(10.8604411049857rem + 50px) !important;
-    min-height: calc(10.8604411049857rem + 50px) !important;
-  }
-  .A-absolutely.n3,
-  .A-absolutely.n4 {
-    height: calc(12.979109123178548rem + 50px) !important;
-    min-height: calc(12.979109123178548rem + 50px) !important;
-  }
-  .A-absolutely.n5 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .A-bs.n5 {
     height: calc(16.133088903040557rem + 50px) !important;
     min-height: calc(16.133088903040557rem + 50px) !important;
   }
 }
 //(max-width: 419px)
 @media only screen and (max-width: 419px) {
-<<<<<<< HEAD
-  .ruj.n1 {
+  .A-bs.n1 {
     height: calc(18.21220488581861rem + 50px) !important;
     min-height: calc(18.21220488581861rem + 50px) !important;
   }
-  .ruj.n2 {
+  .A-bs.n2 {
     height: calc(10.501422431008852rem + 50px) !important;
     min-height: calc(10.501422431008852rem + 50px) !important;
   }
-  .ruj.n3,
-  .ruj.n4 {
+  .A-bs.n3,
+  .A-bs.n4 {
     height: calc(12.612359072629774rem + 50px) !important;
     min-height: calc(12.612359072629774rem + 50px) !important;
   }
-  .ruj.n5 {
-=======
-  .A-absolutely.n1 {
-    height: calc(18.21220488581861rem + 50px) !important;
-    min-height: calc(18.21220488581861rem + 50px) !important;
-  }
-  .A-absolutely.n2 {
-    height: calc(10.501422431008852rem + 50px) !important;
-    min-height: calc(10.501422431008852rem + 50px) !important;
-  }
-  .A-absolutely.n3,
-  .A-absolutely.n4 {
-    height: calc(12.612359072629774rem + 50px) !important;
-    min-height: calc(12.612359072629774rem + 50px) !important;
-  }
-  .A-absolutely.n5 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .A-bs.n5 {
     height: calc(15.765786965542997rem + 50px) !important;
     min-height: calc(15.765786965542997rem + 50px) !important;
   }
 }
 //(max-width: 398px)
 @media only screen and (max-width: 398px) {
-<<<<<<< HEAD
-  .ruj.n1 {
+  .A-bs.n1 {
     height: calc(17.479653353795224rem + 50px) !important;
     min-height: calc(17.479653353795224rem + 50px) !important;
   }
-  .ruj.n2 {
+  .A-bs.n2 {
     height: calc(10.315074208390348rem + 50px) !important;
     min-height: calc(10.315074208390348rem + 50px) !important;
   }
-  .ruj.n3,
-  .ruj.n4 {
+  .A-bs.n3,
+  .A-bs.n4 {
     height: calc(12.388007620692573rem + 50px) !important;
     min-height: calc(12.388007620692573rem + 50px) !important;
   }
-  .ruj.n5 {
-=======
-  .A-absolutely.n1 {
-    height: calc(17.479653353795224rem + 50px) !important;
-    min-height: calc(17.479653353795224rem + 50px) !important;
-  }
-  .A-absolutely.n2 {
-    height: calc(10.315074208390348rem + 50px) !important;
-    min-height: calc(10.315074208390348rem + 50px) !important;
-  }
-  .A-absolutely.n3,
-  .A-absolutely.n4 {
-    height: calc(12.388007620692573rem + 50px) !important;
-    min-height: calc(12.388007620692573rem + 50px) !important;
-  }
-  .A-absolutely.n5 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .A-bs.n5 {
     height: calc(15.691183006516879rem + 50px) !important;
     min-height: calc(15.691183006516879rem + 50px) !important;
   }
 }
 
-<<<<<<< HEAD
-.u08 {
-=======
-.help-enabler {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.h-nb {
   flex-grow: 1;
   font-family: 'AtkinsonHyperlegibleBold';
   font-size: 26.647101746392745px;
@@ -918,18 +652,10 @@ ul {
   user-select: none;
   cursor: pointer;
 }
-<<<<<<< HEAD
-.u08 + .u08 {
+.h-nb + .h-nb {
   margin-right: 0px;
 }
-.u08:nth-child(2) {
-  animation: s8z $dur $timing infinite;
-=======
-.help-enabler + .help-enabler {
-  margin-right: 0px;
-}
-.help-enabler:nth-child(2) {
-  animation: glow-text-glow $dur $timing infinite;
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.h-nb:nth-child(2) {
+  animation: g-t-glw $dur $timing infinite;
 }
 </style>

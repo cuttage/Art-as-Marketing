@@ -1,9 +1,5 @@
 <template>
-<<<<<<< HEAD
-  <div v-if="batchKeyds.includes(searchfactor)" class="3wp nbl">
-=======
-  <div v-if="batchKeyds.includes(searchfactor)" class="archive noblue">
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  <div v-if="batchKeyds.includes(searchfactor)" class="rchv nbl">
     <article class="article">
       <div>
         <G2MSLeft>
@@ -33,11 +29,7 @@
         </G2MSLeft>
       </div>
     </article>
-<<<<<<< HEAD
-    <div class="article plg"></div>
-=======
-    <div class="article emptyspace"></div>
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+    <div class="article emptyspc"></div>
     <article class="article">
       <div>
         <G3MSLeft>
@@ -103,21 +95,12 @@ export default {
   },
   data() {
     return {
-<<<<<<< HEAD
-      isBlock_1Active: 'cmr',
+      isBlock_1Active: 'b_s_img_1',
       img1Key: 999,
       img2Key: 1998,
-      isQdhActive: 'Qdh',
+      isVrnc2AActive: 'vrnc2A',
       img3Key: 2997,
-      isAkrActive: 'Akr'
-=======
-      isBlock_1Active: 'block_start_img_1',
-      img1Key: 999,
-      img2Key: 1998,
-      isVariance2AActive: 'variance2A',
-      img3Key: 2997,
-      isVariance3AActive: 'variance3A'
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+      isVrnc3AActive: 'vrnc3A'
     }
   },
   components: {
@@ -127,29 +110,17 @@ export default {
   computed: {
     classObjectImg1() {
       return {
-<<<<<<< HEAD
-        cmr: this.isBlock_1Active
-=======
-        block_start_img_1: this.isBlock_1Active
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+        b_s_img_1: this.isBlock_1Active
       }
     },
     classObjectVar2() {
       return {
-<<<<<<< HEAD
-        Qdh: this.isQdhActive
-=======
-        variance2A: this.isVariance2AActive
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+        vrnc2A: this.isVrnc2AActive
       }
     },
     classObjectVar3() {
       return {
-<<<<<<< HEAD
-        Akr: this.isAkrActive
-=======
-        variance3A: this.isVariance3AActive
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+        vrnc3A: this.isVrnc3AActive
       }
     }
   }
@@ -157,17 +128,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-<<<<<<< HEAD
-.3wp {
-=======
-.archive {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.rchv {
   display: grid;
   visibility: visible;
   grid-gap: 1em;
   grid-auto-flow: dense;
 }
-.noblue {
+.nbl {
   background-color: transparent !important;
 }
 /*
@@ -179,11 +146,7 @@ img {
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
-<<<<<<< HEAD
-.cmr {
-=======
-.block_start_img_1 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.b_s_img_1 {
   image-rendering: high-quality;
   grid-area: 1/4/13/1;
   max-width: 110%;
@@ -193,21 +156,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-<<<<<<< HEAD
-  .cmr {
-=======
-  .block_start_img_1 {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .b_s_img_1 {
     image-rendering: -webkit-optimize-contrast;
     justify-self: start;
     max-height: 151.8px;
   }
 }
-<<<<<<< HEAD
-.Qdh {
-=======
-.variance2A {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.vrnc2A {
   image-rendering: high-quality;
   grid-area: 4/6/9/3;
   z-index: 3;
@@ -220,20 +175,12 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-<<<<<<< HEAD
-  .Qdh {
-=======
-  .variance2A {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .vrnc2A {
     image-rendering: -webkit-optimize-contrast;
     max-height: 151.8px;
   }
 }
-<<<<<<< HEAD
-.Akr {
-=======
-.variance3A {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.vrnc3A {
   image-rendering: high-quality;
   grid-area: 1/5/7/7;
   z-index: 2;
@@ -246,21 +193,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-<<<<<<< HEAD
-  .Akr {
-=======
-  .variance3A {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+  .vrnc3A {
     image-rendering: -webkit-optimize-contrast;
     justify-self: end;
     max-height: 151.8px;
   }
 }
-<<<<<<< HEAD
-.plg {
-=======
-.emptyspace {
->>>>>>> parent of 494e274... Changed mostly class naming system, intermediate step
+.emptyspc {
   height: 27.2vw;
   display: flex;
 }
