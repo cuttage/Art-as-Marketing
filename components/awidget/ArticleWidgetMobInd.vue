@@ -1,29 +1,29 @@
 <template>
-  <div class="c-mrt">
-    <div class="p-cntnr t-mrt">
-      <div class="c-s-r-t-r-t-sb">
-        <small class="tmp1">
+  <div class="0og">
+    <div class="7uh fxw">
+      <div class="go3">
+        <small class="k9z">
           Marta Fattori
         </small>
-        <small class="sbhdr">
+        <small class="2u8">
           Read my latest Medium article
         </small>
-        <h3 class="rg-txt">"Change in Fashion: A China Case-Study."</h3>
+        <h3 class="thj">"Change in Fashion: A China Case-Study."</h3>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.c-mrt {
+.0og {
   margin-bottom: 1em;
 }
-.c-mrt .c-s-r-t-r-t-sb {
+.0og .go3 {
   will-change: opacity;
   opacity: 0.3;
 }
 
-.c-mrt {
+.0og {
   will-change: opacity;
   opacity: 1;
   background: linear-gradient(to right, rgba(32,28,41,0.2), rgba(32,28,41,0.2) 0.030745614035088rem, rgba(23,20,29,0.2) 0.030745614035088rem, rgba(23,20,29,0.2));
@@ -50,8 +50,8 @@
       rgba(black, 0.66) 0 0.922368421052632rem 1.844736842105263rem 0, inset #333 0 0 0 0.178324561403509rem,
       inset rgba(white, 0.9) 0 0 0 0.184473684210526rem;
   }
-  &:focus .c-s-r-t-r-t-sb,
-  &:hover .c-s-r-t-r-t-sb {
+  &:focus .go3,
+  &:hover .go3 {
     opacity: 1;
     transition: opacity 0.4s ease;
   }
@@ -67,16 +67,16 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .c-mrt {
+  .0og {
     margin-top: -3em;
   }
 }
 
-.sbhdr {
+.2u8 {
   line-height: inherit !important;
 }
 
-.rg-txt {
+.thj {
   display: inline-block !important;
   font-size: 0.67640350877193rem; /*with bangla MN*/
   line-height: 1.89 !important; /*with bangla MN*/
@@ -87,7 +87,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   -webkit-text-fill-color: transparent;
 }
 
-.sbhdr {
+.2u8 {
   padding-top: 3px;
   padding-bottom: 3px;
   font-family: sans-serif !important;
@@ -108,11 +108,11 @@ div {
 	flex-direction: column;
 }
 
-.p-cntnr {
+.7uh {
 	padding: 30px;
 }
 
-.p-cntnr h3 {
+.7uh h3 {
   letter-spacing: 1.2px !important;
   line-height: 1.5;
   padding-top: 3px;
@@ -120,21 +120,21 @@ div {
   text-rendering: geometricPrecision;
 }
 
-.p-cntnr small {
+.7uh small {
 	font-size: 0.75em;
 	line-height: 15px;
 }
 
-.p-cntnr small:nth-of-type(2)  {
+.7uh small:nth-of-type(2)  {
 	text-transform: uppercase;
   opacity: 0.6;
 }
 
-.p-cntnr small:nth-of-type(1)  {
+.7uh small:nth-of-type(1)  {
   opacity: 1;
 }
 
-.tmp1 {
+.k9z {
   margin: 0;
   display: inline-block;
   line-height: 1;
@@ -147,7 +147,7 @@ div {
   -webkit-text-fill-color: transparent;
 }
 
-.t-mrt {
+.fxw {
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0.5px;
   width: 80%;

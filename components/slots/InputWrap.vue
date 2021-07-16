@@ -1,7 +1,7 @@
 <template>
   <InputParent :dsk="dsk" :mob="mob">
     <template v-slot:inputBlueContent>
-      <component :is="mob ? 'InputMob' : 'InputDesk'" class="b_s_h" @hook:created="chldresponse" @hook:beforeDestroy="chldresponse" :key="diapobKeySub1"></component>
+      <component :is="mob ? 'InputMob' : 'InputDesk'" class="rur" @hook:created="ChildResponse" @hook:beforeDestroy="ChildResponse" :key="diapobKeySub1"></component>
     </template>
   </InputParent>
 </template>
@@ -25,7 +25,7 @@ export default {
   },
   computed: mapState(['toggleSidebar']),
   methods: {
-    chldresponse() {
+    ChildResponse() {
       if (this.toggleSidebar === false) {
         return this.$bus.$emit('nav-logo-b')
       }
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.b_s_h {
+.rur {
   z-index: 6;
 }
 </style>

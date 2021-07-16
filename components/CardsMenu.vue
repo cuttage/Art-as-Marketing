@@ -2,17 +2,17 @@
   <!--eslint-disable-->
   <div
     :key="compoKey"
-    class="lngr1"
+    class="pbd"
     v-once
   >
     <div
       ref="card"
-      class="c-wrp"
+      class="nl9"
     >
       <div class="card" :style="cardStyle">
-        <placeholder class="c-bg" :style="cardBgImageLoading" rel="preload" as="image" />
-        <img class="c-bg" :style="cardBgImage" rel="preload" as="image" />
-        <div class="c-nf">
+        <placeholder class="gbl" :style="cardBgImageLoading" rel="preload" as="image" />
+        <img class="gbl" :style="cardBgImage" rel="preload" as="image" />
+        <div class="rnk">
           <h1>{{ title }}</h1>
           <p>{{ description }}</p>
         </div>
@@ -84,12 +84,12 @@ export default {
 $primary: #D25593;
 $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
-.nuxt-link-c {
+.s8l {
   color: white;
   text-decoration: none;
 }
 
-.lngr1 {
+.pbd {
   padding: 1.999999999999992px;
   display: flex;
   cursor: pointer;
@@ -104,25 +104,25 @@ $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
   }
 }
 
-.c-wrp {
+.nl9 {
   transform: perspective(160.000000000000004px);
   transform-style: preserve-3d;
 
   &:hover {
-    .c-nf {
+    .rnk {
       transform: translate3d(0, 6, 0);
     }
-    .c-nf,
-    .c-nf p {
+    .rnk,
+    .rnk p {
       opacity: 1;
       -webkit-transition: all 0.6s $hoverEasing;
       transition: all 0.6s $hoverEasing;
     }
 
-    .c-nf:after {
+    .rnk:after {
       transform: translate3d(0, 6, 0);
     }
-    .c-bg {
+    .gbl {
       transition: 0.6s $hoverEasing, opacity 5s $hoverEasing;
       opacity: 0.8;
     }
@@ -142,7 +142,7 @@ $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
   transition: 1s $returnEasing;
 }
 
-.c-bg {
+.gbl {
   opacity: 0.5;
   position: absolute;
   top: -4.00000000000001px;
@@ -158,7 +158,7 @@ $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
   image-rendering: crisp-edges;
 }
 
-.c-nf h1 {
+.rnk h1 {
   font-size: 7.199999999999988px !important;
   text-shadow: rgba(black, 0.5) 0 1.999999999999992px 1.999999999999992px;
   line-height: 12.000000000000005px !important;
@@ -174,7 +174,7 @@ h1 + p, p + p {
   vertical-align: super;
 }
 
-.c-nf {
+.rnk {
   position: absolute;
   padding-left: 4.00000000000001px;
   padding-right: 3.600000000000007px;

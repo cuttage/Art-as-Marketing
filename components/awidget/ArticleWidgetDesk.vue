@@ -1,14 +1,14 @@
 <template>
-  <div class="c-mrt">
+  <div class="0og">
     <div class="day day1">
-      <div class="t-mrt">
+      <div class="fxw">
         <span v-show="toggleMarta === false" class="spinner"></span>
-        <div class="c-s-r-t-r-t-sb" v-once>
-          <span class="temp tmp1">Marta Fattori</span>
+        <div class="go3" v-once>
+          <span class="temp k9z">Marta Fattori</span>
           <h1 class="header">A couturière with a vision.</h1>
-          <h2 class="sbhdr">Read my latest Medium article</h2>
-          <h3 class="rg-txt">"Change in Fashion: A China Case-Study."</h3>
-          <p class="rg-txt-sb">"Change in Fashion: A Case-Study. Lorem ipsum dolor sit"</p>
+          <h2 class="2u8">Read my latest Medium article</h2>
+          <h3 class="thj">"Change in Fashion: A China Case-Study."</h3>
+          <p class="bt5">"Change in Fashion: A Case-Study. Lorem ipsum dolor sit"</p>
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@ $m: rgba(210, 85, 147, 0.9);
 $g: 2.15219298245614rem;
 
 @media only screen and (min-width: 1196px) {
-  .c-mrt {
+  .0og {
     background: linear-gradient(to right, rgba(32,28,41,0.2), rgba(32,28,41,0.2) 1px, rgba(23,20,29,0.2) 1px, rgba(23,20,29,0.2));
     border-radius: 10px;
     -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
@@ -80,7 +80,7 @@ $g: 2.15219298245614rem;
                 0 8px 8px rgba(0,0,0,0.05),
                 0 16px 16px rgba(0,0,0,0.025);
   }
-  .t-mrt {
+  .fxw {
     margin-top: 12%;
     align-self: center;
     margin-left: 11%;
@@ -101,7 +101,7 @@ $g: 2.15219298245614rem;
     -webkit-text-fill-color: transparent;
   }
 
-  .sbhdr {
+  .2u8 {
     font-weight: 400;
     font-size: 10px;
     text-transform: uppercase;
@@ -122,7 +122,7 @@ $g: 2.15219298245614rem;
     -webkit-text-fill-color: transparent;
   }
 
-  .rg-txt {
+  .thj {
     font-size: 22px;
     line-height: 1.45;
     text-transform: uppercase;
@@ -132,7 +132,7 @@ $g: 2.15219298245614rem;
     -webkit-text-fill-color: transparent;
   }
 
-  .rg-txt-sb {
+  .bt5 {
     font-size: 12px;
     line-height: 1.55;
     margin-top: 6%;

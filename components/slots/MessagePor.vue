@@ -1,5 +1,5 @@
 <template>
-  <span class="g2m-dt-wr">
+  <span class="66u">
     <slot name="g2m" :tellYou="caption"></slot>
     <slot name="g3m" :G2mData="G2mData" :G2m2Data="G2m2Data"></slot>
   </span>
@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 @media only screen and (max-width: 1047px) {
-  .g2m-dt-wr {
+  .66u {
     width: 80%;
     text-align: center;
   }

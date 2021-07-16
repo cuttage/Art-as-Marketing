@@ -1,23 +1,23 @@
 <template>
   <!--eslint-disable-->
-  <div class="cntnr">
-    <div class="day c-d1 a1">
+  <div class="vt0">
+    <div class="day ocp a1">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="t-s-d3 t-d3var">Exploit an haute-couture design strategy.
-            <div class="sbt-d3 tI">Anywhere you promote or sell,</div>
-            <div class="c-s2-d3">
-              <div class="s2-d3 tI">Give your customer a full-blown,</div>
-              <div class="s-s22-d3">
-                <div class="s22-d3 tI">original soundtrack Music experience.</div>
-                <div class="s222-d3 tI">*</div>
+          <div id="target-d1 tI" class="2y9 dyb">Exploit an haute-couture design strategy.
+            <div class="kk8 tI">Anywhere you promote or sell,</div>
+            <div class="3jk">
+              <div class="l2w tI">Give your customer a full-blown,</div>
+              <div class="nqv">
+                <div class="rju tI">original soundtrack Music experience.</div>
+                <div class="2iu tI">*</div>
               </div>
             </div>
-            <div class="s3-d3 tI">A small investment, great added value.</div>
-            <div class="c-s4-s5-d3">
-              <div class="s4-d3 tI s4-d3-bsnss">Original studio Music brought to your selling sites</div>
-              <div class="s44-d3 tI">brings customer awareness to match your service quality.</div>
-              <div class="s5-d3 tI">*Is this the best haute-couture tweak for you? We will find out.</div>
+            <div class="33y tI">A small investment, great added value.</div>
+            <div class="k2g">
+              <div class="2yc tI t0p">Original studio Music brought to your selling sites</div>
+              <div class="tn2 tI">brings customer awareness to match your service quality.</div>
+              <div class="6tg tI">*Is this the best haute-couture tweak for you? We will find out.</div>
             </div>
             <Help v-if="father === 'Homepage1Scrollto'" :mother="mother" />
           </div>

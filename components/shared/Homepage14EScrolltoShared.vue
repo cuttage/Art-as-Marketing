@@ -1,17 +1,17 @@
 <template>
-  <div class="cntnr">
-    <div class="day c-d1">
+  <div class="vt0">
+    <div class="day ocp">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="t-d6 t-d6vr2">‘Minimal structure’: Fast adapted.
-            <div class="c-s-d6">
-              <div class="s-d6 tI">First, we decide how to round up your customers’</div>
-              <div class="s1-d6 tI">opinions. Light best practices, to rapidly adapt the final service.</div>
+          <div id="target-d1 tI" class="npn 8ah">‘Minimal structure’: Fast adapted.
+            <div class="k0h">
+              <div class="wns tI">First, we decide how to round up your customers’</div>
+              <div class="o5j tI">opinions. Light best practices, to rapidly adapt the final service.</div>
             </div>
-            <div class="c-s2-d6">
-              <div class="s2-d6 tI">Your customer may prefer embroidered</div>
-              <div class="s21-d6 tI">curtains or to find its wedding dress ...</div>
-              <div class="s22-d6 tI">We got it covered. ...</div>
+            <div class="wi6">
+              <div class="sxg tI">Your customer may prefer embroidered</div>
+              <div class="xru tI">curtains or to find its wedding dress ...</div>
+              <div class="8ls tI">We got it covered. ...</div>
             </div>
           </div>
         </div>

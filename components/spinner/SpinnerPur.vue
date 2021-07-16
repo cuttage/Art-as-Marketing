@@ -1,7 +1,7 @@
 <template>
-  <nav class="n-wrpr">
-    <div class="t-wrpr">
-      <transition name="apng" mode="out-in">
+  <nav class="jq4">
+    <div class="9sn">
+      <transition name="o64" mode="out-in">
         <div v-if="getToggleCuttage2" id="consultancy">
           <p>
             A Consultancy part of Cuttage Group
@@ -9,12 +9,12 @@
         </div>
       </transition>
     </div>
-    <div class="s-wrpr">
-      <div id="s-cntnr">
+    <div class="wo2">
+      <div id="wl1">
         <div id="circ">
-          <section class="s-pg">
-            <div v-if="page === 'about'" class="sp-2" @click="toggleImage" />
-            <div v-else class="sp-1" @click="toggleImage" />
+          <section class="2ih">
+            <div v-if="page === 'about'" class="g2b" @click="toggleImage" />
+            <div v-else class="7ip" @click="toggleImage" />
             <ul>
               <li></li>
               <li></li>
@@ -72,13 +72,13 @@ $d: 60px;
 $c: rgba(0, 169, 157, 0.9);
 $m: rgba(210, 85, 147, 0.9);
 
-.n-wrpr {
+.jq4 {
   visibility: visible;
   display: flex;
   width: 100vw;
   height: 80px;
   overflow: visible;
-  .t-wrpr {
+  .9sn {
     flex-grow: 1;
     width: calc(10px + 54%);
     height: inherit;
@@ -88,7 +88,7 @@ $m: rgba(210, 85, 147, 0.9);
     overflow: visible;
     margin-left: 4%;
   }
-  .s-wrpr {
+  .wo2 {
     flex-grow: 1;
     width: calc(10px + 46%);
   }
@@ -104,29 +104,29 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .n-wrpr {
+  .jq4 {
     visibility: hidden;
     display: none;
     height: 0;
   }
 }
 
-.apng {
+.o64 {
   backface-visibility: hidden;
   will-change: opacity, transform;
 }
-.apng-enter-to,
-.apng-leave {
+.o64-enter-to,
+.o64-leave {
   opacity: 1;
 }
-.apng-enter-active {
+.o64-enter-active {
   transition: all .4s;
 }
-.apng-leave-active {
+.o64-leave-active {
   transition: all .05s cubic-bezier(1.0, 0.5, 0.8, 1.0) 220ms;
   transform: rotate(0.01);
 }
-.apng-enter, .apng-leave-to {
+.o64-enter, .o64-leave-to {
   opacity: 0;
 }
 
@@ -167,7 +167,7 @@ p {
   cursor: pointer;
 }
 
-#s-cntnr {
+#wl1 {
   width: 100%;
   height: 80px;
   display: flex;
@@ -175,7 +175,7 @@ p {
   justify-content: center;
 }
 
-.s-pg {
+.2ih {
   display: flex;
   justify-content: center;
   align-items: center !important;
@@ -183,14 +183,14 @@ p {
   position: relative;
 }
 
-.sp-1::after,
-.sp-2::after {
+.7ip::after,
+.g2b::after {
   backface-visibility: hidden !important;
   content: '';
   display: flex;
 }
 
-.sp-2 {
+.g2b {
   &, &:before {
     backface-visibility: hidden !important;
     width: $d; height: $d;
@@ -204,7 +204,7 @@ p {
   background: url('~assets/svg/LogoAboutMob.svg') 50%/ cover padding-box !important;
 }
 
-.sp-1 {
+.7ip {
   &, &:before {
     backface-visibility: hidden !important;
     width: $d; height: $d;

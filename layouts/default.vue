@@ -1,36 +1,36 @@
 <template>
   <my-layout>
     <div :class="(page === 'portfolio' || page === 'portfolio-id') ? content : null">
-      <div :class="(page === 'portfolio' || page === 'portfolio-id') ? rchv : null">
+      <div :class="(page === 'portfolio' || page === 'portfolio-id') ? 3wp : null">
         <Spinner
           v-if="page !== 'index' && page !== 'portfolio' && page !== 'portfolio-id' && page !== 'about'"
-          class="sw-sp"
+          class="hx0"
           :is="asyncComp"
         />
-        <Marta v-if="page !== 'portfolio' && page !== 'portfolio-id'" class="h-hd" :class="page === 'about' ? 'h-h2' : ''" />
+        <Marta v-if="page !== 'portfolio' && page !== 'portfolio-id'" class="ju8" :class="page === 'about' ? 'nwe' : ''" />
         <div v-if="page === 'index'">
-          <div class="s-prlxc">
-            <Pxcc class="Pxcc Pxcco"></Pxcc>
+          <div class="igf">
+            <Cake class="r9z 9i1"></Cake>
           </div>
-          <Form class="c-f-c" />
+          <Form class="fnm" />
         </div>
         <div :class="(page === 'portfolio' || page === 'portfolio-id') ? article : content">
           <nuxt />
         </div>
         <SpinnerMob
           v-if="page === 'about'"
-          class="sw-wsp-vr"
+          class="57x"
           :is="asyncComp2"
         />
         <article class="article" v-if="(page === 'portfolio' || page === 'portfolio-id')">
           <SpinnerMob
-            class="sw-wsp"
+            class="3cm"
             :is="asyncComp2"
           />
         </article>
         <article class="article" v-if="(page === 'portfolio' || page === 'portfolio-id')">
           <ArticleWidgetMob
-            class="m-g-b"
+            class="iob"
           />
         </article>
       </div>
@@ -47,7 +47,7 @@ export default {
   data: () => ({
     asyncComp: '',
     asyncComp2: '',
-    rchv: 'rchv',
+    3wp: '3wp',
     content: 'content',
     article: 'article'
   }),
@@ -55,7 +55,7 @@ export default {
     myLayout,
     Form,
     Spinner: () => import('~/components/spinner/Spinner.vue'),
-    Pxcc: () => import('~/components/PxccAlt.vue'),
+    Cake: () => import('~/components/Cake.vue'),
     Marta: () => import('~/components/awidget/ArticleWidgetDesk.vue'),
     SpinnerMob: () => import('~/components/spinner/SpinnerMob.vue'),
     ArticleWidgetMob: () => import('~/components/awidget/ArticleWidgetMob.vue')
@@ -238,38 +238,38 @@ body-content {
   flex: 1;
 }
 
-.c-f-c {
+.fnm {
   width: inherit;
   z-index: 999;
 }
 
 @media only screen and (min-width: 525px) {
-  .cntnr,
-  .c-ndx,
-  .c-ppp {
+  .vt0,
+  .c3q,
+  .6p2 {
     width: inherit;
     height: inherit;
     background: blue;
   }
 
-  .cntnr:hover,
-  .c-ppp:hover {
+  .vt0:hover,
+  .6p2:hover {
     transition: all 0.3s ease-out-in;
     text-shadow: none !important;
   }
 }
 
-.Pxcc {
+.r9z {
   opacity: 1;
   visibility: visible;
 }
 
-.Pxcco {
+.9i1 {
   overflow-y: visible;
   overflow-x: hidden;
 }
 
-.sw-sp {
+.hx0 {
   position: absolute;
   top: 78vh;
 }
@@ -282,21 +282,21 @@ body-content {
   }
 }
 
-.sw-wsp {
+.3cm {
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   margin-bottom: calc(9.296188183807424vw + (2em - 9.296188183807424vw));
   visibility: visible;
   display: block;
 }
 
-.sw-wsp-vr {
+.57x {
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   visibility: visible;
   display: block;
 }
 
 @media only screen and (max-width: 974px) {
-  .h-h2 {
+  .nwe {
     visibility: hidden;
     display: none;
     height: 0;
@@ -307,12 +307,12 @@ body-content {
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .h-hd {
+  .ju8 {
     visibility: hidden;
     display: none;
     height: 0;
   }
-  .sw-wsp-vr {
+  .57x {
     visibility: hidden !important;
     display: none !important;
     height: 0 !important;
@@ -329,7 +329,7 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .sw-wsp {
+  .3cm {
     margin-bottom: 0;
     visibility: hidden;
     display: none;
@@ -337,7 +337,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
-.rchv {
+.3wp {
   display: grid;
   grid-template-columns: repeat(1, minmax(280px, 2732px));
   justify-content: center;
@@ -345,11 +345,11 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   grid-auto-flow: dense;
 }
 
-.m-g-b {
+.iob {
   margin-bottom: 2em !important;
 }
 
-.s-prlxc {
+.igf {
   visibility: visible;
   display: block;
   position: absolute;
@@ -361,7 +361,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 @media only screen and (max-width: 1199px) {
-  .s-prlxc {
+  .igf {
     top: calc(20.2rem - 12vw);
   }
 }
@@ -369,7 +369,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 @media only screen and (max-width: 865px),
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px) {
-  .s-prlxc {
+  .igf {
     visibility: hidden;
     display: none;
     width: 0;

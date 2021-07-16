@@ -1,13 +1,13 @@
 <template>
-  <article class="article lgcl">
+  <article class="article 6lt">
     <div class="ntm" />
     <div id="pnl" class="ntm" :style="diapoclass2C">
-      <span role="button" v-bind:class="{dsbld: currentDiapo === 0}" @click="changeDiapo('prev')"></span>
-      <span role="button" v-bind:class="{dsbld: currentDiapo === diapos.length - 1}" @click="changeDiapo('next')"></span>
+      <span role="button" v-bind:class="{u55: currentDiapo === 0}" @click="changeDiapo('prev')"></span>
+      <span role="button" v-bind:class="{u55: currentDiapo === diapos.length - 1}" @click="changeDiapo('next')"></span>
     </div>
     <article v-show="this.currentDiapo === 0" class="ntm" :style="diapoclassC" :key="diapoaKeySub">
-      <project v-if="page === 'portfolio'" class="b_s_h" :key="diapoaKeySub1"></project>
-      <nuxt-child v-else class="b_s_h" :key="diapoaKeySub1"></nuxt-child>
+      <project v-if="page === 'portfolio'" class="rur" :key="diapoaKeySub1"></project>
+      <nuxt-child v-else class="rur" :key="diapoaKeySub1"></nuxt-child>
     </article>
     <component :is="diapos[currentDiapo]" v-if="this.currentDiapo === 1" class="ntm" :style="diapoclassC" :key="diapobKey">
       <slot name="inputBlueContent"></slot>
@@ -96,11 +96,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.b_s_h {
+.rur {
   z-index: 6;
 }
 
-.lgcl {
+.6lt {
   display: grid;
   visibility: visible;
   width: 100%;
@@ -128,7 +128,7 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .lgcl {
+  .6lt {
     display: none;
     visibility: hidden;
   }
@@ -144,7 +144,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
     cursor: pointer;
     flex-grow: 1;
 
-    &.dsbld {
+    &.u55 {
       pointer-events: none;
     }
   }

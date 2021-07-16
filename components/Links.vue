@@ -1,6 +1,6 @@
 <template>
   <!--eslint-disable-->
-  <div class="n-lst">
+  <div class="7al">
     <HomepageMenu />
     <HomepageMenuAbout />
     <HomepageMenuPortfolio />
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped>
-.n-lst {
+.7al {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,23 +1,23 @@
 <template>
-  <div class="n-lst">
-    <div class="strtchl">
+  <div class="7al">
+    <div class="s1c">
       <nuxt-link exact to="/" class="disable">
-        <ul id="chldr" class="chldr"></ul>
+        <ul id="zfp" class="zfp"></ul>
       </nuxt-link>
     </div>
-    <div class="strtchl" v-for="(data, i) in objData" :key="data.id">
+    <div class="s1c" v-for="(data, i) in objData" :key="data.id">
       <nuxt-link exact :to="'/' + i" class="disable">
-        <ul id="chldr" class="chldr"></ul>
+        <ul id="zfp" class="zfp"></ul>
       </nuxt-link>
     </div>
-    <div class="strtchl">
+    <div class="s1c">
       <nuxt-link exact to="/" class="disable">
-        <ul id="chldr" class="chldr"></ul>
+        <ul id="zfp" class="zfp"></ul>
       </nuxt-link>
     </div>
-    <div class="strtchl">
+    <div class="s1c">
       <nuxt-link exact to="/portfolio" class="disable">
-        <ul id="chldr" class="chldr"></ul>
+        <ul id="zfp" class="zfp"></ul>
       </nuxt-link>
     </div>
   </div>
@@ -37,7 +37,7 @@ export default {
 <style exact lang="scss" scoped>
 $primary: #D25593;
 
-.n-lst {
+.7al {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,12 +47,12 @@ $primary: #D25593;
   height: inherit;
 }
 
-.strtchl {
+.s1c {
   flex-grow: 1;
   height: 100%;
 }
 
-.strtchl + .strtchl {
+.s1c + .s1c {
   margin-top: 10%;
 }
 
@@ -61,7 +61,7 @@ ul {
   padding: 0;
 }
 
-.chldr {
+.zfp {
   text-rendering: geometricPrecision;
   position: relative;
   display: table;

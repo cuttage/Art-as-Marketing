@@ -1,6 +1,6 @@
 <template>
-  <div class="n-v-t-c">
-    <div class="n-v-t">🚧<br/>Rotate your device to view the page</div>
+  <div class="j86">
+    <div class="uh0">🚧<br/>Rotate your device to view the page</div>
   </div>
 </template>
 
@@ -11,11 +11,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.n-v-t-c {
+.j86 {
   display: none;
   visibility: hidden;
 }
-.n-v-t {
+.uh0 {
   display: none;
   visibility: hidden;
 }
@@ -29,14 +29,14 @@ only screen and (max-width: 460px) and (max-resolution: 1.6687500000dppx), // li
 only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.6687500000),
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape) {
-  .n-v-t-c {
+  .j86 {
     display: flex;
     visibility: visible;
     width: 100vw;
     height: 100vh;
     justify-content: center;
   }
-  .n-v-t {
+  .uh0 {
     display: flex;
     visibility: visible;
     width: auto;
@@ -51,14 +51,14 @@ only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2
 }
 
 @media only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .n-v-t-c {
+  .j86 {
     display: flex;
     visibility: visible;
     width: 100vw;
     height: 100vh;
     justify-content: center;
   }
-  .n-v-t {
+  .uh0 {
     display: flex;
     visibility: visible;
     width: auto;

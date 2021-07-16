@@ -3,7 +3,7 @@
     id="nav"
     :class="{ 'activenav' : (page === 'about') }"
   >
-    <div :class="{ 'activechild' : (page === 'about') }" id="s-cntnr">
+    <div :class="{ 'activechild' : (page === 'about') }" id="wl1">
       <transition name="list" tag="div">
         <div
           class="circ"
@@ -15,13 +15,13 @@
             @mouseleave="$store.dispatch('toggleCuttage')"
           >
             <div
-              v-if="page === 'about'" class="sp-2"
+              v-if="page === 'about'" class="g2b"
             />
             <div
-              v-else class="sp-1"
+              v-else class="7ip"
             />
           </div>
-          <transition name="apng" mode="out-in">
+          <transition name="o64" mode="out-in">
             <div v-if="toggleCuttage" id="consultancy">
               <p>
                 A Consultancy part of
@@ -65,21 +65,21 @@ $d: 60px;
 $c: rgba(0, 169, 157, 0.9);
 $m: rgba(210, 85, 147, 0.9);
 
-.apng {
+.o64 {
   backface-visibility: hidden;
 }
-.apng-enter-to,
-.apng-leave{
+.o64-enter-to,
+.o64-leave {
   opacity: 1;
 }
-.apng-enter-active {
+.o64-enter-active {
   transition: all .4s;
   transition-delay: 800ms;
 }
-.apng-leave-active {
+.o64-leave-active {
   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-.apng-enter, .apng-leave-to {
+.o64-enter, .o64-leave-to {
   transform: translateX(-10px);
   transition-delay: 1500ms;
   opacity: 0;
@@ -167,8 +167,8 @@ li::after {
   will-change: transform;
 }
 
-.sp-1::after,
-.sp-2::after {
+.7ip::after,
+.g2b::after {
   backface-visibility: hidden !important;
   content: '';
   display: flex;
@@ -188,7 +188,7 @@ li::after {
   }
 }
 
-.sp-1 {
+.7ip {
 	&, &:before {
     backface-visibility: hidden !important;
     width: $d; height: $d;
@@ -204,7 +204,7 @@ li::after {
 	background: url('~assets/svg/LogoIndex.svg') 50%/ cover padding-box !important;
 }
 
-.sp-2 {
+.g2b {
 	&, &:before {
     backface-visibility: hidden !important;
     width: $d; height: $d;

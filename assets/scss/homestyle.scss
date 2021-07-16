@@ -3,27 +3,27 @@ $timing: ease-out;
 
 $cta-color: yellow;
 
-.lngr:hover div {
-  animation: g-b-glw $dur $timing infinite;
+.yjb:hover div {
+  animation: p9d $dur $timing infinite;
   cursor: pointer;
 }
 
-.lngr:hover .child {
+.yjb:hover .child {
   filter: saturate(1.15);
   background: {
     filter: none !important;
   };
 }
 
-.c-t-tv:hover .s-d2-tv {
-  animation: g-t-glw $dur $timing infinite;
+.5gm:hover .gvx {
+  animation: s8z $dur $timing infinite;
 }
 
-.s-d2-tv:hover {
-  animation: g-t-glw $dur $timing infinite;
+.gvx:hover {
+  animation: s8z $dur $timing infinite;
 }
 
-@keyframes g-b-glw {
+@keyframes p9d {
     from {
         background-color: $cta-color;
         box-shadow: 0 1px 1px rgba(0,0,0,0.125),
@@ -50,7 +50,7 @@ $cta-color: yellow;
     }
 }
 
-@keyframes g-t-glw {
+@keyframes s8z {
     from {
       text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
                   0 0.5px 0.5px rgba(0,0,0,0.1),
@@ -75,16 +75,16 @@ $cta-color: yellow;
 }
 
 /* homepage clickable component animation */
-.clckbl {
+.rak {
   backface-visibility: hidden;
 }
 
-.clckbl-enter {
+.rak-enter {
   opacity: 0;
   transform: rotateY(50deg);
 }
 
-.clckbl-enter-to {
+.rak-enter-to {
   opacity: 1;
   transform: rotateY(0deg);
 }

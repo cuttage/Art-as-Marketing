@@ -22,87 +22,87 @@
       class="ay2"
     />
 
-    <div class="c-t2">
-      <div class="it-2 item1" :class="peEnabled" @mouseover="toggleHomepage11AScrollto" />
-      <div class="it-2 item2" :class="peEnabled" @mouseover="toggleHomepage12AScrollto" />
-      <div class="it-2 item3" :class="peEnabled" @mouseover="toggleHomepage13AScrollto" />
-      <div class="it-2 item4" :class="peEnabled" @mouseover="toggleHomepage14AScrollto" />
-      <div class="it-2 item5" :class="peEnabled" @mouseover="toggleHomepage15AScrollto" />
+    <div class="15n">
+      <div class="ppk item1" :class="peEnabled" @mouseover="toggleHomepage11AScrollto" />
+      <div class="ppk item2" :class="peEnabled" @mouseover="toggleHomepage12AScrollto" />
+      <div class="ppk item3" :class="peEnabled" @mouseover="toggleHomepage13AScrollto" />
+      <div class="ppk item4" :class="peEnabled" @mouseover="toggleHomepage14AScrollto" />
+      <div class="ppk item5" :class="peEnabled" @mouseover="toggleHomepage15AScrollto" />
     </div>
-    <div class="c-t-v-g-h" @click.prevent="prevent11" />
-    <div class="c-t-v2">
-      <div class="i-v i-v-1">
-        <vue-next-level-scroll target="#my-target11">
+    <div class="s9e" @click.prevent="prevent11" />
+    <div class="8un">
+      <div class="i-v 55w">
+        <vue-next-level-scroll target="#efz11">
           <HomepageMenu11AScrollto
             v-if="isHomepage11AScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
-        <vue-next-level-scroll target="#my-target12">
+        <vue-next-level-scroll target="#efz12">
           <HomepageMenu12AScrollto
             v-if="isHomepage12AScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
-        <vue-next-level-scroll target="#my-target13">
+        <vue-next-level-scroll target="#efz13">
           <HomepageMenu13AScrollto
             v-if="isHomepage13AScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
-        <vue-next-level-scroll target="#my-target14">
+        <vue-next-level-scroll target="#efz14">
           <HomepageMenu14AScrollto
             v-if="isHomepage14AScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
-        <vue-next-level-scroll target="#my-target15">
+        <vue-next-level-scroll target="#efz15">
           <HomepageMenu15AScrollto
             v-if="isHomepage15AScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
       </div>
-      <div class="i-v i-v-2">
-        <span class="sl-d2">Your gateway to: Safe Crash Records Music Studio, Rome-based Film Production Companies.</span>
-        <vue-next-level-scroll target=".my-target16">
+      <div class="i-v txl">
+        <span class="pb2">Your gateway to: Safe Crash Records Music Studio, Rome-based Film Production Companies.</span>
+        <vue-next-level-scroll target=".efz16">
           <span
             v-if="isHomepage11AScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
-        <vue-next-level-scroll target=".my-target17">
+        <vue-next-level-scroll target=".efz17">
           <span
             v-if="isHomepage12AScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
-        <vue-next-level-scroll target=".my-target18">
+        <vue-next-level-scroll target=".efz18">
           <span
             v-if="isHomepage13AScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
-        <vue-next-level-scroll target=".my-target19">
+        <vue-next-level-scroll target=".efz19">
           <span
             v-if="isHomepage14AScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
-        <vue-next-level-scroll target=".my-target20">
+        <vue-next-level-scroll target=".efz20">
           <span
             v-if="isHomepage15AScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
         <nuxt-link exact to="/contact">
           <span
-            class="s-d2-tv-2"
+            class="hv7"
           >| Understood</span>
         </nuxt-link>
       </div>
     </div>
-    <div class="svt-c">
+    <div class="lsy">
       <SpinnerPur
         v-if="isHomepage14AScrolltoActive"
         class="svt"
@@ -110,28 +110,28 @@
     </div>
     <Homepage11Target
       v-if="isHomepage11AScrolltoActive"
-      id="my-target11"
-      class="ay-vr2 my-target16"
+      id="efz11"
+      class="zlm efz16"
     />
     <Homepage12Target
       v-if="isHomepage12AScrolltoActive"
-      id="my-target12"
-      class="ay-vr2 my-target17"
+      id="efz12"
+      class="zlm efz17"
     />
     <Homepage13Target
       v-if="isHomepage13AScrolltoActive"
-      id="my-target13"
-      class="ay-vr2 my-target18"
+      id="efz13"
+      class="zlm efz18"
     />
     <Homepage14Target
       v-if="isHomepage14AScrolltoActive"
-      id="my-target14"
-      class="ay-vr2 my-target19"
+      id="efz14"
+      class="zlm efz19"
     />
     <Homepage15Target
       v-if="isHomepage15AScrolltoActive"
-      id="my-target15"
-      class="ay-vr2 my-target20"
+      id="efz15"
+      class="zlm efz20"
     />
   </div>
 </template>
@@ -189,7 +189,7 @@ export default {
   data() {
     return {
       activeDialog: DIALOG_TYPE.NONE,
-      noPoint: 'n-pt',
+      noPoint: 't0f',
       nullNoPoint: null,
       father: 'Homepage1Scrollto'
     };
@@ -266,7 +266,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   position: absolute;
 }
 
-.svt-c {
+.lsy {
   z-index: 999;
   position: absolute;
   right: 2.459649122807018rem;
@@ -296,14 +296,14 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 @media only screen and (min-height: 821px) {
   @media only screen and (min-width: 525px) {
-    .ay-vr2 {
+    .zlm {
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
-  .ay-vr2 {
+  .zlm {
     position: absolute;
     top: 117vh;
     width: 100vw;
@@ -313,15 +313,15 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
       cursor: default;
     }
   }
-  .it-2 {
+  .ppk {
     opacity: 0;
     flex-grow: 1;
     height: 77vh;
   }
-  .n-pt {
+  .t0f {
     pointer-events: none;
   }
-  .c-t-v-g-h {
+  .s9e {
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -330,21 +330,21 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     align-self: center;
     position: relative;
   }
-  .c-t-v2 {
+  .8un {
     display: flex;
     flex-direction: row;
     height: 35vh;
     align-self: center;
     overflow: visible;
   }
-  .svt-c {
+  .lsy {
     top: calc(77vh - 80px);
   }
 }
 
 @media only screen and (max-height: 820px) {
   @media only screen and (min-width: 525px) {
-    .ay-vr2 {
+    .zlm {
       &:hover {
         cursor: default;
         background-color: blue;
@@ -352,19 +352,19 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   }
   @media only screen and (max-height: 710px) {
-    .ay-vr2 {
+    .zlm {
       height: 117vh;
       min-height: 760.56px;
       z-index: -1;
     }
   }
   @media only screen and (min-height: 711px) {
-    .ay-vr2 {
+    .zlm {
       height: inherit;
       z-index: -1;
     }
   }
-  .ay-vr2 {
+  .zlm {
     position: absolute;
     top: 960.56px;
     width: 100vw;
@@ -373,16 +373,16 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
       cursor: default;
     }
   }
-  .it-2 {
+  .ppk {
     opacity: 0;
     flex-grow: 1;
     height: calc(392.16px + 17.1vw);
     max-height: 632.16px;
   }
-  .n-pt {
+  .t0f {
     pointer-events: none;
   }
-  .c-t-v-g-h {
+  .s9e {
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -390,31 +390,31 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     align-self: center;
     position: relative;
   }
-  .c-t-v2 {
+  .8un {
     display: flex;
     flex-direction: row;
     height: 287.34px;
     align-self: center;
     overflow: visible;
   }
-  .svt-c {
+  .lsy {
     top: calc(392.16px + 17.1vw - 80px);
   }
 }
 
-.c-t2 {
+.15n {
   display: flex;
 }
 
-.it-2 + .it-2 {
+.ppk + .ppk {
   margin-left: 0;
 }
 
 .i-v { margin-left: 5%; }
-.i-v-1 { margin-left: 15%; }
-.i-v-2 { height: 100%; max-width: 41%; }
+.55w { margin-left: 15%; }
+.txl { height: 100%; max-width: 41%; }
 
-.sl-d2 {
+.pb2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 560;
   font-size: 1.007793231094659em;
@@ -425,7 +425,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: default !important;
 }
 
-.s-d2-tv {
+.gvx {
   margin-left: 0.064526909722222em;
   line-height: 2.905em;
   position: relative;
@@ -438,7 +438,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-.s-d2-tv-2 {
+.hv7 {
   margin-left: 0.064526909722222em;
   display: inline-block;
   position: relative;

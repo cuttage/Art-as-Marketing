@@ -1,10 +1,10 @@
 <template>
   <keep-alive>
     <div>
-      <p v-if="getToggleHelp === false" class="h-nb">+ Help</p>
-      <p v-if="getToggleHelp === true" class="h-nb">– Help</p>
-      <div v-if="getToggleHelp === true" class="p-wrppr p-wrppr-a p-wrppr-n" :class="prWclass">
-        <div class="p-blck p-crd p-crd-a" :class="prCclass">
+      <p v-if="getToggleHelp === false" class="u08">+ Help</p>
+      <p v-if="getToggleHelp === true" class="u08">– Help</p>
+      <div v-if="getToggleHelp === true" class="csw d1k kwy" :class="prWclass">
+        <div class="q0s ox6 idh" :class="prCclass">
           <slot name="HelpWrapSlot"></slot>
           <hr>
         </div>
@@ -26,10 +26,10 @@ export default {
   },
   data() {
     return {
-      normalizedW: 'p-wrppr-nrml',
-      tailorizedW: 'p-wrppr-tlr',
-      normalizedC: 'p-crd-n',
-      tailorizedC: 'p-crd-t'
+      normalizedW: 'w28',
+      tailorizedW: '7da',
+      normalizedC: 'btj',
+      tailorizedC: 'wgw'
     }
   },
   computed: {
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.h-nb {
+.u08 {
   position: absolute;
   left: 28px;
   height: 5vh;
@@ -69,13 +69,13 @@ export default {
 }
 
 @media only screen and (min-height: 821px) {
-  .h-nb {
+  .u08 {
     top: 77vh;
   }
 }
 
 @media only screen and (max-height: 820px) {
-  .h-nb {
+  .u08 {
     top: calc(392.16px + 17.1vw);
   }
 }

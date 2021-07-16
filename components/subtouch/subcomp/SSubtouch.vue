@@ -1,40 +1,40 @@
 <template>
   <div>
-    <main v-if="selectedContent" class="rchv" id="mSS1" v-pan="onPan">
+    <main v-if="selectedContent" class="3wp" id="lt3" v-pan="onPan">
       <article class="article">
         <Homepage11Target
           v-if="isHomepage1DialogActive"
-          class="A-bs n0"
+          class="ruj n0"
         />
         <Homepage12TargetNowrap
           v-if="isHomepage2DialogActive"
-          class="A-bs alternative"
+          class="ruj alternative"
         />
         <Homepage13Target
           v-if="isHomepage3DialogActive"
-          class="A-bs n0"
+          class="ruj n0"
         />
         <Homepage14Target
           v-if="isHomepage4DialogActive"
-          class="A-bs n0"
+          class="ruj n0"
         />
         <Homepage15Target
           v-if="isHomepage5DialogActive"
-          class="A-bs n0"
+          class="ruj n0"
         />
       </article>
 
       <article class="article">
-        <FormMob class="c-f-c" v-if="selectedContent" />
+        <FormMob class="fnm" v-if="selectedContent" />
       </article>
       <article class="article">
         <div class="cosa" ref="cosa">That's all folks!</div>
       </article>
       <article class="article">
-        <section class="slider">
-          <ul class="slider__nw" ref="newie">
+        <section class="w9x">
+          <ul class="w9x__nw" ref="newie">
             <li v-for="(indice, index) in indices" v-bind:key="indice.id"
-                class="slider__tm"
+                class="w9x__tm"
                 v-tap="(e) => onTap(e, indice)"
                 :style="{backgroundColor: colors[index]}">
               {{ indice }}
@@ -43,42 +43,42 @@
         </section>
       </article>
     </main>
-    <main v-else class="rchv spchv nwmpp1" id="mSS1" v-pan="onPan">
+    <main v-else class="3wp wud ybl" id="lt3" v-pan="onPan">
       <article class="article">
         <Homepage11Target
           v-if="isHomepage1DialogActive"
-          class="A-bs n0"
+          class="ruj n0"
         />
         <Homepage12TargetNowrap
           v-if="isHomepage2DialogActive"
-          class="A-bs alternative"
+          class="ruj alternative"
         />
         <Homepage13Target
           v-if="isHomepage3DialogActive"
-          class="A-bs n0"
+          class="ruj n0"
         />
         <Homepage14Target
           v-if="isHomepage4DialogActive"
-          class="A-bs n0"
+          class="ruj n0"
         />
         <Homepage15Target
           v-if="isHomepage5DialogActive"
-          class="A-bs n0"
+          class="ruj n0"
         />
       </article>
 
       <article class="article">
-        <FormMob class="c-f-c" v-if="selectedContent" />
+        <FormMob class="fnm" v-if="selectedContent" />
       </article>
       <article class="article">
         <div class="cosa" ref="cosa" v-if="selectedContent">{{ selectedContent }}</div>
-        <div class="cosa nwcs" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
+        <div class="cosa zk4" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
       </article>
       <article class="article">
-        <section class="slider">
-          <ul class="slider__nw" ref="newie">
+        <section class="w9x">
+          <ul class="w9x__nw" ref="newie">
             <li v-for="(indice, index) in indices" v-bind:key="indice.id"
-                class="slider__tm"
+                class="w9x__tm"
                 v-tap="(e) => onTap(e, indice)"
                 :style="{backgroundColor: colors[index]}">
               {{ indice }}
@@ -254,13 +254,13 @@ $timing: ease-out;
 
 $cta-color: yellow;
 
-.A-bs {
+.ruj {
   border-radius: 5px;
   text-rendering: geometricPrecision;
   height: auto;
   background-color: blue !important;
 }
-.slider {
+.w9x {
 	width: 100%;
 	height: 108px;
 	overflow: visible;
@@ -301,10 +301,10 @@ $cta-color: yellow;
 }
 
 li:nth-child(1) {
-  animation: g-t-glw $dur $timing infinite;
+  animation: s8z $dur $timing infinite;
 }
 
-@keyframes g-t-glw {
+@keyframes s8z {
   from {
     text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
                 0 0.5px 0.5px rgba(0,0,0,0.1),
@@ -342,21 +342,21 @@ li:nth-child(1) {
 }
 
 @media only screen and (orientation : portrait) and (max-width: 460px) {
-  .nwcs {
+  .zk4 {
     position: relative;
   }
-  .nwmpp1 {
+  .ybl {
     margin-top: -2em;
   }
 }
 @media only screen and (orientation : portrait) and (min-width: 461px) {
-  .spchv {
+  .wud {
     position: relative;
     margin-top: -2em !important;
   }
 }
 @media only screen and (orientation : landscape) {
-  .spchv {
+  .wud {
     position: relative;
     margin-top: -2em !important;
   }
@@ -374,7 +374,7 @@ ul {
   padding: 0 !important;
 }
 
-#mSS1 {
+#lt3 {
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
@@ -382,101 +382,101 @@ ul {
   margin-bottom: 12px;
 }
 
-.rchv {
+.3wp {
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;
   grid-auto-flow: dense;
 }
-.c-f-c {
+.fnm {
   background-color: blue;
   z-index: 999;
   border-radius: 0.307456140350877rem;
 }
 //(min-width: 690px)
 @media only screen and (min-width: 690px) {
-  .A-bs.n0 {
+  .ruj.n0 {
     height: calc(11.857282044634382rem + 50px) !important;
     min-height: calc(11.857282044634382rem + 50px) !important;
   }
-  .A-bs.alternative {
+  .ruj.alternative {
     height: calc(19.094792655440469rem + 50px) !important;
     min-height: calc(19.094792655440469rem + 50px) !important;
   }
 }
 //(max-width: 689px)
 @media only screen and (max-width: 689px) {
-  .A-bs.n0 {
+  .ruj.n0 {
     height: calc(11.860757073534807rem + 50px) !important;
     min-height: calc(11.860757073534807rem + 50px) !important;
   }
-  .A-bs.alternative {
+  .ruj.alternative {
     height: calc(19.054884296127279rem + 50px) !important;
     min-height: calc(19.054884296127279rem + 50px) !important;
   }
 }
 //(max-width: 556px)
 @media only screen and (max-width: 556px) {
-  .A-bs.n0 {
+  .ruj.n0 {
     height: calc(11.758988118326949rem + 50px) !important;
     min-height: calc(11.758988118326949rem + 50px) !important;
   }
-  .A-bs.alternative {
+  .ruj.alternative {
     height: calc(18.846074507581784rem + 50px) !important;
     min-height: calc(18.846074507581784rem + 50px) !important;
   }
 }
 //(max-width: 532px)
 @media only screen and (max-width: 532px) {
-  .A-bs.n0 {
+  .ruj.n0 {
     height: calc(11.659741815687602rem + 50px) !important;
     min-height: calc(11.659741815687602rem + 50px) !important;
   }
-  .A-bs.alternative {
+  .ruj.alternative {
     height: calc(18.754562022329161rem + 50px) !important;
     min-height: calc(18.754562022329161rem + 50px) !important;
   }
 }
 //(max-width: 524px)
 @media only screen and (max-width: 524px) {
-  .A-bs.n0 {
+  .ruj.n0 {
     height: calc(10.338376431376611rem + 50px) !important;
     min-height: calc(10.338376431376611rem + 50px) !important;
   }
-  .A-bs.alternative {
+  .ruj.alternative {
     height: calc(16.2447074730535rem + 50px) !important;
     min-height: calc(16.2447074730535rem + 50px) !important;
   }
 }
 //(max-width: 456px)
 @media only screen and (max-width: 456px) {
-  .A-bs.n0 {
+  .ruj.n0 {
     height: calc(10.331951661585883rem + 50px) !important;
     min-height: calc(10.331951661585883rem + 50px) !important;
   }
-  .A-bs.alternative {
+  .ruj.alternative {
     height: calc(16.20280052302556rem + 50px) !important;
     min-height: calc(16.20280052302556rem + 50px) !important;
   }
 }
 //(max-width: 419px)
 @media only screen and (max-width: 419px) {
-  .A-bs.n0 {
+  .ruj.n0 {
     height: calc(10.011658214749353rem + 50px) !important;
     min-height: calc(10.011658214749353rem + 50px) !important;
   }
-  .A-bs.alternative {
+  .ruj.alternative {
     height: calc(15.649954604288297rem + 50px) !important;
     min-height: calc(15.649954604288297rem + 50px) !important;
   }
 }
 //(max-width: 398px)
 @media only screen and (max-width: 398px) {
-  .A-bs.n0 {
+  .ruj.n0 {
     height: calc(9.82638125052881rem + 50px) !important;
     min-height: calc(9.82638125052881rem + 50px) !important;
   }
-  .A-bs.alternative {
+  .ruj.alternative {
     height: calc(15.267162848053932rem + 50px) !important;
     min-height: calc(15.267162848053932rem + 50px) !important;
   }

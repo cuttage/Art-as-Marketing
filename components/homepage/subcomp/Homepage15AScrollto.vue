@@ -1,20 +1,20 @@
 <template>
   <!--eslint-disable-->
-  <div class="cntnr">
-    <div class="day c-d1">
+  <div class="vt0">
+    <div class="day ocp">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="t-s-d6 t-d3var">We make it happen fy in your area.
-            <div class="c-s-d6 c-s-d615AS">
-              <div class="s-d6 tI">While there are differences in managing design among companies,</div>
-              <div class="s1-d6 tI">top-teams will retain their dramatic performance improvement:</div>
-              <div class="s11-d6 tI">Tackle it in advance.</div>
+          <div id="target-d1 tI" class="t6e dyb">We make it happen fy in your area.
+            <div class="k0h hs8">
+              <div class="wns tI">While there are differences in managing design among companies,</div>
+              <div class="o5j tI">top-teams will retain their dramatic performance improvement:</div>
+              <div class="my4 tI">Tackle it in advance.</div>
             </div>
-            <div id="target-d1 tI" class="e1-d6">Price: less than testing, same quality.</div>
-            <div class="cntnr-s3-d6">
-              <div class="s3-d6 tI s3-d615AS">Years of experience in entertainment: liaisons and business</div>
-              <div class="s3-d6 tI s3-d615AS">best practices, preparation at working cross-functional.</div>
-              <div class="s3-d5 tI s3-d5-mbttm">Ease for you? Time & results.</div>
+            <div id="target-d1 tI" class="7dz">Price: less than testing, same quality.</div>
+            <div class="dlm">
+              <div class="nm1 tI 5ue">Years of experience in entertainment: liaisons and business</div>
+              <div class="nm1 tI 5ue">best practices, preparation at working cross-functional.</div>
+              <div class="dy1 tI k4p">Ease for you? Time & results.</div>
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <NoneMob class="g2-bk-mob" />
-    <div class="w-c-b-v-mob">
-      <main class="rchv" id="mapp" v-pan="onPan">
+    <div class="6lw">
+      <main class="3wp" id="mapp" v-pan="onPan">
         <article class="article">
           <Homepage1DialogNowrap
             v-if="isHomepage1DialogActive"
@@ -31,10 +31,10 @@
           <div class="yyj" ref="yyj" v-else>We use art for experiential marketing. Browse Below</div>
         </article>
         <article class="article">
-          <section class="slider">
-            <ul class="slider__lst" ref="list">
+          <section class="w9x">
+            <ul class="w9x__lst" ref="list">
               <li v-for="(slide, index) in slides" v-bind:key="slide.id"
-                  class="slider__tm"
+                  class="w9x__tm"
                   v-tap="(e) => onTap(e, slide)"
                   :style="{backgroundColor: colors[index]}">
                 {{ slide }}
@@ -241,7 +241,7 @@ $timing: ease-out;
 
 $cta-color: yellow;
 
-.w-c-b-v-mob {
+.6lw {
   display: block;
   visibility: visible;
 }
@@ -256,7 +256,7 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .w-c-b-v-mob {
+  .6lw {
     display: none;
     visibility: hidden;
   }
@@ -268,7 +268,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   height: auto;
   background-color: blue !important;
 }
-.slider {
+.w9x {
 	width: 100%;
 	height: 120px;
 	overflow: visible;
@@ -309,10 +309,10 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 li:nth-child(1) {
-  animation: g-t-glw $dur $timing infinite;
+  animation: s8z $dur $timing infinite;
 }
 
-@keyframes g-t-glw {
+@keyframes s8z {
   from {
     text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
                 0 0.5px 0.5px rgba(0,0,0,0.1),
@@ -369,7 +369,7 @@ ul {
 	overflow: hidden;
 }
 
-.rchv {
+.3wp {
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;

@@ -1,38 +1,38 @@
 <template>
   <my-layout>
-    <div class="rchv">
+    <div class="3wp">
       <article class="article">
         <nuxt />
       </article>
       <article class="article">
         <div v-if="page === 'touch'">
-          <SpinnerMob class="t-sw-wsp2" :is="asyncComp"></SpinnerMob>
+          <SpinnerMob class="k7m" :is="asyncComp"></SpinnerMob>
         </div>
       </article>
       <article class="article">
         <SpinnerMob
           v-if="page === 'touch'"
-          class="h-sp"
+          class="csz"
         />
         <SpinnerMob
           v-else-if="page === 'touchabout'"
-          class="sw-wsp2"
+          class="7on"
           :is="asyncComp"
         />
         <SpinnerMob
           v-else
-          class="sw-wsp"
+          class="3cm"
           :is="asyncComp"
         />
       </article>
       <article class="article">
         <ArticleWidgetMobInd
           v-if="page === 'touch'"
-          class="m-n-g"
+          class="puj"
         />
         <ArticleWidgetMob
           v-else
-          class="m-g-b"
+          class="iob"
         />
       </article>
     </div>
@@ -228,29 +228,29 @@ body {
   pointer-events: all;
 }
 
-.PxccMob {
+.b16 {
   opacity: 1;
   visibility: visible;
   display: flex;
   justify-content: center;
 }
 
-.h-sp {
+.csz {
   display: none !important;
 }
 
-.sw-wsp {
+.3cm {
   margin-top: calc(4.648094091903712vw + (1em - 4.648094091903712vw));
   margin-bottom: calc(9.296188183807424vw + (2em - 9.296188183807424vw));
   visibility: visible;
   display: block;
 }
 
-.sw-wsp2 {
+.7on {
   margin-top: calc(-1 * ((3em) / 2));
 }
 
-.t-sw-wsp2 {
+.k7m {
   margin-top: calc(-1 * ((3em) / 2) - 12px);
 }
 
@@ -264,7 +264,7 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .sw-wsp {
+  .3cm {
     margin-bottom: 0;
     visibility: hidden;
     display: none;
@@ -272,7 +272,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
-.rchv {
+.3wp {
   display: grid;
   grid-template-columns: repeat(1, minmax(280px, 2732px));
   justify-content: center;
@@ -280,12 +280,12 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   grid-auto-flow: dense;
 }
 
-.m-n-g {
+.puj {
   margin-top: -1em;
   margin-bottom: 2em !important;
 }
 
-.m-g-b {
+.iob {
   margin-bottom: 2em !important;
 }
 </style>

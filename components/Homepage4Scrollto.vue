@@ -21,109 +21,109 @@
       class="ay2"
     />
 
-    <div class="c-t2">
-      <div class="it-2 item1" @mouseover="toggleHomepage11DScrollto" />
-      <div class="it-2 item2" @mouseover="toggleHomepage12DScrollto" />
-      <div class="it-2 item3" @mouseover="toggleHomepage13DScrollto" />
-      <div class="it-2 item4" @mouseover="toggleHomepage14DScrollto" />
-      <div class="it-2 item5" @mouseover="toggleHomepage15DScrollto" />
+    <div class="15n">
+      <div class="ppk item1" @mouseover="toggleHomepage11DScrollto" />
+      <div class="ppk item2" @mouseover="toggleHomepage12DScrollto" />
+      <div class="ppk item3" @mouseover="toggleHomepage13DScrollto" />
+      <div class="ppk item4" @mouseover="toggleHomepage14DScrollto" />
+      <div class="ppk item5" @mouseover="toggleHomepage15DScrollto" />
     </div>
-    <div class="c-t-v2">
-      <div class="i-v i-v-1">
-        <vue-next-level-scroll target="#my-target11">
+    <div class="8un">
+      <div class="i-v 55w">
+        <vue-next-level-scroll target="#efz11">
           <HomepageMenu11DScrollto
             v-if="isHomepage11DScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
-        <vue-next-level-scroll target="#my-target12">
+        <vue-next-level-scroll target="#efz12">
           <HomepageMenu12DScrollto
             v-if="isHomepage12DScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
-        <vue-next-level-scroll target="#my-target13">
+        <vue-next-level-scroll target="#efz13">
           <HomepageMenu13DScrollto
             v-if="isHomepage13DScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
-        <vue-next-level-scroll target="#my-target14">
+        <vue-next-level-scroll target="#efz14">
           <HomepageMenu14DScrollto
             v-if="isHomepage14DScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
-        <vue-next-level-scroll target="#my-target15">
+        <vue-next-level-scroll target="#efz15">
           <HomepageMenu15DScrollto
             v-if="isHomepage15DScrolltoActive"
             class="app-links"
           />
         </vue-next-level-scroll>
       </div>
-      <div class="i-v i-v-2">
-        <span class="sl-d2">Your gateway to: Alta Sartoria Mario Napolitano, Accademia dei Sartori, World Federation of Master Tailors.</span>
-        <vue-next-level-scroll target=".my-target16">
+      <div class="i-v txl">
+        <span class="pb2">Your gateway to: Alta Sartoria Mario Napolitano, Accademia dei Sartori, World Federation of Master Tailors.</span>
+        <vue-next-level-scroll target=".efz16">
           <span
             v-if="isHomepage11DScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
-        <vue-next-level-scroll target=".my-target17">
+        <vue-next-level-scroll target=".efz17">
           <span
             v-if="isHomepage12DScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
-        <vue-next-level-scroll target=".my-target18">
+        <vue-next-level-scroll target=".efz18">
           <span
             v-if="isHomepage13DScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
-        <vue-next-level-scroll target=".my-target19">
+        <vue-next-level-scroll target=".efz19">
           <span
             v-if="isHomepage14DScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
-        <vue-next-level-scroll target=".my-target20">
+        <vue-next-level-scroll target=".efz20">
           <span
             v-if="isHomepage15DScrolltoActive"
-            class="s-d2-tv"
+            class="gvx"
           >Tell me more</span>
         </vue-next-level-scroll>
         <nuxt-link exact to="/contact">
           <span
-            class="s-d2-tv-2"
+            class="hv7"
           >| Understood</span>
         </nuxt-link>
       </div>
     </div>
     <Homepage11Target
       v-if="isHomepage11DScrolltoActive"
-      id="my-target11"
-      class="ay-vr2 my-target16"
+      id="efz11"
+      class="zlm efz16"
     />
     <Homepage12TargetDesign
       v-if="isHomepage12DScrolltoActive"
-      id="my-target12"
-      class="ay-vr2 my-target17"
+      id="efz12"
+      class="zlm efz17"
     />
     <Homepage13Target
       v-if="isHomepage13DScrolltoActive"
-      id="my-target13"
-      class="ay-vr2 my-target18"
+      id="efz13"
+      class="zlm efz18"
     />
     <Homepage15Target
       v-if="isHomepage14DScrolltoActive"
-      id="my-target14"
-      class="ay-vr2 my-target19"
+      id="efz14"
+      class="zlm efz19"
     />
     <Homepage14Target
       v-if="isHomepage15DScrolltoActive"
-      id="my-target15"
-      class="ay-vr2 my-target20"
+      id="efz15"
+      class="zlm efz20"
     />
   </div>
 </template>
@@ -238,14 +238,14 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   position: absolute;
 }
 
-.svtp-c {
+.3i8 {
   position: absolute;
   right: 80px;
   bottom: 20vh;
   transform: translate3d(30px, 0, 0) scale(0.5);
 }
 
-.svt-c {
+.lsy {
   position: absolute;
   right: 80px;
   bottom: 10vh;
@@ -274,14 +274,14 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 @media only screen and (min-height: 821px) {
   @media only screen and (min-width: 525px) {
-    .ay-vr2 {
+    .zlm {
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
-  .ay-vr2 {
+  .zlm {
     position: absolute;
     top: 117vh;
     width: 100vw;
@@ -291,12 +291,12 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
       cursor: default;
     }
   }
-  .it-2 {
+  .ppk {
     opacity: 0;
     flex-grow: 1;
     height: 77vh;
   }
-  .c-t-v2 {
+  .8un {
     display: flex;
     flex-direction: row;
     height: 35vh;
@@ -307,7 +307,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 @media only screen and (max-height: 820px) {
   @media only screen and (min-width: 525px) {
-    .ay-vr2 {
+    .zlm {
       &:hover {
         cursor: default;
         background-color: blue;
@@ -315,19 +315,19 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   }
   @media only screen and (max-height: 710px) {
-    .ay-vr2 {
+    .zlm {
       height: 117vh;
       min-height: 760.56px;
       z-index: -1;
     }
   }
   @media only screen and (min-height: 711px) {
-    .ay-vr2 {
+    .zlm {
       height: inherit;
       z-index: -1;
     }
   }
-  .ay-vr2 {
+  .zlm {
     position: absolute;
     top: 960.56px;
     width: 100vw;
@@ -336,13 +336,13 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
       cursor: default;
     }
   }
-  .it-2 {
+  .ppk {
     opacity: 0;
     flex-grow: 1;
     height: calc(392.16px + 17.1vw);
     max-height: 632.16px;
   }
-  .c-t-v2 {
+  .8un {
     display: flex;
     flex-direction: row;
     height: 287.34px;
@@ -351,19 +351,19 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-.c-t2 {
+.15n {
   display: flex;
 }
 
-.it-2 + .it-2 {
+.ppk + .ppk {
   margin-left: 0;
 }
 
 .i-v { margin-left: 5%; }
-.i-v-1 { margin-left: 15%; }
-.i-v-2 { height: 100%; max-width: 41%; }
+.55w { margin-left: 15%; }
+.txl { height: 100%; max-width: 41%; }
 
-.sl-d2 {
+.pb2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 560;
   font-size: 1.007793231094659em;
@@ -374,7 +374,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: default !important;
 }
 
-.s-d2-tv {
+.gvx {
   margin-left: 0.064526909722222em;
   line-height: 2.905em;
   position: relative;
@@ -387,7 +387,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
-.s-d2-tv-2 {
+.hv7 {
   margin-left: 0.064526909722222em;
   display: inline-block;
   position: relative;

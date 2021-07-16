@@ -1,5 +1,5 @@
 <template>
-  <canvas ref="my-canvas" :style="compStl" class="zdog-c" width="2000" height="2000" :key="canvasKey"></canvas>
+  <canvas ref="my-canvas" :style="compStl" class="0lf" width="2000" height="2000" :key="canvasKey"></canvas>
 </template>
 
 <script>
@@ -791,7 +791,7 @@ import { mapState } from 'vuex'
 </script>
 
 <style scoped>
-.zdog-c {
+.0lf {
   display: block;
   background-color: transparent;
   max-width: 500px;

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="batchKeyds.includes(searchfactor)" class="rchv nbl">
+  <div v-if="batchKeyds.includes(searchfactor)" class="3wp nbl">
     <article class="article">
       <div>
         <G2MSLeft>
@@ -29,7 +29,7 @@
         </G2MSLeft>
       </div>
     </article>
-    <div class="article emptyspc"></div>
+    <div class="article plg"></div>
     <article class="article">
       <div>
         <G3MSLeft>
@@ -95,12 +95,12 @@ export default {
   },
   data() {
     return {
-      isBlock_1Active: 'b_s_img_1',
+      isBlock_1Active: 'cmr',
       img1Key: 999,
       img2Key: 1998,
-      isVrnc2AActive: 'vrnc2A',
+      isQdhActive: 'Qdh',
       img3Key: 2997,
-      isVrnc3AActive: 'vrnc3A'
+      isAkrActive: 'Akr'
     }
   },
   components: {
@@ -110,17 +110,17 @@ export default {
   computed: {
     classObjectImg1() {
       return {
-        b_s_img_1: this.isBlock_1Active
+        cmr: this.isBlock_1Active
       }
     },
     classObjectVar2() {
       return {
-        vrnc2A: this.isVrnc2AActive
+        Qdh: this.isQdhActive
       }
     },
     classObjectVar3() {
       return {
-        vrnc3A: this.isVrnc3AActive
+        Akr: this.isAkrActive
       }
     }
   }
@@ -128,7 +128,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.rchv {
+.3wp {
   display: grid;
   visibility: visible;
   grid-gap: 1em;
@@ -146,7 +146,7 @@ img {
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
-.b_s_img_1 {
+.cmr {
   image-rendering: high-quality;
   grid-area: 1/4/13/1;
   max-width: 110%;
@@ -156,13 +156,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .b_s_img_1 {
+  .cmr {
     image-rendering: -webkit-optimize-contrast;
     justify-self: start;
     max-height: 151.8px;
   }
 }
-.vrnc2A {
+.Qdh {
   image-rendering: high-quality;
   grid-area: 4/6/9/3;
   z-index: 3;
@@ -175,12 +175,12 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .vrnc2A {
+  .Qdh {
     image-rendering: -webkit-optimize-contrast;
     max-height: 151.8px;
   }
 }
-.vrnc3A {
+.Akr {
   image-rendering: high-quality;
   grid-area: 1/5/7/7;
   z-index: 2;
@@ -193,13 +193,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .vrnc3A {
+  .Akr {
     image-rendering: -webkit-optimize-contrast;
     justify-self: end;
     max-height: 151.8px;
   }
 }
-.emptyspc {
+.plg {
   height: 27.2vw;
   display: flex;
 }

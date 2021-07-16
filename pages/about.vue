@@ -1,11 +1,11 @@
 <template>
   <!--eslint-disable-->
-  <div class="a-wr">
+  <div class="ovs">
     <None class="g2-bk-desk" />
-    <div class="w-c-b-v">
-      <footer class="h-c-c">Hover over the cards</footer>
+    <div class="jvn">
+      <footer class="fv6">Hover over the cards</footer>
 
-      <div class="cntnr">
+      <div class="vt0">
         <Cards
             v-for="article in this.$store.state.articleList"
             v-bind="article"
@@ -43,11 +43,11 @@ export default {
 </script>
 
 <style scoped>
-.a-wr {
+.ovs {
   background: blue;
 }
 
-.w-c-b-v {
+.jvn {
   display: block;
   visibility: visible;
   max-width: 80%;
@@ -58,17 +58,17 @@ export default {
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .w-c-b-v {
+  .jvn {
     display: none;
     visibility: hidden;
   }
 }
 
-.n-l-n {
+.0lq {
   position: absolute;
   bottom: 100px;
 }
-.cntnr {
+.vt0 {
   display: flex;
   align-items: center !important;
   padding: 60px 0 60px 0;
@@ -76,7 +76,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   overflow: visible;
 }
 
-.h-c-c {
+.fv6 {
   font-family: 'DIN Medium', sans-serif;
   font-size: 24px;
   font-weight: 700;

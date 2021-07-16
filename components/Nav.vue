@@ -1,11 +1,11 @@
 <template>
   <div>
     <header>
-      <div v-if="portflioCheck" class="logo" :class="(preventPropertyB && desk) ? 'cgo2' : ''" role="button" @click.prevent="giveTime"> <!--:disable only works on button-->
+      <div v-if="portflioCheck" class="logo" :class="(preventPropertyB && desk) ? 'i5t' : ''" role="button" @click.prevent="giveTime"> <!--:disable only works on button-->
         <slot :name="desk ? 'WrapperSlotA' : 'WrapperSlotB'"></slot>
         <slot name="svgContent"></slot>
       </div>
-      <div v-else class="logo" :class="(preventPropertyA && desk) ? 'cgo2' : ''" role="button" @click.prevent="giveTime"> <!--:disable only works on button-->
+      <div v-else class="logo" :class="(preventPropertyA && desk) ? 'i5t' : ''" role="button" @click.prevent="giveTime"> <!--:disable only works on button-->
         <slot :name="desk ? 'WrapperSlotA' : 'WrapperSlotB'"></slot>
         <slot name="svgContent"></slot>
       </div>
@@ -23,7 +23,7 @@ export default {
       rAm: false,
       rBm: false,
       alwaysTrue: true,
-      cgo2: "cgo2",
+      i5t: "i5t",
       smallDebounce: 250,
       unwatchitB: null,
       longDebounce: 35000
@@ -144,7 +144,7 @@ export default {
   border-bottom: calc(0.55px + 0.007vw) solid rgba(255, 255, 255, 0.35);
 }
 
-.cgo2:hover {
+.i5t:hover {
   opacity: 0.8;
   transition: 0.25s opacity ease;
   transition-delay: 14s;

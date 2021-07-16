@@ -1,43 +1,43 @@
 <template>
   <div>
-    <main v-if="selectedContent" class="rchv" id="mzp1" v-pan="onPan">
+    <main v-if="selectedContent" class="3wp" id="p3z" v-pan="onPan">
       <article class="article">
         <Homepage11EScrollto
           v-if="isHomepage1DialogActive"
-          class="A-bs n1"
+          class="ruj n1"
         />
         <Homepage12EScrollto
           v-if="isHomepage2DialogActive"
-          class="A-bs n2"
+          class="ruj n2"
         />
         <Homepage13EScrolltoSmall
           v-if="isHomepage3DialogActive"
-          class="A-bs n3"
+          class="ruj n3"
         />
         <Homepage14EScrollto
           v-if="isHomepage4DialogActive"
-          class="A-bs n4"
+          class="ruj n4"
         />
         <Homepage15EScrolltoSmall
           v-if="isHomepage5DialogActive"
-          class="A-bs n5"
+          class="ruj n5"
         />
       </article>
 
       <article class="article">
         <div class="cosa" ref="cosa" v-if="selectedContent">{{ selectedContent }}</div>
-        <div class="cosa nwcs" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
+        <div class="cosa zk4" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
       </article>
 
-      <main v-if="isHomepage1DialogActive && selected2 === '+ Help'" class="rchv" id="mzpb">
+      <main v-if="isHomepage1DialogActive && selected2 === '+ Help'" class="3wp" id="i8c">
         <article class="article">
           <div class="cosa"><Help :mother="mother" /></div>
         </article>
         <article class="article">
-          <section class="slider">
-            <ul class="slider__nw" ref="newie2">
+          <section class="w9x">
+            <ul class="w9x__nw" ref="newie2">
               <li v-for="(hey, index) in heys" v-bind:key="hey"
-                  class="slider__tm h-nb"
+                  class="w9x__tm u08"
                   v-tap="(e) => tap2(e, hey)"
                   :style="{backgroundColor: colors[index]}">
                 {{ hey }}
@@ -46,12 +46,12 @@
           </section>
         </article>
       </main>
-      <main v-else-if="isHomepage1DialogActive" class="rchv" id="mzpb">
+      <main v-else-if="isHomepage1DialogActive" class="3wp" id="i8c">
         <article class="article">
-          <section class="slider">
-            <ul class="slider__nw" ref="newie2">
+          <section class="w9x">
+            <ul class="w9x__nw" ref="newie2">
               <li v-for="(hey, index) in heys" v-bind:key="hey"
-                  class="slider__tm h-nb"
+                  class="w9x__tm u08"
                   v-tap="(e) => tap2(e, hey)"
                   :style="{backgroundColor: colors[index]}">
                 {{ hey }}
@@ -62,10 +62,10 @@
       </main>
 
       <article class="article">
-        <section class="slider">
-          <ul class="slider__nw" ref="newie">
+        <section class="w9x">
+          <ul class="w9x__nw" ref="newie">
             <li v-for="(indice, index) in indices" v-bind:key="indice"
-                class="slider__tm"
+                class="w9x__tm"
                 v-tap="(e) => onTap(e, indice)"
                 :style="{backgroundColor: colors[index]}">
               {{ indice }}
@@ -77,39 +77,39 @@
         <SSubtouchT v-if="isAnyActive" />
       </article>
     </main>
-    <main v-else class="rchv spchv nwmpp1" id="mzp1" v-pan="onPan">
+    <main v-else class="3wp wud ybl" id="p3z" v-pan="onPan">
       <article class="article">
         <Homepage11EScrollto
           v-if="isHomepage1DialogActive"
-          class="A-bs n1"
+          class="ruj n1"
         />
         <Homepage12EScrollto
           v-if="isHomepage2DialogActive"
-          class="A-bs n2"
+          class="ruj n2"
         />
         <Homepage13EScrolltoSmall
           v-if="isHomepage3DialogActive"
-          class="A-bs n3"
+          class="ruj n3"
         />
         <Homepage14EScrollto
           v-if="isHomepage4DialogActive"
-          class="A-bs n4"
+          class="ruj n4"
         />
         <Homepage15EScrolltoSmall
           v-if="isHomepage5DialogActive"
-          class="A-bs n5"
+          class="ruj n5"
         />
       </article>
 
       <article class="article">
         <div class="cosa" ref="cosa" v-if="selectedContent">{{ selectedContent }}</div>
-        <div class="cosa nwcs" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
+        <div class="cosa zk4" ref="cosa" v-else>We use art for experiential marketing. Browse Below</div>
       </article>
       <article class="article">
-        <section class="slider">
-          <ul class="slider__nw" ref="newie">
+        <section class="w9x">
+          <ul class="w9x__nw" ref="newie">
             <li v-for="(indice, index) in indices" v-bind:key="indice"
-                class="slider__tm"
+                class="w9x__tm"
                 v-tap="(e) => onTap(e, indice)"
                 :style="{backgroundColor: colors[index]}">
               {{ indice }}
@@ -334,13 +334,13 @@ $timing: ease-out;
 
 $cta-color: yellow;
 
-.A-bs {
+.ruj {
   border-radius: 5px;
   text-rendering: geometricPrecision;
   height: auto;
   background-color: blue !important;
 }
-.slider {
+.w9x {
 	width: 100%;
 	height: 120px;
 	overflow: visible;
@@ -381,10 +381,10 @@ $cta-color: yellow;
 }
 
 li:nth-child(1) {
-  animation: g-t-glw $dur $timing infinite;
+  animation: s8z $dur $timing infinite;
 }
 
-@keyframes g-t-glw {
+@keyframes s8z {
   from {
     text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
                 0 0.5px 0.5px rgba(0,0,0,0.1),
@@ -422,21 +422,21 @@ li:nth-child(1) {
 }
 
 @media only screen and (orientation : portrait) and (max-width: 460px) {
-  .nwcs {
+  .zk4 {
     position: relative;
   }
-  .nwmpp1 {
+  .ybl {
     margin-top: -1em;
   }
 }
 @media only screen and (orientation : portrait) and (min-width: 461px) {
-  .spchv {
+  .wud {
     position: relative;
     margin-top: -1em !important;
   }
 }
 @media only screen and (orientation : landscape) {
-  .spchv {
+  .wud {
     position: relative;
     margin-top: -1em !important;
   }
@@ -454,21 +454,21 @@ ul {
   padding: 0 !important;
 }
 
-#mzp1 {
+#p3z {
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
 	overflow: hidden;
 }
 
-#mzpb {
+#i8c {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
   overflow: visible;
 }
 
-.rchv {
+.3wp {
   display: grid;
   grid-template-columns: 100vw;
   grid-gap: 1em;
@@ -477,190 +477,190 @@ ul {
 
 //(min-width: 690px)
 @media only screen and (min-width: 690px) {
-  .A-bs.n1 {
+  .ruj.n1 {
     height: calc(18.189894749166817rem + 50px) !important;
     min-height: calc(18.189894749166817rem + 50px) !important;
   }
-  .A-bs.n2 {
+  .ruj.n2 {
     height: calc(19.308472336635402rem + 50px) !important;
     min-height: calc(19.308472336635402rem + 50px) !important;
   }
-  .A-bs.n3 {
+  .ruj.n3 {
     height: calc(20.241386952576492rem + 50px) !important;
     min-height: calc(20.241386952576492rem + 50px) !important;
   }
-  .A-bs.n4 {
+  .ruj.n4 {
     height: calc(17.378664648348478rem + 50px) !important;
     min-height: calc(17.378664648348478rem + 50px) !important;
   }
-  .A-bs.n5 {
+  .ruj.n5 {
     height: calc(17.698138770526421rem + 50px) !important;
     min-height: calc(17.698138770526421rem + 50px) !important;
   }
 }
 //(max-width: 689px)
 @media only screen and (max-width: 689px) {
-  .A-bs.n1 {
+  .ruj.n1 {
     height: calc(18.149552165998754rem + 50px) !important;
     min-height: calc(18.149552165998754rem + 50px) !important;
   }
-  .A-bs.n2 {
+  .ruj.n2 {
     height: calc(19.227248823674854rem + 50px) !important;
     min-height: calc(19.227248823674854rem + 50px) !important;
   }
-  .A-bs.n3 {
+  .ruj.n3 {
     height: calc(20.202447157930672rem + 50px) !important;
     min-height: calc(20.202447157930672rem + 50px) !important;
   }
-  .A-bs.n4 {
+  .ruj.n4 {
     height: calc(17.339606230726655rem + 50px) !important;
     min-height: calc(17.339606230726655rem + 50px) !important;
   }
-  .A-bs.n5 {
+  .ruj.n5 {
     height: calc(17.669692668190336rem + 50px) !important;
     min-height: calc(17.669692668190336rem + 50px) !important;
   }
 }
 //(max-width: 556px)
 @media only screen and (max-width: 556px) {
-  .A-bs.n1 {
+  .ruj.n1 {
     height: calc(18.301326521674624rem + 50px) !important;
     min-height: calc(18.301326521674624rem + 50px) !important;
   }
-  .A-bs.n2 {
+  .ruj.n2 {
     height: calc(18.683856690613532rem + 50px) !important;
     min-height: calc(18.683856690613532rem + 50px) !important;
   }
-  .A-bs.n3 {
+  .ruj.n3 {
     height: calc(19.509245968686152rem + 50px) !important;
     min-height: calc(19.509245968686152rem + 50px) !important;
   }
-  .A-bs.n4 {
+  .ruj.n4 {
     height: calc(17.088044502201336rem + 50px) !important;
     min-height: calc(17.088044502201336rem + 50px) !important;
   }
-  .A-bs.n5 {
+  .ruj.n5 {
     height: calc(17.453593191678003rem + 50px) !important;
     min-height: calc(17.453593191678003rem + 50px) !important;
   }
 }
 //(max-width: 532px)
 @media only screen and (max-width: 532px) {
-  .A-bs.n1 {
+  .ruj.n1 {
     height: calc(18.169548150306488rem + 50px) !important;
     min-height: calc(18.169548150306488rem + 50px) !important;
   }
-  .A-bs.n2 {
+  .ruj.n2 {
     height: calc(18.592133576810104rem + 50px) !important;
     min-height: calc(18.592133576810104rem + 50px) !important;
   }
-  .A-bs.n3 {
+  .ruj.n3 {
     height: calc(19.39929888824742rem + 50px) !important;
     min-height: calc(19.39929888824742rem + 50px) !important;
   }
-  .A-bs.n4 {
+  .ruj.n4 {
     height: calc(17.019880517816455rem + 50px) !important;
     min-height: calc(17.019880517816455rem + 50px) !important;
   }
-  .A-bs.n5 {
+  .ruj.n5 {
     height: calc(17.291801118810752rem + 50px) !important;
     min-height: calc(17.291801118810752rem + 50px) !important;
   }
 }
 //(max-width: 524px)
 @media only screen and (max-width: 524px) {
-  .A-bs.n1 {
+  .ruj.n1 {
     height: calc(16.880773892926396rem + 50px) !important;
     min-height: calc(16.880773892926396rem + 50px) !important;
   }
-  .A-bs.n2 {
+  .ruj.n2 {
     height: calc(17.507753649658251rem + 50px) !important;
     min-height: calc(17.507753649658251rem + 50px) !important;
   }
-  .A-bs.n3 {
+  .ruj.n3 {
     height: calc(18.474574607865052rem + 50px) !important;
     min-height: calc(18.474574607865052rem + 50px) !important;
   }
-  .A-bs.n4 {
+  .ruj.n4 {
     height: calc(15.227455534413919rem + 50px) !important;
     min-height: calc(15.227455534413919rem + 50px) !important;
   }
-  .A-bs.n5 {
+  .ruj.n5 {
     height: calc(15.948936587812604rem + 50px) !important;
     min-height: calc(15.948936587812604rem + 50px) !important;
   }
 }
 //(max-width: 456px)
 @media only screen and (max-width: 456px) {
-  .A-bs.n1 {
+  .ruj.n1 {
     height: calc(16.887199062472916rem + 50px) !important;
     min-height: calc(16.887199062472916rem + 50px) !important;
   }
-  .A-bs.n2 {
+  .ruj.n2 {
     height: calc(17.359636595209116rem + 50px) !important;
     min-height: calc(17.359636595209116rem + 50px) !important;
   }
-  .A-bs.n3 {
+  .ruj.n3 {
     height: calc(18.558864868734904rem + 50px) !important;
     min-height: calc(18.558864868734904rem + 50px) !important;
   }
-  .A-bs.n4 {
+  .ruj.n4 {
     height: calc(15.407240211169686rem + 50px) !important;
     min-height: calc(15.407240211169686rem + 50px) !important;
   }
-  .A-bs.n5 {
+  .ruj.n5 {
     height: calc(16.133088903040557rem + 50px) !important;
     min-height: calc(16.133088903040557rem + 50px) !important;
   }
 }
 //(max-width: 419px)
 @media only screen and (max-width: 419px) {
-  .A-bs.n1 {
+  .ruj.n1 {
     height: calc(16.985150868045793rem + 50px) !important;
     min-height: calc(16.985150868045793rem + 50px) !important;
   }
-  .A-bs.n2 {
+  .ruj.n2 {
     height: calc(16.986112132454545rem + 50px) !important;
     min-height: calc(16.986112132454545rem + 50px) !important;
   }
-  .A-bs.n3 {
+  .ruj.n3 {
     height: calc(18.813956405697799rem + 50px) !important;
     min-height: calc(18.813956405697799rem + 50px) !important;
   }
-  .A-bs.n4 {
+  .ruj.n4 {
     height: calc(15.06118015392727rem + 50px) !important;
     min-height: calc(15.06118015392727rem + 50px) !important;
   }
-  .A-bs.n5 {
+  .ruj.n5 {
     height: calc(15.807601967323739rem + 50px) !important;
     min-height: calc(15.807601967323739rem + 50px) !important;
   }
 }
 //(max-width: 398px)
 @media only screen and (max-width: 398px) {
-  .A-bs.n1 {
+  .ruj.n1 {
     height: calc(16.485248280335676rem + 50px) !important;
     min-height: calc(16.485248280335676rem + 50px) !important;
   }
-  .A-bs.n2 {
+  .ruj.n2 {
     height: calc(16.309707824825213rem + 50px) !important;
     min-height: calc(16.309707824825213rem + 50px) !important;
   }
-  .A-bs.n3 {
+  .ruj.n3 {
     height: calc(17.806421182335476rem + 50px) !important;
     min-height: calc(17.806421182335476rem + 50px) !important;
   }
-  .A-bs.n4 {
+  .ruj.n4 {
     height: calc(14.945257636009815rem + 50px) !important;
     min-height: calc(14.945257636009815rem + 50px) !important;
   }
-  .A-bs.n5 {
+  .ruj.n5 {
     height: calc(15.733974031682864rem + 50px) !important;
     min-height: calc(15.733974031682864rem + 50px) !important;
   }
 }
 
-.h-nb {
+.u08 {
   flex-grow: 1;
   font-family: 'AtkinsonHyperlegibleBold';
   font-size: 26.647101746392745px;
@@ -677,10 +677,10 @@ ul {
   user-select: none;
   cursor: pointer;
 }
-.h-nb + .h-nb {
+.u08 + .u08 {
   margin-right: 0px;
 }
-.h-nb:nth-child(2) {
-  animation: g-t-glw $dur $timing infinite;
+.u08:nth-child(2) {
+  animation: s8z $dur $timing infinite;
 }
 </style>

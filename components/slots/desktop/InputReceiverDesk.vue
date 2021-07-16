@@ -1,8 +1,8 @@
 <template>
-  <span class="hdspng">
+  <span class="6tm">
     <div v-if="searchfactor.length > 0 && JSON.stringify(searchfactor) === JSON.stringify(block.keyword)" style="color: yellow;" v-for="block in filteredComp">
       <G2MSSDesk :block="block" :searchfactor="searchfactor" :key="block._uid"></G2MSSDesk>
-      <Sorter :block="block" :searchfactor="searchfactor" class="r-slt">
+      <Sorter :block="block" :searchfactor="searchfactor" class="8bn">
         <template v-slot:surgeon="{whichLeft,whichRight}">
           <G2MSSDeskLeft :block="block" :whichLeft="whichLeft" :searchfactor="searchfactor" :key="whichLeft"></G2MSSDeskLeft>
           <G2MSSDeskRight :block="block" :whichRight="whichRight" :searchfactor="searchfactor" :key="whichRight"></G2MSSDeskRight>
@@ -62,19 +62,19 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .hdspng {
+  .6tm {
     display: none;
     visibility: hidden;
   }
 }
 
-.r-slt {
+.8bn {
   visibility: visible;
   display: block;
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (max-width: 767px) {
-  .r-slt {
+  .8bn {
     visibility: hidden;
     display: none;
   }

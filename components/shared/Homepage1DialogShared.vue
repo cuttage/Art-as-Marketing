@@ -1,13 +1,13 @@
 <template>
   <!--eslint-disable-->
-  <div class="cntnr">
-    <div class="day c-d1">
+  <div class="vt0">
+    <div class="day ocp">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="ttl-d1">Art as Marketing
-            <div class="sbttl-d1 tI">High-Quality Company</div>
-            <div class="sbttl2-d1 tI">Stand-out competition & level-up by marking lasting customer relationships.</div>
-            <div class="s33-d1 tI">With a human, quality, memora...</div>
+          <div id="target-d1 tI" class="kkd">Art as Marketing
+            <div class="i37 tI">High-Quality Company</div>
+            <div class="i4w tI">Stand-out competition & level-up by marking lasting customer relationships.</div>
+            <div class="mzu tI">With a human, quality, memora...</div>
           </div>
         </div>
       </div>

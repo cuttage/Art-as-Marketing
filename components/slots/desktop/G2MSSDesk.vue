@@ -1,5 +1,5 @@
 <template>
-  <div v-if="batchKeyds.includes(searchfactor.toLowerCase())" class="rchv nbl">
+  <div v-if="batchKeyds.includes(searchfactor.toLowerCase())" class="3wp nbl">
     <article class="article">
       <div>
         <G2MSlo>
@@ -9,7 +9,7 @@
             v-bind:class="[(isImage1Active ? classObjectImg1 : ''),(isZoom && isImage1Active ? c_Obj_I_Up : ''),(isImage1Active && isDataBool && !isZoom ? classObjectImg1_Anim : ''),(isImage2Active || isImage3Active ? classObjectVar1 : '')]"
             :srcSet="i1Set" :src="i1"
             alt="marta-fattori"
-            class="w-c-p"
+            class="vwz"
             :key="img1Key"
           />
 
@@ -19,7 +19,7 @@
             v-bind:class="[(isImage2Active ? classObjectImg2 : ''),(isZoom && isImage2Active ? c_Obj_I_Up : ''),(isImage2Active && isDataBool && !isZoom ? classObjectImg2_Anim : ''),(isImage1Active || isImage3Active ? classObjectVar2 : '')]"
             :srcSet="i2Set" :src="i2"
             alt="marta-fattori"
-            class="w-c-p"
+            class="vwz"
             :key="img2Key"
           />
 
@@ -29,40 +29,40 @@
             v-bind:class="[(isImage3Active ? classObjectImg3 : ''),(isZoom && isImage3Active ? c_Obj_I_Up : ''),(isImage3Active && isDataBool && !isZoom ? classObjectImg3_Anim : ''),(isImage1Active || isImage2Active ? classObjectVar3 : '')]"
             :srcSet="i3Set" :src="i3"
             alt="marta-fattori"
-            class="w-c-p"
+            class="vwz"
             :key="img3Key"
           />
         </G2MSlo>
         <div
-          class="c-t-g"
+          class="cm8"
           v-bind:style="[(isImage1Active || isImage2Active || isImage3Active ? {'z-index': '996 !important'} : '')]"
         >
           <DoubleClick
-            class="itmg"
+            class="pj3"
             @single-click="toggleImage1"
             @double-click="toggleZoom"
           />
           <DoubleClick
-            class="itmg"
+            class="pj3"
             @single-click="toggleImage2"
             @double-click="toggleZoom"
           />
           <DoubleClick
-            class="itmg"
+            class="pj3"
             @single-click="toggleImage3"
             @double-click="toggleZoom"
           />
         </div>
-        <div class="p-g-g-c" @click="toggleNone"></div>
+        <div class="qps" @click="toggleNone"></div>
 
-        <div v-if="isZoom" class="d-c-g">
-          <div class="g-g-c3">
-            <DoubleClick class="c-t-g3" @single-click="toggleBackZoom" @double-click="toggleBackZoom"></DoubleClick>
+        <div v-if="isZoom" class="j62">
+          <div class="w0c">
+            <DoubleClick class="ryl" @single-click="toggleBackZoom" @double-click="toggleBackZoom"></DoubleClick>
           </div>
         </div>
       </div>
     </article>
-    <div class="article emptyspc">
+    <div class="article plg">
       <MessagePor :uidb="block._uid">
         <template slot="g2m" slot-scope="{tellYou}">
           <g2M :tellYou="tellYou"></g2M>
@@ -81,7 +81,7 @@
             v-bind:class="[(isImage1Active ? classObjectImg1 : ''),(isZoom && isImage1Active ? c_Obj_I_Down : ''),(isImage1Active && isDataBool && !isZoom ? classObjectImg1_Anim : ''),(isImage2Active || isImage3Active ? classObjectVar1 : '')]"
             :srcSet="i4Set" :src="i4"
             alt="marta-fattori"
-            class="w-c-p"
+            class="vwz"
             :key="img1Key"
           />
 
@@ -91,7 +91,7 @@
             v-bind:class="[(isImage2Active ? classObjectImg2 : ''),(isZoom && isImage2Active ? c_Obj_I_Down : ''),(isImage2Active && isDataBool && !isZoom ? classObjectImg2_Anim : ''),(isImage1Active || isImage3Active ? classObjectVar2 : '')]"
             :srcSet="i5Set" :src="i5"
             alt="marta-fattori"
-            class="w-c-p"
+            class="vwz"
             :key="img2Key"
           />
 
@@ -101,7 +101,7 @@
             v-bind:class="[(isImage3Active ? classObjectImg3 : ''),(isZoom && isImage3Active ? c_Obj_I_Down : ''),(isImage3Active && isDataBool && !isZoom ? classObjectImg3_Anim : ''),(isImage1Active || isImage2Active ? classObjectVar3 : '')]"
             :srcSet="i6Set" :src="i6"
             alt="marta-fattori"
-            class="w-c-p"
+            class="vwz"
             :key="img3Key"
           />
         </G3MSlo>
@@ -154,22 +154,22 @@ export default {
   data() {
     return {
       activeDialog: DIALOG_TYPE.NONE,
-      isBlock_1Active: 'b_s_img_1',
-      isZooming_UpActive: 'z_img_up',
-      isZooming_DownActive: 'z_img_down',
+      isBlock_1Active: 'cmr',
+      isZooming_UpActive: 'khc',
+      isZooming_DownActive: 'ib8',
       dataBool: false,
       zoom: false,
-      isBlock_Anim_1Active: 'b_s_img_a_1',
+      isBlock_Anim_1Active: '7jp',
       img1Key: 999,
-      isVrnc1AActive: 'vrnc1A',
-      isBlock_2Active: 'b_s_img_2',
-      isBlock_Anim_2Active: 'b_s_img_a_2',
+      isFikActive: 'Fik',
+      isBlock_2Active: '0mu',
+      isBlock_Anim_2Active: 'j76',
       img2Key: 1998,
-      isVrnc2AActive: 'vrnc2A',
-      isBlock_3Active: 'b_s_img_3',
-      isBlock_Anim_3Active: 'b_s_img_a_3',
+      isQdhActive: 'Qdh',
+      isBlock_3Active: 'rb1',
+      isBlock_Anim_3Active: 'c3v',
       img3Key: 2997,
-      isVrnc3AActive: 'vrnc3A',
+      isAkrActive: 'Akr',
       promiseList: this.promiseGenerator()
     }
   },
@@ -190,17 +190,17 @@ export default {
     },
     classObjectImg1() {
       return {
-        b_s_img_1: this.isBlock_1Active
+        cmr: this.isBlock_1Active
       }
     },
     c_Obj_I_Up() {
       return {
-        z_img_up: this.isZooming_UpActive
+        khc: this.isZooming_UpActive
       }
     },
     c_Obj_I_Down() {
       return {
-        z_img_down: this.isZooming_DownActive
+        ib8: this.isZooming_DownActive
       }
     },
     isDataBool() {
@@ -211,7 +211,7 @@ export default {
     },
     classObjectImg1_Anim() {
       return {
-        b_s_img_a_1: this.isBlock_Anim_1Active
+        7jp: this.isBlock_Anim_1Active
       }
     },
     isImage2Active() {
@@ -222,37 +222,37 @@ export default {
     },
     classObjectVar1() {
       return {
-        vrnc1A: this.isVrnc1AActive
+        Fik: this.isFikActive
       }
     },
     classObjectImg2() {
       return {
-        b_s_img_2: this.isBlock_2Active
+        0mu: this.isBlock_2Active
       }
     },
     classObjectImg2_Anim() {
       return {
-        b_s_img_a_2: this.isBlock_Anim_2Active
+        j76: this.isBlock_Anim_2Active
       }
     },
     classObjectVar2() {
       return {
-        vrnc2A: this.isVrnc2AActive
+        Qdh: this.isQdhActive
       }
     },
     classObjectImg3() {
       return {
-        b_s_img_3: this.isBlock_3Active
+        rb1: this.isBlock_3Active
       }
     },
     classObjectImg3_Anim() {
       return {
-        b_s_img_a_3: this.isBlock_Anim_3Active
+        c3v: this.isBlock_Anim_3Active
       }
     },
     classObjectVar3() {
       return {
-        vrnc3A: this.isVrnc3AActive
+        Akr: this.isAkrActive
       }
     }
   },
@@ -283,17 +283,17 @@ export default {
     toggleAnim() {
       if(this.isBlock_Anim_1Active === undefined){
         this.testDataBool();
-        this.isBlock_Anim_1Active = 'b_s_img_a_1';
+        this.isBlock_Anim_1Active = '7jp';
       }
 
       if(this.isBlock_Anim_2Active === undefined){
         this.testDataBool();
-        this.isBlock_Anim_2Active = 'b_s_img_a_2';
+        this.isBlock_Anim_2Active = 'j76';
       }
 
       if(this.isBlock_Anim_3Active === undefined){
         this.testDataBool();
-        this.isBlock_Anim_3Active = 'b_s_img_a_3';
+        this.isBlock_Anim_3Active = 'c3v';
       }
       return this.testDataBool();
     },
@@ -372,7 +372,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.rchv {
+.3wp {
   display: grid;
   visibility: visible;
   grid-gap: 1em;
@@ -390,7 +390,7 @@ img {
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
-.b_s_img_1 {
+.cmr {
   image-rendering: high-quality;
   grid-area: 1/4/13/1;
   max-width: 110%;
@@ -400,13 +400,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .b_s_img_1 {
+  .cmr {
     image-rendering: -webkit-optimize-contrast;
     justify-self: start;
     max-height: 151.8px;
   }
 }
-.z_img_up {
+.khc {
   grid-area: 2/1/13/10 !important;
   max-height: none !important;
   align-self: self-end !important;
@@ -414,11 +414,11 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .z_img_up {
+  .khc {
     max-width: 100% !important;
   }
 }
-.z_img_down {
+.ib8 {
   grid-area: 2/1/13/10 !important;
   max-height: none !important;
   align-self: self-start !important;
@@ -426,18 +426,18 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .z_img_down {
+  .ib8 {
     grid-area: 1/1/13/10 !important;
     align-self: self-end !important;
     max-width: 100% !important;
   }
 }
-.b_s_img_a_1 {
-  animation: b_s_img_a_1 0.27s 0.2s;
+.7jp {
+  animation: 7jp 0.27s 0.2s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
-@keyframes b_s_img_a_1 {
+@keyframes 7jp {
   0% {
     transform: translate3d(-5%,0,0);
     opacity: 0;
@@ -447,10 +447,10 @@ img {
     opacity: 1;
   }
 }
-.w-c-p {
+.vwz {
   will-change: transform, opacity;
 }
-.vrnc1A {
+.Fik {
   image-rendering: high-quality;
   grid-area: 1/4/13/1;
   max-width: 110%;
@@ -461,13 +461,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .vrnc1A {
+  .Fik {
     image-rendering: -webkit-optimize-contrast;
     justify-self: start;
     max-height: 151.8px;
   }
 }
-.b_s_img_2 {
+.0mu {
   image-rendering: high-quality;
   grid-area: 4/6/9/3;
   z-index: 7;
@@ -479,17 +479,17 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .b_s_img_2 {
+  .0mu {
     image-rendering: -webkit-optimize-contrast;
     max-height: 151.8px;
   }
 }
-.b_s_img_a_2 {
-  animation: b_s_img_a_2 0.27s 0s;
+.j76 {
+  animation: j76 0.27s 0s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
-@keyframes b_s_img_a_2 {
+@keyframes j76 {
   0% {
     transform: translate3d(0,-10%,0);
     opacity: 0;
@@ -499,7 +499,7 @@ img {
     opacity: 1;
   }
 }
-.vrnc2A {
+.Qdh {
   image-rendering: high-quality;
   grid-area: 4/6/9/3;
   z-index: 7;
@@ -512,12 +512,12 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .vrnc2A {
+  .Qdh {
     image-rendering: -webkit-optimize-contrast;
     max-height: 151.8px;
   }
 }
-.b_s_img_3 {
+.rb1 {
   image-rendering: high-quality;
   grid-area: 1/5/7/7;
   z-index: 8;
@@ -529,18 +529,18 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .b_s_img_3 {
+  .rb1 {
     image-rendering: -webkit-optimize-contrast;
     justify-self: end;
     max-height: 151.8px;
   }
 }
-.b_s_img_a_3 {
-  animation: b_s_img_a_3 0.27s 0s;
+.c3v {
+  animation: c3v 0.27s 0s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.47, 0, 0.18, 1);
 }
-@keyframes b_s_img_a_3 {
+@keyframes c3v {
   0% {
     transform: translate3d(0,10%,0);
     opacity: 0;
@@ -550,7 +550,7 @@ img {
     opacity: 1;
   }
 }
-.vrnc3A {
+.Akr {
   image-rendering: high-quality;
   grid-area: 1/5/7/7;
   z-index: 6;
@@ -563,13 +563,13 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .vrnc3A {
+  .Akr {
     image-rendering: -webkit-optimize-contrast;
     justify-self: end;
     max-height: 151.8px;
   }
 }
-.c-t-g {
+.cm8 {
   display: flex;
   position: absolute;
   top: calc(50px + 22.2vw);
@@ -579,11 +579,11 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .c-t-g {
+  .cm8 {
     height: calc((460px * 0.7) + (1em - 15.34px));
   }
 }
-.itmg {
+.pj3 {
   opacity: 0;
   flex-grow: 1;
   height: calc(164.365450121654501vw + 2em) !important;
@@ -593,25 +593,25 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .itmg {
+  .pj3 {
     height: calc(3em + 613.32px + 27.2vw) !important;
   }
 }
-.p-g-g-c {
+.qps {
   position: absolute;
   top: 0;
   height: calc(50px + 2vw);
   width: 100%;
   z-index: 11;
 }
-.d-c-g {
+.j62 {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 20px 0 20px;
 }
-.g-g-c3 {
+.w0c {
   position: absolute;
   top: calc(50px + 22.2vw) !important;
   height: calc(164.365450121654501vw + 2em);
@@ -621,11 +621,11 @@ img {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .g-g-c3 {
+  .w0c {
     height: calc(3em + 613.32px + 27.2vw) !important;
   }
 }
-.c-t-g3 {
+.ryl {
   position: absolute;
   top: 0;
   display: flex;
@@ -633,7 +633,7 @@ img {
   width: 100%;
   z-index: 997;
 }
-.emptyspc {
+.plg {
   height: 27.2vw;
   background-color: blue;
   display: flex;

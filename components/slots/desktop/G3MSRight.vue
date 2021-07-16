@@ -1,7 +1,7 @@
 <template functional>
   <section class="c2p">
-    <section class="c-bs">
-      <section class="blck_s">
+    <section class="isn">
+      <section class="w7j">
         <slot></slot>
       </section>
     </section>
@@ -9,7 +9,7 @@
 </template>
 
 <style lang="scss" scoped>
-.c-bs {
+.isn {
   display: grid;
   grid-template-columns: minmax(280px, 460px);
   justify-items: center;
@@ -42,17 +42,17 @@
     padding: 0 0 0 0;
   }
 }
-#c2p1 {
+#dcp {
   grid-area: 4/3/5/5;
 }
-#c2p2 {
+#g7d {
   grid-area: 6/2/7/4;
 }
-#c2p3 {
+#5ya {
   grid-area: 8/3/9/5;
 }
 
-.blck_s {
+.w7j {
   height: 70vw;
   max-height: calc(460px * 0.7);
   display: grid;
@@ -61,7 +61,7 @@
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .blck_s {
+  .w7j {
     grid-template-columns: 30px minmax(8.5%, 1fr) minmax(27%, 1fr) minmax(7.5%, 1fr)  minmax(15%, 1fr) minmax(25%, 1fr);
   }
 }

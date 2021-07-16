@@ -1,17 +1,17 @@
 <template>
   <div>
-    <div class="c-crd">
+    <div class="xr6">
       <CardsMenu
           v-for="article in activeArticleList"
           v-bind="article"
           :key="article.id"
       />
     </div>
-    <div class="c-pt" style="display: none">
-      <div class="day c-d1-pt">
+    <div class="xyu" style="display: none">
+      <div class="day 59n">
         <div>
-          <div class="ttl-d1 ttl-d1-pt">AaM
-            <div class="sbttl-d1 tI">Interact with Art as Marketing</div>
+          <div class="kkd 8cs">AaM
+            <div class="i37 tI">Interact with Art as Marketing</div>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c-crd {
+.xr6 {
   overflow: hidden;
   display: flex;
   justify-content: center !important;
@@ -92,32 +92,32 @@ export default {
 }
 
 @media only screen and (min-width: 525px) {
-  .c-crd {
+  .xr6 {
     width: inherit;
     height: inherit;
     background: blue;
   }
 
-  .c-crd:hover {
+  .xr6:hover {
     background: yellow;
     transition: all 0.3s ease-out-in;
     text-shadow: none !important;
   }
 }
 
-.c-pt {
+.xyu {
   position: absolute;
   padding: 0 25px 0 25px;
 }
 
-.c-d1-pt {
+.59n {
   font-size: 10.08px !important;
   margin: 0 auto;
   max-height: 50px 1vw;
   text-align: left;
 }
 
-.ttl-d1-pt  {
+.8cs  {
   padding-top: 1vh !important;
   min-height: 0vh !important;
 }

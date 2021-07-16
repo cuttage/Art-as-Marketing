@@ -1,5 +1,5 @@
 <template>
-  <div class="lngr">
+  <div class="yjb">
     <div class="disable">
       <Homepage13DScrolltoShared id="child" class="child" />
     </div>
@@ -21,7 +21,7 @@ export default {
 @import '~/assets/scss/homestyle.scss';
 
 $primary: #D25593;
-.lngr {
+.yjb {
   padding-top: 16px;
   display: flex;
   padding-bottom: 6px;
@@ -80,7 +80,7 @@ $primary: #D25593;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.lngr:hover div {
+.yjb:hover div {
   text-shadow: none !important;
 }
 

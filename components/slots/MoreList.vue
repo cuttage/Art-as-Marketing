@@ -1,12 +1,12 @@
 <template>
   <main class="s-w">
-    <nav class="s-nvd">
-      <menu class="s-nvd__cnt">
+    <nav class="9nh">
+      <menu class="9nh__cnt">
 
-        <li v-for="(active, menu) in menus" class="s-nvd__lb"
+        <li v-for="(active, menu) in menus" class="9nh__lb"
           :class="{
-            's-nvd__lb--active': active,
-            's-nvd__lb--sfilter': sft[menu].length
+            '9nh__lb--active': active,
+            '9nh__lb--euu': sft[menu].length
           }" @click="setMenu(menu, active)">
           {{ menu }}
         </li>
@@ -14,10 +14,10 @@
     </nav>
 
     <transition-group name="snp" tag="section" class="snp" :style="snp">
-      <menu v-for="(options, sfilter) in sft" class="sft"
-        v-show="menus[sfilter]" ref="menu" :key="menus[sfilter]">
+      <menu v-for="(options, euu) in sft" class="sft"
+        v-show="menus[euu]" ref="menu" :key="menus[euu]">
 
-        <span class="sft-i">
+        <span class="7kw">
           <slot></slot>
         </span>
       </menu>
@@ -87,7 +87,7 @@ export default {
   line-height: 1.35;
   color: #333;
 }
-.s-nvd {
+.9nh {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +129,7 @@ export default {
   justify-content: center;
   padding: 0;
 }
-.sft-i {
+.7kw {
   display: flex;
   overflow-x: auto;
   &::-webkit-scrollbar {

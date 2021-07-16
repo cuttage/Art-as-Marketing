@@ -2,10 +2,10 @@
   <!--eslint-disable-->
   <div>
     <NoneMob class="g2-bk-mob" />
-    <div class="w-c-b-v-mob">
-      <footer class="h-c-c">Hover over the cards</footer>
+    <div class="6lw">
+      <footer class="fv6">Hover over the cards</footer>
 
-      <div class="c-crd">
+      <div class="xr6">
         <Cards
             v-for="article in this.$store.state.articleList"
             v-bind="article"
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style scoped>
-.w-c-b-v-mob {
+.6lw {
   display: block;
   visibility: visible;
 }
@@ -53,23 +53,23 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .w-c-b-v-mob {
+  .6lw {
     display: none;
     visibility: hidden;
   }
 }
 
-.n-l-n {
+.0lq {
   position: absolute;
   bottom: 100px;
 }
-.c-crd {
+.xr6 {
   display: flex;
   align-items: center !important;
   padding: 60px 0 60px 0;
 }
 
-.c-crd {
+.xr6 {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -78,12 +78,12 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 @media only screen and (max-width: 398px) {
-  .c-crd {
+  .xr6 {
     padding: 40px 0 0 0;
   }
 }
 
-.h-c-c {
+.fv6 {
   font-family: 'DIN Medium', sans-serif;
   font-size: 24px;
   font-weight: 700;

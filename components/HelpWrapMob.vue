@@ -1,8 +1,8 @@
 <template>
   <keep-alive>
     <div>
-      <div v-if="getToggleHelp === true" class="p-wrppr p-wrppr-nB">
-        <div class="p-blck p-crd p-crd-t">
+      <div v-if="getToggleHelp === true" class="csw zq8">
+        <div class="q0s ox6 wgw">
           <slot name="HelpWrapSlot"></slot>
           <hr>
         </div>

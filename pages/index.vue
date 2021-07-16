@@ -1,7 +1,7 @@
 <template>
   <div>
     <None class="g2-bk-desk" />
-    <div class="w-c-b-v">
+    <div class="jvn">
       <Homepage1Dialog
         v-if="isHomepage1DialogActive"
         class="ayt"
@@ -23,110 +23,110 @@
         class="ayt"
       />
 
-      <div class="c-ts">
+      <div class="3al">
         <div class="item item1" @mouseover="toggleHomepage1Dialog" />
         <div class="item item2" @mouseover="toggleHomepage2Dialog" />
         <div class="item item3" @mouseover="toggleHomepage3Dialog" />
         <div class="item item4" @mouseover="toggleHomepage4Dialog" />
         <div class="item item5" @mouseover="toggleHomepage5Dialog" />
       </div>
-      <div class="nv-c" />
-      <div class="c-t-tv o-cts">
-        <div class="i-v i-v-1">
-          <vue-next-level-scroll target="#my-target1">
+      <div class="dsu" />
+      <div class="5gm do3">
+        <div class="i-v 55w">
+          <vue-next-level-scroll target="#efz1">
             <HomepageMenu1Scrollto
               v-if="isHomepage1DialogActive"
               class="app-links"
             />
           </vue-next-level-scroll>
-          <vue-next-level-scroll target="#my-target2">
+          <vue-next-level-scroll target="#efz2">
             <HomepageMenu2Scrollto
               v-if="isHomepage2DialogActive"
               class="app-links"
             />
           </vue-next-level-scroll>
-          <vue-next-level-scroll target="#my-target3">
+          <vue-next-level-scroll target="#efz3">
             <HomepageMenu3Scrollto
               v-if="isHomepage3DialogActive"
               class="app-links"
             />
           </vue-next-level-scroll>
-          <vue-next-level-scroll target="#my-target4">
+          <vue-next-level-scroll target="#efz4">
             <HomepageMenu4Scrollto
               v-if="isHomepage4DialogActive"
               class="app-links"
             />
           </vue-next-level-scroll>
-          <vue-next-level-scroll target="#my-target5">
+          <vue-next-level-scroll target="#efz5">
             <HomepageMenu5Scrollto
               v-if="isHomepage5DialogActive"
               class="app-links"
             />
           </vue-next-level-scroll>
         </div>
-        <div class="i-v i-v-2">
-          <span class="sl-d2">We use art for experiential marketing.</span>
-          <vue-next-level-scroll target=".my-target6">
+        <div class="i-v txl">
+          <span class="pb2">We use art for experiential marketing.</span>
+          <vue-next-level-scroll target=".efz6">
             <span
               v-if="isHomepage1DialogActive"
-              class="s-d2-tv"
+              class="gvx"
             >Tell me more</span>
           </vue-next-level-scroll>
-          <vue-next-level-scroll target=".my-target7">
+          <vue-next-level-scroll target=".efz7">
             <span
               v-if="isHomepage2DialogActive"
-              class="s-d2-tv"
+              class="gvx"
             >Tell me more</span>
           </vue-next-level-scroll>
-          <vue-next-level-scroll target=".my-target8">
+          <vue-next-level-scroll target=".efz8">
             <span
               v-if="isHomepage3DialogActive"
-              class="s-d2-tv"
+              class="gvx"
             >Tell me more</span>
           </vue-next-level-scroll>
-          <vue-next-level-scroll target=".my-target9">
+          <vue-next-level-scroll target=".efz9">
             <span
               v-if="isHomepage4DialogActive"
-              class="s-d2-tv"
+              class="gvx"
             >Tell me more</span>
           </vue-next-level-scroll>
-          <vue-next-level-scroll target=".my-target10">
+          <vue-next-level-scroll target=".efz10">
             <span
               v-if="isHomepage5DialogActive"
-              class="s-d2-tv"
+              class="gvx"
             >Tell me more</span>
           </vue-next-level-scroll>
           <nuxt-link exact to="/about">
             <span
-              class="s-d2-tv-2"
+              class="hv7"
             >| Understood</span>
           </nuxt-link>
         </div>
       </div>
       <Homepage1Scrollto
         v-if="isHomepage1DialogActive"
-        id="my-target1"
-        class="ayt-vr my-target6"
+        id="efz1"
+        class="yvh efz6"
       />
       <Homepage2Scrollto
         v-if="isHomepage2DialogActive"
-        id="my-target2"
-        class="ayt-vr my-target7"
+        id="efz2"
+        class="yvh efz7"
       />
       <Homepage3Scrollto
         v-if="isHomepage3DialogActive"
-        id="my-target3"
-        class="ayt-vr my-target8"
+        id="efz3"
+        class="yvh efz8"
       />
       <Homepage4Scrollto
         v-if="isHomepage4DialogActive"
-        id="my-target4"
-        class="ayt-vr my-target9"
+        id="efz4"
+        class="yvh efz9"
       />
       <Homepage5Scrollto
         v-if="isHomepage5DialogActive"
-        id="my-target5"
-        class="ayt-vr my-target10"
+        id="efz5"
+        class="yvh efz10"
       />
     </div>
   </div>
@@ -253,7 +253,7 @@ export default {
 $primary: #D25593;
 $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
-.w-c-b-v {
+.jvn {
   display: block;
   visibility: visible;
 }
@@ -262,7 +262,7 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 only screen and (min-width: 1441px),
 only screen and (min-height: 822px),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .w-c-b-v {
+  .jvn {
     display: none;
     visibility: hidden;
   }
@@ -295,14 +295,14 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 
 @media only screen and (min-height: 821px) {
   @media only screen and (min-width: 525px) {
-    .ayt-vr {
+    .yvh {
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
-  .ayt-vr {
+  .yvh {
     position: absolute;
     top: 95vh;
     width: 100vw;
@@ -317,7 +317,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 65vh;
     }
-    .nv-c {
+    .dsu {
       display: none;
     }
   }
@@ -328,34 +328,34 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 45.5vh;
     }
-    .nv-c {
+    .dsu {
       display: flex;
       width: 100%;
       height: 19.5vh;
     }
   }
-  .c-t-tv {
+  .5gm {
     display: flex;
     flex-direction: row;
     height: 25vh;
     margin-top: 5vh;
     align-self: center;
   }
-  .o-cts {
+  .do3 {
     overflow: visible;
   }
 }
 
 @media only screen and (max-height: 820px) {
   @media only screen and (min-width: 525px) {
-    .ayt-vr {
+    .yvh {
       &:hover {
         cursor: default;
         background-color: blue;
       }
     }
   }
-  .ayt-vr {
+  .yvh {
     position: absolute;
     top: 779.94px;
     width: 100vw;
@@ -371,7 +371,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 533.64px;
     }
-    .nv-c {
+    .dsu {
       display: none;
     }
   }
@@ -382,25 +382,25 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
       flex-grow: 1;
       height: 373.548px;
     }
-    .nv-c {
+    .dsu {
       display: flex;
       width: 100%;
       height: 160.092px;
     }
   }
-  .c-t-tv {
+  .5gm {
     display: flex;
     flex-direction: row;
     height: 205.25px;
     margin-top: 41.05px;
     align-self: center;
   }
-  .o-cts {
+  .do3 {
     overflow: visible;
   }
 }
 
-.c-ts {
+.3al {
   display: flex;
 }
 
@@ -409,10 +409,10 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
 }
 
 .i-v { margin-left: 5%; }
-.i-v-1 { margin-left: 15%; }
-.i-v-2 { height: 100%; max-width: 41%; }
+.55w { margin-left: 15%; }
+.txl { height: 100%; max-width: 41%; }
 
-.sl-d2 {
+.pb2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 560;
   font-size: 1.007793231094659em;
@@ -423,7 +423,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   cursor: default !important;
 }
 
-.s-d2-tv {
+.gvx {
   margin-left: 0.064526909722222em;
   line-height: 2.905em;
   position: relative;
@@ -436,7 +436,7 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   }
 }
 
-.s-d2-tv-2 {
+.hv7 {
   margin-left: 0.064526909722222em;
   display: inline-block;
   position: relative;

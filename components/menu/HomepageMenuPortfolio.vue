@@ -1,5 +1,5 @@
 <template>
-  <div class="lngr">
+  <div class="yjb">
     <nuxt-link exact to="/portfolio" class="disable">
       <Homepage id="child" class="child" />
     </nuxt-link>
@@ -20,7 +20,7 @@ export default {
 
 <style exact lang="scss" scoped>
 $primary: #D25593;
-.lngr {
+.yjb {
   padding-top: 6px;
   display: flex;
   padding-bottom: 6px;
@@ -85,7 +85,7 @@ $primary: #D25593;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.lngr:hover div {
+.yjb:hover div {
   background-color: yellow !important;
   text-shadow: none !important;
 }

@@ -1,12 +1,12 @@
 <template>
   <!--eslint-disable-->
-  <ul class="n-lst" @click.once="toggle">
+  <ul class="7al" @click.once="toggle">
     <li>index</li>
     <li>about</li>
     <li>portfolio</li>
     <li>index</li>
     <li>portfolio</li>
-    <NavList v-if="rtmO === true && glow === true" class="trbk" :object2="object2" :key="appLinkKeyBk" />
+    <NavList v-if="rtmO === true && glow === true" class="fmx" :object2="object2" :key="appLinkKeyBk" />
   </ul>
 </template>
 
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.n-lst {
+.7al {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,7 @@ li {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-.trbk {
+.fmx {
   z-index: -1;
 }
 </style>

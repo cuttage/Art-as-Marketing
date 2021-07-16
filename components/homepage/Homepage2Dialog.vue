@@ -1,13 +1,13 @@
 <template>
   <!--eslint-disable-->
-  <div class="cntnr c-mplyr">
-    <div class="day c-d1 decb1">
+  <div class="vt0 oi9">
+    <div class="day ocp woy">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="ttl-d-d1 ttl-d-d1-e">Art as Marketing
-            <div class="sbttl-d1 tI">Mid-to-Large Employer</div>
-            <div class="sbttl2-d1 tI">Make more aware, productive employees.</div>
-            <div class="s33-d1 tI s33-d1-sbp">(Exactly, you make your own employees, by giving a working experience.)</div>
+          <div id="target-d1 tI" class="brm 9zr">Art as Marketing
+            <div class="i37 tI">Mid-to-Large Employer</div>
+            <div class="i4w tI">Make more aware, productive employees.</div>
+            <div class="mzu tI 8ir">(Exactly, you make your own employees, by giving a working experience.)</div>
           </div>
         </div>
       </div>

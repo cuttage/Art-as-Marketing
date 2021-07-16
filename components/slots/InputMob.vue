@@ -2,10 +2,10 @@
   <div ref="submenu">
     <span class="input-c" @focusin="muted">
       <div class="a-h" :key="diapobKeySub" @focusin="muted">
-        <input id='sh-b' type="text" autocomplete="off" v-model="search" placeholder="   Browse keywords" ref="inputab" @focusin="muted"/>
+        <input id="fmp" type="text" autocomplete="off" v-model="search" placeholder="   Browse keywords" ref="inputab" @focusin="muted"/>
       </div>
     </span>
-    <span class="s-b-wrp drpdwn">
+    <span class="n0w nki">
       <div v-for="blog in filteredBlogs" class="s-b" v-show="search.length > 0 && search.localeCompare(blog.keyword, undefined, { sensitivity: 'accent' }) != 0" @click="setState(blog.keyword)">
         <h2>{{blog.keyword}}</h2>
       </div>
@@ -175,7 +175,7 @@ h2 {
   justify-content: space-around;
   text-transform: capitalize;
 }
-.s-b-wrp {
+.n0w {
   width: 100%;
   background-color: black;
   display: flex;
@@ -185,7 +185,7 @@ h2 {
   align-items: center;
   overflow: hidden;
 }
-.drpdwn {
+.nki {
   position: relative;
   overflow: hidden;
 
@@ -231,7 +231,7 @@ body {
 	background: transparent;
 }
 
-[id='sh-b'] {
+[id='fmp'] {
   z-index: 998;
   align-self: self-start;
 	border: none;

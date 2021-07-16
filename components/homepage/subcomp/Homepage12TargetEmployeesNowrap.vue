@@ -1,15 +1,15 @@
 <template>
   <!--eslint-disable-->
-  <div class="cntnr c-blckchn">
-    <div class="day c-d1 bt">
+  <div class="vt0 ydh">
+    <div class="day ocp bt">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="ttl-d1-S ttl-d1-S-nwrp">Art as Marketing
-            <div class="sbttl2-d1 tI s2-d1-m-cllbck">Yes — Daring. A research-based</br>consultancy, showing human experiences</br>can make employees conscious and aware</br>of a specific brand, concentrating on it.</div>
-            <div class="c-s2-d6">
-              <div class="s2A1-d6 tI">We use Design holistically, in harmony with your</div>
-              <div class="s21A-d6 tI">current strategies and environments</div>
-              <div class="s22A-d6 tI">We use custom analytics to measure performance.</div>
+          <div id="target-d1 tI" class="6m9 f2r">Art as Marketing
+            <div class="i4w tI jb2">Yes — Daring. A research-based</br>consultancy, showing human experiences</br>can make employees conscious and aware</br>of a specific brand, concentrating on it.</div>
+            <div class="wi6">
+              <div class="eyy tI">We use Design holistically, in harmony with your</div>
+              <div class="q8d tI">current strategies and environments</div>
+              <div class="cgr tI">We use custom analytics to measure performance.</div>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 <template>
-  <span class="hdspng">
+  <span class="6tm">
     <div v-if="searchfactor.length > 0 && JSON.stringify(searchfactor) === JSON.stringify(block.keyword)" style="color: yellow;" v-for="block in filteredComp">
       <component :is="block.component" :block="block" :searchfactor="searchfactor" :key="block._uid"></component>
     </div>
@@ -53,7 +53,7 @@ only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.668750
 only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
 only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
-  .hdspng {
+  .6tm {
     display: none;
     visibility: hidden;
   }

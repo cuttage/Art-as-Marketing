@@ -1,27 +1,27 @@
 <template>
   <!--eslint-disable-->
-  <div class="lngr"
+  <div class="yjb"
     @mousemove="handleMouseMove"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
   >
     <div
       ref="card"
-      class="c-wrp"
+      class="nl9"
     >
       <div class="card" :style="cardStyle">
         <div v-show="isLoaded">
-          <placeholder class="c-bg" :style="[cardBgTransform, cardBgImageLoading]" />
+          <placeholder class="gbl" :style="[cardBgTransform, cardBgImageLoading]" />
         </div>
         <div v-if="isLoaded">
-          <div class="c-bg" :style="[cardBgTransform, cardBgImage]" />
+          <div class="gbl" :style="[cardBgTransform, cardBgImage]" />
         </div>
         <div v-else>
-          <placeholder class="c-bg" :style="[cardBgTransform, cardBgImageLoading]" />
+          <placeholder class="gbl" :style="[cardBgTransform, cardBgImageLoading]" />
         </div>
-        <div class="c-nf">
+        <div class="rnk">
           <CardTitle :title="title" />
-          <nuxt-link :to="dsk ? 'portfolio' + link : 'touchportfolio' + link" class="nuxt-link-c">
+          <nuxt-link :to="dsk ? 'portfolio' + link : 'touchportfolio' + link" class="s8l">
             <CardDescription :description="description" />
           </nuxt-link>
         </div>
@@ -113,12 +113,12 @@ export default {
 $primary: #D25593;
 $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
-.nuxt-link-c {
+.s8l {
   color: white;
   text-decoration: none;
 }
 
-.lngr {
+.yjb {
   padding: 10px;
   display: flex;
   cursor: pointer;
@@ -133,25 +133,25 @@ $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
   }
 }
 
-.c-wrp {
+.nl9 {
   transform: perspective(800px);
   transform-style: preserve-3d;
 
   &:hover {
-    .c-nf {
+    .rnk {
       transform: translate3d(0, 30, 0);
     }
-    .c-nf,
-    .c-nf p {
+    .rnk,
+    .rnk p {
       opacity: 1;
       -webkit-transition: all 0.6s $hoverEasing;
       transition: all 0.6s $hoverEasing;
     }
 
-    .c-nf:after {
+    .rnk:after {
       transform: translate3d(0, 30, 0);
     }
-    .c-bg {
+    .gbl {
       transition: 0.6s $hoverEasing, opacity 5s $hoverEasing;
       opacity: 0.8;
     }
@@ -171,7 +171,7 @@ $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
   transition: 1s $returnEasing;
 }
 
-.c-bg {
+.gbl {
   opacity: 0.5;
   position: absolute;
   top: -20px;
@@ -187,7 +187,7 @@ $returnEasing: cubic-bezier(0.165, 0.84, 0.44, 0.44);
   image-rendering: crisp-edges;
 }
 
-.c-nf h1 {
+.rnk h1 {
   font-size: 36px !important;
   text-shadow: rgba(black, 0.5) 0 10px 10px;
   line-height: 60px !important;
@@ -203,7 +203,7 @@ h1 + p, p + p {
   vertical-align: super;
 }
 
-.c-nf {
+.rnk {
   position: absolute;
   padding-left: 20px;
   padding-right: 18px;

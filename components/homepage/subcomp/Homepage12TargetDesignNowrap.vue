@@ -1,11 +1,11 @@
 <template>
   <!--eslint-disable-->
-  <div class="cntnr c-blckchn">
-    <div class="day c-d1 bt">
+  <div class="vt0 ydh">
+    <div class="day ocp bt">
       <div class="declaration declaration1">
         <div class="text">
-          <div id="target-d1 tI" class="ttl-d1-S ttl-d1-S-nwrp">Art as Marketing
-            <div class="sbttl2-d1 tI s2-d1-m-cllbck">Yes — Real. We employ Design in time &</br>money worthy brand experiences. We give</br>back to creative communities. You grow.</div>
+          <div id="target-d1 tI" class="6m9 f2r">Art as Marketing
+            <div class="i4w tI jb2">Yes — Real. We employ Design in time &</br>money worthy brand experiences. We give</br>back to creative communities. You grow.</div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="nbrg">
+  <div class="ypx">
     <slot name="surgeon" :whichLeft="whichLeft" :whichRight="whichRight"></slot>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nbrg {
+.ypx {
   filter: brightness(30%);
   position: relative;
   top: calc(-164.365450121654501vw - 2em) !important;
@@ -27,7 +27,7 @@ export default {
 }
 /* experimental feature: 460px limit in layout */
 @media only screen and (min-width: 460px) {
-  .nbrg {
+  .ypx {
     top: calc(-3em - 613.32px - 27.2vw) !important;
     height: 0 !important;
   }
