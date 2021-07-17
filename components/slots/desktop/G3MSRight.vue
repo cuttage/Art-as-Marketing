@@ -1,3 +1,5 @@
+<!--Copyright (c) 2021 Marta Fattori-->
+<!--This code is licensed under MIT license (see LICENSE-MIT for details)-->
 <template functional>
   <section class="c2p">
     <section class="c-bs">

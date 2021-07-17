@@ -1,3 +1,5 @@
+<!--Copyright (c) 2021 Marta Fattori-->
+<!--This code is licensed under MIT license (see LICENSE-MIT for details)-->
 <template>
   <div>
     <main v-if="selectedContent" class="rchv" id="mSS1" v-pan="onPan">

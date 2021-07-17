@@ -171,6 +171,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// Copyright (c) 2021 Marta Fattori
+// This code is licensed under MIT license (see LICENSE-MIT for details)
 /* Hide scrollbar for Chrome, Safari and Opera */
 .sidenav::-webkit-scrollbar {
   display: none;

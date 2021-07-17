@@ -1,3 +1,5 @@
+<!--Copyright (c) 2021 Marta Fattori-->
+<!--This code is licensed under MIT license (see LICENSE-MIT for details)-->
 <template>
   <div class="lngr">
     <nuxt-link exact to="/" class="disable">

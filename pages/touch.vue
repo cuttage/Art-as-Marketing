@@ -1,3 +1,5 @@
+<!--Copyright (c) 2021 Marta Fattori-->
+<!--This code is licensed under MIT license (see LICENSE-MIT for details)-->
 <template>
   <div>
     <NoneMob class="g2-bk-mob" />

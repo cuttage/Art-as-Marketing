@@ -1,3 +1,5 @@
+<!--Copyright (c) 2021 Marta Fattori-->
+<!--This code is licensed under MIT license (see LICENSE-MIT for details)-->
 <template>
   <main class="s-w">
     <nav class="s-nvd">

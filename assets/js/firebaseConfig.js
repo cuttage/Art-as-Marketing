@@ -1,3 +1,5 @@
+// Copyright (c) 2021 Marta Fattori
+// This code is licensed under MIT license (see LICENSE-MIT for details)
 export default {
   apiKey: "AIzaSyAaGxpXbB2V53IEKq2Dbz7iaG3IwFNNxkM",
   authDomain: "aamwa-mf.firebaseapp.com",

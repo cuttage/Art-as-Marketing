@@ -68,6 +68,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// Copyright (c) 2021 Marta Fattori
+// This code is licensed under MIT license (see LICENSE-MIT for details)
 $d: 60px;
 $c: rgba(0, 169, 157, 0.9);
 $m: rgba(210, 85, 147, 0.9);
