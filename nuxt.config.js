@@ -37,13 +37,13 @@ export default {
   },
   router: {
     middleware: [
+      'browser',
       'mobile',
       'pages'
     ]
   },
   loading: false,
   css: [
-    '~/assets/main.css',
     '@/assets/scss/styles.scss'
   ],
   plugins: [

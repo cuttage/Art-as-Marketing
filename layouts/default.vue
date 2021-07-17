@@ -3,11 +3,11 @@
     <div :class="(page === 'portfolio' || page === 'portfolio-id') ? content : null">
       <div :class="(page === 'portfolio' || page === 'portfolio-id') ? rchv : null">
         <Spinner
-          v-if="page !== 'index' && page !== 'portfolio' && page !== 'portfolio-id' && page !== 'about'"
+          v-if="page !== 'index' && page !== 'portfolio' && page !== 'portfolio-id' && page !== 'about' && page !== 'sorry'"
           class="sw-sp"
           :is="asyncComp"
         />
-        <Marta v-if="page !== 'portfolio' && page !== 'portfolio-id'" class="h-hd" :class="page === 'about' ? 'h-h2' : ''" />
+        <Marta v-if="page !== 'portfolio' && page !== 'portfolio-id' && page !== 'sorry'" class="h-hd" :class="page === 'about' ? 'h-h2' : ''" />
         <div v-if="page === 'index'">
           <div class="s-prlxc">
             <Pxcc class="Pxcc Pxcco"></Pxcc>

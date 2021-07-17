@@ -31,7 +31,7 @@
           class="m-n-g"
         />
         <ArticleWidgetMob
-          v-else
+          v-else-if="page !== 'sorry'"
           class="m-g-b"
         />
       </article>

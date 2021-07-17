@@ -198,7 +198,7 @@ export default {
       selected2: "",
       mother: 'Subtouch5',
       tmrSubtouch1: null,
-      wchrSubtouch1: null
+      wchrSubtouch1C: null
     }
   },
 	computed: {
@@ -317,13 +317,13 @@ export default {
     }
 	},
   async created() {
-    this.wchrSubtouch1 = this.$watch('selected2', async (newValue, oldValue) => {
+    this.wchrSubtouch1C = this.$watch('selected2', async (newValue, oldValue) => {
       if (newValue === '+ Help') await this.utilA()
-      if (newValue === '– Help') await this.toggleHelp()
+      if (newValue === '– Help' && this.getToggleHelp === true) await this.toggleHelp()
     })
   },
   beforeDestroy() {
-    this.wchrSubtouch1();
+    this.wchrSubtouch1C();
     if (this.getToggleHelp === true) this.toggleHelp()
   }
 }
