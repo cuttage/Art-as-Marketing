@@ -23,7 +23,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Intellectual Property Rights (IPR) & License
 
-WGAW #2128628
+#### WGAW #2128628
 
 This project has been filed at the Writers Guild of America West (WGAW) Registry to document the claim of authorship.
 
@@ -40,4 +40,4 @@ This work is licensed under a
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-See marked exemptions in the code comments. All exemptions in the code are licensed under LICENSE-MIT
+See marked exemptions in the code comments. All exemptions in the code are licensed under LICENSE-MIT.
