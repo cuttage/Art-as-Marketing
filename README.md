@@ -23,7 +23,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Intellectual Property Rights (IPR) & License
 
-#### WGAW #2128628
+WGAW #2128628
 
 This project has been filed at the Writers Guild of America West (WGAW) Registry to document the claim of authorship.
 
