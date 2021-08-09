@@ -3,6 +3,7 @@
     <NavWrap class="n-hd-mob" />
     <SideNavMob />
     <slot></slot>
+    <Privacy v-if="showModal" @close="onClickChild" />
     <footer id="footer">
       <Footer />
     </footer>
@@ -13,13 +14,25 @@
 import NavWrap from '~/components/slots/NavWrap.vue'
 import SideNavMob from '~/components/SideNavMob.vue'
 import Footer from '~/components/Footer.vue'
+import Privacy from '~/components/Privacy.vue'
 
 export default {
   name: 'Layout_0Mob',
+  data() {
+    return {
+      showModal: true
+    }
+  },
   components: {
     NavWrap,
     SideNavMob,
-    Footer
+    Footer,
+    Privacy
+  },
+  methods: {
+    onClickChild (value) {
+      this.showModal = value
+    }
   }
 }
 </script>

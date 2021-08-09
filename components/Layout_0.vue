@@ -3,6 +3,7 @@
     <NavWrap :desk="desk" class="n-hd" />
     <SideNavPicker />
     <slot></slot>
+    <Privacy v-if="showModal" @close="onClickChild" :desk="desk" />
     <footer id="footer">
       <Footer />
     </footer>
@@ -13,18 +14,26 @@
 import NavWrap from '~/components/slots/NavWrap.vue'
 import SideNavPicker from '~/components/SideNavPicker.vue'
 import Footer from '~/components/Footer.vue'
+import Privacy from '~/components/Privacy.vue'
 
 export default {
   name: 'Layout_0',
   data() {
     return {
-      desk: 'desk'
+      desk: 'desk',
+      showModal: true
     }
   },
   components: {
     NavWrap,
     SideNavPicker,
-    Footer
+    Footer,
+    Privacy
+  },
+  methods: {
+    onClickChild (value) {
+      this.showModal = value
+    }
   }
 }
 </script>
