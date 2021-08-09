@@ -102,15 +102,6 @@ export default {
   border-radius: 50%;
 }
 
-/*
- * The following styles are auto-applied to elements with
- * transition="md4" when their visibility is toggled
- * by Vue.js.
- *
- * You can easily play with the md4 transition by editing
- * these styles.
- */
-
 .md4-enter {
   opacity: 0;
 }
