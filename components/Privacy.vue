@@ -7,13 +7,13 @@
         <div class="ruy">
 
           <div class="md6 disable">
-            <slot name="s7u chldr">
+            <slot name="s7u" class="chldr">
               Hey!
             </slot>
           </div>
 
           <div class="ya6 disable">
-            <slot name="dy5 chldr">
+            <slot name="dy5" class="chldr">
               By submitting the form, you consent to our
               <nuxt-link class="ya6__link" to="/privacy-policy">Privacy Policy</nuxt-link>.
               Please read it through.
@@ -21,7 +21,7 @@
           </div>
 
           <div class="t7y disable">
-            <slot name="gh2 chldr">
+            <slot name="gh2" class="chldr">
               <div class="b2w" @click="emitMd4" role="button">
                 OK
               </div>
@@ -114,6 +114,11 @@ export default {
 .md4-leave-active .ruy {
   -webkit-transform: scale(0.99);
   transform: scale(0.99);
+}
+
+.md4-enter-active,
+.md4-leave-active {
+  transition: transform 0.005s;
 }
 
 .chldr {
