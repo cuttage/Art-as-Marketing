@@ -1,10 +1,10 @@
 # Art-as-Marketing
 
-> My fantastic Nuxt.js project
+> My fantastic Nuxt.js project. Use Node ^14.0.0 If it's not the first time you install, we recommend a fresh install on a new Node version (select with nvm). Tested stable on Node 14.18.0 and Node 14.17.6. This project is not for sale and is only meant to showcase to the full my UI/UX design and Frontend Engineering abilities.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 
