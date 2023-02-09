@@ -1,116 +1,252 @@
 <template>
+
+
   <div v-if="batchKeyds.includes(searchfactor.toLowerCase())" class="rchv nbl">
+
+
     <article class="article">
+
+
       <div>
+
+
         <G2MSlo>
+
+
           <img
-            async=on
+            async="on"
             v-show="baseCondition"
-            v-bind:class="[(isImage1Active ? classObjectImg1 : ''),(isZoom && isImage1Active ? c_Obj_I_Up : ''),(isImage1Active && isDataBool && !isZoom ? classObjectImg1_Anim : ''),(isImage2Active || isImage3Active ? classObjectVar1 : '')]"
-            :srcSet="i1Set" :src="i1"
+            v-bind:class="[
+              isImage1Active ? classObjectImg1 : '',
+              isZoom && isImage1Active ? c_Obj_I_Up : '',
+              isImage1Active && isDataBool && !isZoom
+                ? classObjectImg1_Anim
+                : '',
+              isImage2Active || isImage3Active ? classObjectVar1 : '',
+            ]"
+            :srcSet="i1Set?.value"
+            :src="i1?.value"
             alt="marta-fattori"
             class="w-c-p"
             :key="img1Key"
           />
 
+
           <img
-            async=on
+            async="on"
             v-show="baseCondition"
-            v-bind:class="[(isImage2Active ? classObjectImg2 : ''),(isZoom && isImage2Active ? c_Obj_I_Up : ''),(isImage2Active && isDataBool && !isZoom ? classObjectImg2_Anim : ''),(isImage1Active || isImage3Active ? classObjectVar2 : '')]"
-            :srcSet="i2Set" :src="i2"
+            v-bind:class="[
+              isImage2Active ? classObjectImg2 : '',
+              isZoom && isImage2Active ? c_Obj_I_Up : '',
+              isImage2Active && isDataBool && !isZoom
+                ? classObjectImg2_Anim
+                : '',
+              isImage1Active || isImage3Active ? classObjectVar2 : '',
+            ]"
+            :srcSet="i2Set?.value"
+            :src="i2?.value"
             alt="marta-fattori"
             class="w-c-p"
             :key="img2Key"
           />
 
+
           <img
-            async=on
+            async="on"
             v-show="baseCondition"
-            v-bind:class="[(isImage3Active ? classObjectImg3 : ''),(isZoom && isImage3Active ? c_Obj_I_Up : ''),(isImage3Active && isDataBool && !isZoom ? classObjectImg3_Anim : ''),(isImage1Active || isImage2Active ? classObjectVar3 : '')]"
-            :srcSet="i3Set" :src="i3"
+            v-bind:class="[
+              isImage3Active ? classObjectImg3 : '',
+              isZoom && isImage3Active ? c_Obj_I_Up : '',
+              isImage3Active && isDataBool && !isZoom
+                ? classObjectImg3_Anim
+                : '',
+              isImage1Active || isImage2Active ? classObjectVar3 : '',
+            ]"
+            :srcSet="i3Set?.value"
+            :src="i3?.value"
             alt="marta-fattori"
             class="w-c-p"
             :key="img3Key"
           />
+
+
         </G2MSlo>
+
+
         <div
           class="c-t-g"
-          v-bind:style="[(isImage1Active || isImage2Active || isImage3Active ? {'z-index': '996 !important'} : '')]"
+          v-bind:style="[
+            isImage1Active || isImage2Active || isImage3Active
+              ? { 'z-index': '996 !important' }
+              : '',
+          ]"
         >
+
+
           <DoubleClick
             class="itmg"
             @single-click="toggleImage1"
             @double-click="toggleZoom"
           />
+
+
           <DoubleClick
             class="itmg"
             @single-click="toggleImage2"
             @double-click="toggleZoom"
           />
+
+
           <DoubleClick
             class="itmg"
             @single-click="toggleImage3"
             @double-click="toggleZoom"
           />
+
+
         </div>
+
+
         <div class="p-g-g-c" @click="toggleNone"></div>
 
+
         <div v-if="isZoom" class="d-c-g">
+
+
           <div class="g-g-c3">
-            <DoubleClick class="c-t-g3" @single-click="toggleBackZoom" @double-click="toggleBackZoom"></DoubleClick>
+
+
+            <DoubleClick
+              class="c-t-g3"
+              @single-click="toggleBackZoom"
+              @double-click="toggleBackZoom"
+            ></DoubleClick>
+
+
           </div>
+
+
         </div>
+
+
       </div>
+
+
     </article>
+
+
     <div class="article emptyspc">
+
+
       <MessagePor :uidb="block._uid">
-        <template slot="g2m" slot-scope="{tellYou}">
+
+
+        <template slot="g2m" slot-scope="{ tellYou }">
+
+
           <g2M :tellYou="tellYou"></g2M>
+
+
         </template>
-        <template slot="g3m" slot-scope="{G2mData, G2m2Data}">
+
+
+        <template slot="g3m" slot-scope="{ G2mData, G2m2Data }">
+
+
           <g3M :G2mData="G2mData" :G2m2Data="G2m2Data"></g3M>
+
+
         </template>
+
+
       </MessagePor>
+
+
     </div>
+
+
     <article class="article">
+
+
       <div>
+
+
         <G3MSlo>
+
+
           <img
-            async=on
+            async="on"
             v-show="baseCondition"
-            v-bind:class="[(isImage1Active ? classObjectImg1 : ''),(isZoom && isImage1Active ? c_Obj_I_Down : ''),(isImage1Active && isDataBool && !isZoom ? classObjectImg1_Anim : ''),(isImage2Active || isImage3Active ? classObjectVar1 : '')]"
-            :srcSet="i4Set" :src="i4"
+            v-bind:class="[
+              isImage1Active ? classObjectImg1 : '',
+              isZoom && isImage1Active ? c_Obj_I_Down : '',
+              isImage1Active && isDataBool && !isZoom
+                ? classObjectImg1_Anim
+                : '',
+              isImage2Active || isImage3Active ? classObjectVar1 : '',
+            ]"
+            :srcSet="i4Set?.value"
+            :src="i4?.value"
             alt="marta-fattori"
             class="w-c-p"
             :key="img1Key"
           />
 
+
           <img
-            async=on
+            async="on"
             v-show="baseCondition"
-            v-bind:class="[(isImage2Active ? classObjectImg2 : ''),(isZoom && isImage2Active ? c_Obj_I_Down : ''),(isImage2Active && isDataBool && !isZoom ? classObjectImg2_Anim : ''),(isImage1Active || isImage3Active ? classObjectVar2 : '')]"
-            :srcSet="i5Set" :src="i5"
+            v-bind:class="[
+              isImage2Active ? classObjectImg2 : '',
+              isZoom && isImage2Active ? c_Obj_I_Down : '',
+              isImage2Active && isDataBool && !isZoom
+                ? classObjectImg2_Anim
+                : '',
+              isImage1Active || isImage3Active ? classObjectVar2 : '',
+            ]"
+            :srcSet="i5Set?.value"
+            :src="i5?.value"
             alt="marta-fattori"
             class="w-c-p"
             :key="img2Key"
           />
 
+
           <img
-            async=on
+            async="on"
             v-show="baseCondition"
-            v-bind:class="[(isImage3Active ? classObjectImg3 : ''),(isZoom && isImage3Active ? c_Obj_I_Down : ''),(isImage3Active && isDataBool && !isZoom ? classObjectImg3_Anim : ''),(isImage1Active || isImage2Active ? classObjectVar3 : '')]"
-            :srcSet="i6Set" :src="i6"
+            v-bind:class="[
+              isImage3Active ? classObjectImg3 : '',
+              isZoom && isImage3Active ? c_Obj_I_Down : '',
+              isImage3Active && isDataBool && !isZoom
+                ? classObjectImg3_Anim
+                : '',
+              isImage1Active || isImage2Active ? classObjectVar3 : '',
+            ]"
+            :srcSet="i6Set?.value"
+            :src="i6?.value"
             alt="marta-fattori"
             class="w-c-p"
             :key="img3Key"
           />
+
+
         </G3MSlo>
+
+
       </div>
+
+
     </article>
+
+
   </div>
+
+
 </template>
 
-<script async=on>
+
+<script async="on">
 //desktop
 import useReactCenter from '~/composables/react-center.js'
 import useRaw from '~/composables/raw-data.js'
@@ -120,20 +256,21 @@ const DIALOG_TYPE = {
   NONE: null,
   IMAGE1: 1,
   IMAGE2: 2,
-  IMAGE3: 3
-};
-import MessagePor from '~/components/slots/MessagePor.vue';
-import g2M from '~/components/slots/g2M.vue';
-import g3M from '~/components/slots/g3M.vue';
+  IMAGE3: 3,
+}
+import MessagePor from '~/components/slots/MessagePor.vue'
+import g2M from '~/components/slots/g2M.vue'
+import g3M from '~/components/slots/g3M.vue'
 import G3MSlo from '~/components/slots/G3MSlo.vue'
-import 'requestidlecallback-polyfill'; //remove with safari 14
+import 'requestidlecallback-polyfill' //remove with safari 14
 export default {
   scrollToTop: true,
   name: 'G2MSSDesk',
   props: ['searchfactor', 'block'],
-  setup (props) {
-    const { i1Set,i1,i4Set,i4,i2Set,i2,i5Set,i5,i3Set,i3,i6Set,i6 } = useReactCenter(props.block._uid);
-    const { batchKeyds } = useRaw();
+  setup(props) {
+    const { i1Set, i1, i4Set, i4, i2Set, i2, i5Set, i5, i3Set, i3, i6Set, i6 } =
+      useReactCenter(props.block._uid)
+    const { batchKeyds } = useRaw()
 
     return {
       i1Set,
@@ -148,7 +285,7 @@ export default {
       i3,
       i6Set,
       i6,
-      batchKeyds
+      batchKeyds,
     }
   },
   data() {
@@ -170,91 +307,91 @@ export default {
       isBlock_Anim_3Active: 'b_s_img_a_3',
       img3Key: 2997,
       isVrnc3AActive: 'vrnc3A',
-      promiseList: this.promiseGenerator()
+      promiseList: this.promiseGenerator(),
     }
   },
   components: {
     G2MSlo,
-    DoubleClick: () => import("~/components/DoubleClick.vue"),
+    DoubleClick: () => import('~/components/DoubleClick.vue'),
     MessagePor,
     g2M,
     g3M,
-    G3MSlo
+    G3MSlo,
   },
   computed: {
     baseCondition() {
-      return this.isImage1Active || this.isImage2Active || this.isImage3Active;
+      return this.isImage1Active || this.isImage2Active || this.isImage3Active
     },
     isImage1Active() {
-      return this.activeDialog === DIALOG_TYPE.IMAGE1;
+      return this.activeDialog === DIALOG_TYPE.IMAGE1
     },
     classObjectImg1() {
       return {
-        b_s_img_1: this.isBlock_1Active
+        b_s_img_1: this.isBlock_1Active,
       }
     },
     c_Obj_I_Up() {
       return {
-        z_img_up: this.isZooming_UpActive
+        z_img_up: this.isZooming_UpActive,
       }
     },
     c_Obj_I_Down() {
       return {
-        z_img_down: this.isZooming_DownActive
+        z_img_down: this.isZooming_DownActive,
       }
     },
     isDataBool() {
-      return this.dataBool === true;
+      return this.dataBool === true
     },
     isZoom() {
-      return this.zoom === true;
+      return this.zoom === true
     },
     classObjectImg1_Anim() {
       return {
-        b_s_img_a_1: this.isBlock_Anim_1Active
+        b_s_img_a_1: this.isBlock_Anim_1Active,
       }
     },
     isImage2Active() {
-      return this.activeDialog === DIALOG_TYPE.IMAGE2;
+      return this.activeDialog === DIALOG_TYPE.IMAGE2
     },
     isImage3Active() {
-      return this.activeDialog === DIALOG_TYPE.IMAGE3;
+      return this.activeDialog === DIALOG_TYPE.IMAGE3
     },
     classObjectVar1() {
       return {
-        vrnc1A: this.isVrnc1AActive
+        vrnc1A: this.isVrnc1AActive,
       }
     },
     classObjectImg2() {
       return {
-        b_s_img_2: this.isBlock_2Active
+        b_s_img_2: this.isBlock_2Active,
       }
     },
     classObjectImg2_Anim() {
       return {
-        b_s_img_a_2: this.isBlock_Anim_2Active
+        b_s_img_a_2: this.isBlock_Anim_2Active,
       }
     },
     classObjectVar2() {
       return {
-        vrnc2A: this.isVrnc2AActive
+        vrnc2A: this.isVrnc2AActive,
       }
     },
     classObjectImg3() {
       return {
-        b_s_img_3: this.isBlock_3Active
+        b_s_img_3: this.isBlock_3Active,
       }
     },
     classObjectImg3_Anim() {
       return {
-        b_s_img_a_3: this.isBlock_Anim_3Active
+        b_s_img_a_3: this.isBlock_Anim_3Active,
       }
     },
     classObjectVar3() {
       return {
-        vrnc3A: this.isVrnc3AActive
+        vrnc3A: this.isVrnc3AActive,
       }
-    }
+    },
   },
   methods: {
     promiseRequestIdleCallback() {
@@ -267,109 +404,116 @@ export default {
       new Promise((resolve) => setTimeout(resolve, ms))
     },
     async *promiseGenerator() {
-      var val = yield await this.promiseRequestIdleCallback();
-      while(val = yield val);
+      var val = yield await this.promiseRequestIdleCallback()
+      while ((val = yield val));
     },
     async fetchWaitIdle() {
-      let res2 = await this.promiseList.next();
-      let res3 = await this.promiseList.next(this.promiseRequestIdleCallback(res2));
-      let res4 = await this.promiseList.next(this.promiseRequestAnimationFrame(res3));
-      let res5 = await this.promiseList.next(this.promiseSetTimeout(0), res4);
-      return res5;
+      let res2 = await this.promiseList.next()
+      let res3 = await this.promiseList.next(
+        this.promiseRequestIdleCallback(res2)
+      )
+      let res4 = await this.promiseList.next(
+        this.promiseRequestAnimationFrame(res3)
+      )
+      let res5 = await this.promiseList.next(this.promiseSetTimeout(0), res4)
+      return res5
     },
     testDataBool() {
-      return this.dataBool === true ? this.dataBool = false:'';
+      return this.dataBool === true ? (this.dataBool = false) : ''
     },
     toggleAnim() {
-      if(this.isBlock_Anim_1Active === undefined){
-        this.testDataBool();
-        this.isBlock_Anim_1Active = 'b_s_img_a_1';
+      if (this.isBlock_Anim_1Active === undefined) {
+        this.testDataBool()
+        this.isBlock_Anim_1Active = 'b_s_img_a_1'
       }
 
-      if(this.isBlock_Anim_2Active === undefined){
-        this.testDataBool();
-        this.isBlock_Anim_2Active = 'b_s_img_a_2';
+      if (this.isBlock_Anim_2Active === undefined) {
+        this.testDataBool()
+        this.isBlock_Anim_2Active = 'b_s_img_a_2'
       }
 
-      if(this.isBlock_Anim_3Active === undefined){
-        this.testDataBool();
-        this.isBlock_Anim_3Active = 'b_s_img_a_3';
+      if (this.isBlock_Anim_3Active === undefined) {
+        this.testDataBool()
+        this.isBlock_Anim_3Active = 'b_s_img_a_3'
       }
-      return this.testDataBool();
+      return this.testDataBool()
     },
     resetDialog() {
-      this.activeDialog = DIALOG_TYPE.NONE;
+      this.activeDialog = DIALOG_TYPE.NONE
     },
     setImage(wait, value) {
       if (this.activeDialog === value) {
-        return this.resetDialog();
+        return this.resetDialog()
       }
-      this.activeDialog = value;
+      this.activeDialog = value
     },
     async toggleImage(ValD2) {
-      let valA = await this.fetchWaitIdle();
-      let valB = await this.toggleAnim(valA);
-      let valC = await this.setImage(valB, ValD2);
-      let valD = await this.promiseList.next(this.promiseRequestIdleCallback(valC));
-      return valD;
+      let valA = await this.fetchWaitIdle()
+      let valB = await this.toggleAnim(valA)
+      let valC = await this.setImage(valB, ValD2)
+      let valD = await this.promiseList.next(
+        this.promiseRequestIdleCallback(valC)
+      )
+      return valD
     },
     setDataBool() {
-      return this.dataBool = true;
+      return (this.dataBool = true)
     },
     async toggleImage1() {
-      let part1 = await this.toggleImage(DIALOG_TYPE.IMAGE1);
-      let part2 = await this.setDataBool(part1);
-      return part2;
+      let part1 = await this.toggleImage(DIALOG_TYPE.IMAGE1)
+      let part2 = await this.setDataBool(part1)
+      return part2
     },
     toggleZoom() {
-      return this.zoom = true;
+      return (this.zoom = true)
     },
     async toggleImage2() {
-      let part1 = await this.toggleImage(DIALOG_TYPE.IMAGE2);
-      let part2 = await this.setDataBool(part1);
-      return part2;
+      let part1 = await this.toggleImage(DIALOG_TYPE.IMAGE2)
+      let part2 = await this.setDataBool(part1)
+      return part2
     },
     async toggleImage3() {
-      let part1 = await this.toggleImage(DIALOG_TYPE.IMAGE3);
-      let part2 = await this.setDataBool(part1);
-      return part2;
+      let part1 = await this.toggleImage(DIALOG_TYPE.IMAGE3)
+      let part2 = await this.setDataBool(part1)
+      return part2
     },
     toggleNone() {
-      this.setImage({}, DIALOG_TYPE.NONE);
+      this.setImage({}, DIALOG_TYPE.NONE)
     },
     toggleBackZoom() {
       if (this.isZoom && this.isImage1Active) {
-        this.zoom = false;
+        this.zoom = false
         this.isBlock_Anim_1Active = undefined
       } else if (this.isZoom && this.isImage2Active) {
-        this.zoom = false;
+        this.zoom = false
         this.isBlock_Anim_2Active = undefined
       } else if (this.isZoom && this.isImage3Active) {
-        this.zoom = false;
+        this.zoom = false
         this.isBlock_Anim_3Active = undefined
       }
-      return;
+      return
     },
     zoomHandle(newVal, oldVal) {
-      return newVal !== oldVal && (newVal === true)
-    }
+      return newVal !== oldVal && newVal === true
+    },
   },
   watch: {
     isZoom: {
-      handler: function(newVal, oldVal) {
-        if(this.zoomHandle(newVal, oldVal) && this.isImage1Active) {
-          return this.$set(this.$data, 'img1Key', this.img1Key + 1 );
-        } else if(this.zoomHandle(newVal, oldVal) && this.isImage2Active) {
-          return this.$set(this.$data, 'img2Key', this.img2Key + 1 );
-        } else if(this.zoomHandle(newVal, oldVal) && this.isImage3Active) {
-          return this.$set(this.$data, 'img3Key', this.img3Key + 1 );
+      handler: function (newVal, oldVal) {
+        if (this.zoomHandle(newVal, oldVal) && this.isImage1Active) {
+          return this.$set(this.$data, 'img1Key', this.img1Key + 1)
+        } else if (this.zoomHandle(newVal, oldVal) && this.isImage2Active) {
+          return this.$set(this.$data, 'img2Key', this.img2Key + 1)
+        } else if (this.zoomHandle(newVal, oldVal) && this.isImage3Active) {
+          return this.$set(this.$data, 'img3Key', this.img3Key + 1)
         }
       },
       immediate: true,
-    }
-  }
+    },
+  },
 }
 </script>
+
 
 <style lang="scss" scoped>
 .rchv {
@@ -439,11 +583,11 @@ img {
 }
 @keyframes b_s_img_a_1 {
   0% {
-    transform: translate3d(-5%,0,0);
+    transform: translate3d(-5%, 0, 0);
     opacity: 0;
   }
   100% {
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -491,11 +635,11 @@ img {
 }
 @keyframes b_s_img_a_2 {
   0% {
-    transform: translate3d(0,-10%,0);
+    transform: translate3d(0, -10%, 0);
     opacity: 0;
   }
   100% {
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -542,11 +686,11 @@ img {
 }
 @keyframes b_s_img_a_3 {
   0% {
-    transform: translate3d(0,10%,0);
+    transform: translate3d(0, 10%, 0);
     opacity: 0;
   }
   100% {
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -643,3 +787,5 @@ img {
   text-rendering: geometricPrecision;
 }
 </style>
+
+

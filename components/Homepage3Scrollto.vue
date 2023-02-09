@@ -1,165 +1,298 @@
 <!--Copyright (c) 2021 Marta Fattori-->
+
+
 <!--This code is licensed under MIT license (see LICENSE-MIT for details)-->
+
+
 <template>
+
+
   <div>
-    <Homepage11CScrollto
-      v-if="isHomepage11CScrolltoActive"
-      class="ay2"
-    />
-    <Homepage12CScrollto
-      v-if="isHomepage12CScrolltoActive"
-      class="ay2"
-    />
-    <Homepage13CScrollto
-      v-if="isHomepage13CScrolltoActive"
-      class="ay2"
-    />
-    <Homepage14CScrollto
-      v-if="isHomepage14CScrolltoActive"
-      class="ay2"
-    />
-    <Homepage15CScrollto
-      v-if="isHomepage15CScrolltoActive"
-      class="ay2"
-    />
+
+
+    <Homepage11CScrollto v-if="isHomepage11CScrolltoActive" class="ay2" />
+
+
+    <Homepage12CScrollto v-if="isHomepage12CScrolltoActive" class="ay2" />
+
+
+    <Homepage13CScrollto v-if="isHomepage13CScrolltoActive" class="ay2" />
+
+
+    <Homepage14CScrollto v-if="isHomepage14CScrolltoActive" class="ay2" />
+
+
+    <Homepage15CScrollto v-if="isHomepage15CScrolltoActive" class="ay2" />
+
 
     <div class="c-t2">
-      <div class="it-2 item1" :class="peEnabled" @mouseover="toggleHomepage11CScrollto" />
-      <div class="it-2 item2" :class="peEnabled" @mouseover="toggleHomepage12CScrollto" />
-      <div class="it-2 item3" :class="peEnabled" @mouseover="toggleHomepage13CScrollto" />
-      <div class="it-2 item4" :class="peEnabled" @mouseover="toggleHomepage14CScrollto" />
-      <div class="it-2 item5" :class="peEnabled" @mouseover="toggleHomepage15CScrollto" />
+
+
+      <div
+        class="it-2 item1"
+        :class="peEnabled"
+        @mouseover="toggleHomepage11CScrollto"
+      />
+
+
+      <div
+        class="it-2 item2"
+        :class="peEnabled"
+        @mouseover="toggleHomepage12CScrollto"
+      />
+
+
+      <div
+        class="it-2 item3"
+        :class="peEnabled"
+        @mouseover="toggleHomepage13CScrollto"
+      />
+
+
+      <div
+        class="it-2 item4"
+        :class="peEnabled"
+        @mouseover="toggleHomepage14CScrollto"
+      />
+
+
+      <div
+        class="it-2 item5"
+        :class="peEnabled"
+        @mouseover="toggleHomepage15CScrollto"
+      />
+
+
     </div>
+
+
     <div class="c-t-v-g-h" @click.prevent="prevent11" />
+
+
     <div class="c-t-v2">
+
+
       <div class="i-v i-v-1">
+
+
         <vue-next-level-scroll target="#my-target11">
+
+
           <HomepageMenu11CScrollto
             v-if="isHomepage11CScrolltoActive"
             class="app-links"
           />
+
+
         </vue-next-level-scroll>
+
+
         <vue-next-level-scroll target="#my-target12">
+
+
           <HomepageMenu12CScrollto
             v-if="isHomepage12CScrolltoActive"
             class="app-links"
           />
+
+
         </vue-next-level-scroll>
+
+
         <vue-next-level-scroll target="#my-target13">
+
+
           <HomepageMenu13CScrollto
             v-if="isHomepage13CScrolltoActive"
             class="app-links"
           />
+
+
         </vue-next-level-scroll>
+
+
         <vue-next-level-scroll target="#my-target14">
+
+
           <HomepageMenu14CScrollto
             v-if="isHomepage14CScrolltoActive"
             class="app-links"
           />
+
+
         </vue-next-level-scroll>
+
+
         <vue-next-level-scroll target="#my-target15">
+
+
           <HomepageMenu15CScrollto
             v-if="isHomepage15CScrolltoActive"
             class="app-links"
           />
+
+
         </vue-next-level-scroll>
+
+
       </div>
+
+
       <div class="i-v i-v-2">
-        <span class="sl-d2">Your gateway to: Alta Sartoria Mario Napolitano, Accademia dei Sartori, World Federation of Master Tailors.</span>
+
+
+        <span class="sl-d2">
+           Your gateway to: Alta Sartoria Mario Napolitano, Accademia dei Sartori,
+          World Federation of Master Tailors.
+        </span>
+
+
         <vue-next-level-scroll target=".my-target16">
-          <span
-            v-if="isHomepage11CScrolltoActive"
-            class="s-d2-tv"
-          >Tell me more</span>
+
+
+          <span v-if="isHomepage11CScrolltoActive" class="s-d2-tv">
+             Tell me more
+          </span>
+
+
         </vue-next-level-scroll>
+
+
         <vue-next-level-scroll target=".my-target17">
-          <span
-            v-if="isHomepage12CScrolltoActive"
-            class="s-d2-tv"
-          >Tell me more</span>
+
+
+          <span v-if="isHomepage12CScrolltoActive" class="s-d2-tv">
+             Tell me more
+          </span>
+
+
         </vue-next-level-scroll>
+
+
         <vue-next-level-scroll target=".my-target18">
-          <span
-            v-if="isHomepage13CScrolltoActive"
-            class="s-d2-tv"
-          >Tell me more</span>
+
+
+          <span v-if="isHomepage13CScrolltoActive" class="s-d2-tv">
+             Tell me more
+          </span>
+
+
         </vue-next-level-scroll>
+
+
         <vue-next-level-scroll target=".my-target19">
-          <span
-            v-if="isHomepage14CScrolltoActive"
-            class="s-d2-tv"
-          >Tell me more</span>
+
+
+          <span v-if="isHomepage14CScrolltoActive" class="s-d2-tv">
+             Tell me more
+          </span>
+
+
         </vue-next-level-scroll>
+
+
         <vue-next-level-scroll target=".my-target20">
-          <span
-            v-if="isHomepage15CScrolltoActive"
-            class="s-d2-tv"
-          >Tell me more</span>
+
+
+          <span v-if="isHomepage15CScrolltoActive" class="s-d2-tv">
+             Tell me more
+          </span>
+
+
         </vue-next-level-scroll>
+
+
         <nuxt-link exact to="/contact">
-          <span
-            class="s-d2-tv-2"
-          >| Understood</span>
+
+
+          <span class="s-d2-tv-2">| Understood</span>
+
+
         </nuxt-link>
+
+
       </div>
+
+
     </div>
+
+
     <div class="spinnerscont">
+
+
       <div class="svt-c">
-        <SpinnerCut
-          v-if="isHomepage12CScrolltoActive"
-          class="svt"
-        />
-        <SpinnerCut
-          v-if="isHomepage13CScrolltoActive"
-          class="svt"
-        />
-        <SpinnerCut
-          v-if="isHomepage14CScrolltoActive"
-          class="svt"
-        />
+
+
+        <SpinnerCut v-if="isHomepage12CScrolltoActive" class="svt" />
+
+
+        <SpinnerCut v-if="isHomepage13CScrolltoActive" class="svt" />
+
+
+        <SpinnerCut v-if="isHomepage14CScrolltoActive" class="svt" />
+
+
       </div>
+
+
       <div class="svtp-c">
-        <SpinnerPat
-          v-if="isHomepage12CScrolltoActive"
-          class="svt"
-        />
-        <SpinnerPat
-          v-if="isHomepage13CScrolltoActive"
-          class="svt"
-        />
-        <SpinnerPat
-          v-if="isHomepage14CScrolltoActive"
-          class="svt"
-        />
+
+
+        <SpinnerPat v-if="isHomepage12CScrolltoActive" class="svt" />
+
+
+        <SpinnerPat v-if="isHomepage13CScrolltoActive" class="svt" />
+
+
+        <SpinnerPat v-if="isHomepage14CScrolltoActive" class="svt" />
+
+
       </div>
+
+
     </div>
+
+
     <Homepage11Target
       v-if="isHomepage11CScrolltoActive"
       id="my-target11"
       class="ay-vr2 my-target16"
     />
+
+
     <Homepage12TargetFinancial
       v-if="isHomepage12CScrolltoActive"
       id="my-target12"
       class="ay-vr2 my-target17"
     />
+
+
     <Homepage12TargetDesign
       v-if="isHomepage13CScrolltoActive"
       id="my-target13"
       class="ay-vr2 my-target18"
     />
+
+
     <Homepage12TargetFinancialB
       v-if="isHomepage14CScrolltoActive"
       id="my-target14"
       class="ay-vr2 my-target19"
     />
+
+
     <Homepage15Target
       v-if="isHomepage15CScrolltoActive"
       id="my-target15"
       class="ay-vr2 my-target20"
     />
+
+
   </div>
+
+
 </template>
+
 
 <script>
 import Homepage11CScrollto from '~/components/homepage/subcomp/Homepage11CScrollto.vue'
@@ -180,8 +313,8 @@ const DIALOG_TYPE = {
   HOMEPAGE12: 2,
   HOMEPAGE13: 3,
   HOMEPAGE14: 4,
-  HOMEPAGE15: 5
-};
+  HOMEPAGE15: 5,
+}
 
 export default {
   components: {
@@ -197,94 +330,102 @@ export default {
     Homepage15Target,
     SpinnerCut: () => import('~/components/spinner/SpinnerCut.vue'),
     SpinnerPat: () => import('~/components/spinner/SpinnerPat.vue'),
-    HomepageMenu11CScrollto: () => import('~/components/menu/scrollto/subcomp/HomepageMenu11CScrollto.vue'),
-    HomepageMenu12CScrollto: () => import('~/components/menu/scrollto/subcomp/HomepageMenu12CScrollto.vue'),
-    HomepageMenu13CScrollto: () => import('~/components/menu/scrollto/subcomp/HomepageMenu13CScrollto.vue'),
-    HomepageMenu14CScrollto: () => import('~/components/menu/scrollto/subcomp/HomepageMenu14CScrollto.vue'),
-    HomepageMenu15CScrollto: () => import('~/components/menu/scrollto/subcomp/HomepageMenu15CScrollto.vue'),
-    VueNextLevelScroll: () => import('vue-next-level-scroll')
+    HomepageMenu11CScrollto: () =>
+      import('~/components/menu/scrollto/subcomp/HomepageMenu11CScrollto.vue'),
+    HomepageMenu12CScrollto: () =>
+      import('~/components/menu/scrollto/subcomp/HomepageMenu12CScrollto.vue'),
+    HomepageMenu13CScrollto: () =>
+      import('~/components/menu/scrollto/subcomp/HomepageMenu13CScrollto.vue'),
+    HomepageMenu14CScrollto: () =>
+      import('~/components/menu/scrollto/subcomp/HomepageMenu14CScrollto.vue'),
+    HomepageMenu15CScrollto: () =>
+      import('~/components/menu/scrollto/subcomp/HomepageMenu15CScrollto.vue'),
+    VueNextLevelScroll: () => import('vue-next-level-scroll'),
   },
-  setup () {
-    const { toggleHelp, getToggleHelp } = enactHelp();
+  setup() {
+    const { toggleHelp, getToggleHelp } = enactHelp()
 
     return {
       toggleHelp,
-      getToggleHelp
+      getToggleHelp,
     }
   },
   data() {
     return {
       activeDialog: DIALOG_TYPE.NONE,
       noPoint: 'n-pt',
-      nullNoPoint: null
-    };
+      nullNoPoint: null,
+    }
   },
   computed: {
     isHomepage11CScrolltoActive() {
-      return this.activeDialog === DIALOG_TYPE.HOMEPAGE11;
+      return this.activeDialog === DIALOG_TYPE.HOMEPAGE11
     },
     isHomepage12CScrolltoActive() {
-      return this.activeDialog === DIALOG_TYPE.HOMEPAGE12;
+      return this.activeDialog === DIALOG_TYPE.HOMEPAGE12
     },
     isHomepage13CScrolltoActive() {
-      return this.activeDialog === DIALOG_TYPE.HOMEPAGE13;
+      return this.activeDialog === DIALOG_TYPE.HOMEPAGE13
     },
     isHomepage14CScrolltoActive() {
-      return this.activeDialog === DIALOG_TYPE.HOMEPAGE14;
+      return this.activeDialog === DIALOG_TYPE.HOMEPAGE14
     },
     isHomepage15CScrolltoActive() {
-      return this.activeDialog === DIALOG_TYPE.HOMEPAGE15;
+      return this.activeDialog === DIALOG_TYPE.HOMEPAGE15
     },
     peEnabled() {
-      return (this.getToggleHelp === true) ? this.noPoint : this.nullNoPoint;
-    }
+      return this.getToggleHelp?.value === true
+        ? this.noPoint
+        : this.nullNoPoint
+    },
   },
   methods: {
     resetDialog() {
-      this.activeDialog = DIALOG_TYPE.NONE;
+      this.activeDialog = DIALOG_TYPE.NONE
     },
     toggleHomepage11CScrollto() {
       if (this.activeDialog === DIALOG_TYPE.HOMEPAGE11) {
-        return this.resetDialog();
+        return this.resetDialog()
       }
-      this.activeDialog = DIALOG_TYPE.HOMEPAGE11;
+      this.activeDialog = DIALOG_TYPE.HOMEPAGE11
     },
     toggleHomepage12CScrollto() {
       if (this.activeDialog === DIALOG_TYPE.HOMEPAGE12) {
-        return this.resetDialog();
+        return this.resetDialog()
       }
-      this.activeDialog = DIALOG_TYPE.HOMEPAGE12;
+      this.activeDialog = DIALOG_TYPE.HOMEPAGE12
     },
     toggleHomepage13CScrollto() {
       if (this.activeDialog === DIALOG_TYPE.HOMEPAGE13) {
-        return this.resetDialog();
+        return this.resetDialog()
       }
-      this.activeDialog = DIALOG_TYPE.HOMEPAGE13;
+      this.activeDialog = DIALOG_TYPE.HOMEPAGE13
     },
     toggleHomepage14CScrollto() {
       if (this.activeDialog === DIALOG_TYPE.HOMEPAGE14) {
-        return this.resetDialog();
+        return this.resetDialog()
       }
-      this.activeDialog = DIALOG_TYPE.HOMEPAGE14;
+      this.activeDialog = DIALOG_TYPE.HOMEPAGE14
     },
     toggleHomepage15CScrollto() {
       if (this.activeDialog === DIALOG_TYPE.HOMEPAGE15) {
-        return this.resetDialog();
+        return this.resetDialog()
       }
-      this.activeDialog = DIALOG_TYPE.HOMEPAGE15;
+      this.activeDialog = DIALOG_TYPE.HOMEPAGE15
     },
     prevent11() {
       if (this.isHomepage11CScrolltoActive) {
         return this.toggleHelp()
       }
-    }
-  }
-};
+    },
+  },
+}
 </script>
+
 
 <style lang="scss" scoped>
 @import '~/assets/scss/homestyle.scss';
-$primary: #D25593;
+$primary: #d25593;
 $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 .svt {
@@ -437,9 +578,16 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   margin-left: 0;
 }
 
-.i-v { margin-left: 5%; }
-.i-v-1 { margin-left: 15%; }
-.i-v-2 { height: 100%; max-width: 41%; }
+.i-v {
+  margin-left: 5%;
+}
+.i-v-1 {
+  margin-left: 15%;
+}
+.i-v-2 {
+  height: 100%;
+  max-width: 41%;
+}
 
 .sl-d2 {
   font-family: 'Barlow', sans-serif;
@@ -478,3 +626,5 @@ $hoverEasing: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 </style>
+
+

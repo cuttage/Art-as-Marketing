@@ -1,60 +1,131 @@
 <!--Copyright (c) 2021 Marta Fattori-->
+
+
 <!--This code is licensed under MIT license (see LICENSE-MIT for details)-->
+
+
 <template>
+
+
   <div>
+
+
     <NoneMob class="g2-bk-mob" />
+
+
     <div class="w-c-b-v-mob">
+
+
       <main class="rchv" id="mapp" v-pan="onPan">
+
+
         <article class="article">
+
+
           <Homepage1DialogNowrap
             v-if="isHomepage1DialogActive"
             class="ayt n1"
           />
-          <Homepage2Dialog
-            v-if="isHomepage2DialogActive"
-            class="ayt n2"
-          />
+
+
+          <Homepage2Dialog v-if="isHomepage2DialogActive" class="ayt n2" />
+
+
           <Homepage3DialogNowrap
             v-if="isHomepage3DialogActive"
             class="ayt n3"
           />
-          <Homepage4Dialog
-            v-if="isHomepage4DialogActive"
-            class="ayt n4"
-          />
+
+
+          <Homepage4Dialog v-if="isHomepage4DialogActive" class="ayt n4" />
+
+
           <Homepage5DialogSmall
             v-if="isHomepage5DialogSmallActive"
             class="ayt n5"
           />
+
+
         </article>
 
+
         <article class="article">
-          <div class="yyj" ref="yyj" v-if="selectedContent">{{ selectedContent }}</div>
-          <div class="yyj" ref="yyj" v-else>We use art for experiential marketing. Browse Below</div>
+
+
+          <div class="yyj" ref="yyj" v-if="selectedContent">
+             {{ selectedContent }}
+          </div>
+
+
+          <div class="yyj" ref="yyj" v-else>
+             We use art for experiential marketing. Browse Below
+          </div>
+
+
         </article>
+
+
         <article class="article">
+
+
           <section class="slider">
+
+
             <ul class="slider__lst" ref="list">
-              <li v-for="(slide, index) in slides" v-bind:key="slide.id"
-                  class="slider__tm"
-                  v-tap="(e) => onTap(e, slide)"
-                  :style="{backgroundColor: colors[index]}">
-                {{ slide }}
+
+
+              <li
+                v-for="(slide, index) in slides"
+                v-bind:key="slide.id"
+                class="slider__tm"
+                v-tap="(e) => onTap(e, slide)"
+                :style="{ backgroundColor: colors[index] }"
+              >
+                 {{ slide }}
               </li>
+
+
             </ul>
+
+
           </section>
+
+
         </article>
+
+
         <article class="article">
+
+
           <Subtouch1 v-if="isHomepage1DialogActive" />
+
+
           <Subtouch2 v-if="isHomepage2DialogActive" />
+
+
           <Subtouch3 v-if="isHomepage3DialogActive" />
+
+
           <Subtouch4 v-if="isHomepage4DialogActive" />
+
+
           <Subtouch5 v-if="isHomepage5DialogSmallActive" />
+
+
         </article>
+
+
       </main>
+
+
     </div>
+
+
   </div>
+
+
 </template>
+
 
 <script>
 if (process.browser) {
@@ -66,7 +137,7 @@ import Homepage2Dialog from '~/components/homepage/Homepage2Dialog.vue'
 import Homepage3DialogNowrap from '~/components/homepage/Homepage3DialogNowrap.vue'
 import Homepage4Dialog from '~/components/homepage/Homepage4Dialog.vue'
 import Homepage5DialogSmall from '~/components/homepage/Homepage5DialogSmall.vue'
-import { TweenMax, Elastic, Sine } from "gsap/dist/gsap"
+import { TweenMax, Elastic, Sine } from 'gsap/dist/gsap'
 import Subtouch1 from '~/components/subtouch/Subtouch1.vue'
 import Subtouch2 from '~/components/subtouch/Subtouch2.vue'
 import Subtouch3 from '~/components/subtouch/Subtouch3.vue'
@@ -79,8 +150,8 @@ const DIALOG_TYPE = {
   HOMEPAGE2: 1,
   HOMEPAGE3: 1,
   HOMEPAGE4: 1,
-  HOMEPAGE5: 1
-};
+  HOMEPAGE5: 1,
+}
 
 export default {
   head: {
@@ -89,11 +160,11 @@ export default {
       {
         hid: 'touch home hid',
         name: 'touch home',
-        content: 'Touch home page description'
-      }
-    ]
+        content: 'Touch home page description',
+      },
+    ],
   },
-  layout: ({ isMobile }) => isMobile ? 'mobile' : 'default',
+  layout: ({ isMobile }) => (isMobile ? 'mobile' : 'default'),
   components: {
     NoneMob,
     Homepage1DialogNowrap,
@@ -105,139 +176,135 @@ export default {
     Subtouch2,
     Subtouch3,
     Subtouch4,
-    Subtouch5
+    Subtouch5,
   },
   data() {
     return {
       activeDialog: DIALOG_TYPE.NONE,
-      slides: [
-  			"Business",
-  			"Employer",
-  			"FinTech",
-  			"Agency",
-  			"Land Developer"
-  		],
+      slides: ['Business', 'Employer', 'FinTech', 'Agency', 'Land Developer'],
       yyjs: [
-        "Navigate to know more about Business",
-        "Navigate to know more about Employer",
-        "Navigate to know more about FinTech",
-        "Navigate to know more about Agency",
-        "Navigate to know more about Land Developer",
+        'Navigate to know more about Business',
+        'Navigate to know more about Employer',
+        'Navigate to know more about FinTech',
+        'Navigate to know more about Agency',
+        'Navigate to know more about Land Developer',
       ],
-      colors: [
-        "blue",
-        "yellow",
-        "blue",
-        "yellow",
-        "blue"
-      ],
+      colors: ['blue', 'yellow', 'blue', 'yellow', 'blue'],
       currentOffset: 0,
-      selected: ""
+      selected: '',
     }
   },
-	computed: {
+  computed: {
     isHomepage1DialogActive() {
-      if (this.selected === "Business") {
-        return this.activeDialog === DIALOG_TYPE.HOMEPAGE1;
+      if (this.selected === 'Business') {
+        return this.activeDialog === DIALOG_TYPE.HOMEPAGE1
       }
     },
     isHomepage2DialogActive() {
-      if (this.selected === "Employer") {
-        return this.activeDialog === DIALOG_TYPE.HOMEPAGE2;
+      if (this.selected === 'Employer') {
+        return this.activeDialog === DIALOG_TYPE.HOMEPAGE2
       }
     },
     isHomepage3DialogActive() {
-      if (this.selected === "FinTech") {
-        return this.activeDialog === DIALOG_TYPE.HOMEPAGE3;
+      if (this.selected === 'FinTech') {
+        return this.activeDialog === DIALOG_TYPE.HOMEPAGE3
       }
     },
     isHomepage4DialogActive() {
-      if (this.selected === "Agency") {
-        return this.activeDialog === DIALOG_TYPE.HOMEPAGE4;
+      if (this.selected === 'Agency') {
+        return this.activeDialog === DIALOG_TYPE.HOMEPAGE4
       }
     },
     isHomepage5DialogSmallActive() {
-      if (this.selected === "Land Developer") {
-        return this.activeDialog === DIALOG_TYPE.HOMEPAGE5;
+      if (this.selected === 'Land Developer') {
+        return this.activeDialog === DIALOG_TYPE.HOMEPAGE5
       }
     },
-		overflowRatio() {
-			return this.$refs.list.scrollWidth / this.$refs.list.offsetWidth;
-		},
-		itemWidth() {
-			return this.$refs.list.scrollWidth / this.slides.length;
-		},
-		selectedContent() {
-			if (this.selected === "Business") {
-				return this.yyjs[this.slides.indexOf('Business')];
-			} else if (this.selected === "Employer") {
-        return this.yyjs[this.slides.indexOf('Employer')];
-      } else if (this.selected === "FinTech") {
-        return this.yyjs[this.slides.indexOf('FinTech')];
-      } else if (this.selected === "Agency") {
-        return this.yyjs[this.slides.indexOf('Agency')];
-      } else if (this.selected === "Land Developer") {
-        return this.yyjs[this.slides.indexOf('Land Developer')];
+    overflowRatio() {
+      return this.$refs.list.scrollWidth / this.$refs.list.offsetWidth
+    },
+    itemWidth() {
+      return this.$refs.list.scrollWidth / this.slides.length
+    },
+    selectedContent() {
+      if (this.selected === 'Business') {
+        return this.yyjs[this.slides.indexOf('Business')]
+      } else if (this.selected === 'Employer') {
+        return this.yyjs[this.slides.indexOf('Employer')]
+      } else if (this.selected === 'FinTech') {
+        return this.yyjs[this.slides.indexOf('FinTech')]
+      } else if (this.selected === 'Agency') {
+        return this.yyjs[this.slides.indexOf('Agency')]
+      } else if (this.selected === 'Land Developer') {
+        return this.yyjs[this.slides.indexOf('Land Developer')]
       }
-			return "";
-		},
-		count() {
-			return this.slides.length
-		}
-	},
+      return ''
+    },
+    count() {
+      return this.slides.length
+    },
+  },
   methods: {
-		onPan(e) {
-			const dragOffset = 100 / this.itemWidth * e.deltaX / this.count * this.overflowRatio;
+    onPan(e) {
+      const dragOffset =
+        (((100 / this.itemWidth) * e.deltaX) / this.count) * this.overflowRatio
 
-			const transform = this.currentOffset + dragOffset;
+      const transform = this.currentOffset + dragOffset
 
-			this.$refs.list.style.setProperty("--x", transform);
+      this.$refs.list.style.setProperty('--x', transform)
 
-			if (e.isFinal) {
-				this.currentOffset = transform;
-				const maxScroll = 100 - this.overflowRatio * 100;
-				let finalOffset = this.currentOffset;
+      if (e.isFinal) {
+        this.currentOffset = transform
+        const maxScroll = 100 - this.overflowRatio * 100
+        let finalOffset = this.currentOffset
 
-				// scrolled to last item
-				if (this.currentOffset <= maxScroll) {
-					finalOffset = maxScroll;
-				} else if (this.currentOffset >= 0) {
-					// scroll to first item
-					finalOffset = 0;
-				} else {
-					// animate to next item according to pan direction
-					const index = this.currentOffset / this.overflowRatio / 100 * this.count;
-					const nextIndex = e.deltaX <= 0 ? Math.floor(index) : Math.ceil(index);
-					finalOffset = 100 * this.overflowRatio / this.count * nextIndex;
-				}
+        // scrolled to last item
+        if (this.currentOffset <= maxScroll) {
+          finalOffset = maxScroll
+        } else if (this.currentOffset >= 0) {
+          // scroll to first item
+          finalOffset = 0
+        } else {
+          // animate to next item according to pan direction
+          const index =
+            (this.currentOffset / this.overflowRatio / 100) * this.count
+          const nextIndex = e.deltaX <= 0 ? Math.floor(index) : Math.ceil(index)
+          finalOffset = ((100 * this.overflowRatio) / this.count) * nextIndex
+        }
 
-				// bounce back animation
-				TweenMax.fromTo(
-					this.$refs.list,
-					0.4,
-					{ '--x': this.currentOffset },
-					{
-						'--x': finalOffset,
-						ease: Elastic.easeOut.config(1, 0.8),
-						onComplete: () => {
-							this.currentOffset = finalOffset;
-						}
-					}
-				);
-			}
-		},
-		onTap(e, value) {
-			if (value) {
-				TweenMax.to(e.target, 0.12, { scale: 1.1, yoyo: true, repeat: 1, ease: Sine.easeOut})
-				this.selected = value;
-			}
-		}
-	}
+        // bounce back animation
+        TweenMax.fromTo(
+          this.$refs.list,
+          0.4,
+          { '--x': this.currentOffset },
+          {
+            '--x': finalOffset,
+            ease: Elastic.easeOut.config(1, 0.8),
+            onComplete: () => {
+              this.currentOffset = finalOffset
+            },
+          }
+        )
+      }
+    },
+    onTap(e, value) {
+      if (value) {
+        TweenMax.to(e.target, 0.12, {
+          scale: 1.1,
+          yoyo: true,
+          repeat: 1,
+          ease: Sine.easeOut,
+        })
+        this.selected = value
+      }
+    },
+  },
 }
 </script>
 
+
 <style lang="scss" scoped>
-$primary: #D25593;
+$primary: #d25593;
 $dur: 2s;
 $timing: ease-out;
 
@@ -250,14 +317,14 @@ $cta-color: yellow;
 
 /* experimental feature: 375px limit in layout */
 @media only screen and (max-device-width: 290px) and (orientation: portrait),
-only screen and (max-width: 368px),
-only screen and (max-width: 375px) and (max-resolution: 2.88dppx), // limit until 375px excluding iPhone 12 mini
-only screen and (max-width: 375px) and (-webkit-max-device-pixel-ratio: 2.88),
-only screen and (max-width: 460px) and (max-resolution: 1.6687500000dppx), // limit until 460px devices with max-resolution: 1.6687500000dppx (especially galaxy note II)
-only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.6687500000),
-only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape), // limit anything below iPhone 4s in landscape
-only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
-only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
+  only screen and (max-width: 368px),
+  only screen and (max-width: 375px) and (max-resolution: 2.88dppx),
+  // limit until 375px excluding iPhone 12 mini only screen and (max-width: 375px) and (-webkit-max-device-pixel-ratio: 2.88),
+  only screen and (max-width: 460px) and (max-resolution: 1.66875dppx),
+  // limit until 460px devices with max-resolution: 1.6687500000dppx (especially galaxy note ii) only screen and (max-width: 460px) and (-webkit-max-device-pixel-ratio: 1.66875),
+  only screen and (max-device-width: 480px) and (max-resolution: 2dppx) and (orientation: landscape),
+  // limit anything below iPhone 4s in landscape only screen and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape),
+  only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   .w-c-b-v-mob {
     display: none;
     visibility: hidden;
@@ -271,43 +338,43 @@ only screen and (max-height: 566px) and (min-aspect-ratio: 1/1) {
   background-color: blue !important;
 }
 .slider {
-	width: 100%;
-	height: 120px;
-	overflow: visible;
+  width: 100%;
+  height: 120px;
+  overflow: visible;
   position: relative;
   white-space: nowrap;
 
-	&__lst {
-		display: flex;
-		width: 100%;
-		height: 100%;
+  &__lst {
+    display: flex;
+    width: 100%;
+    height: 100%;
 
-		font-size: 2rem;
-		backface-visibility: hidden;
-		transform: translateX(calc(var(--x, 0) * 1%));
-	}
+    font-size: 2rem;
+    backface-visibility: hidden;
+    transform: translateX(calc(var(--x, 0) * 1%));
+  }
 
-	&__tm {
-		position: relative;
-		flex: 0 0 140px;
+  &__tm {
+    position: relative;
+    flex: 0 0 140px;
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		margin-right: 12px;
-		padding: 6px;
-		box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 12px;
+    padding: 6px;
+    box-sizing: border-box;
 
-		border-radius: 8px;
-		text-align: center;
-  	transition: opacity 0.15s ease;
-		color: $primary;
+    border-radius: 8px;
+    text-align: center;
+    transition: opacity 0.15s ease;
+    color: $primary;
 
-		&:focus {
-			opacity: 0.8;
-		}
-	}
+    &:focus {
+      opacity: 0.8;
+    }
+  }
 }
 
 li:nth-child(1) {
@@ -316,59 +383,55 @@ li:nth-child(1) {
 
 @keyframes g-t-glw {
   from {
-    text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
-                0 0.5px 0.5px rgba(0,0,0,0.1),
-                0 1.25px 1.25px rgba(0,0,0,0.075),
-                0 2.5px 2.5px rgba(0,0,0,0.05),
-                0 5px 5px rgba(0,0,0,0.025);
+    text-shadow: 0 0.25px 0.25px rgba(0, 0, 0, 0.125),
+      0 0.5px 0.5px rgba(0, 0, 0, 0.1), 0 1.25px 1.25px rgba(0, 0, 0, 0.075),
+      0 2.5px 2.5px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.025);
   }
   37.5% {
-      text-shadow: 0 0.25px 0.28125px rgba($cta-color,0.01041666666666666667),
-                  0 0.5px 0.5625px rgba($cta-color,0.0208333333333333333),
-                  0 1.25px 1.125px rgba($cta-color,0.03125),
-                  0 2.5px 2.25px rgba($cta-color,0.041666666666666667),
-                  0 5px 4.5px rgba($cta-color,0.05208333333333333333);
+    text-shadow: 0 0.25px 0.28125px rgba($cta-color, 0.01041666666666666667),
+      0 0.5px 0.5625px rgba($cta-color, 0.0208333333333333333),
+      0 1.25px 1.125px rgba($cta-color, 0.03125),
+      0 2.5px 2.25px rgba($cta-color, 0.041666666666666667),
+      0 5px 4.5px rgba($cta-color, 0.05208333333333333333);
   }
   to {
-    text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
-                0 0.5px 0.5px rgba(0,0,0,0.1),
-                0 1.25px 1.25px rgba(0,0,0,0.075),
-                0 2.5px 2.5px rgba(0,0,0,0.05),
-                0 5px 5px rgba(0,0,0,0.025);
+    text-shadow: 0 0.25px 0.25px rgba(0, 0, 0, 0.125),
+      0 0.5px 0.5px rgba(0, 0, 0, 0.1), 0 1.25px 1.25px rgba(0, 0, 0, 0.075),
+      0 2.5px 2.5px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.025);
   }
 }
 
-.yyj  {
+.yyj {
   background-color: blue;
   border-radius: 5px;
   text-rendering: geometricPrecision;
-	padding: 30px;
-	font-size: 1.4rem;
+  padding: 30px;
+  font-size: 1.4rem;
   color: $primary;
-	backface-visibility: hidden;
-  font-family:'DIN Medium', sans-serif;
+  backface-visibility: hidden;
+  font-family: 'DIN Medium', sans-serif;
   line-height: 42px;
   text-align: center;
 }
 
 body {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 ul {
-  font-family:'DIN Medium', sans-serif;
-	font-size: 16px;
+  font-family: 'DIN Medium', sans-serif;
+  font-size: 16px;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 #mapp {
-	height: 100%;
-	width: 100%;
-	box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .rchv {
@@ -453,7 +516,7 @@ ul {
   }
   .ayt.n2,
   .ayt.n3,
-  .ayt.n4  {
+  .ayt.n4 {
     height: calc(11.701375902532816rem + 50px) !important;
     min-height: calc(11.701375902532816rem + 50px) !important;
   }
@@ -470,7 +533,7 @@ ul {
   }
   .ayt.n2,
   .ayt.n3,
-  .ayt.n4  {
+  .ayt.n4 {
     height: calc(11.716292547639414rem + 50px) !important;
     min-height: calc(11.716292547639414rem + 50px) !important;
   }
@@ -517,3 +580,5 @@ ul {
   }
 }
 </style>
+
+

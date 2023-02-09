@@ -1,27 +1,58 @@
 <template>
+
+
   <keep-alive>
+
+
     <div>
-      <p v-if="getToggleHelp === false" class="h-nb">+ Help</p>
-      <p v-if="getToggleHelp === true" class="h-nb">– Help</p>
-      <div v-if="getToggleHelp === true" class="p-wrppr p-wrppr-a p-wrppr-n" :class="prWclass">
+
+
+      <p v-if="getToggleHelp?.value === false" class="h-nb">+ Help</p>
+
+
+      <p v-if="getToggleHelp?.value === true" class="h-nb">– Help</p>
+
+
+      <div
+        v-if="getToggleHelp?.value === true"
+        class="p-wrppr p-wrppr-a p-wrppr-n"
+        :class="prWclass"
+      >
+
+
         <div class="p-blck p-crd p-crd-a" :class="prCclass">
+
+
           <slot name="HelpWrapSlot"></slot>
-          <hr>
+
+
+          <hr />
+
+
         </div>
+
+
       </div>
+
+
     </div>
+
+
   </keep-alive>
+
+
 </template>
+
 
 <script>
 import { enactHelp } from '~/composables/toggle-help-store.js'
 export default {
   props: ['mother'],
-  setup () {
-    const { getToggleHelp } = enactHelp();
+  setup() {
+    const { getToggleHelp } = enactHelp()
 
     return {
-      getToggleHelp
+      getToggleHelp,
     }
   },
   data() {
@@ -29,22 +60,26 @@ export default {
       normalizedW: 'p-wrppr-nrml',
       tailorizedW: 'p-wrppr-tlr',
       normalizedC: 'p-crd-n',
-      tailorizedC: 'p-crd-t'
+      tailorizedC: 'p-crd-t',
     }
   },
   computed: {
     getMother() {
-      return this.mother === 'Homepage11EScrollto' || this.mother === 'Homepage11AScrollto';
+      return (
+        this.mother === 'Homepage11EScrollto' ||
+        this.mother === 'Homepage11AScrollto'
+      )
     },
     prWclass() {
-      return this.getMother ? this.tailorizedW : this.normalizedW;
+      return this.getMother ? this.tailorizedW : this.normalizedW
     },
     prCclass() {
-      return this.getMother ? this.tailorizedC : this.normalizedC;
-    }
-  }
+      return this.getMother ? this.tailorizedC : this.normalizedC
+    },
+  },
 }
 </script>
+
 
 <style lang="scss" scoped>
 .h-nb {
@@ -80,3 +115,5 @@ export default {
   }
 }
 </style>
+
+

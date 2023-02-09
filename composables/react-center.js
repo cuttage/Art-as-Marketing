@@ -1,4 +1,4 @@
-import { reactive, toRefs } from '@vue/composition-api';
+import { reactive, toRefs } from '@vue/composition-api'
 
 import react from '~/composables/react-common.js'
 
@@ -14,12 +14,13 @@ const reacteeCenter = reactive({
   i3Set: '',
   i3: '',
   i6Set: '',
-  i6: ''
+  i6: '',
 })
 
-export default function useReactCenter (name) {
+export default function useReactCenter(name) {
   react(name, reacteeCenter)
+
   return {
-    ...toRefs(reacteeCenter)
+    ...toRefs(reacteeCenter),
   }
 }

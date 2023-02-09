@@ -1,8 +1,14 @@
 # Art-as-Marketing
 
-> My fantastic Nuxt.js project. Use Node ^14.0.0 If it's not the first time you install, we recommend a fresh install on a new Node version (select with nvm). Tested stable on Node 14.18.0 and Node 14.17.6. This project is not for sale and is only meant to showcase to the full my UI/UX design and Frontend Engineering abilities.
+> My fantastic Nuxt.js project. Use Node ^14.0.0 If it's not the first time you install, we recommend a fresh install on a new Node version (select with nvm). Tested stable on Node 14.18.0 and Node 14.17.6. This project is not for sale and is only meant to showcase to the full my UI/UX design and Frontend/FullStack Engineering skills.
+
+## Available online at
+
+✅ Production: https://art-as-marketing.vercel.app
 
 ## Build Setup
+
+Please use the master branch of this repo for this purpose
 
 ```bash
 # install dependencies

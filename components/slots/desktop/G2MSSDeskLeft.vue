@@ -1,81 +1,129 @@
 <template>
+
+
   <div v-if="batchKeyds.includes(searchfactor)" class="rchv nbl">
+
+
     <article class="article">
+
+
       <div>
+
+
         <G2MSLeft>
+
+
           <img
-            async=on
-            v-bind:class="[(classObjectImg1)]"
-            :srcSet="i1Set" :src="i1"
+            async="on"
+            v-bind:class="[classObjectImg1]"
+            :srcSet="i1Set?.value"
+            :src="i1?.value"
             alt="marta-fattori"
             :key="img1Key"
           />
 
+
           <img
-            async=on
-            v-bind:class="[(classObjectVar2)]"
-            :srcSet="i2Set" :src="i2"
+            async="on"
+            v-bind:class="[classObjectVar2]"
+            :srcSet="i2Set?.value"
+            :src="i2?.value"
             alt="marta-fattori"
             :key="img2Key"
           />
 
+
           <img
-            async=on
-            v-bind:class="[(classObjectVar3)]"
-            :srcSet="i3Set" :src="i3"
+            async="on"
+            v-bind:class="[classObjectVar3]"
+            :srcSet="i3Set?.value"
+            :src="i3?.value"
             alt="marta-fattori"
             :key="img3Key"
           />
+
+
         </G2MSLeft>
+
+
       </div>
+
+
     </article>
+
+
     <div class="article emptyspc"></div>
+
+
     <article class="article">
+
+
       <div>
+
+
         <G3MSLeft>
+
+
           <img
-            async=on
-            v-bind:class="[(classObjectImg1)]"
-            :srcSet="i4Set" :src="i4"
+            async="on"
+            v-bind:class="[classObjectImg1]"
+            :srcSet="i4Set?.value"
+            :src="i4?.value"
             alt="marta-fattori"
             :key="img1Key"
           />
 
+
           <img
-            async=on
-            v-bind:class="[(classObjectVar2)]"
-            :srcSet="i5Set" :src="i5"
+            async="on"
+            v-bind:class="[classObjectVar2]"
+            :srcSet="i5Set?.value"
+            :src="i5?.value"
             alt="marta-fattori"
             :key="img2Key"
           />
 
+
           <img
-            async=on
-            v-bind:class="[(classObjectVar3)]"
-            :srcSet="i6Set" :src="i6"
+            async="on"
+            v-bind:class="[classObjectVar3]"
+            :srcSet="i6Set?.value"
+            :src="i6?.value"
             alt="marta-fattori"
             :key="img3Key"
           />
+
+
         </G3MSLeft>
+
+
       </div>
+
+
     </article>
+
+
   </div>
+
+
 </template>
 
-<script async=on>
+
+<script async="on">
 import useReactLeft from '~/composables/react-left.js'
 import useRaw from '~/composables/raw-data.js'
 
 import G2MSLeft from '~/components/slots/desktop/G2MSLeft.vue'
 import G3MSLeft from '~/components/slots/desktop/G3MSLeft.vue'
-import 'requestidlecallback-polyfill'; //remove with safari 14
+import 'requestidlecallback-polyfill' //remove with safari 14
 export default {
   scrollToTop: true,
   name: 'G2MSSDeskLeft',
   props: ['searchfactor', 'whichLeft'],
-  setup (props) {
-    const { i1Set,i1,i4Set,i4,i2Set,i2,i5Set,i5,i3Set,i3,i6Set,i6 } = useReactLeft(props.whichLeft);
-    const { batchKeyds } = useRaw();
+  setup(props) {
+    const { i1Set, i1, i4Set, i4, i2Set, i2, i5Set, i5, i3Set, i3, i6Set, i6 } =
+      useReactLeft(props.whichLeft)
+    const { batchKeyds } = useRaw()
 
     return {
       i1Set,
@@ -90,7 +138,7 @@ export default {
       i3,
       i6Set,
       i6,
-      batchKeyds
+      batchKeyds,
     }
   },
   data() {
@@ -100,32 +148,33 @@ export default {
       img2Key: 1998,
       isVrnc2AActive: 'vrnc2A',
       img3Key: 2997,
-      isVrnc3AActive: 'vrnc3A'
+      isVrnc3AActive: 'vrnc3A',
     }
   },
   components: {
     G2MSLeft,
-    G3MSLeft
+    G3MSLeft,
   },
   computed: {
     classObjectImg1() {
       return {
-        b_s_img_1: this.isBlock_1Active
+        b_s_img_1: this.isBlock_1Active,
       }
     },
     classObjectVar2() {
       return {
-        vrnc2A: this.isVrnc2AActive
+        vrnc2A: this.isVrnc2AActive,
       }
     },
     classObjectVar3() {
       return {
-        vrnc3A: this.isVrnc3AActive
+        vrnc3A: this.isVrnc3AActive,
       }
-    }
-  }
+    },
+  },
 }
 </script>
+
 
 <style lang="scss" scoped>
 .rchv {
@@ -204,3 +253,5 @@ img {
   display: flex;
 }
 </style>
+
+

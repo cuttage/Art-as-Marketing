@@ -1,4 +1,4 @@
-import { ref, computed } from '@vue/composition-api';
+import { ref, computed } from '@vue/composition-api'
 
 const toghelpstate = ref({ tHelp: false })
 
@@ -12,9 +12,9 @@ function toggleHelp() {
 
 const getToggleHelp = computed(() => toghelpstate.value.tHelp)
 
-export function enactHelp () {
+export function enactHelp() {
   return {
     toggleHelp,
-    getToggleHelp
+    getToggleHelp,
   }
 }
