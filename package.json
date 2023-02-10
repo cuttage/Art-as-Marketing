@@ -2,8 +2,8 @@
   "name": "AAM",
   "version": "1.0.0",
   "description": "Art as Marketing",
-  "author": "Cuttage",
   "private": true,
+  "author": "Marta Fattori <martafattori@protonmail.ch> (https://github.com/cuttage/)",
   "scripts": {
     "dev": "nuxt",
     "build:modern": "nuxt build --modern=server",
